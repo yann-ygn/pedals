@@ -1,0 +1,32 @@
+Circuit: * Z:\Dev\pedals\pedals\Colorsound Overdriver\sim\overdriver.asc
+
+Direct Newton iteration for .op point succeeded.
+.step gain=0.1
+.step gain=0.2
+.step gain=0.3
+.step gain=0.4
+.step gain=0.5
+.step gain=0.6
+.step gain=0.7
+.step gain=0.8
+.step gain=0.9
+.step gain=1
+
+Date: Fri Apr 21 17:07:18 2017
+Total elapsed time: 0.778 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 7671
+traniter = 7661
+tranpoints = 2609
+accept = 2038
+rejected = 571
+matrix size = 33
+fillins = 38
+solver = Normal
+Matrix Compiler1: 4.38 KB object code size  1.1/0.5/[0.3]
+Matrix Compiler2: off  [0.3]/0.4/0.4
+
+

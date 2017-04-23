@@ -1,0 +1,217 @@
+* A Collection of Potentiometers
+* ==============================
+* Helmut Sennewald,                          12/23/2003         V1.1
+*
+*    Models:
+*       potentiometer    old style LTSPICE potentiometer
+*       pot_lin          k*x
+*       pot_pow          x^k
+*       pot_plog         exp(k*(1-x))
+*       pot_nlog         exp(kx)
+*       pot_tab          table(x)
+*       pot_piher_plog   piecewise linear, datasheet
+*       pot_radiohm_plog piecewise linear, measured
+*    
+*
+*       1 ____    1.0=wiper   
+*             |  
+*            | |  3
+*            | |<---- wiper 0..1
+*            | |
+*       Rtap | |  Tap 
+*            | |
+*       2 ____|   0.0=wiper
+*
+* 
+*     RTOT = total resistance
+*     WIPER = ratio of travel of the wiper
+*     RTAP = reference resistance at wiper=Tap
+*            It is needed only for pot_plog, pot_nlog and pot_pow.
+*            RTAP is measured between pin-2 and wiper.
+*     TAP = ratio of travel when Rtap is reached
+
+
+
+*--------------------- The Linear Potentiometer ---------------------
+*      
+* 1.0 <----- 0.0
+*        |3
+*      __V__
+*  1--|_____|--2
+*        
+*  o--R1-o-R2--o
+*
+.SUBCKT potentiometer 1 2 3
+* Parameters: Rtot, wiper
+.param w=limit(0.01m,wiper,0.99999)
+*
+R1 1 3 {Rtot*(1-w)}
+R2 3 2 {Rtot*(w)}
+.ENDS
+*
+
+.SUBCKT pot_lin 1 2 3
+.param w=limit(0.01m,wiper,0.99999)
+*
+R1 1 3 {Rtot*(1-w)}
+R2 3 2 {Rtot*(w)}
+.ENDS
+
+
+
+*------------- The Ideal Power Function Potentiometer ---------------
+*
+* It is interesting to know that the power log. curve is a
+* good fit to so called "log"-potentiometers, because most of 
+* them have not true logarithm dependency in reality.
+*
+* 1.0 <----- 0.0
+*        |3
+*      __V__
+*  1--|_____|--2
+*        
+*  o--R1-o-R2--o
+*
+*  RTAP is resistance at travel TAP
+*  Example: Rtot=10k, R=1k @ 0.5   (half way)
+*           RTAP=1k, TAP=0.5
+*  RTAP and TAP define a point of the curve resistance versus ratio.
+*
+.SUBCKT pot_pow 1 2 3
+* Parameters: Rtot, wiper, Rtap, Tap
+.param w=limit(0.01m,wiper,0.99999)
+*
+.param pwrexp=ln(RTAP/RTOT)/ln(TAP)
+.param ratio=w**pwrexp
+*
+R1 1 3 {Rtot*(1-ratio)}
+R2 3 2 {Rtot*(ratio)}
+.ENDS
+
+
+
+*---------- The Ideal Positive Logarithm Potentiometer --------------
+*
+* 1.0 <----- 0.0
+*        |3
+*      __V__
+*  1--|_____|--2
+*        
+*  o--R1-o-R2--o
+*
+*  RTAP is resistance at travel TAP
+*  Example: Rtot=10k, R=1 @ 0.001  
+*           RTAP=1, TAP=0.001
+*  RTAP and TAP define a point of the curve resistance versus ratio.
+*
+.SUBCKT pot_plog 1 2 3
+* Parameters: Rtot, wiper, Rtap, Tap
+.param w=limit(0.01m,wiper,0.99999)
+*
+.param pwrexp=ln(RTAP/RTOT)/(1-TAP)
+.param ratio=exp(pwrexp*(1-w))
+*
+R1 1 3 {Rtot*(1-ratio)}
+R2 3 2 {Rtot*(ratio)}
+.ENDS
+
+
+
+*---------- The Ideal Negative Logarithm Potentiometer -------------
+*
+* 1.0 <----- 0.0
+*        |3
+*      __V__
+*  1--|_____|--2
+*        
+*  o--R1-o-R2--o
+*
+*  RTAP is resistance at travel TAP
+*  Example: Rtot=10k, R=1 @ 0.999  
+*           RTAP=1, TAP=0.999
+*  RTAP and TAP define a point of the curve resistance versus ratio.
+*
+.SUBCKT pot_nlog 1 2 3
+* Parameters: Rtot, wiper, Rtap, Tap
+.param w=limit(0.01m,wiper,0.99999)
+*
+.param pwrexp=ln(RTAP/RTOT)/(TAP)
+.param ratio=exp(pwrexp*(w))
+*
+R1 1 3 {Rtot*(1-ratio)}
+R2 3 2 {Rtot*(ratio)}
+.ENDS
+
+
+
+* ------------ The Arbtrary(Table) Potentiometer --------------------
+*
+* 1.0 <----- 0.0
+*        |3
+*      __V__
+*  1--|_____|--2
+*        
+*  o--R1-o-R2--o
+*
+.SUBCKT pot_tab 1 2 3
+* Parameters: Rtot, wiper
+.param w=limit(0.01m,wiper,0.99999)
+*
+.param ratio=TABLE(w, 0,0.01m, 0.1, 0.001, 0.2, 0.003, 0.3, 0.01, 
++ 0.4, 0.05, 0.5, 0.1, 0.6, 0.2, 0.7, 0.35,
++ 0.8, 0.6, 0.9, 0.9, 0.95, 0.98, 1.0, 0.99999) 
+*
+R1 1 3 {Rtot*(1-ratio)}
+R2 3 2 {Rtot*(ratio)}
+.ENDS
+
+
+
+*---------- A Positive "Logarithm" Potentiometer from PIHER ---------
+*
+* PIHER shows three piecewise linear functions in their datasheet
+* for the resistance dependenncy.
+*
+* 1.0 <----- 0.0
+*        |3
+*      __V__
+*  1--|_____|--2
+*        
+*  o--R1-o-R2--o
+*
+.SUBCKT pot_piher_plog 1 2 3
+* Parameters: Rtot, wiper
+.param w=limit(0.01m,wiper,0.99999)
+*
+.param ratio=TABLE(w, 0,0.01m, 0.05,0.01m, 0.33,0.04, 0.66,0.16, 
++ 0.95,0.99, 1.0,0.99999)
+*
+R1 1 3 {Rtot*(1-ratio)}
+R2 3 2 {Rtot*(ratio)}
+.ENDS
+
+
+
+*--------- A Positive "Logarithm" Potentiometer from RADIOHM. -------
+*
+* RADIOHM shows a smooth "logarithm/power" curve in the datasheet. 
+* My own measurements on a 100kOhm stero pot has shown that it
+* consists of five piecwise linear sections. 
+*
+* 1.0 <----- 0.0
+*        |3
+*      __V__
+*  1--|_____|--2
+*        
+*  o--R1-o-R2--o
+*
+.SUBCKT pot_radiohm_plog 1 2 3
+* Parameters: Rtot, wiper
+.param w=limit(0.01m,wiper,0.99999)
+*
+.param ratio=TABLE(w, 0,0.01m, 0.1,0.01m, 0.3,0.012, 0.42,0.047, 
++ 0.52,0.105, 0.64,0.25, 0.95,0.99999, 1.0,0.99999)
+*
+R1 1 3 {Rtot*(1-ratio)}
+R2 3 2 {Rtot*(ratio)}
+.ENDS
