@@ -4,24 +4,19 @@ Early termination of direct N-R iteration.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
-Gmin = 1.07374
-Gmin = 0.115292
-Gmin = 0.0123794
-Gmin = 0.00132923
-Gmin = 0.000142725
-Gmin = 1.5325e-005
-Gmin = 1.6455e-006
 vernier = 0.5
 vernier = 0.25
 vernier = 0.125
+Gmin = 4.096
 vernier = 0.0625
 vernier = 0.03125
 vernier = 0.015625
+Gmin = 3.91048
 vernier = 0.0078125
-Gmin = 1.05312e-006
 vernier = 0.00390625
 vernier = 0.00195313
 vernier = 0.000976563
+Gmin = 3.91619
 vernier = 0.000488281
 Gmin = 0
 Gmin stepping failed
@@ -33,32 +28,83 @@ Source Step = 63.6364%
 Source Step = 93.9394%
 Source stepping succeeded in finding the operating point.
 
-.step gain=0.1
-.step gain=0.2
-.step gain=0.3
-.step gain=0.4
-.step gain=0.5
-.step gain=0.6
-.step gain=0.7
-.step gain=0.8
-.step gain=0.9
-.step gain=1
+Changing Tseed to 1e-008
+Heightened Def Con from 0.00562358 to 0.00562358
+Heightened Def Con from 0.00562358 to 0.00562358
+Heightened Def Con from 0.00562359 to 0.00562359
+Heightened Def Con from 0.0166213 to 0.0166213
+Heightened Def Con from 0.0266667 to 0.0266667
+Heightened Def Con from 0.0517234 to 0.0517234
+Heightened Def Con from 0.0517234 to 0.0517234
+Heightened Def Con from 0.0517234 to 0.0517234
+Heightened Def Con from 0.0579592 to 0.0579592
+Heightened Def Con from 0.0805897 to 0.0805897
+Heightened Def Con from 0.0805897 to 0.0805897
+Heightened Def Con from 0.101655 to 0.101655
+Heightened Def Con from 0.178685 to 0.178685
+Heightened Def Con from 0.178685 to 0.178685
+Heightened Def Con from 0.178685 to 0.178685
+Heightened Def Con from 0.178685 to 0.178685
+Heightened Def Con from 0.186576 to 0.186576
+Heightened Def Con from 0.186576 to 0.186576
+Heightened Def Con from 0.186576 to 0.186576
+Heightened Def Con from 0.208798 to 0.208798
+Heightened Def Con from 0.227347 to 0.227347
+Heightened Def Con from 0.253764 to 0.253764
+Heightened Def Con from 0.253764 to 0.253764
+Heightened Def Con from 0.278435 to 0.278435
+Heightened Def Con from 0.278435 to 0.278435
+Heightened Def Con from 0.331859 to 0.331859
+Heightened Def Con from 0.331859 to 0.331859
+Heightened Def Con from 0.331859 to 0.331859
+Heightened Def Con from 0.416123 to 0.416123
+Heightened Def Con from 0.416123 to 0.416123
+Heightened Def Con from 0.429841 to 0.429841
+Heightened Def Con from 0.480839 to 0.480839
+Heightened Def Con from 0.480839 to 0.480839
+Heightened Def Con from 0.542222 to 0.542222
+Heightened Def Con from 0.609524 to 0.609524
+Heightened Def Con from 0.748345 to 0.748345
+Heightened Def Con from 0.748345 to 0.748345
+Heightened Def Con from 0.766553 to 0.766553
+Heightened Def Con from 0.78034 to 0.78034
+Heightened Def Con from 0.78034 to 0.78034
+Heightened Def Con from 0.826848 to 0.826848
+Heightened Def Con from 0.910884 to 0.910884
+Heightened Def Con from 0.936871 to 0.936871
+Heightened Def Con from 0.956576 to 0.956576
+Heightened Def Con from 0.984014 to 0.984014
+Heightened Def Con from 0.984014 to 0.984014
+Heightened Def Con from 1.00317 to 1.00317
+Heightened Def Con from 1.00488 to 1.00488
+Heightened Def Con from 1.12914 to 1.12914
+Heightened Def Con from 1.24927 to 1.24927
+Heightened Def Con from 1.30204 to 1.30204
+Heightened Def Con from 1.32297 to 1.32297
+Heightened Def Con from 1.3361 to 1.3361
+Heightened Def Con from 1.35771 to 1.35771
+Heightened Def Con from 1.38354 to 1.38354
+Heightened Def Con from 1.45197 to 1.45197
+Heightened Def Con from 1.48644 to 1.48644
+Heightened Def Con from 1.51993 to 1.51993
+Heightened Def Con from 1.51993 to 1.51993
+Heightened Def Con from 1.56474 to 1.56474
 
-Date: Mon Apr 24 21:52:57 2017
-Total elapsed time: 79.650 seconds.
+Date: Tue May 02 22:47:33 2017
+Total elapsed time: 107.667 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 8220
-traniter = 6443
-tranpoints = 2303
-accept = 1843
-rejected = 460
+totiter = 5262170
+traniter = 5260534
+tranpoints = 2332495
+accept = 1730699
+rejected = 601855
 matrix size = 77
-fillins = 538
+fillins = 477
 solver = Normal
-Matrix Compiler1: 66.51 KB object code size  10.6/6.2/[4.7]
-Matrix Compiler2: 15.11 KB object code size  1.6/1.6/[0.7]
+Matrix Compiler1: 51.08 KB object code size  9.3/4.7/[3.4]
+Matrix Compiler2: 14.09 KB object code size  1.6/1.7/[0.8]
 
 

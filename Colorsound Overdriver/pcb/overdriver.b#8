@@ -1151,9 +1151,9 @@ design rules under a new name.</description>
 <wire x1="48.26" y1="48.895" x2="47.625" y2="48.26" width="0.8128" layer="16"/>
 <wire x1="47.625" y1="55.88" x2="46.99" y2="56.515" width="0.8128" layer="16"/>
 <wire x1="46.99" y1="56.515" x2="46.99" y2="61.595" width="0.8128" layer="16"/>
+<wire x1="32.385" y1="43.18" x2="32.385" y2="45.72" width="0.8128" layer="16"/>
+<wire x1="32.385" y1="45.72" x2="36.83" y2="45.72" width="0.8128" layer="16"/>
 <wire x1="46.355" y1="48.26" x2="47.625" y2="48.26" width="0" layer="19" extent="16-16"/>
-<wire x1="32.385" y1="45.72" x2="36.83" y2="45.72" width="0" layer="19" extent="16-16"/>
-<wire x1="32.385" y1="43.18" x2="32.385" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+9V">
 <contactref element="J1" pad="GND"/>

@@ -34,9 +34,9 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -1170,6 +1170,12 @@ design rules under a new name.</description>
 </signal>
 <signal name="+9V">
 <contactref element="X1" pad="5"/>
+</signal>
+<signal name="N$32">
+<wire x1="38.1" y1="90.805" x2="38.1" y2="86.36" width="0" layer="1"/>
+</signal>
+<signal name="N$33">
+<wire x1="36.83" y1="81.28" x2="36.83" y2="80.01" width="0" layer="1"/>
 </signal>
 </signals>
 </board>
