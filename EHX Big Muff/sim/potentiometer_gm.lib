@@ -1,0 +1,17 @@
+* a modest addition to potentiometers_standard.lib
+* by Helmut Sennewald, 12/23/2003 V1.1
+*
+* this adds a reverse log (audio) pot by a simple edit to
+* pot_nlog
+
+* REVERSE AUDIO POT subcircuit
+.SUBCKT pot_ra 1 2 3
+* Parameters: Rtot, wiper, Rtap, Tap
+.param w=limit(0.01m,wiper,0.99999)
+*
+.param pwrexp=ln(RTAP/RTOT)/(TAP)
+.param ratio=1-exp(pwrexp*(w))
+*
+R1 1 3 {Rtot*(1-ratio)}
+R2 3 2 {Rtot*(ratio)}
+.ENDS

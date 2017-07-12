@@ -814,7 +814,7 @@ design rules under a new name.</description>
 <element name="C5" library="pedals-capacitors-film" package="050X030_025_2" value="150p" x="-2.54" y="48.26"/>
 <element name="R8" library="pedals-resistors" package="R0207/3" value="470k" x="-1.27" y="45.72"/>
 <element name="C4" library="pedals-capacitors-elec" package="040_020" value="1u" x="-3.175" y="41.91"/>
-<element name="R9" library="pedals-resistors" package="R0207/3" value="470k" x="-1.27" y="38.1"/>
+<element name="R9" library="pedals-resistors" package="R0207/3" value="10k" x="-1.27" y="38.1"/>
 <element name="C6" library="pedals-capacitors-elec" package="040_020" value="1u" x="-3.175" y="34.29"/>
 <element name="C7" library="pedals-capacitors-film" package="BOX_MED" value="1u" x="-2.54" y="29.845"/>
 <element name="CLIP" library="pedals-potentiometers" package="16MM" value="200kB" x="56.515" y="33.655"/>
