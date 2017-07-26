@@ -1223,12 +1223,12 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <library name="pedals-switches">
 <packages>
 <package name="DPDT">
-<pad name="A1" x="-2.54" y="5.08" drill="1.2" diameter="2.032" shape="square" rot="R180"/>
-<pad name="A2" x="-2.54" y="0" drill="1.2" diameter="2.032" rot="R180"/>
-<pad name="A3" x="-2.54" y="-5.08" drill="1.2" diameter="2.032" rot="R180"/>
-<pad name="B1" x="2.54" y="5.08" drill="1.2" diameter="2.032" rot="R180"/>
-<pad name="B2" x="2.54" y="0" drill="1.2" diameter="2.032" rot="R180"/>
-<pad name="B3" x="2.54" y="-5.08" drill="1.2" diameter="2.032" rot="R180"/>
+<pad name="A1" x="-2.54" y="5.08" drill="2" diameter="2.69999375" shape="square" rot="R180"/>
+<pad name="A2" x="-2.54" y="0" drill="2" diameter="2.69999375" rot="R180"/>
+<pad name="A3" x="-2.54" y="-5.08" drill="2" diameter="2.69999375" rot="R180"/>
+<pad name="B1" x="2.54" y="5.08" drill="2" diameter="2.69999375" rot="R180"/>
+<pad name="B2" x="2.54" y="0" drill="2" diameter="2.69999375" rot="R180"/>
+<pad name="B3" x="2.54" y="-5.08" drill="2" diameter="2.69999375" rot="R180"/>
 <text x="-6.985" y="-3.81" size="1.016" layer="21" ratio="12" rot="R90" align="center">&gt;NAME</text>
 <wire x1="-6.2555" y1="6.54" x2="-6.2555" y2="-6.3965" width="0.127" layer="21"/>
 <wire x1="-6.2555" y1="-6.3965" x2="6.2445" y2="-6.3965" width="0.127" layer="21"/>
