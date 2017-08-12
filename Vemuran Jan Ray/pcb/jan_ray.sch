@@ -851,8 +851,6 @@ spacing: 3 holes
 <pad name="1" x="-3.81" y="0" drill="0.4" diameter="1.1"/>
 <pad name="2" x="3.81" y="0" drill="0.4" diameter="1.1"/>
 <text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<wire x1="-2.80035" y1="0" x2="-3.24485" y2="0" width="0.127" layer="21"/>
-<wire x1="2.81305" y1="0" x2="3.25755" y2="0" width="0.127" layer="21"/>
 </package>
 <package name="R0207/4">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;br&gt;
@@ -1108,8 +1106,8 @@ spacing: 6 holes
 <wire x1="1.27" y1="-1.27" x2="2.54" y2="0" width="0.1524" layer="21" curve="90"/>
 <wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="21" curve="90"/>
 <wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.4" diameter="1"/>
-<pad name="2" x="2.54" y="0" drill="0.4" diameter="1"/>
+<pad name="1" x="-2.54" y="0" drill="0.6" diameter="1.3"/>
+<pad name="2" x="2.54" y="0" drill="0.6" diameter="1.3"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="050X030_025_3">
@@ -1145,8 +1143,8 @@ spacing: 6 holes
 <wire x1="3.583" y1="1.24" x2="3.583" y2="-1.24" width="0.1524" layer="21"/>
 <wire x1="3.583" y1="-1.24" x2="-3.583" y2="-1.24" width="0.1524" layer="21"/>
 <wire x1="-3.583" y1="-1.24" x2="-3.583" y2="1.24" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.4" diameter="1.1"/>
-<pad name="2" x="2.54" y="0" drill="0.4" diameter="1.1"/>
+<pad name="1" x="-2.54" y="0" drill="0.6" diameter="1.3"/>
+<pad name="2" x="2.54" y="0" drill="0.6" diameter="1.3"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="BOX_MED">
@@ -1332,15 +1330,6 @@ spacing: 6 holes
 </library>
 <library name="pedals-capacitors-elec">
 <packages>
-<package name="050_020">
-<description>&lt;b&gt;5mm diameter, 2mm lead spacing&lt;/b&gt;</description>
-<circle x="0" y="0" radius="2.5" width="0.1524" layer="21"/>
-<wire x1="-0.983615625" y1="1.57988125" x2="-0.983615625" y2="0.94488125" width="0.1524" layer="21"/>
-<wire x1="-0.674878125" y1="1.254759375" x2="-1.335278125" y2="1.254759375" width="0.1524" layer="21"/>
-<pad name="+" x="-0.998221875" y="0.001271875" drill="1" diameter="1.524" shape="square"/>
-<pad name="-" x="0.99821875" y="0.000634375" drill="1" diameter="1.524"/>
-<text x="-0.46863125" y="-1.36651875" size="1.016" layer="25" ratio="12" align="center">&gt;NAME</text>
-</package>
 <package name="050_020_1">
 <description>&lt;b&gt;5mm diameter, 0.1" lead spacing&lt;/b&gt;</description>
 <circle x="0" y="0" radius="2.5" width="0.1524" layer="21"/>
@@ -1349,6 +1338,15 @@ spacing: 6 holes
 <pad name="+" x="-1.27" y="0" drill="0.4" diameter="1" shape="square"/>
 <pad name="-" x="1.27" y="0" drill="0.4" diameter="1"/>
 <text x="0" y="-1.778" size="0.8128" layer="25" ratio="12" align="center">&gt;NAME</text>
+</package>
+<package name="050_020">
+<description>&lt;b&gt;5mm diameter, 2mm lead spacing&lt;/b&gt;</description>
+<circle x="0" y="0" radius="2.5" width="0.1524" layer="21"/>
+<wire x1="-0.983615625" y1="1.57988125" x2="-0.983615625" y2="0.94488125" width="0.1524" layer="21"/>
+<wire x1="-0.674878125" y1="1.254759375" x2="-1.335278125" y2="1.254759375" width="0.1524" layer="21"/>
+<pad name="+" x="-0.998221875" y="0.001271875" drill="0.5" diameter="1.1" shape="square"/>
+<pad name="-" x="0.99821875" y="0.000634375" drill="0.5" diameter="1.1"/>
+<text x="-0.46863125" y="-1.36651875" size="1.016" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -1513,14 +1511,14 @@ Source: 3M</description>
 <wire x1="7.605" y1="-3.275" x2="1.883" y2="-3.275" width="0.2032" layer="21"/>
 <wire x1="-1.883" y1="-3.275" x2="-7.605" y2="-3.275" width="0.2032" layer="21"/>
 <wire x1="-7.605" y1="-3.275" x2="-7.605" y2="3.275" width="0.2032" layer="21"/>
-<pad name="1" x="-3.81" y="-1.27" drill="0.7" diameter="1.4"/>
-<pad name="2" x="-3.81" y="1.27" drill="0.7" diameter="1.4"/>
-<pad name="3" x="-1.27" y="-1.27" drill="0.7" diameter="1.4"/>
-<pad name="4" x="-1.27" y="1.27" drill="0.7" diameter="1.4"/>
-<pad name="5" x="1.27" y="-1.27" drill="0.7" diameter="1.4"/>
-<pad name="6" x="1.27" y="1.27" drill="0.7" diameter="1.4"/>
-<pad name="7" x="3.81" y="-1.27" drill="0.7" diameter="1.4"/>
-<pad name="8" x="3.81" y="1.27" drill="0.7" diameter="1.4"/>
+<pad name="1" x="-3.81" y="-1.27" drill="0.9" diameter="1.6"/>
+<pad name="2" x="-3.81" y="1.27" drill="0.9" diameter="1.6"/>
+<pad name="3" x="-1.27" y="-1.27" drill="0.9" diameter="1.6"/>
+<pad name="4" x="-1.27" y="1.27" drill="0.9" diameter="1.6"/>
+<pad name="5" x="1.27" y="-1.27" drill="0.9" diameter="1.6"/>
+<pad name="6" x="1.27" y="1.27" drill="0.9" diameter="1.6"/>
+<pad name="7" x="3.81" y="-1.27" drill="0.9" diameter="1.6"/>
+<pad name="8" x="3.81" y="1.27" drill="0.9" diameter="1.6"/>
 </package>
 <package name="PAK100/2500-5-10">
 <description>&lt;b&gt;3M (TM) Pak 100 4-Wall Header&lt;/b&gt; Right Angle&lt;p&gt;
@@ -2053,28 +2051,28 @@ NS Package M08A</description>
 <wire x1="8.89" y1="14.605" x2="0" y2="5.715" width="0.127" layer="22" style="shortdash" curve="-90"/>
 <wire x1="0" y1="5.715" x2="-8.89" y2="14.605" width="0.127" layer="22" style="shortdash" curve="-90"/>
 <wire x1="-7.62" y1="10.16" x2="-7.62" y2="0.651" width="0.127" layer="22" style="shortdash"/>
-<wire x1="-6.604" y1="0.524" x2="-3.556" y2="0.524" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="0.524" x2="1.524" y2="0.524" width="0.127" layer="21"/>
-<wire x1="3.556" y1="0.524" x2="6.604" y2="0.524" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="0.2065" x2="-3.81" y2="0.2065" width="0.127" layer="21"/>
 <wire x1="7.62" y1="0.651" x2="7.62" y2="10.16" width="0.127" layer="22" style="shortdash"/>
-<wire x1="-6.604" y1="0.524" x2="-6.604" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="-6.604" y1="-2.524" x2="-3.556" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="-3.556" y1="-2.524" x2="-3.556" y2="0.524" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="0.524" x2="-1.524" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="-2.524" x2="1.524" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="1.524" y1="-2.524" x2="1.524" y2="0.524" width="0.127" layer="21"/>
-<wire x1="3.556" y1="0.524" x2="3.556" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="3.556" y1="-2.524" x2="6.604" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="6.604" y1="-2.524" x2="6.604" y2="0.524" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="0.2065" x2="-6.35" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-2.2065" x2="-3.81" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.2065" x2="-3.81" y2="0.2065" width="0.127" layer="21"/>
 <wire x1="0" y1="5.715" x2="0" y2="23.495" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-8.89" y1="14.605" x2="8.89" y2="14.605" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-7.62" y1="0.651" x2="7.62" y2="0.651" width="0.127" layer="22" style="shortdash"/>
-<pad name="1" x="5.08" y="-1" drill="0.9" diameter="1.6" shape="square" rot="R180"/>
-<pad name="2" x="0" y="-1" drill="0.9" diameter="1.6" rot="R180"/>
-<pad name="3" x="-5.08" y="-1" drill="0.9" diameter="1.6" rot="R180"/>
+<pad name="1" x="5.08" y="-1" drill="1.1" diameter="1.8" shape="square" rot="R180"/>
+<pad name="2" x="0" y="-1" drill="1.1" diameter="1.8" rot="R180"/>
+<pad name="3" x="-5.08" y="-1" drill="1.1" diameter="1.8" rot="R180"/>
 <text x="0" y="2.667" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 <text x="5.142" y="0.978" size="1.016" layer="21" ratio="12">1</text>
 <text x="0" y="2.667" size="1.27" layer="26" ratio="12" rot="MR0" align="center">&gt;NAME</text>
+<wire x1="-1.27" y1="0.2065" x2="1.27" y2="0.2065" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.2065" x2="-1.27" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-2.2065" x2="1.27" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-2.2065" x2="1.27" y2="0.2065" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.2065" x2="6.35" y2="0.2065" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.2065" x2="3.81" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-2.2065" x2="6.35" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-2.2065" x2="6.35" y2="0.2065" width="0.127" layer="21"/>
 </package>
 <package name="16MM_TOPMOUNT">
 <wire x1="-8.89" y1="14.605" x2="0" y2="23.495" width="0.127" layer="22" curve="-90.001289"/>

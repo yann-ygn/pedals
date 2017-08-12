@@ -2792,8 +2792,8 @@ Source: 3M</description>
 <part name="C16" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="22n"/>
 <part name="C17" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="4.7n"/>
 <part name="GND17" library="gm-supply" deviceset="GND" device=""/>
-<part name="OUTPUT1" library="pedals-jacks" deviceset="STEREO" device="NMJ"/>
-<part name="INPUT1" library="pedals-jacks" deviceset="STEREO" device="NMJ"/>
+<part name="OUTPUT" library="pedals-jacks" deviceset="STEREO" device="NMJ"/>
+<part name="INPUT" library="pedals-jacks" deviceset="STEREO" device="NMJ"/>
 <part name="GND18" library="gm-supply" deviceset="GND" device=""/>
 <part name="D6" library="pedals-diodes" deviceset="DO41" device=".2" value="1N4002"/>
 <part name="C18" library="pedals-capacitors-elec" deviceset="040" device="0" value="47u"/>
@@ -2889,8 +2889,8 @@ Source: 3M</description>
 <instance part="C16" gate="G$1" x="248.92" y="76.2"/>
 <instance part="C17" gate="G$1" x="264.16" y="33.02" rot="R90"/>
 <instance part="GND17" gate="GND" x="264.16" y="20.32"/>
-<instance part="OUTPUT1" gate="G$1" x="27.94" y="66.04" rot="R180"/>
-<instance part="INPUT1" gate="G$1" x="27.94" y="48.26" rot="R180"/>
+<instance part="OUTPUT" gate="G$1" x="27.94" y="66.04" rot="R180"/>
+<instance part="INPUT" gate="G$1" x="27.94" y="48.26" rot="R180"/>
 <instance part="GND18" gate="GND" x="-10.16" y="86.36"/>
 <instance part="D6" gate="G$1" x="15.24" y="91.44" rot="R90"/>
 <instance part="C18" gate="1" x="43.18" y="91.44" rot="R270"/>
@@ -2993,13 +2993,13 @@ Source: 3M</description>
 <wire x1="264.16" y1="29.21" x2="264.16" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="OUTPUT1" gate="G$1" pin="S"/>
+<pinref part="OUTPUT" gate="G$1" pin="S"/>
 <wire x1="15.24" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="GND" pin="GND"/>
 <wire x1="12.7" y1="60.96" x2="12.7" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="INPUT1" gate="G$1" pin="S"/>
+<pinref part="INPUT" gate="G$1" pin="S"/>
 <wire x1="15.24" y1="43.18" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="GND" pin="GND"/>
 <wire x1="12.7" y1="43.18" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
@@ -3411,7 +3411,7 @@ Source: 3M</description>
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="OUTPUT1" gate="G$1" pin="T"/>
+<pinref part="OUTPUT" gate="G$1" pin="T"/>
 <pinref part="X1" gate="-1" pin="KL"/>
 <wire x1="15.24" y1="66.04" x2="-7.62" y2="66.04" width="0.1524" layer="91"/>
 </segment>
@@ -3421,7 +3421,7 @@ Source: 3M</description>
 <pinref part="X1" gate="-7" pin="KL"/>
 <wire x1="-7.62" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="50.8" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="INPUT1" gate="G$1" pin="T"/>
+<pinref part="INPUT" gate="G$1" pin="T"/>
 <wire x1="5.08" y1="48.26" x2="15.24" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>

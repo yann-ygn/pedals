@@ -848,9 +848,11 @@ spacing: 3 holes
 <wire x1="2.556" y1="1.016" x2="1.54" y2="1.016" width="0.1524" layer="21"/>
 <wire x1="2.556" y1="-1.016" x2="1.54" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="2.81" y1="-0.762" x2="2.81" y2="0.762" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="1" diameter="2"/>
-<pad name="2" x="3.81" y="0" drill="1" diameter="2"/>
+<pad name="1" x="-3.81" y="0" drill="0.4" diameter="1.1"/>
+<pad name="2" x="3.81" y="0" drill="0.4" diameter="1.1"/>
 <text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<wire x1="-2.80035" y1="0" x2="-3.24485" y2="0" width="0.127" layer="21"/>
+<wire x1="2.81305" y1="0" x2="3.25755" y2="0" width="0.127" layer="21"/>
 </package>
 <package name="R0207/4">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;br&gt;

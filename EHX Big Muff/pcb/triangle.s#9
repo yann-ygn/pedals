@@ -2427,19 +2427,11 @@ Source: 3M</description>
 <wire x1="8.89" y1="14.605" x2="0" y2="5.715" width="0.127" layer="22" style="shortdash" curve="-90"/>
 <wire x1="0" y1="5.715" x2="-8.89" y2="14.605" width="0.127" layer="22" style="shortdash" curve="-90"/>
 <wire x1="-7.62" y1="10.16" x2="-7.62" y2="0.651" width="0.127" layer="22" style="shortdash"/>
-<wire x1="-6.604" y1="0.524" x2="-3.556" y2="0.524" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="0.524" x2="1.524" y2="0.524" width="0.127" layer="21"/>
-<wire x1="3.556" y1="0.524" x2="6.604" y2="0.524" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="0.2065" x2="-3.81" y2="0.2065" width="0.127" layer="21"/>
 <wire x1="7.62" y1="0.651" x2="7.62" y2="10.16" width="0.127" layer="22" style="shortdash"/>
-<wire x1="-6.604" y1="0.524" x2="-6.604" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="-6.604" y1="-2.524" x2="-3.556" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="-3.556" y1="-2.524" x2="-3.556" y2="0.524" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="0.524" x2="-1.524" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="-2.524" x2="1.524" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="1.524" y1="-2.524" x2="1.524" y2="0.524" width="0.127" layer="21"/>
-<wire x1="3.556" y1="0.524" x2="3.556" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="3.556" y1="-2.524" x2="6.604" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="6.604" y1="-2.524" x2="6.604" y2="0.524" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="0.2065" x2="-6.35" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-2.2065" x2="-3.81" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.2065" x2="-3.81" y2="0.2065" width="0.127" layer="21"/>
 <wire x1="0" y1="5.715" x2="0" y2="23.495" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-8.89" y1="14.605" x2="8.89" y2="14.605" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-7.62" y1="0.651" x2="7.62" y2="0.651" width="0.127" layer="22" style="shortdash"/>
@@ -2449,6 +2441,14 @@ Source: 3M</description>
 <text x="0" y="2.667" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 <text x="5.142" y="0.978" size="1.016" layer="21" ratio="12">1</text>
 <text x="0" y="2.667" size="1.27" layer="26" ratio="12" rot="MR0" align="center">&gt;NAME</text>
+<wire x1="-1.27" y1="0.2065" x2="1.27" y2="0.2065" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.2065" x2="-1.27" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-2.2065" x2="1.27" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-2.2065" x2="1.27" y2="0.2065" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.2065" x2="6.35" y2="0.2065" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.2065" x2="3.81" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-2.2065" x2="6.35" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-2.2065" x2="6.35" y2="0.2065" width="0.127" layer="21"/>
 </package>
 <package name="16MM_CENTERMOUNT">
 <circle x="0" y="0" radius="0.898" width="0.127" layer="22"/>

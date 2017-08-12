@@ -920,11 +920,6 @@ design rules under a new name.</description>
 <contactref element="R9" pad="1"/>
 <contactref element="C7" pad="2"/>
 <contactref element="C8" pad="2"/>
-<wire x1="90.17" y1="31.75" x2="91.44" y2="31.75" width="0.254" layer="16"/>
-<wire x1="91.44" y1="31.75" x2="92.075" y2="31.115" width="0.254" layer="16"/>
-<wire x1="92.075" y1="31.115" x2="92.075" y2="29.845" width="0.254" layer="16"/>
-<wire x1="92.075" y1="29.845" x2="92.71" y2="29.21" width="0.254" layer="16"/>
-<wire x1="92.71" y1="29.21" x2="93.98" y2="29.21" width="0.254" layer="16"/>
 <wire x1="93.98" y1="29.21" x2="94.9325" y2="29.21" width="0.254" layer="16"/>
 <wire x1="94.9325" y1="29.21" x2="97.4725" y2="26.67" width="0.254" layer="16"/>
 <wire x1="81.915" y1="22.86" x2="81.915" y2="26.035" width="0.254" layer="16"/>
@@ -936,6 +931,9 @@ design rules under a new name.</description>
 <wire x1="86.995" y1="30.48" x2="87.63" y2="30.48" width="0.254" layer="16"/>
 <wire x1="87.63" y1="30.48" x2="88.9" y2="31.75" width="0.254" layer="16"/>
 <wire x1="88.9" y1="31.75" x2="90.17" y2="31.75" width="0.254" layer="16"/>
+<wire x1="90.17" y1="31.75" x2="90.805" y2="31.75" width="0.254" layer="16"/>
+<wire x1="90.805" y1="31.75" x2="93.345" y2="29.21" width="0.254" layer="16"/>
+<wire x1="93.345" y1="29.21" x2="93.98" y2="29.21" width="0.254" layer="16"/>
 </signal>
 <signal name="N$16">
 <contactref element="Q2" pad="3"/>

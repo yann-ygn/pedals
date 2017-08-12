@@ -836,9 +836,9 @@ design rules under a new name.</description>
 <contactref element="OUTPUT" pad="T"/>
 <contactref element="X1" pad="1"/>
 <wire x1="53.975" y1="47.625" x2="56.515" y2="45.085" width="0.254" layer="16"/>
-<wire x1="56.515" y1="45.085" x2="56.515" y2="10.16" width="0.254" layer="16"/>
-<wire x1="56.515" y1="10.16" x2="53.975" y2="7.62" width="0.254" layer="16"/>
-<wire x1="53.975" y1="7.62" x2="33.02" y2="7.62" width="0.254" layer="16"/>
+<wire x1="56.515" y1="45.085" x2="56.515" y2="11.43" width="0.254" layer="16"/>
+<wire x1="56.515" y1="11.43" x2="52.705" y2="7.62" width="0.254" layer="16"/>
+<wire x1="52.705" y1="7.62" x2="33.02" y2="7.62" width="0.254" layer="16"/>
 <wire x1="34.938" y1="54.6735" x2="39.3065" y2="54.6735" width="0.254" layer="16"/>
 <wire x1="39.3065" y1="54.6735" x2="46.355" y2="47.625" width="0.254" layer="16"/>
 <wire x1="46.355" y1="47.625" x2="53.975" y2="47.625" width="0.254" layer="16"/>

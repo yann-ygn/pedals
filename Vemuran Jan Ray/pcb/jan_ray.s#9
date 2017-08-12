@@ -647,8 +647,8 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="-2.286" y1="0.762" x2="-2.286" y2="-0.762" width="0.1524" layer="21"/>
 <wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.1524" layer="21"/>
 <rectangle x1="-1.397" y1="-1.016" x2="-0.889" y2="1.016" layer="21"/>
-<pad name="A" x="2.54" y="0" drill="0.5"/>
-<pad name="C" x="-2.54" y="0" drill="0.5" shape="square"/>
+<pad name="A" x="2.54" y="0" drill="0.5" diameter="1.2"/>
+<pad name="C" x="-2.54" y="0" drill="0.5" diameter="1.2" shape="square"/>
 <text x="-0.0254" y="0" size="1.016" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 <package name="DO35-3">

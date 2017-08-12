@@ -1106,8 +1106,8 @@ spacing: 6 holes
 <wire x1="1.27" y1="-1.27" x2="2.54" y2="0" width="0.1524" layer="21" curve="90"/>
 <wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="21" curve="90"/>
 <wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="1" diameter="2"/>
-<pad name="2" x="2.54" y="0" drill="1" diameter="2"/>
+<pad name="1" x="-2.54" y="0" drill="0.4" diameter="1"/>
+<pad name="2" x="2.54" y="0" drill="0.4" diameter="1"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="050X030_025_3">
@@ -1143,8 +1143,8 @@ spacing: 6 holes
 <wire x1="3.583" y1="1.24" x2="3.583" y2="-1.24" width="0.1524" layer="21"/>
 <wire x1="3.583" y1="-1.24" x2="-3.583" y2="-1.24" width="0.1524" layer="21"/>
 <wire x1="-3.583" y1="-1.24" x2="-3.583" y2="1.24" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="1" diameter="2"/>
-<pad name="2" x="2.54" y="0" drill="1" diameter="2"/>
+<pad name="1" x="-2.54" y="0" drill="0.4" diameter="1.1"/>
+<pad name="2" x="2.54" y="0" drill="0.4" diameter="1.1"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="BOX_MED">
@@ -1173,8 +1173,8 @@ spacing: 6 holes
 <wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-3.81" y1="1.905" x2="-3.225" y2="2.49" width="0.1524" layer="21" curve="-90"/>
 <wire x1="-3.225" y1="2.49" x2="-2.948" y2="2.49" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="1" diameter="2"/>
-<pad name="2" x="2.54" y="0" drill="1" diameter="2"/>
+<pad name="1" x="-2.54" y="0" drill="0.5" diameter="1.1"/>
+<pad name="2" x="2.54" y="0" drill="0.5" diameter="1.1"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="AXIAL">
@@ -3771,7 +3771,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <part name="BASS" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="50kB"/>
 <part name="VB3" library="pedals-supply" deviceset="VB" device=""/>
 <part name="VB4" library="pedals-supply" deviceset="VB" device=""/>
-<part name="C9" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.2" value="1u"/>
+<part name="C9" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.3" value="1u"/>
 <part name="TREBLE" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="10kB"/>
 <part name="R9" library="pedals-resistors" deviceset="R_" device=".3B" value="1.2k"/>
 <part name="C10" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>

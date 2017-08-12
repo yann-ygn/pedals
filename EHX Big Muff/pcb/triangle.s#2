@@ -2796,7 +2796,7 @@ Source: 3M</description>
 <part name="INPUT" library="pedals-jacks" deviceset="STEREO" device="NMJ"/>
 <part name="GND18" library="gm-supply" deviceset="GND" device=""/>
 <part name="D6" library="pedals-diodes" deviceset="DO41" device=".2" value="1N4002"/>
-<part name="C18" library="pedals-capacitors-elec" deviceset="040" device="0" value="47u"/>
+<part name="C18" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
 <part name="J2" library="pedals-jacks" deviceset="POWER_JACK" device=""/>
 <part name="GND19" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND20" library="gm-supply" deviceset="GND" device=""/>
@@ -2804,7 +2804,7 @@ Source: 3M</description>
 <part name="IN2" library="supply pins" deviceset="IN" device=""/>
 <part name="OUT2" library="supply pins" deviceset="OUT" device=""/>
 <part name="GND21" library="gm-supply" deviceset="GND" device=""/>
-<part name="R24" library="pedals-resistors" deviceset="R_" device=".3B" value="100"/>
+<part name="R24" library="pedals-resistors" deviceset="R_" device=".3B" value="47"/>
 <part name="C19" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="100n"/>
 <part name="GND22" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND23" library="gm-supply" deviceset="GND" device=""/>

@@ -2073,9 +2073,9 @@ NS Package M08A</description>
 <wire x1="0" y1="5.715" x2="0" y2="23.495" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-8.89" y1="14.605" x2="8.89" y2="14.605" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-7.62" y1="0.651" x2="7.62" y2="0.651" width="0.127" layer="22" style="shortdash"/>
-<pad name="1" x="5.08" y="-1" drill="1.4" diameter="2.54" shape="square" rot="R180"/>
-<pad name="2" x="0" y="-1" drill="1.4" diameter="2.54" rot="R180"/>
-<pad name="3" x="-5.08" y="-1" drill="1.4" diameter="2.54" rot="R180"/>
+<pad name="1" x="5.08" y="-1" drill="0.9" diameter="1.6" shape="square" rot="R180"/>
+<pad name="2" x="0" y="-1" drill="0.9" diameter="1.6" rot="R180"/>
+<pad name="3" x="-5.08" y="-1" drill="0.9" diameter="1.6" rot="R180"/>
 <text x="0" y="2.667" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 <text x="5.142" y="0.978" size="1.016" layer="21" ratio="12">1</text>
 <text x="0" y="2.667" size="1.27" layer="26" ratio="12" rot="MR0" align="center">&gt;NAME</text>

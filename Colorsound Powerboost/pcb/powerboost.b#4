@@ -36,14 +36,14 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
@@ -180,9 +180,9 @@
 <wire x1="48.26" y1="54.61" x2="34.925" y2="54.61" width="0" layer="41"/>
 <wire x1="31.75" y1="33.655" x2="42.17035" y2="33.63595" width="0" layer="41"/>
 <wire x1="42.17035" y1="33.63595" x2="42.17035" y2="43.79595" width="0" layer="41"/>
-<wire x1="42.17035" y1="43.79595" x2="38.1" y2="47.625" width="0" layer="41"/>
-<wire x1="38.1" y1="47.625" x2="33.655" y2="47.625" width="0" layer="41"/>
-<wire x1="33.655" y1="47.625" x2="33.655" y2="50.165" width="0" layer="41"/>
+<wire x1="42.17035" y1="43.79595" x2="38.1" y2="47.879" width="0" layer="41"/>
+<wire x1="38.1" y1="47.879" x2="33.655" y2="47.879" width="0" layer="41"/>
+<wire x1="33.655" y1="47.879" x2="33.655" y2="50.165" width="0" layer="41"/>
 <wire x1="31.75" y1="33.655" x2="31.75" y2="50.165" width="0" layer="41"/>
 <wire x1="30.48" y1="4.445" x2="30.48" y2="50.165" width="0" layer="41"/>
 <wire x1="29.845" y1="69.85" x2="29.845" y2="64.135" width="0" layer="41"/>
@@ -677,7 +677,7 @@ design rules under a new name.</description>
 </element>
 <element name="R6" library="pedals-resistors" package="R0207/3" value="470" x="20.32" y="26.67" rot="R180"/>
 <element name="R16" library="pedals-resistors" package="R0207/3" value="47" x="33.274" y="39.37" rot="R270"/>
-<element name="C14" library="pedals-capacitors-film" package="BOX_SMALL" value="100n" x="40.513" y="38.1" rot="R270"/>
+<element name="C14" library="pedals-capacitors-film" package="050X030_025_2" value="100n" x="40.513" y="38.1" rot="R270"/>
 <element name="U$1" library="pedals-pcb" package="125B_PCB" value="" x="0.3175" y="0"/>
 <element name="C15" library="pedals-capacitors-film" package="050X030_025_2" value="100p" x="50.165" y="22.86" rot="R270"/>
 </elements>
@@ -993,14 +993,16 @@ design rules under a new name.</description>
 <via x="28.575" y="24.765" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="28.575" y1="24.765" x2="28.575" y2="3.81" width="0.8128" layer="1"/>
 <wire x1="28.575" y1="28.575" x2="31.115" y2="31.115" width="0.8128" layer="16"/>
-<wire x1="31.115" y1="31.115" x2="31.115" y2="35.56" width="0.8128" layer="16"/>
-<wire x1="31.115" y1="35.56" x2="31.75" y2="36.195" width="0.8128" layer="16"/>
+<wire x1="31.115" y1="31.115" x2="31.115" y2="41.021" width="0.8128" layer="16"/>
 <wire x1="33.274" y1="43.18" x2="33.274" y2="61.341" width="0.8128" layer="16"/>
 <wire x1="33.274" y1="61.341" x2="32.385" y2="62.23" width="0.8128" layer="16"/>
 <wire x1="32.385" y1="62.23" x2="29.8793" y2="62.23" width="0.8128" layer="16"/>
 <wire x1="29.8793" y1="62.23" x2="29.81325" y2="62.29605" width="0.8128" layer="16"/>
-<wire x1="36.83" y1="40.005" x2="33.274" y2="43.18" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="36.195" x2="36.83" y2="40.005" width="0" layer="19" extent="16-16"/>
+<wire x1="31.115" y1="41.021" x2="33.274" y2="43.18" width="0.8128" layer="16"/>
+<wire x1="33.274" y1="43.18" x2="33.274" y2="42.926" width="0.8128" layer="16"/>
+<wire x1="33.274" y1="42.926" x2="35.179" y2="42.926" width="0.8128" layer="16"/>
+<wire x1="35.179" y1="42.926" x2="36.83" y2="41.275" width="0.8128" layer="16"/>
+<wire x1="36.83" y1="41.275" x2="36.83" y2="40.005" width="0.8128" layer="16"/>
 </signal>
 <signal name="VR">
 <contactref element="R16" pad="2"/>
@@ -1027,6 +1029,43 @@ design rules under a new name.</description>
 <wire x1="36.576" y1="28.575" x2="40.513" y2="32.512" width="0.8128" layer="16"/>
 </signal>
 </signals>
+<errors>
+<approved hash="18,29,3c31bff35bf3924e"/>
+<approved hash="18,29,88904a690265c09c"/>
+<approved hash="18,29,0a037b6053fbdfba"/>
+<approved hash="18,29,805ee4c4349850d0"/>
+<approved hash="18,29,f84028e0eb5aa123"/>
+<approved hash="18,29,58c4f9ffc3c905d3"/>
+<approved hash="18,29,d7c1504f2591a190"/>
+<approved hash="18,29,d4615035258fa254"/>
+<approved hash="18,29,a693235e56c8d08a"/>
+<approved hash="18,29,a6dd22be5694d178"/>
+<approved hash="18,29,689bab38933c509f"/>
+<approved hash="18,29,20d9980256474cd9"/>
+<approved hash="18,29,a246729e092d291b"/>
+<approved hash="18,29,8500a24222440506"/>
+<approved hash="18,29,b8d256d9c1d92fd2"/>
+<approved hash="18,29,57f1f906f6aa2079"/>
+<approved hash="18,29,0ffc8d4905398e03"/>
+<approved hash="18,29,8bc102fb8c0b0cbe"/>
+<approved hash="18,29,7f3e69d569d57f3e"/>
+<approved hash="18,29,e9e50062044193e2"/>
+<approved hash="18,29,3f346abca7caebb3"/>
+<approved hash="18,29,6a76d8440a475faf"/>
+<approved hash="18,29,d0a3d1013d66a71e"/>
+<approved hash="18,29,a4fc2d7630dddcaa"/>
+<approved hash="18,30,9b28025db67df92b"/>
+<approved hash="18,30,05cd4c841887a256"/>
+<approved hash="18,30,ef651601c4ad9655"/>
+<approved hash="18,30,e30389014a877be0"/>
+<approved hash="18,30,e22e8160ae653952"/>
+<approved hash="18,30,d3b1cbf7a127a487"/>
+<approved hash="18,30,74dc058c0c986a35"/>
+<approved hash="18,30,e4c01b79764b89b8"/>
+<approved hash="18,30,773da1e22dc376ea"/>
+<approved hash="18,30,f0e7dde28da91816"/>
+<approved hash="18,30,15e276b9b9d64a7d"/>
+</errors>
 </board>
 </drawing>
 </eagle>
