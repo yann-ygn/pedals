@@ -719,7 +719,7 @@ design rules under a new name.</description>
 <attribute name="MPN" value="2510-6002UB" x="29.21" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U$1" library="pedals-pcb" package="125B_PCB" value="" x="-0.3175" y="2.921"/>
-<element name="R12" library="pedals-potentiometers" package="RTRIM3296W" value="" x="13.335" y="23.495"/>
+<element name="R12" library="pedals-potentiometers" package="RTRIM3296W" value="10k" x="13.335" y="23.495"/>
 </elements>
 <signals>
 <signal name="+9V">

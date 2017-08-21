@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -761,6 +761,7 @@ design rules under a new name.</description>
 <vertex x="0" y="69.85"/>
 <vertex x="0" y="-1.27"/>
 </polygon>
+<via x="3.175" y="46.355" extent="1-16" drill="0.5" diameter="0.85"/>
 </signal>
 <signal name="OUT">
 <contactref element="X1" pad="2"/>
@@ -844,9 +845,9 @@ design rules under a new name.</description>
 <contactref element="R16" pad="1"/>
 <contactref element="X1" pad="5"/>
 <wire x1="21.59" y1="37.465" x2="24.13" y2="37.465" width="0.6096" layer="16"/>
-<wire x1="29.7815" y1="62.277" x2="29.7815" y2="61.6585" width="0.6096" layer="16"/>
-<wire x1="29.7815" y1="61.6585" x2="33.02" y2="58.42" width="0.6096" layer="16"/>
-<wire x1="33.02" y1="58.42" x2="33.02" y2="48.26" width="0.6096" layer="16"/>
+<wire x1="29.7815" y1="62.277" x2="29.7815" y2="62.2935" width="0.6096" layer="16"/>
+<wire x1="29.7815" y1="62.2935" x2="33.02" y2="59.055" width="0.6096" layer="16"/>
+<wire x1="33.02" y1="59.055" x2="33.02" y2="48.26" width="0.6096" layer="16"/>
 <wire x1="33.02" y1="48.26" x2="24.13" y2="39.37" width="0.6096" layer="16"/>
 <wire x1="24.13" y1="39.37" x2="24.13" y2="37.465" width="0.6096" layer="16"/>
 <wire x1="24.13" y1="37.465" x2="36.195" y2="37.465" width="0.6096" layer="1"/>
@@ -1033,6 +1034,8 @@ design rules under a new name.</description>
 <wire x1="30.6705" y1="10.6045" x2="32.385" y2="8.89" width="0.254" layer="16"/>
 <wire x1="32.385" y1="8.89" x2="33.655" y2="8.89" width="0.254" layer="16"/>
 <wire x1="33.655" y1="8.89" x2="36.195" y2="8.89" width="0.254" layer="16"/>
+</signal>
+<signal name="N$19">
 </signal>
 </signals>
 </board>

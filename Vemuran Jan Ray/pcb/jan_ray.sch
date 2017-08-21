@@ -3781,7 +3781,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <part name="GND12" library="pedals-supply" deviceset="GND" device=""/>
 <part name="GND9" library="pedals-supply" deviceset="GND" device=""/>
 <part name="V3" library="pedals-supply" deviceset="+9V" device=""/>
-<part name="R12" library="pedals-potentiometers" deviceset="R-TRIMM" device="3296W"/>
+<part name="R12" library="pedals-potentiometers" deviceset="R-TRIMM" device="3296W" value="10k"/>
 </parts>
 <sheets>
 <sheet>

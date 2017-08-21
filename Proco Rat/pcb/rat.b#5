@@ -1034,9 +1034,6 @@ design rules under a new name.</description>
 <wire x1="32.385" y1="8.89" x2="33.655" y2="8.89" width="0.254" layer="16"/>
 <wire x1="33.655" y1="8.89" x2="36.195" y2="8.89" width="0.254" layer="16"/>
 </signal>
-<signal name="N$19" airwireshidden="yes">
-<wire x1="33.02" y1="40.005" x2="33.02" y2="40.005" width="0" layer="19" extent="1-16"/>
-</signal>
 </signals>
 </board>
 </drawing>
