@@ -231,15 +231,15 @@ Source: 3M</description>
 <wire x1="9.02" y1="7.92" x2="9.02" y2="-8.02" width="0.1524" layer="21"/>
 <wire x1="9.02" y1="-8.02" x2="-9.02" y2="-8.02" width="0.1524" layer="21"/>
 <wire x1="-9.02" y1="-8.02" x2="-9.02" y2="7.92" width="0.1524" layer="21"/>
-<pad name="A1" x="-5.08" y="4.8895" drill="2.2" diameter="2.89999375" shape="square" rot="R180"/>
+<pad name="A1" x="-5.08" y="4.826" drill="2.2" diameter="2.89999375" shape="square" rot="R180"/>
 <pad name="A2" x="-5.08" y="0" drill="2.2" diameter="2.89999375" rot="R180"/>
-<pad name="A3" x="-5.08" y="-4.699" drill="2.2" diameter="2.89999375" rot="R180"/>
-<pad name="B1" x="0" y="4.8895" drill="2.2" diameter="2.89999375" rot="R180"/>
+<pad name="A3" x="-5.08" y="-4.6355" drill="2.2" diameter="2.89999375" rot="R180"/>
+<pad name="B1" x="0" y="4.826" drill="2.2" diameter="2.89999375" rot="R180"/>
 <pad name="B2" x="0" y="0" drill="2.2" diameter="2.89999375" rot="R180"/>
-<pad name="B3" x="0" y="-4.699" drill="2.2" diameter="2.89999375" rot="R180"/>
-<pad name="C1" x="5.08" y="4.8895" drill="2.2" diameter="2.89999375" rot="R180"/>
+<pad name="B3" x="0" y="-4.6355" drill="2.2" diameter="2.89999375" rot="R180"/>
+<pad name="C1" x="5.08" y="4.826" drill="2.2" diameter="2.89999375" rot="R180"/>
 <pad name="C2" x="5.08" y="0" drill="2.2" diameter="2.89999375" rot="R180"/>
-<pad name="C3" x="5.08" y="-4.699" drill="2.2" diameter="2.89999375" rot="R180"/>
+<pad name="C3" x="5.08" y="-4.6355" drill="2.2" diameter="2.89999375" rot="R180"/>
 <text x="0" y="8.882" size="1.27" layer="21" ratio="12" align="center">&gt;NAME</text>
 </package>
 <package name="3PDT_PCM">
@@ -896,8 +896,8 @@ spacing: 6 holes
 <wire x1="1.429734375" y1="-0.8911125" x2="-0.9652" y2="-1.3716" width="0.127" layer="21" curve="-90"/>
 <wire x1="-0.9652" y1="-1.3716" x2="1.42974375" y2="0.90490625" width="0.127" layer="21" curve="-204.158299" cap="flat"/>
 <circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
-<pad name="P$1" x="1.27" y="0" drill="0.5" diameter="1.3"/>
-<pad name="ANODE" x="-1.27" y="0" drill="0.5" diameter="1.3" shape="square"/>
+<pad name="P$1" x="1.27" y="0" drill="0.8" diameter="1.5"/>
+<pad name="ANODE" x="-1.27" y="0" drill="0.8" diameter="1.5" shape="square"/>
 <wire x1="1.429734375" y1="-0.8911125" x2="-0.9652" y2="-1.3716" width="0.127" layer="21" curve="-90"/>
 <wire x1="-0.9652" y1="-1.3716" x2="1.42974375" y2="0.90490625" width="0.127" layer="21" curve="-204.158299" cap="flat"/>
 <wire x1="1.429734375" y1="-0.8911125" x2="1.42974375" y2="0.90490625" width="0.127" layer="21"/>

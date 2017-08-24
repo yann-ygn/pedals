@@ -255,8 +255,8 @@
 <wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
 <rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
-<pad name="A" x="2.54" y="0" drill="0.5" diameter="1.2"/>
-<pad name="C" x="-2.54" y="0" drill="0.5" diameter="1.2" shape="square"/>
+<pad name="A" x="2.54" y="0" drill="0.7" diameter="1.4"/>
+<pad name="C" x="-2.54" y="0" drill="0.7" diameter="1.4" shape="square"/>
 <text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -277,8 +277,8 @@
 <circle x="0" y="0" radius="2.5" width="0.1524" layer="21"/>
 <wire x1="-1.143" y1="1.6764" x2="-1.143" y2="1.0414" width="0.1524" layer="21"/>
 <wire x1="-0.8128" y1="1.3716" x2="-1.4732" y2="1.3716" width="0.1524" layer="21"/>
-<pad name="+" x="-1.27" y="0" drill="0.4" diameter="1" shape="square"/>
-<pad name="-" x="1.27" y="0" drill="0.4" diameter="1"/>
+<pad name="+" x="-1.27" y="0" drill="0.5" diameter="1.2" shape="square"/>
+<pad name="-" x="1.27" y="0" drill="0.5" diameter="1.2"/>
 <text x="0" y="-1.778" size="0.8128" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -349,8 +349,8 @@ spacing: 3 holes
 <wire x1="1.27" y1="-1.27" x2="2.54" y2="0" width="0.1524" layer="21" curve="90"/>
 <wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="21" curve="90"/>
 <wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.4" diameter="1"/>
-<pad name="2" x="2.54" y="0" drill="0.4" diameter="1"/>
+<pad name="1" x="-2.54" y="0" drill="0.6" diameter="1.3"/>
+<pad name="2" x="2.54" y="0" drill="0.6" diameter="1.3"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -366,28 +366,28 @@ spacing: 3 holes
 <wire x1="8.89" y1="14.605" x2="0" y2="5.715" width="0.127" layer="22" style="shortdash" curve="-90"/>
 <wire x1="0" y1="5.715" x2="-8.89" y2="14.605" width="0.127" layer="22" style="shortdash" curve="-90"/>
 <wire x1="-7.62" y1="10.16" x2="-7.62" y2="0.651" width="0.127" layer="22" style="shortdash"/>
-<wire x1="-6.604" y1="0.524" x2="-3.556" y2="0.524" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="0.524" x2="1.524" y2="0.524" width="0.127" layer="21"/>
-<wire x1="3.556" y1="0.524" x2="6.604" y2="0.524" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="0.2065" x2="-3.81" y2="0.2065" width="0.127" layer="21"/>
 <wire x1="7.62" y1="0.651" x2="7.62" y2="10.16" width="0.127" layer="22" style="shortdash"/>
-<wire x1="-6.604" y1="0.524" x2="-6.604" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="-6.604" y1="-2.524" x2="-3.556" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="-3.556" y1="-2.524" x2="-3.556" y2="0.524" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="0.524" x2="-1.524" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="-1.524" y1="-2.524" x2="1.524" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="1.524" y1="-2.524" x2="1.524" y2="0.524" width="0.127" layer="21"/>
-<wire x1="3.556" y1="0.524" x2="3.556" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="3.556" y1="-2.524" x2="6.604" y2="-2.524" width="0.127" layer="21"/>
-<wire x1="6.604" y1="-2.524" x2="6.604" y2="0.524" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="0.2065" x2="-6.35" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-2.2065" x2="-3.81" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.2065" x2="-3.81" y2="0.2065" width="0.127" layer="21"/>
 <wire x1="0" y1="5.715" x2="0" y2="23.495" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-8.89" y1="14.605" x2="8.89" y2="14.605" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-7.62" y1="0.651" x2="7.62" y2="0.651" width="0.127" layer="22" style="shortdash"/>
-<pad name="1" x="5.08" y="-1" drill="0.9" diameter="1.6" shape="square" rot="R180"/>
-<pad name="2" x="0" y="-1" drill="0.9" diameter="1.6" rot="R180"/>
-<pad name="3" x="-5.08" y="-1" drill="0.9" diameter="1.6" rot="R180"/>
+<pad name="1" x="5.08" y="-1" drill="1.1" diameter="1.8" shape="square" rot="R180"/>
+<pad name="2" x="0" y="-1" drill="1.1" diameter="1.8" rot="R180"/>
+<pad name="3" x="-5.08" y="-1" drill="1.1" diameter="1.8" rot="R180"/>
 <text x="0" y="2.667" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 <text x="5.142" y="0.978" size="1.016" layer="21" ratio="12">1</text>
 <text x="0" y="2.667" size="1.27" layer="26" ratio="12" rot="MR0" align="center">&gt;NAME</text>
+<wire x1="-1.27" y1="0.2065" x2="1.27" y2="0.2065" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.2065" x2="-1.27" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-2.2065" x2="1.27" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-2.2065" x2="1.27" y2="0.2065" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.2065" x2="6.35" y2="0.2065" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.2065" x2="3.81" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-2.2065" x2="6.35" y2="-2.2065" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-2.2065" x2="6.35" y2="0.2065" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -658,7 +658,7 @@ design rules under a new name.</description>
 <element name="C11" library="pedals-capacitors-elec" package="050_020_1" value="10u" x="47.625" y="17.145" rot="R180"/>
 <element name="R15" library="pedals-resistors" package="R0207/3" value="1k" x="42.545" y="24.765" rot="R270"/>
 <element name="C12" library="pedals-capacitors-elec" package="040_020" value="22u" x="47.625" y="28.321" rot="R90"/>
-<element name="GAIN" library="pedals-potentiometers" package="16MM" value="1kB" x="11.43" y="41.021"/>
+<element name="GAIN" library="pedals-potentiometers" package="16MM" value="1kC" x="11.43" y="41.021"/>
 <element name="BASS" library="pedals-potentiometers" package="16MM" value="100kB" x="48.26" y="10.541"/>
 <element name="TREBLE" library="pedals-potentiometers" package="16MM" value="100kB" x="11.43" y="10.541"/>
 <element name="VOL" library="pedals-potentiometers" package="16MM" value="100kA" x="48.26" y="41.021"/>
@@ -676,7 +676,7 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="46F4725" x="29.845" y="2.54" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R6" library="pedals-resistors" package="R0207/3" value="470" x="20.32" y="26.67" rot="R180"/>
-<element name="R16" library="pedals-resistors" package="R0207/3" value="47" x="33.274" y="39.37" rot="R270"/>
+<element name="R21" library="pedals-resistors" package="R0207/3" value="47" x="33.274" y="39.37" rot="R270"/>
 <element name="C14" library="pedals-capacitors-film" package="050X030_025_2" value="100n" x="40.513" y="38.1" rot="R270"/>
 <element name="U$1" library="pedals-pcb" package="125B_PCB" value="" x="0.3175" y="0"/>
 <element name="C15" library="pedals-capacitors-film" package="050X030_025_2" value="100p" x="50.165" y="22.86" rot="R270"/>
@@ -987,7 +987,7 @@ design rules under a new name.</description>
 <signal name="+18V">
 <contactref element="J1" pad="GND"/>
 <contactref element="D1" pad="C"/>
-<contactref element="R16" pad="1"/>
+<contactref element="R21" pad="1"/>
 <contactref element="X1" pad="5"/>
 <wire x1="28.575" y1="28.575" x2="28.575" y2="24.765" width="0.8128" layer="16"/>
 <via x="28.575" y="24.765" extent="1-16" drill="0.6" shape="square"/>
@@ -1005,7 +1005,7 @@ design rules under a new name.</description>
 <wire x1="36.83" y1="41.275" x2="36.83" y2="40.005" width="0.8128" layer="16"/>
 </signal>
 <signal name="VR">
-<contactref element="R16" pad="2"/>
+<contactref element="R21" pad="2"/>
 <contactref element="C1" pad="+"/>
 <contactref element="R1" pad="2"/>
 <contactref element="R7" pad="1"/>

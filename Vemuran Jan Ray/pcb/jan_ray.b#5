@@ -789,10 +789,10 @@ design rules under a new name.</description>
 <wire x1="36.195" y1="34.925" x2="36.195" y2="32.385" width="0.8128" layer="16"/>
 <wire x1="31.9405" y1="38.1" x2="36.195" y2="38.1" width="0.8128" layer="16"/>
 <wire x1="36.195" y1="38.1" x2="38.735" y2="38.1" width="0.8128" layer="16"/>
-<wire x1="38.735" y1="38.1" x2="39.37" y2="38.735" width="0.8128" layer="16"/>
-<wire x1="39.37" y1="38.735" x2="39.497" y2="43.18" width="0.8128" layer="16"/>
 <wire x1="36.195" y1="34.925" x2="36.195" y2="38.1" width="0.8128" layer="16"/>
 <wire x1="36.195" y1="34.925" x2="33.02" y2="34.925" width="0.8128" layer="16"/>
+<wire x1="39.497" y1="43.18" x2="39.497" y2="38.862" width="0.8128" layer="16"/>
+<wire x1="39.497" y1="38.862" x2="38.735" y2="38.1" width="0.8128" layer="16"/>
 </signal>
 <signal name="VB">
 <contactref element="R2" pad="2"/>

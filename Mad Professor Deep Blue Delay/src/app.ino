@@ -18,8 +18,8 @@
 //////
 byte address = 0x11;
 int i=0;
-int LastDigPotValue = 0;
-int DigPotValue = 0;
+int lastDigPotValue = 0;
+int digPotValue = 0;
 
 long int now;
 long int interval;
@@ -45,10 +45,10 @@ void checkTapTimeout();
 void tapReset();
 void digitalPotWrite(int value);
 long int getInterval();
-int TapButtonPressed();
+int tapButtonPressed();
 void firstPress();
 void blinkLed(long int blinkDelay);
-int AnalogPotTurned();
+int analogPotTurned();
 void calibration();
 
 //////
@@ -73,36 +73,36 @@ void setup()
 
 void loop()
 {
-  // now = micros();
-  // checkTapTimeout();
-  //
-  // if(timesTapped >= MINTAPS)
-  // {
-  //   interval = getInterval();
-  // }
-  //
-  // if(AnalogPotTurned())
-  // {
-  //   interval = map(analogPotCurrVal, 0, 1023, minInterval, maxInterval);
-  // }
-  //
-  // if (TapButtonPressed())
-  // {
-  //   firstPress();
-  //
-  //   lastTapTime = now;
-  // }
-  //
-  // mappedInterval = map(interval, minInterval, maxInterval, 0, 255);
-  //
-  // digitalPotWrite(mappedInterval);
-  //
-  // blinkLed(interval);
-  //
-  // Serial.println(analogPotCurrVal);
-  // Serial.println(mappedInterval);
-  // //Serial.println(timesTapped);
-  // Serial.println(interval);
+  now = micros();
+  checkTapTimeout();
+  
+  if(timesTapped >= MINTAPS)
+  {
+    interval = getInterval();
+  }
+  
+  if(analogPotTurned())
+  {
+    interval = map(analogPotCurrVal, 0, 1023, minInterval, maxInterval);
+  }
+  
+  if (tapButtonPressed())
+  {
+    firstPress();
+  
+    lastTapTime = now;
+  }
+  
+  mappedInterval = map(interval, minInterval, maxInterval, 0, 255);
+  
+  digitalPotWrite(mappedInterval);
+  
+  blinkLed(interval);
+  
+  //Serial.println(analogPotCurrVal);
+  //Serial.println(mappedInterval);
+  //Serial.println(timesTapped);
+  //Serial.println(interval); 
 }
 
 void checkTapTimeout()
@@ -111,7 +111,6 @@ void checkTapTimeout()
   {
     tapReset();
   }
-  return;
 }
 
 void tapReset()
@@ -131,14 +130,14 @@ void digitalPotWrite(int value)
     value = 0;
   }
 
-  if (value != LastDigPotValue)
+  if (value != lastDigPotValue)
   {
 
     digitalWrite(MP41_CS, LOW);
     SPI.transfer(address);
     SPI.transfer(value);
     digitalWrite(MP41_CS, HIGH);
-    LastDigPotValue = value;
+    lastDigPotValue = value;
   }
 }
 
@@ -146,20 +145,22 @@ long int getInterval()
 {
   long int avgTapInterval = (lastTapTime - firstTapTime) / (timesTapped - 1);
 
-  if (avgTapInterval > maxInterval + 10000){
+  if (avgTapInterval > maxInterval + 10000)
+  {
     avgTapInterval = maxInterval;
-    }
-  if (avgTapInterval < minInterval - 10000){
+  }
+  if (avgTapInterval < minInterval - 10000)
+  {
     avgTapInterval = minInterval;
-    }
+  }
   return avgTapInterval;
 }
 
-int TapButtonPressed()
+int tapButtonPressed()
 {
   tapState = digitalRead(SWITCH);
   if(tapState == LOW && now - lastTapTime > 30000 && tapState != lastTapState )
-  { //Debounce
+  {
     lastTapState = tapState;
     return 1;
   }
@@ -184,6 +185,7 @@ void blinkLed(long int blinkDelay)
     nextBlinkSync = now + blinkDelay*2;
     nextBlinkTime = now;
   }
+
   if(now >= nextBlinkTime)
   {
     digitalWrite(LED, HIGH);
@@ -196,15 +198,16 @@ void blinkLed(long int blinkDelay)
   }
 }
 
-int AnalogPotTurned()
+int analogPotTurned()
 {
   analogPotCurrVal = analogRead(ANALOGPOT);
-  if(analogPotCurrVal > analogPotLastVal + 3 || analogPotCurrVal < analogPotLastVal - 3 ) //debounce
+  if(analogPotCurrVal > analogPotLastVal + 3 || analogPotCurrVal < analogPotLastVal - 3 )
   {
     analogPotLastVal = analogPotCurrVal;
 
     return 1;
-  } else return 0;
+  } 
+  else return 0;
 }
 
 void calibration()

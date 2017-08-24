@@ -34,8 +34,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -44,17 +44,17 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -147,8 +147,8 @@
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="250" name="Descript" color="7" fill="1" visible="no" active="yes"/>
-<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
@@ -215,9 +215,9 @@
 <wire x1="102.87" y1="17.907" x2="105.41" y2="15.367" width="0" layer="41"/>
 <wire x1="101.9175" y1="17.4625" x2="104.4575" y2="14.9225" width="0" layer="41"/>
 <wire x1="104.4575" y1="8.255" x2="104.4575" y2="14.9225" width="0" layer="41"/>
-<wire x1="108.2675" y1="53.975" x2="108.2675" y2="51.1175" width="0" layer="41"/>
-<wire x1="108.2675" y1="51.1175" x2="111.125" y2="48.26" width="0" layer="41"/>
-<wire x1="111.125" y1="48.26" x2="115.8875" y2="48.26" width="0" layer="41"/>
+<wire x1="108.204" y1="53.975" x2="108.204" y2="51.1175" width="0" layer="41"/>
+<wire x1="108.204" y1="51.1175" x2="111.0615" y2="48.26" width="0" layer="41"/>
+<wire x1="111.0615" y1="48.26" x2="115.8875" y2="48.26" width="0" layer="41"/>
 <wire x1="104.394" y1="5.08" x2="104.775" y2="5.08" width="0" layer="41"/>
 </plain>
 <libraries>
@@ -709,7 +709,7 @@ design rules under a new name.</description>
 <element name="C9" library="pedals-capacitors-film" package="BOX_SMALL" value="100n" x="81.915" y="17.78" rot="R90"/>
 <element name="R13" library="pedals-resistors" package="R0207/3" value="8.2k" x="79.375" y="16.51" rot="R90"/>
 <element name="R14" library="pedals-resistors" package="R0207/3" value="470k" x="84.455" y="16.51" rot="R270"/>
-<element name="C10" library="pedals-capacitors-film" package="050X030_025_2" value="500p" x="81.915" y="10.795" rot="R180"/>
+<element name="C10" library="pedals-capacitors-film" package="050X030_025_2" value="500p" x="81.915" y="10.16" rot="R180"/>
 <element name="C11" library="pedals-capacitors-film" package="BOX_SMALL" value="100n" x="86.995" y="17.78" rot="R90"/>
 <element name="Q3" library="pedals-transistors" package="TO92-" value="2N5088" x="92.075" y="17.145"/>
 <element name="D4" library="pedals-diodes" package="DO35-2" value="1N914" x="86.995" y="10.16" rot="R90"/>
@@ -734,8 +734,8 @@ design rules under a new name.</description>
 <element name="C16" library="pedals-capacitors-film" package="BOX_SMALL" value="22n" x="112.395" y="13.97" rot="R270"/>
 <element name="C17" library="pedals-capacitors-film" package="BOX_SMALL" value="4.7n" x="115.57" y="13.97" rot="R90"/>
 <element name="U$1" library="pedals-pcb" package="125B_PCB" value="" x="74.93" y="1.27"/>
-<element name="OUTPUT" library="pedals-jacks" package="NMJ6HCD2" value="" x="118.3005" y="59.69" rot="R90"/>
-<element name="INPUT" library="pedals-jacks" package="NMJ6HCD2" value="" x="90.551" y="59.6265" rot="R90"/>
+<element name="OUTPUT" library="pedals-jacks" package="NMJ6HCD2" value="" x="118.3005" y="59.4995" rot="R90"/>
+<element name="INPUT" library="pedals-jacks" package="NMJ6HCD2" value="" x="90.551" y="59.4995" rot="R90"/>
 <element name="D6" library="pedals-diodes" package="DO41-2" value="1N4002" x="114.3" y="40.64" rot="R90"/>
 <element name="C18" library="pedals-capacitors-elec" package="040_020" value="100u" x="110.8075" y="31.496" rot="R270"/>
 <element name="J2" library="pedals-jacks" package="POWER_JACK_PTH" value="POWER_JACK" x="104.4575" y="71.247" rot="MR180">
@@ -981,8 +981,7 @@ design rules under a new name.</description>
 <contactref element="C10" pad="2"/>
 <contactref element="C11" pad="2"/>
 <contactref element="R13" pad="2"/>
-<wire x1="79.375" y1="10.795" x2="78.74" y2="10.795" width="0.254" layer="16"/>
-<wire x1="78.74" y1="10.795" x2="78.105" y2="11.43" width="0.254" layer="16"/>
+<wire x1="79.375" y1="10.16" x2="78.105" y2="11.43" width="0.254" layer="16"/>
 <wire x1="78.105" y1="11.43" x2="78.105" y2="19.685" width="0.254" layer="16"/>
 <wire x1="78.105" y1="19.685" x2="78.74" y2="20.32" width="0.254" layer="16"/>
 <wire x1="78.74" y1="20.32" x2="79.375" y2="20.32" width="0.254" layer="16"/>
@@ -1030,10 +1029,10 @@ design rules under a new name.</description>
 <wire x1="96.7105" y1="16.51" x2="96.7105" y2="13.97" width="0.254" layer="16"/>
 <wire x1="89.535" y1="7.62" x2="90.3605" y2="7.62" width="0.254" layer="16"/>
 <wire x1="86.995" y1="7.62" x2="89.535" y2="7.62" width="0.254" layer="16"/>
-<wire x1="84.455" y1="10.795" x2="84.455" y2="8.255" width="0.254" layer="16"/>
+<wire x1="84.455" y1="10.16" x2="84.455" y2="8.255" width="0.254" layer="16"/>
 <wire x1="84.455" y1="8.255" x2="85.09" y2="7.62" width="0.254" layer="16"/>
 <wire x1="85.09" y1="7.62" x2="86.995" y2="7.62" width="0.254" layer="16"/>
-<wire x1="84.455" y1="12.7" x2="84.455" y2="10.795" width="0.254" layer="16"/>
+<wire x1="84.455" y1="12.7" x2="84.455" y2="10.16" width="0.254" layer="16"/>
 <wire x1="96.7105" y1="13.97" x2="104.775" y2="13.97" width="0.254" layer="16"/>
 <wire x1="104.775" y1="13.97" x2="105.41" y2="13.335" width="0.254" layer="16"/>
 <wire x1="105.41" y1="13.335" x2="105.41" y2="10.16" width="0.254" layer="16"/>
@@ -1159,22 +1158,22 @@ design rules under a new name.</description>
 <signal name="N$35">
 <contactref element="OUTPUT" pad="T"/>
 <contactref element="X1" pad="1"/>
-<wire x1="110.1855" y1="53.34" x2="113.665" y2="53.34" width="0.254" layer="16"/>
-<wire x1="113.665" y1="53.34" x2="118.745" y2="48.26" width="0.254" layer="16"/>
 <wire x1="118.745" y1="48.26" x2="127.635" y2="48.26" width="0.254" layer="16"/>
 <wire x1="127.635" y1="48.26" x2="132.08" y2="43.815" width="0.254" layer="16"/>
 <wire x1="132.08" y1="43.815" x2="132.08" y2="12.065" width="0.254" layer="16"/>
 <wire x1="132.08" y1="12.065" x2="125.095" y2="5.08" width="0.254" layer="16"/>
 <wire x1="125.095" y1="5.08" x2="108.585" y2="5.08" width="0.254" layer="16"/>
+<wire x1="110.1855" y1="53.1495" x2="113.8555" y2="53.1495" width="0.254" layer="16"/>
+<wire x1="113.8555" y1="53.1495" x2="118.745" y2="48.26" width="0.254" layer="16"/>
 </signal>
 <signal name="N$36">
 <contactref element="X1" pad="7"/>
 <contactref element="INPUT" pad="T"/>
-<wire x1="82.436" y1="53.2765" x2="79.9465" y2="53.2765" width="0.254" layer="16"/>
-<wire x1="79.9465" y1="53.2765" x2="76.835" y2="50.165" width="0.254" layer="16"/>
 <wire x1="76.835" y1="50.165" x2="76.835" y2="8.89" width="0.254" layer="16"/>
 <wire x1="76.835" y1="8.89" x2="80.645" y2="5.08" width="0.254" layer="16"/>
 <wire x1="80.645" y1="5.08" x2="100.965" y2="5.08" width="0.254" layer="16"/>
+<wire x1="82.436" y1="53.1495" x2="79.8195" y2="53.1495" width="0.254" layer="16"/>
+<wire x1="79.8195" y1="53.1495" x2="76.835" y2="50.165" width="0.254" layer="16"/>
 </signal>
 <signal name="VR">
 <contactref element="R24" pad="2"/>
