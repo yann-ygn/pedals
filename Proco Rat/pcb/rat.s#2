@@ -2884,7 +2884,7 @@ Marquardt</description>
 <part name="VR1" library="pedals-supply" deviceset="VR" device=""/>
 <part name="R2" library="pedals-resistors" deviceset="R_" device=".3B" value="100k"/>
 <part name="R3" library="pedals-resistors" deviceset="R_" device=".3B" value="100k"/>
-<part name="C6" library="pedals-capacitors-elec" deviceset="040" device="0" value="47u"/>
+<part name="C3" library="pedals-capacitors-elec" deviceset="040" device="0" value="47u"/>
 <part name="GND11" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND12" library="gm-supply" deviceset="GND" device=""/>
 <part name="VB2" library="pedals-supply" deviceset="VB" device=""/>
@@ -2892,7 +2892,7 @@ Marquardt</description>
 <part name="V3" library="pedals-supply" deviceset="+9V" device=""/>
 <part name="V2" library="pedals-supply" deviceset="+9V" device=""/>
 <part name="R4" library="pedals-resistors" deviceset="R_" device=".3B" value="2M"/>
-<part name="C3" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="22n"/>
+<part name="C4" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="22n"/>
 <part name="R5" library="pedals-resistors" deviceset="R_" device=".3B" value="2M"/>
 <part name="R6" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
 <part name="C7" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1n"/>
@@ -2906,8 +2906,8 @@ Marquardt</description>
 <part name="C8" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="100p"/>
 <part name="R8" library="pedals-resistors" deviceset="R_" device=".3B" value="47"/>
 <part name="R7" library="pedals-resistors" deviceset="R_" device=".3B" value="560"/>
-<part name="C4" library="pedals-capacitors-elec" deviceset="050" device="0" value="4.7u"/>
-<part name="C5" library="pedals-capacitors-elec" deviceset="050" device="0" value="2.2u"/>
+<part name="C5" library="pedals-capacitors-elec" deviceset="050" device="0" value="4.7u"/>
+<part name="C6" library="pedals-capacitors-elec" deviceset="050" device="0" value="2.2u"/>
 <part name="GND8" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND9" library="gm-supply" deviceset="GND" device=""/>
 <part name="C10" library="pedals-capacitors-elec" deviceset="050" device="0" value="4.7u"/>
@@ -2973,7 +2973,7 @@ Marquardt</description>
 <instance part="VR1" gate="G$1" x="35.56" y="99.06"/>
 <instance part="R2" gate="G$1" x="45.72" y="96.52"/>
 <instance part="R3" gate="G$1" x="53.34" y="88.9" rot="R90"/>
-<instance part="C6" gate="1" x="63.5" y="91.44" rot="R270"/>
+<instance part="C3" gate="1" x="63.5" y="91.44" rot="R270"/>
 <instance part="GND11" gate="GND" x="53.34" y="78.74"/>
 <instance part="GND12" gate="GND" x="63.5" y="78.74"/>
 <instance part="VB2" gate="G$1" x="63.5" y="99.06"/>
@@ -2981,7 +2981,7 @@ Marquardt</description>
 <instance part="V3" gate="+9V" x="0" y="96.52" rot="R90"/>
 <instance part="V2" gate="+9V" x="-7.62" y="45.72" rot="R270"/>
 <instance part="R4" gate="G$1" x="45.72" y="45.72" rot="R90"/>
-<instance part="C3" gate="G$1" x="52.07" y="55.88"/>
+<instance part="C4" gate="G$1" x="52.07" y="55.88"/>
 <instance part="R5" gate="G$1" x="58.42" y="63.5" rot="R90"/>
 <instance part="R6" gate="G$1" x="66.04" y="55.88"/>
 <instance part="C7" gate="G$1" x="73.66" y="46.99" rot="R90"/>
@@ -2995,8 +2995,8 @@ Marquardt</description>
 <instance part="C8" gate="G$1" x="97.79" y="27.94"/>
 <instance part="R8" gate="G$1" x="78.74" y="15.24"/>
 <instance part="R7" gate="G$1" x="78.74" y="22.86"/>
-<instance part="C4" gate="1" x="58.42" y="22.86" rot="R180"/>
-<instance part="C5" gate="1" x="48.26" y="15.24" rot="R180"/>
+<instance part="C5" gate="1" x="58.42" y="22.86" rot="R180"/>
+<instance part="C6" gate="1" x="48.26" y="15.24" rot="R180"/>
 <instance part="GND8" gate="GND" x="38.1" y="22.86" rot="R270"/>
 <instance part="GND9" gate="GND" x="38.1" y="15.24" rot="R270"/>
 <instance part="C10" gate="1" x="121.92" y="53.34"/>
@@ -3070,7 +3070,7 @@ Marquardt</description>
 <wire x1="35.56" y1="86.36" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C6" gate="1" pin="-"/>
+<pinref part="C3" gate="1" pin="-"/>
 <pinref part="GND12" gate="GND" pin="GND"/>
 <wire x1="63.5" y1="86.36" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -3096,12 +3096,12 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="GND8" gate="GND" pin="GND"/>
-<pinref part="C4" gate="1" pin="-"/>
+<pinref part="C5" gate="1" pin="-"/>
 <wire x1="40.64" y1="22.86" x2="53.34" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="GND" pin="GND"/>
-<pinref part="C5" gate="1" pin="-"/>
+<pinref part="C6" gate="1" pin="-"/>
 <wire x1="40.64" y1="15.24" x2="43.18" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -3178,7 +3178,7 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="IN2" gate="G$1" pin="IN"/>
-<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="55.88" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
@@ -3232,7 +3232,7 @@ Marquardt</description>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C6" gate="1" pin="+"/>
+<pinref part="C3" gate="1" pin="+"/>
 <wire x1="53.34" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="96.52" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -3270,7 +3270,7 @@ Marquardt</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -3325,7 +3325,7 @@ Marquardt</description>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="C4" gate="1" pin="+"/>
+<pinref part="C5" gate="1" pin="+"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="22.86" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
 </segment>
@@ -3451,7 +3451,7 @@ Marquardt</description>
 <wire x1="66.04" y1="10.16" x2="66.04" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="7.62" x2="58.42" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="7.62" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="C5" gate="1" pin="+"/>
+<pinref part="C6" gate="1" pin="+"/>
 <wire x1="50.8" y1="15.24" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="SWEEP" gate="G$1" pin="3"/>
 <wire x1="58.42" y1="15.24" x2="59.69" y2="15.24" width="0.1524" layer="91"/>

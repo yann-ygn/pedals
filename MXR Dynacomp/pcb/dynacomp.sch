@@ -6,36 +6,36 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,19 +53,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -692,21 +692,8 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
 <rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
-<pad name="A" x="2.54" y="0" drill="0.5" diameter="1.2"/>
-<pad name="C" x="-2.54" y="0" drill="0.5" diameter="1.2" shape="square"/>
-<text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
-</package>
-<package name="DO41-3">
-<description>&lt;b&gt;DO-41 0.3" pad spacing&lt;/b&gt;</description>
-<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
-<rectangle x1="-2.413" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
-<rectangle x1="2.032" y1="-0.381" x2="2.413" y2="0.381" layer="21"/>
-<pad name="A" x="3.81" y="0" drill="1" diameter="2"/>
-<pad name="C" x="-3.81" y="0" drill="1" diameter="2" shape="square"/>
+<pad name="A" x="2.54" y="0" drill="0.7" diameter="1.4"/>
+<pad name="C" x="-2.54" y="0" drill="0.7" diameter="1.4" shape="square"/>
 <text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 <package name="DO41-4">
@@ -720,6 +707,19 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <rectangle x1="-3.937" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
 <pad name="A" x="5.08" y="0" drill="1" diameter="2"/>
 <pad name="C" x="-5.08" y="0" drill="1" diameter="2" shape="square"/>
+<text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
+</package>
+<package name="DO41-3">
+<description>&lt;b&gt;DO-41 0.3" pad spacing&lt;/b&gt;</description>
+<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
+<rectangle x1="-2.413" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
+<rectangle x1="2.032" y1="-0.381" x2="2.413" y2="0.381" layer="21"/>
+<pad name="A" x="3.81" y="0" drill="0.7" diameter="1.4"/>
+<pad name="C" x="-3.81" y="0" drill="0.7" diameter="1.4" shape="square"/>
 <text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -1189,8 +1189,8 @@ spacing: 6 holes
 <wire x1="1.27" y1="-1.27" x2="2.54" y2="0" width="0.1524" layer="21" curve="90"/>
 <wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="21" curve="90"/>
 <wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.4" diameter="1"/>
-<pad name="2" x="2.54" y="0" drill="0.4" diameter="1"/>
+<pad name="1" x="-2.54" y="0" drill="0.6" diameter="1.3"/>
+<pad name="2" x="2.54" y="0" drill="0.6" diameter="1.3"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="050X030_025_3">
@@ -1247,8 +1247,8 @@ spacing: 6 holes
 <wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-3.81" y1="1.905" x2="-3.225" y2="2.49" width="0.1524" layer="21" curve="-90"/>
 <wire x1="-3.225" y1="2.49" x2="-2.948" y2="2.49" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.5" diameter="1.1"/>
-<pad name="2" x="2.54" y="0" drill="0.5" diameter="1.1"/>
+<pad name="1" x="-2.54" y="0" drill="0.7" diameter="1.4"/>
+<pad name="2" x="2.54" y="0" drill="0.7" diameter="1.4"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="AXIAL">
@@ -1292,8 +1292,8 @@ spacing: 6 holes
 <wire x1="3.583" y1="1.24" x2="3.583" y2="-1.24" width="0.1524" layer="21"/>
 <wire x1="3.583" y1="-1.24" x2="-3.583" y2="-1.24" width="0.1524" layer="21"/>
 <wire x1="-3.583" y1="-1.24" x2="-3.583" y2="1.24" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.4" diameter="1.1"/>
-<pad name="2" x="2.54" y="0" drill="0.4" diameter="1.1"/>
+<pad name="1" x="-2.54" y="0" drill="0.6" diameter="1.3"/>
+<pad name="2" x="2.54" y="0" drill="0.6" diameter="1.3"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -1983,9 +1983,9 @@ Source: 3M</description>
 <wire x1="0" y1="5.715" x2="0" y2="23.495" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-8.89" y1="14.605" x2="8.89" y2="14.605" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-7.62" y1="0.651" x2="7.62" y2="0.651" width="0.127" layer="22" style="shortdash"/>
-<pad name="1" x="5.08" y="-1" drill="0.9" diameter="1.6" shape="square" rot="R180"/>
-<pad name="2" x="0" y="-1" drill="0.9" diameter="1.6" rot="R180"/>
-<pad name="3" x="-5.08" y="-1" drill="0.9" diameter="1.6" rot="R180"/>
+<pad name="1" x="5.08" y="-1" drill="1.1" diameter="1.8" shape="square" rot="R180"/>
+<pad name="2" x="0" y="-1" drill="1.1" diameter="1.8" rot="R180"/>
+<pad name="3" x="-5.08" y="-1" drill="1.1" diameter="1.8" rot="R180"/>
 <text x="0" y="2.667" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 <text x="5.142" y="0.978" size="1.016" layer="21" ratio="12">1</text>
 <text x="0" y="2.667" size="1.27" layer="26" ratio="12" rot="MR0" align="center">&gt;NAME</text>
@@ -2498,9 +2498,9 @@ NS Package M08A</description>
 <part name="GND9" library="pedals-supply" deviceset="GND" device=""/>
 <part name="V3" library="pedals-supply" deviceset="+9V" device=""/>
 <part name="D1" library="pedals-diodes" deviceset="DO41" device=".2" value="1N4002"/>
-<part name="C3" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
+<part name="C1" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
 <part name="R1" library="pedals-resistors" deviceset="R_" device=".3B" value="47"/>
-<part name="C4" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="100n"/>
+<part name="C2" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="100n"/>
 <part name="GND4" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND10" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND16" library="gm-supply" deviceset="GND" device=""/>
@@ -2508,28 +2508,28 @@ NS Package M08A</description>
 <part name="V4" library="pedals-supply" deviceset="+9V" device=""/>
 <part name="R2" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
 <part name="R3" library="pedals-resistors" deviceset="R_" device=".3B" value="22k"/>
-<part name="C5" library="pedals-capacitors-elec" deviceset="040" device="0" value="47u"/>
+<part name="C3" library="pedals-capacitors-elec" deviceset="040" device="0" value="47u"/>
 <part name="GND11" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND12" library="gm-supply" deviceset="GND" device=""/>
 <part name="VB2" library="pedals-supply" deviceset="VB" device=""/>
-<part name="C6" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
+<part name="C5" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
 <part name="R5" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
 <part name="Q1" library="pedals-transistors" deviceset="2N3904" device=""/>
 <part name="R7" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
 <part name="R8" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="R4" library="pedals-resistors" deviceset="R_" device=".3B" value="4.7M"/>
-<part name="C7" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="150p"/>
+<part name="C4" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="150p"/>
 <part name="GND13" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND14" library="gm-supply" deviceset="GND" device=""/>
 <part name="VR3" library="pedals-supply" deviceset="VR" device=""/>
-<part name="C8" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.3" value="1u"/>
+<part name="C6" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.3" value="1u"/>
 <part name="R9" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
 <part name="R10" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
 <part name="R12" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="IC1" library="pedals-integrated circuits" deviceset="3080" device="TH" value="CA3080E"/>
 <part name="R13" library="pedals-resistors" deviceset="R_" device=".3B" value="15k"/>
-<part name="C9" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
-<part name="C10" library="pedals-capacitors-elec" deviceset="040" device="0" value="1u"/>
+<part name="C7" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
+<part name="C8" library="pedals-capacitors-elec" deviceset="040" device="0" value="1u"/>
 <part name="GND19" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND20" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND21" library="gm-supply" deviceset="GND" device=""/>
@@ -2537,17 +2537,17 @@ NS Package M08A</description>
 <part name="GND23" library="gm-supply" deviceset="GND" device=""/>
 <part name="VR5" library="pedals-supply" deviceset="VR" device=""/>
 <part name="R14" library="pedals-resistors" deviceset="R_" device=".3B" value="150k"/>
-<part name="C11" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1n"/>
+<part name="C9" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1n"/>
 <part name="VB4" library="pedals-supply" deviceset="VB" device=""/>
 <part name="Q2" library="pedals-transistors" deviceset="2N3904" device=""/>
 <part name="R15" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
 <part name="R16" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
-<part name="C12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
+<part name="C10" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
 <part name="R17" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="D2" library="pedals-diodes" deviceset="DO35" device=".2" value="1N914"/>
 <part name="Q3" library="pedals-transistors" deviceset="2N3904" device=""/>
 <part name="Q4" library="pedals-transistors" deviceset="2N3904" device=""/>
-<part name="C14" library="pedals-capacitors-elec" deviceset="040" device="0" value="10u"/>
+<part name="C11" library="pedals-capacitors-elec" deviceset="040" device="0" value="10u"/>
 <part name="GND24" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND25" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND26" library="gm-supply" deviceset="GND" device=""/>
@@ -2558,7 +2558,7 @@ NS Package M08A</description>
 <part name="GND29" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND30" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND31" library="gm-supply" deviceset="GND" device=""/>
-<part name="C13" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
+<part name="C12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
 <part name="VR6" library="pedals-supply" deviceset="VR" device=""/>
 <part name="R6" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="R11" library="pedals-resistors" deviceset="R_" device=".3B" value="470k"/>
@@ -2567,7 +2567,7 @@ NS Package M08A</description>
 <part name="Q5" library="pedals-transistors" deviceset="2N3904" device=""/>
 <part name="VR7" library="pedals-supply" deviceset="VR" device=""/>
 <part name="R20" library="pedals-resistors" deviceset="R_" device=".3B" value="27k"/>
-<part name="C1" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
+<part name="C13" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
 <part name="R21" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
 <part name="GND2" library="gm-supply" deviceset="GND" device=""/>
 <part name="VB1" library="pedals-supply" deviceset="VB" device=""/>
@@ -2602,9 +2602,9 @@ NS Package M08A</description>
 <instance part="GND9" gate="GND" x="-20.32" y="55.88" rot="R90"/>
 <instance part="V3" gate="+9V" x="-20.32" y="53.34" rot="R270"/>
 <instance part="D1" gate="G$1" x="-10.16" y="86.36" rot="R90"/>
-<instance part="C3" gate="1" x="17.78" y="86.36" rot="R270"/>
+<instance part="C1" gate="1" x="17.78" y="86.36" rot="R270"/>
 <instance part="R1" gate="G$1" x="-2.54" y="91.44"/>
-<instance part="C4" gate="G$1" x="7.62" y="85.09" rot="R270"/>
+<instance part="C2" gate="G$1" x="7.62" y="85.09" rot="R270"/>
 <instance part="GND4" gate="GND" x="-10.16" y="73.66"/>
 <instance part="GND10" gate="GND" x="7.62" y="73.66"/>
 <instance part="GND16" gate="GND" x="17.78" y="73.66"/>
@@ -2612,46 +2612,46 @@ NS Package M08A</description>
 <instance part="V4" gate="+9V" x="-15.24" y="91.44" rot="R90"/>
 <instance part="R2" gate="G$1" x="27.94" y="91.44"/>
 <instance part="R3" gate="G$1" x="35.56" y="83.82" rot="R90"/>
-<instance part="C5" gate="1" x="45.72" y="86.36" rot="R270"/>
+<instance part="C3" gate="1" x="45.72" y="86.36" rot="R270"/>
 <instance part="GND11" gate="GND" x="35.56" y="73.66"/>
 <instance part="GND12" gate="GND" x="45.72" y="73.66"/>
 <instance part="VB2" gate="G$1" x="45.72" y="93.98"/>
-<instance part="C6" gate="G$1" x="41.91" y="58.42"/>
+<instance part="C5" gate="G$1" x="41.91" y="58.42"/>
 <instance part="R5" gate="G$1" x="53.34" y="58.42"/>
 <instance part="Q1" gate="G1" x="66.04" y="58.42"/>
 <instance part="R7" gate="G$1" x="68.58" y="35.56" rot="R90"/>
 <instance part="R8" gate="G$1" x="83.82" y="35.56" rot="R270"/>
 <instance part="R4" gate="G$1" x="27.94" y="50.8" rot="R90"/>
-<instance part="C7" gate="G$1" x="35.56" y="52.07" rot="R90"/>
+<instance part="C4" gate="G$1" x="35.56" y="52.07" rot="R90"/>
 <instance part="GND13" gate="GND" x="27.94" y="40.64"/>
 <instance part="GND14" gate="GND" x="35.56" y="40.64"/>
 <instance part="VR3" gate="G$1" x="68.58" y="81.28"/>
-<instance part="C8" gate="G$1" x="74.93" y="50.8"/>
+<instance part="C6" gate="G$1" x="74.93" y="50.8"/>
 <instance part="R9" gate="G$1" x="91.44" y="50.8"/>
 <instance part="R10" gate="G$1" x="106.68" y="50.8"/>
 <instance part="R12" gate="G$1" x="114.3" y="58.42" rot="R90"/>
 <instance part="IC1" gate="A" x="147.32" y="48.26"/>
 <instance part="R13" gate="G$1" x="124.46" y="58.42" rot="R90"/>
-<instance part="C9" gate="G$1" x="134.62" y="57.15" rot="R270"/>
-<instance part="C10" gate="1" x="129.54" y="71.12" rot="R90"/>
+<instance part="C7" gate="G$1" x="134.62" y="57.15" rot="R270"/>
+<instance part="C8" gate="1" x="129.54" y="71.12" rot="R90"/>
 <instance part="GND19" gate="GND" x="129.54" y="81.28" rot="R180"/>
 <instance part="GND20" gate="GND" x="114.3" y="81.28" rot="R180"/>
-<instance part="GND21" gate="GND" x="83.82" y="10.16"/>
-<instance part="GND22" gate="GND" x="68.58" y="10.16"/>
+<instance part="GND21" gate="GND" x="83.82" y="25.4"/>
+<instance part="GND22" gate="GND" x="68.58" y="25.4"/>
 <instance part="GND23" gate="GND" x="144.78" y="35.56"/>
-<instance part="VR5" gate="G$1" x="144.78" y="81.28"/>
+<instance part="VR5" gate="G$1" x="144.78" y="60.96"/>
 <instance part="R14" gate="G$1" x="162.56" y="55.88" rot="R90"/>
-<instance part="C11" gate="G$1" x="172.72" y="54.61" rot="R90"/>
+<instance part="C9" gate="G$1" x="172.72" y="54.61" rot="R90"/>
 <instance part="VB4" gate="G$1" x="167.64" y="81.28"/>
 <instance part="Q2" gate="G1" x="180.34" y="48.26"/>
 <instance part="R15" gate="G$1" x="182.88" y="63.5" rot="R90"/>
 <instance part="R16" gate="G$1" x="182.88" y="-5.08" rot="R90"/>
-<instance part="C12" gate="G$1" x="189.23" y="55.88"/>
+<instance part="C10" gate="G$1" x="189.23" y="55.88"/>
 <instance part="R17" gate="G$1" x="195.58" y="48.26" rot="R270"/>
 <instance part="D2" gate="G$1" x="203.2" y="50.8" rot="R90"/>
 <instance part="Q3" gate="G1" x="208.28" y="55.88"/>
 <instance part="Q4" gate="G1" x="208.28" y="22.86"/>
-<instance part="C14" gate="1" x="231.14" y="43.18" rot="R270"/>
+<instance part="C11" gate="1" x="231.14" y="43.18" rot="R270"/>
 <instance part="GND24" gate="GND" x="195.58" y="38.1"/>
 <instance part="GND25" gate="GND" x="203.2" y="38.1"/>
 <instance part="GND26" gate="GND" x="231.14" y="33.02"/>
@@ -2662,7 +2662,7 @@ NS Package M08A</description>
 <instance part="GND29" gate="GND" x="203.2" y="5.08"/>
 <instance part="GND30" gate="GND" x="195.58" y="5.08"/>
 <instance part="GND31" gate="GND" x="210.82" y="5.08"/>
-<instance part="C13" gate="G$1" x="189.23" y="22.86"/>
+<instance part="C12" gate="G$1" x="189.23" y="22.86"/>
 <instance part="VR6" gate="G$1" x="182.88" y="81.28"/>
 <instance part="R6" gate="G$1" x="60.96" y="68.58" rot="R270"/>
 <instance part="R11" gate="G$1" x="99.06" y="58.42" rot="R90"/>
@@ -2671,7 +2671,7 @@ NS Package M08A</description>
 <instance part="Q5" gate="G1" x="238.76" y="48.26"/>
 <instance part="VR7" gate="G$1" x="241.3" y="81.28"/>
 <instance part="R20" gate="G$1" x="154.94" y="33.02" rot="R180"/>
-<instance part="C1" gate="G$1" x="204.47" y="-7.62"/>
+<instance part="C13" gate="G$1" x="204.47" y="-7.62"/>
 <instance part="R21" gate="G$1" x="215.9" y="-7.62" rot="R180"/>
 <instance part="GND2" gate="GND" x="223.52" y="-30.48"/>
 <instance part="VB1" gate="G$1" x="60.96" y="81.28"/>
@@ -2732,12 +2732,12 @@ NS Package M08A</description>
 <pinref part="GND4" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C3" gate="1" pin="-"/>
+<pinref part="C1" gate="1" pin="-"/>
 <pinref part="GND16" gate="GND" pin="GND"/>
 <wire x1="17.78" y1="81.28" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C5" gate="1" pin="-"/>
+<pinref part="C3" gate="1" pin="-"/>
 <pinref part="GND12" gate="GND" pin="GND"/>
 <wire x1="45.72" y1="81.28" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
 </segment>
@@ -2752,19 +2752,19 @@ NS Package M08A</description>
 <wire x1="27.94" y1="45.72" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="GND" pin="GND"/>
 <wire x1="35.56" y1="48.26" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="GND22" gate="GND" pin="GND"/>
-<wire x1="68.58" y1="30.48" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="30.48" x2="68.58" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="GND21" gate="GND" pin="GND"/>
-<wire x1="83.82" y1="30.48" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="30.48" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
@@ -2772,7 +2772,7 @@ NS Package M08A</description>
 <pinref part="GND20" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C10" gate="1" pin="-"/>
+<pinref part="C8" gate="1" pin="-"/>
 <pinref part="GND19" gate="GND" pin="GND"/>
 <wire x1="129.54" y1="76.2" x2="129.54" y2="78.74" width="0.1524" layer="91"/>
 </segment>
@@ -2818,11 +2818,11 @@ NS Package M08A</description>
 </segment>
 <segment>
 <pinref part="GND10" gate="GND" pin="GND"/>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="76.2" x2="7.62" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C14" gate="1" pin="-"/>
+<pinref part="C11" gate="1" pin="-"/>
 <pinref part="GND26" gate="GND" pin="GND"/>
 <wire x1="231.14" y1="38.1" x2="231.14" y2="35.56" width="0.1524" layer="91"/>
 </segment>
@@ -2834,7 +2834,7 @@ NS Package M08A</description>
 </net>
 <net name="VR" class="0">
 <segment>
-<pinref part="C3" gate="1" pin="+"/>
+<pinref part="C1" gate="1" pin="+"/>
 <wire x1="2.54" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="91.44" x2="17.78" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="91.44" x2="17.78" y2="88.9" width="0.1524" layer="91"/>
@@ -2843,14 +2843,14 @@ NS Package M08A</description>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="91.44" x2="22.86" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="88.9" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
 <junction x="7.62" y="91.44"/>
 </segment>
 <segment>
 <pinref part="VR5" gate="G$1" pin="VR"/>
 <pinref part="IC1" gate="A" pin="V+"/>
-<wire x1="144.78" y1="78.74" x2="144.78" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="58.42" x2="144.78" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="VR6" gate="G$1" pin="VR"/>
@@ -2885,7 +2885,7 @@ NS Package M08A</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="91.44" x2="35.56" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="91.44" x2="45.72" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="C5" gate="1" pin="+"/>
+<pinref part="C3" gate="1" pin="+"/>
 <wire x1="45.72" y1="91.44" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
 <junction x="35.56" y="91.44"/>
 <junction x="45.72" y="91.44"/>
@@ -2895,7 +2895,7 @@ NS Package M08A</description>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="60.96" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="63.5" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="63.5" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="VB4" gate="G$1" pin="VB"/>
@@ -2927,13 +2927,13 @@ NS Package M08A</description>
 <wire x1="-22.86" y1="45.72" x2="-27.94" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="58.42" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="58.42" x2="38.1" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="55.88" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="58.42" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
 <junction x="27.94" y="58.42"/>
 <junction x="35.56" y="58.42"/>
@@ -2958,7 +2958,7 @@ NS Package M08A</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
 </segment>
@@ -2979,7 +2979,7 @@ NS Package M08A</description>
 <pinref part="Q1" gate="G1" pin="E"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="53.34" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="50.8" x2="68.58" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="50.8" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
 <junction x="68.58" y="50.8"/>
@@ -2995,7 +2995,7 @@ NS Package M08A</description>
 <wire x1="83.82" y1="45.72" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="45.72" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
 <junction x="83.82" y="45.72"/>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="50.8" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
 <junction x="83.82" y="50.8"/>
 </segment>
@@ -3024,7 +3024,7 @@ NS Package M08A</description>
 <junction x="114.3" y="50.8"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="50.8" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="50.8" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
 <junction x="124.46" y="50.8"/>
 <junction x="134.62" y="50.8"/>
@@ -3034,19 +3034,19 @@ NS Package M08A</description>
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="63.5" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="66.04" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
 <junction x="129.54" y="66.04"/>
-<pinref part="C10" gate="1" pin="+"/>
+<pinref part="C8" gate="1" pin="+"/>
 <wire x1="129.54" y1="66.04" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="OUT"/>
-<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="48.26" x2="162.56" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="48.26" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="48.26" x2="172.72" y2="50.8" width="0.1524" layer="91"/>
@@ -3063,7 +3063,7 @@ NS Package M08A</description>
 <pinref part="Q2" gate="G1" pin="C"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="53.34" x2="182.88" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="55.88" x2="182.88" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="55.88" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
 <junction x="182.88" y="55.88"/>
@@ -3071,7 +3071,7 @@ NS Package M08A</description>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="C10" gate="G$1" pin="1"/>
 <pinref part="Q3" gate="G1" pin="B"/>
 <wire x1="193.04" y1="55.88" x2="195.58" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
@@ -3094,7 +3094,7 @@ NS Package M08A</description>
 <pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="203.2" y1="22.86" x2="203.2" y2="20.32" width="0.1524" layer="91"/>
 <junction x="203.2" y="22.86"/>
-<pinref part="C13" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="22.86" x2="195.58" y2="22.86" width="0.1524" layer="91"/>
 <junction x="195.58" y="22.86"/>
 </segment>
@@ -3104,14 +3104,14 @@ NS Package M08A</description>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="Q2" gate="G1" pin="E"/>
 <wire x1="182.88" y1="43.18" x2="182.88" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="2"/>
+<pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="22.86" x2="182.88" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="5.08" x2="182.88" y2="0" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="22.86" x2="182.88" y2="22.86" width="0.1524" layer="91"/>
 <junction x="182.88" y="22.86"/>
 <wire x1="182.88" y1="5.08" x2="190.5" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="5.08" x2="190.5" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="190.5" y1="-7.62" x2="200.66" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="182.88" y="5.08"/>
 </segment>
@@ -3136,7 +3136,7 @@ NS Package M08A</description>
 <wire x1="220.98" y1="48.26" x2="220.98" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="30.48" x2="210.82" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="30.48" x2="210.82" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="C14" gate="1" pin="+"/>
+<pinref part="C11" gate="1" pin="+"/>
 <wire x1="220.98" y1="48.26" x2="231.14" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="48.26" x2="231.14" y2="45.72" width="0.1524" layer="91"/>
 <junction x="210.82" y="63.5"/>
@@ -3176,10 +3176,10 @@ NS Package M08A</description>
 <wire x1="223.52" y1="-7.62" x2="223.52" y2="-11.43" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="C40" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
-<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="-7.62" x2="210.82" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>

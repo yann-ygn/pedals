@@ -2467,6 +2467,7 @@ NS Package M08A</description>
 <part name="R18" library="pedals-resistors" deviceset="R_" device=".3B" value="100k"/>
 <part name="C20" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="2.2n"/>
 <part name="VB8" library="pedals-supply" deviceset="VB" device=""/>
+<part name="GND14" library="gm-supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2478,9 +2479,9 @@ NS Package M08A</description>
 <instance part="GND4" gate="GND" x="-17.78" y="93.98"/>
 <instance part="D1" gate="G$1" x="7.62" y="91.44" rot="R90"/>
 <instance part="IN1" gate="G$1" x="40.64" y="50.8"/>
-<instance part="OUT1" gate="G$1" x="335.28" y="25.4"/>
+<instance part="OUT1" gate="G$1" x="320.04" y="27.94"/>
 <instance part="GAIN" gate="G$1" x="78.74" y="25.4" rot="MR90"/>
-<instance part="VOL" gate="G$1" x="322.58" y="25.4"/>
+<instance part="VOL" gate="G$1" x="309.88" y="27.94"/>
 <instance part="C1" gate="1" x="25.4" y="91.44" rot="R270"/>
 <instance part="J1" gate="G$1" x="-25.4" y="101.6" rot="R270"/>
 <instance part="GND1" gate="GND" x="5.08" y="45.72"/>
@@ -2566,6 +2567,7 @@ NS Package M08A</description>
 <instance part="R18" gate="G$1" x="292.1" y="27.94"/>
 <instance part="C20" gate="G$1" x="290.83" y="20.32"/>
 <instance part="VB8" gate="G$1" x="281.94" y="45.72"/>
+<instance part="GND14" gate="GND" x="309.88" y="15.24"/>
 </instances>
 <busses>
 </busses>
@@ -2643,6 +2645,11 @@ NS Package M08A</description>
 <pinref part="IC2" gate="_PWR" pin="V-"/>
 <pinref part="GND13" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND14" gate="GND" pin="GND"/>
+<pinref part="VOL" gate="G$1" pin="1"/>
+<wire x1="309.88" y1="17.78" x2="309.88" y2="21.59" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="OUT" class="0">
 <segment>
@@ -2653,7 +2660,7 @@ NS Package M08A</description>
 <segment>
 <pinref part="VOL" gate="G$1" pin="2"/>
 <pinref part="OUT1" gate="G$1" pin="OUT"/>
-<wire x1="327.66" y1="25.4" x2="332.74" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="27.94" x2="317.5" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN" class="0">
@@ -3094,6 +3101,9 @@ NS Package M08A</description>
 <wire x1="297.18" y1="27.94" x2="302.26" y2="27.94" width="0.1524" layer="91"/>
 <junction x="302.26" y="27.94"/>
 <junction x="302.26" y="38.1"/>
+<pinref part="VOL" gate="G$1" pin="3"/>
+<wire x1="302.26" y1="38.1" x2="309.88" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="38.1" x2="309.88" y2="34.29" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

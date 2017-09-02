@@ -2388,7 +2388,7 @@ NS Package M08A</description>
 <part name="OUTPUT" library="pedals-jacks" deviceset="STEREO" device="NMJ"/>
 <part name="INPUT" library="pedals-jacks" deviceset="STEREO" device="NMJ"/>
 <part name="GND4" library="gm-supply" deviceset="GND" device=""/>
-<part name="D1" library="pedals-diodes" deviceset="DO41" device=".3" value="1N4002"/>
+<part name="D1" library="pedals-diodes" deviceset="DO41" device=".2" value="1N4002"/>
 <part name="IN1" library="supply pins" deviceset="IN" device=""/>
 <part name="OUT1" library="supply pins" deviceset="OUT" device=""/>
 <part name="GAIN" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kB"/>
