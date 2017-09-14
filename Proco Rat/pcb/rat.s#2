@@ -2912,8 +2912,8 @@ Marquardt</description>
 <part name="GND9" library="gm-supply" deviceset="GND" device=""/>
 <part name="C10" library="pedals-capacitors-elec" deviceset="050" device="0" value="4.7u"/>
 <part name="R9" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
-<part name="D4" library="pedals-diodes" deviceset="DO35" device=".2" value="1N914"/>
-<part name="D5" library="pedals-diodes" deviceset="DO35" device=".2" value="1N914"/>
+<part name="D4" library="pedals-diodes" deviceset="DO35" device=".2" value="1N34A"/>
+<part name="D5" library="pedals-diodes" deviceset="DO35" device=".2" value="1N34A"/>
 <part name="GND17" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND15" library="gm-supply" deviceset="GND" device=""/>
 <part name="TONE" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kA"/>

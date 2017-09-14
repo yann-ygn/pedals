@@ -1515,14 +1515,14 @@ Source: 3M</description>
 <wire x1="7.605" y1="-3.275" x2="1.883" y2="-3.275" width="0.2032" layer="21"/>
 <wire x1="-1.883" y1="-3.275" x2="-7.605" y2="-3.275" width="0.2032" layer="21"/>
 <wire x1="-7.605" y1="-3.275" x2="-7.605" y2="3.275" width="0.2032" layer="21"/>
-<pad name="1" x="-3.81" y="-1.27" drill="1" diameter="1.4224"/>
-<pad name="2" x="-3.81" y="1.27" drill="1" diameter="1.4224"/>
-<pad name="3" x="-1.27" y="-1.27" drill="1" diameter="1.4224"/>
-<pad name="4" x="-1.27" y="1.27" drill="1" diameter="1.4224"/>
-<pad name="5" x="1.27" y="-1.27" drill="1" diameter="1.4224"/>
-<pad name="6" x="1.27" y="1.27" drill="1" diameter="1.4224"/>
-<pad name="7" x="3.81" y="-1.27" drill="1" diameter="1.4224"/>
-<pad name="8" x="3.81" y="1.27" drill="1" diameter="1.4224"/>
+<pad name="1" x="-3.81" y="-1.27" drill="0.7" diameter="1.4"/>
+<pad name="2" x="-3.81" y="1.27" drill="0.7" diameter="1.4"/>
+<pad name="3" x="-1.27" y="-1.27" drill="0.7" diameter="1.4"/>
+<pad name="4" x="-1.27" y="1.27" drill="0.7" diameter="1.4"/>
+<pad name="5" x="1.27" y="-1.27" drill="0.7" diameter="1.4"/>
+<pad name="6" x="1.27" y="1.27" drill="0.7" diameter="1.4"/>
+<pad name="7" x="3.81" y="-1.27" drill="0.7" diameter="1.4"/>
+<pad name="8" x="3.81" y="1.27" drill="0.7" diameter="1.4"/>
 <text x="-10.16" y="4.572" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="4.572" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -1686,14 +1686,14 @@ NS Package M08A</description>
 <wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="1" diameter="2" shape="square" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="1" diameter="2" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="1" diameter="2" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="1" diameter="2" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="1" diameter="2" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="1" diameter="2" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="1" diameter="2" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="1" diameter="2" rot="R90"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.5" diameter="1.2" shape="square" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
 <text x="0" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -2073,9 +2073,9 @@ NS Package M08A</description>
 <wire x1="0" y1="5.715" x2="0" y2="23.495" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-8.89" y1="14.605" x2="8.89" y2="14.605" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-7.62" y1="0.651" x2="7.62" y2="0.651" width="0.127" layer="22" style="shortdash"/>
-<pad name="1" x="5.08" y="-1" drill="1.4" diameter="2.54" shape="square" rot="R180"/>
-<pad name="2" x="0" y="-1" drill="1.4" diameter="2.54" rot="R180"/>
-<pad name="3" x="-5.08" y="-1" drill="1.4" diameter="2.54" rot="R180"/>
+<pad name="1" x="5.08" y="-1" drill="0.9" diameter="1.6" shape="square" rot="R180"/>
+<pad name="2" x="0" y="-1" drill="0.9" diameter="1.6" rot="R180"/>
+<pad name="3" x="-5.08" y="-1" drill="0.9" diameter="1.6" rot="R180"/>
 <text x="0" y="2.667" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 <text x="5.142" y="0.978" size="1.016" layer="21" ratio="12">1</text>
 <text x="0" y="2.667" size="1.27" layer="26" ratio="12" rot="MR0" align="center">&gt;NAME</text>

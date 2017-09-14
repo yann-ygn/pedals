@@ -2075,14 +2075,14 @@ Source: 3M</description>
 <wire x1="7.605" y1="-3.275" x2="1.883" y2="-3.275" width="0.2032" layer="21"/>
 <wire x1="-1.883" y1="-3.275" x2="-7.605" y2="-3.275" width="0.2032" layer="21"/>
 <wire x1="-7.605" y1="-3.275" x2="-7.605" y2="3.275" width="0.2032" layer="21"/>
-<pad name="1" x="-3.81" y="-1.27" drill="0.7" diameter="1.4"/>
-<pad name="2" x="-3.81" y="1.27" drill="0.7" diameter="1.4"/>
-<pad name="3" x="-1.27" y="-1.27" drill="0.7" diameter="1.4"/>
-<pad name="4" x="-1.27" y="1.27" drill="0.7" diameter="1.4"/>
-<pad name="5" x="1.27" y="-1.27" drill="0.7" diameter="1.4"/>
-<pad name="6" x="1.27" y="1.27" drill="0.7" diameter="1.4"/>
-<pad name="7" x="3.81" y="-1.27" drill="0.7" diameter="1.4"/>
-<pad name="8" x="3.81" y="1.27" drill="0.7" diameter="1.4"/>
+<pad name="1" x="-3.81" y="-1.27" drill="0.9" diameter="1.6"/>
+<pad name="2" x="-3.81" y="1.27" drill="0.9" diameter="1.6"/>
+<pad name="3" x="-1.27" y="-1.27" drill="0.9" diameter="1.6"/>
+<pad name="4" x="-1.27" y="1.27" drill="0.9" diameter="1.6"/>
+<pad name="5" x="1.27" y="-1.27" drill="0.9" diameter="1.6"/>
+<pad name="6" x="1.27" y="1.27" drill="0.9" diameter="1.6"/>
+<pad name="7" x="3.81" y="-1.27" drill="0.9" diameter="1.6"/>
+<pad name="8" x="3.81" y="1.27" drill="0.9" diameter="1.6"/>
 </package>
 <package name="PAK100/2500-5-10">
 <description>&lt;b&gt;3M (TM) Pak 100 4-Wall Header&lt;/b&gt; Right Angle&lt;p&gt;

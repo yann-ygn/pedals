@@ -896,8 +896,8 @@ spacing: 6 holes
 <wire x1="1.429734375" y1="-0.8911125" x2="-0.9652" y2="-1.3716" width="0.127" layer="21" curve="-90"/>
 <wire x1="-0.9652" y1="-1.3716" x2="1.42974375" y2="0.90490625" width="0.127" layer="21" curve="-204.158299" cap="flat"/>
 <circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
-<pad name="P$1" x="1.27" y="0" drill="0.5" diameter="1.3"/>
-<pad name="ANODE" x="-1.27" y="0" drill="0.5" diameter="1.3" shape="square"/>
+<pad name="P$1" x="1.27" y="0" drill="0.8" diameter="1.5"/>
+<pad name="ANODE" x="-1.27" y="0" drill="0.8" diameter="1.5" shape="square"/>
 <wire x1="1.429734375" y1="-0.8911125" x2="-0.9652" y2="-1.3716" width="0.127" layer="21" curve="-90"/>
 <wire x1="-0.9652" y1="-1.3716" x2="1.42974375" y2="0.90490625" width="0.127" layer="21" curve="-204.158299" cap="flat"/>
 <wire x1="1.429734375" y1="-0.8911125" x2="1.42974375" y2="0.90490625" width="0.127" layer="21"/>

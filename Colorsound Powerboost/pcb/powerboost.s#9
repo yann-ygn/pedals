@@ -2312,7 +2312,7 @@ Source: 3M</description>
 <part name="BASS" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kB"/>
 <part name="TREBLE" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kB"/>
 <part name="VOL" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kA"/>
-<part name="C1" library="pedals-capacitors-elec" deviceset="040" device="0" value="47u"/>
+<part name="C1" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
 <part name="C2" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="220n"/>
 <part name="C13" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="220n"/>
 <part name="R3" library="pedals-resistors" deviceset="R_" device=".3B" value="12k"/>
@@ -2324,7 +2324,7 @@ Source: 3M</description>
 <part name="OUT2" library="supply pins" deviceset="OUT" device=""/>
 <part name="GND3" library="gm-supply" deviceset="GND" device=""/>
 <part name="R6" library="pedals-resistors" deviceset="R_" device=".3B" value="470"/>
-<part name="R16" library="pedals-resistors" deviceset="R_" device=".3B" value="100"/>
+<part name="R16" library="pedals-resistors" deviceset="R_" device=".3B" value="47"/>
 <part name="C14" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="100n"/>
 <part name="GND5" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND6" library="gm-supply" deviceset="GND" device=""/>

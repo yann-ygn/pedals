@@ -2866,7 +2866,7 @@ Marquardt</description>
 <part name="D1" library="pedals-diodes" deviceset="DO41" device=".2" value="1N4002"/>
 <part name="IN2" library="supply pins" deviceset="IN" device=""/>
 <part name="OUT2" library="supply pins" deviceset="OUT" device=""/>
-<part name="POT2" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kA"/>
+<part name="GAIN" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kA"/>
 <part name="POT4" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kA"/>
 <part name="C2" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
 <part name="J1" library="pedals-jacks" deviceset="POWER_JACK" device=""/>
@@ -2916,7 +2916,7 @@ Marquardt</description>
 <part name="D5" library="pedals-diodes" deviceset="DO35" device=".2" value="1N914"/>
 <part name="GND17" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND15" library="gm-supply" deviceset="GND" device=""/>
-<part name="POT3" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kA"/>
+<part name="TONE" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kA"/>
 <part name="R10" library="pedals-resistors" deviceset="R_" device=".3B" value="1.5k"/>
 <part name="C11" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="3.3n"/>
 <part name="GND18" library="gm-supply" deviceset="GND" device=""/>
@@ -2929,7 +2929,7 @@ Marquardt</description>
 <part name="GND20" library="gm-supply" deviceset="GND" device=""/>
 <part name="C13" library="pedals-capacitors-elec" deviceset="050" device="0" value="1u"/>
 <part name="GND21" library="gm-supply" deviceset="GND" device=""/>
-<part name="POT1" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="1kB"/>
+<part name="SWEEP" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="1kB"/>
 <part name="SW1" library="pedals-switches" deviceset="SPDT" device=""/>
 <part name="D3" library="pedals-diodes" deviceset="LED" device=""/>
 <part name="D2" library="pedals-diodes" deviceset="LED" device=""/>
@@ -2948,7 +2948,7 @@ Marquardt</description>
 <instance part="D1" gate="G$1" x="7.62" y="91.44" rot="R90"/>
 <instance part="IN2" gate="G$1" x="40.64" y="55.88"/>
 <instance part="OUT2" gate="G$1" x="251.46" y="38.1"/>
-<instance part="POT2" gate="G$1" x="99.06" y="15.24" rot="MR270"/>
+<instance part="GAIN" gate="G$1" x="99.06" y="15.24" rot="MR270"/>
 <instance part="POT4" gate="G$1" x="241.3" y="38.1"/>
 <instance part="C2" gate="1" x="35.56" y="91.44" rot="R270"/>
 <instance part="J1" gate="G$1" x="-25.4" y="101.6" rot="R270"/>
@@ -3005,7 +3005,7 @@ Marquardt</description>
 <instance part="D5" gate="G$1" x="157.48" y="25.4" rot="R270"/>
 <instance part="GND17" gate="GND" x="165.1" y="15.24"/>
 <instance part="GND15" gate="GND" x="144.78" y="27.94"/>
-<instance part="POT3" gate="G$1" x="175.26" y="53.34" rot="R90"/>
+<instance part="TONE" gate="G$1" x="175.26" y="53.34" rot="R90"/>
 <instance part="R10" gate="G$1" x="190.5" y="53.34"/>
 <instance part="C11" gate="G$1" x="198.12" y="44.45" rot="R90"/>
 <instance part="GND18" gate="GND" x="198.12" y="27.94"/>
@@ -3018,7 +3018,7 @@ Marquardt</description>
 <instance part="GND20" gate="GND" x="220.98" y="27.94"/>
 <instance part="C13" gate="1" x="228.6" y="48.26"/>
 <instance part="GND21" gate="GND" x="241.3" y="27.94"/>
-<instance part="POT1" gate="G$1" x="66.04" y="15.24" rot="MR270"/>
+<instance part="SWEEP" gate="G$1" x="66.04" y="15.24" rot="MR270"/>
 <instance part="SW1" gate="1" x="162.56" y="43.18" rot="R180"/>
 <instance part="D3" gate="G$1" x="147.32" y="38.1" rot="R90"/>
 <instance part="D2" gate="G$1" x="142.24" y="40.64" rot="R270"/>
@@ -3319,7 +3319,7 @@ Marquardt</description>
 <pinref part="C10" gate="1" pin="+"/>
 <wire x1="116.84" y1="53.34" x2="119.38" y2="53.34" width="0.1524" layer="91"/>
 <junction x="116.84" y="53.34"/>
-<pinref part="POT2" gate="G$1" pin="1"/>
+<pinref part="GAIN" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="15.24" x2="105.41" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3340,8 +3340,8 @@ Marquardt</description>
 <net name="N$12" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="POT3" gate="G$1" pin="3"/>
-<pinref part="POT3" gate="G$1" pin="2"/>
+<pinref part="TONE" gate="G$1" pin="3"/>
+<pinref part="TONE" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="53.34" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="53.34" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="53.34" x2="167.64" y2="53.34" width="0.1524" layer="91"/>
@@ -3368,7 +3368,7 @@ Marquardt</description>
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="181.61" y1="53.34" x2="185.42" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="POT3" gate="G$1" pin="1"/>
+<pinref part="TONE" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -3414,7 +3414,7 @@ Marquardt</description>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="POT2" gate="G$1" pin="2"/>
+<pinref part="GAIN" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="10.16" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="7.62" x2="91.44" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="-IN"/>
@@ -3430,7 +3430,7 @@ Marquardt</description>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="22.86" x2="86.36" y2="22.86" width="0.1524" layer="91"/>
 <junction x="86.36" y="22.86"/>
-<pinref part="POT2" gate="G$1" pin="3"/>
+<pinref part="GAIN" gate="G$1" pin="3"/>
 <wire x1="86.36" y1="15.24" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="15.24" x2="92.71" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="7.62" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
@@ -3441,19 +3441,19 @@ Marquardt</description>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="POT1" gate="G$1" pin="1"/>
+<pinref part="SWEEP" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="15.24" x2="72.39" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="POT1" gate="G$1" pin="2"/>
+<pinref part="SWEEP" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="10.16" x2="66.04" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="7.62" x2="58.42" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="7.62" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="C3" gate="1" pin="+"/>
 <wire x1="50.8" y1="15.24" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="POT1" gate="G$1" pin="3"/>
+<pinref part="SWEEP" gate="G$1" pin="3"/>
 <wire x1="58.42" y1="15.24" x2="59.69" y2="15.24" width="0.1524" layer="91"/>
 <junction x="58.42" y="15.24"/>
 </segment>

@@ -635,19 +635,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <pad name="C" x="-1.27" y="0" drill="1" diameter="2" shape="square"/>
 <text x="0" y="1.905" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
-<package name="DO41-3">
-<description>&lt;b&gt;DO-41 0.3" pad spacing&lt;/b&gt;</description>
-<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
-<rectangle x1="-2.413" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
-<rectangle x1="2.032" y1="-0.381" x2="2.413" y2="0.381" layer="21"/>
-<pad name="A" x="3.81" y="0" drill="1" diameter="2"/>
-<pad name="C" x="-3.81" y="0" drill="1" diameter="2" shape="square"/>
-<text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
-</package>
 <package name="DO41-4">
 <description>&lt;b&gt;DO-41 0.4" pad spacing&lt;/b&gt;</description>
 <wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
@@ -812,14 +799,27 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <wire x1="1.429734375" y1="-0.8911125" x2="-0.9652" y2="-1.3716" width="0.127" layer="21" curve="-90"/>
 <wire x1="-0.9652" y1="-1.3716" x2="1.42974375" y2="0.90490625" width="0.127" layer="21" curve="-204.158299" cap="flat"/>
 <circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
-<pad name="P$1" x="1.27" y="0" drill="0.5" diameter="1.3"/>
-<pad name="ANODE" x="-1.27" y="0" drill="0.5" diameter="1.3" shape="square"/>
+<pad name="P$1" x="1.27" y="0" drill="0.8" diameter="1.5"/>
+<pad name="ANODE" x="-1.27" y="0" drill="0.8" diameter="1.5" shape="square"/>
 <wire x1="1.429734375" y1="-0.8911125" x2="-0.9652" y2="-1.3716" width="0.127" layer="21" curve="-90"/>
 <wire x1="-0.9652" y1="-1.3716" x2="1.42974375" y2="0.90490625" width="0.127" layer="21" curve="-204.158299" cap="flat"/>
 <wire x1="1.429734375" y1="-0.8911125" x2="1.42974375" y2="0.90490625" width="0.127" layer="21"/>
 <wire x1="1.3462" y1="-0.9906" x2="1.3462" y2="1.016" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
 <text x="0" y="-2.159" size="0.8128" layer="25" align="center">&gt;NAME</text>
+</package>
+<package name="DO41-3">
+<description>&lt;b&gt;DO-41 0.3" pad spacing&lt;/b&gt;</description>
+<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
+<rectangle x1="-2.413" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
+<rectangle x1="2.032" y1="-0.381" x2="2.413" y2="0.381" layer="21"/>
+<pad name="A" x="3.81" y="0" drill="0.7" diameter="1.4"/>
+<pad name="C" x="-3.81" y="0" drill="0.7" diameter="1.4" shape="square"/>
+<text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -1019,8 +1019,8 @@ Diodes:  1N914</description>
 <circle x="0" y="0" radius="2.5" width="0.1524" layer="21"/>
 <wire x1="-1.143" y1="1.6764" x2="-1.143" y2="1.0414" width="0.1524" layer="21"/>
 <wire x1="-0.8128" y1="1.3716" x2="-1.4732" y2="1.3716" width="0.1524" layer="21"/>
-<pad name="+" x="-1.27" y="0" drill="0.4" diameter="1" shape="square"/>
-<pad name="-" x="1.27" y="0" drill="0.4" diameter="1"/>
+<pad name="+" x="-1.27" y="0" drill="0.5" diameter="1.2" shape="square"/>
+<pad name="-" x="1.27" y="0" drill="0.5" diameter="1.2"/>
 <text x="0" y="-1.778" size="0.8128" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -1544,8 +1544,8 @@ spacing: 6 holes
 <wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-3.81" y1="1.905" x2="-3.225" y2="2.49" width="0.1524" layer="21" curve="-90"/>
 <wire x1="-3.225" y1="2.49" x2="-2.948" y2="2.49" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.5" diameter="1.1"/>
-<pad name="2" x="2.54" y="0" drill="0.5" diameter="1.1"/>
+<pad name="1" x="-2.54" y="0" drill="0.7" diameter="1.4"/>
+<pad name="2" x="2.54" y="0" drill="0.7" diameter="1.4"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -2455,27 +2455,6 @@ Source: 3M</description>
 </library>
 <library name="pedals-integrated circuits">
 <packages>
-<package name="SO08">
-<description>&lt;b&gt;Small Outline Package 8&lt;/b&gt;&lt;br&gt;
-NS Package M08A</description>
-<wire x1="-2.286" y1="1.27" x2="2.286" y2="1.27" width="0.127" layer="21"/>
-<wire x1="2.286" y1="1.27" x2="2.286" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="2.286" y1="-1.27" x2="-2.286" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-2.286" y1="-1.27" x2="-2.286" y2="-0.254" width="0.127" layer="21"/>
-<wire x1="-2.286" y1="-0.254" x2="-1.778" y2="-0.254" width="0.127" layer="21"/>
-<wire x1="-1.778" y1="-0.254" x2="-1.778" y2="0.254" width="0.127" layer="21"/>
-<wire x1="-1.778" y1="0.254" x2="-2.286" y2="0.254" width="0.127" layer="21"/>
-<wire x1="-2.286" y1="0.254" x2="-2.286" y2="1.27" width="0.127" layer="21"/>
-<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="0" y="0" size="1.016" layer="25" ratio="12" align="center">&gt;NAME</text>
-</package>
 <package name="DIL08">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
@@ -2484,15 +2463,45 @@ NS Package M08A</description>
 <wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.5" diameter="1.2" shape="square" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<text x="0" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="SO08">
+<description>&lt;b&gt;Small Outline Package 8&lt;/b&gt;&lt;br&gt;
+NS Package M08A</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 </package>
 </packages>
 <symbols>

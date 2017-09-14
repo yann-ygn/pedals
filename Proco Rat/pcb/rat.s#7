@@ -2867,7 +2867,7 @@ Marquardt</description>
 <part name="IN2" library="supply pins" deviceset="IN" device=""/>
 <part name="OUT2" library="supply pins" deviceset="OUT" device=""/>
 <part name="GAIN" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kA"/>
-<part name="POT4" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kA"/>
+<part name="VOL" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kA"/>
 <part name="C2" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
 <part name="J1" library="pedals-jacks" deviceset="POWER_JACK" device=""/>
 <part name="GND3" library="gm-supply" deviceset="GND" device=""/>
@@ -2949,7 +2949,7 @@ Marquardt</description>
 <instance part="IN2" gate="G$1" x="40.64" y="55.88"/>
 <instance part="OUT2" gate="G$1" x="251.46" y="38.1"/>
 <instance part="GAIN" gate="G$1" x="99.06" y="15.24" rot="MR270"/>
-<instance part="POT4" gate="G$1" x="241.3" y="38.1"/>
+<instance part="VOL" gate="G$1" x="241.3" y="38.1"/>
 <instance part="C2" gate="1" x="35.56" y="91.44" rot="R270"/>
 <instance part="J1" gate="G$1" x="-25.4" y="101.6" rot="R270"/>
 <instance part="GND3" gate="GND" x="5.08" y="45.72"/>
@@ -3121,7 +3121,7 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="GND21" gate="GND" pin="GND"/>
-<pinref part="POT4" gate="G$1" pin="1"/>
+<pinref part="VOL" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="30.48" x2="241.3" y2="31.75" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -3165,7 +3165,7 @@ Marquardt</description>
 <wire x1="-10.16" y1="53.34" x2="-15.24" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="POT4" gate="G$1" pin="2"/>
+<pinref part="VOL" gate="G$1" pin="2"/>
 <pinref part="OUT2" gate="G$1" pin="OUT"/>
 <wire x1="246.38" y1="38.1" x2="248.92" y2="38.1" width="0.1524" layer="91"/>
 </segment>
@@ -3408,7 +3408,7 @@ Marquardt</description>
 <segment>
 <pinref part="C13" gate="1" pin="-"/>
 <wire x1="233.68" y1="48.26" x2="241.3" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="POT4" gate="G$1" pin="3"/>
+<pinref part="VOL" gate="G$1" pin="3"/>
 <wire x1="241.3" y1="48.26" x2="241.3" y2="44.45" width="0.1524" layer="91"/>
 </segment>
 </net>

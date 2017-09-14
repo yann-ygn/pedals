@@ -1499,9 +1499,7 @@ spacing: 6 holes
 Source: 3M</description>
 <wire x1="-8.73" y1="4.2" x2="8.73" y2="4.2" width="0.2032" layer="21"/>
 <wire x1="8.73" y1="4.2" x2="8.73" y2="-4.2" width="0.2032" layer="21"/>
-<wire x1="8.73" y1="-4.2" x2="8.269" y2="-4.2" width="0.2032" layer="21"/>
-<wire x1="8.269" y1="-4.2" x2="5.938" y2="-4.2" width="0.2032" layer="21"/>
-<wire x1="5.938" y1="-4.2" x2="1.883" y2="-4.2" width="0.2032" layer="21"/>
+<wire x1="8.73" y1="-4.2" x2="1.883" y2="-4.2" width="0.2032" layer="21"/>
 <wire x1="1.883" y1="-4.2" x2="1.883" y2="-3.275" width="0.2032" layer="21"/>
 <wire x1="1.883" y1="-3.275" x2="1.883" y2="-2.65" width="0.2032" layer="21"/>
 <wire x1="1.883" y1="-2.65" x2="-1.883" y2="-2.65" width="0.2032" layer="21"/>
@@ -1523,8 +1521,6 @@ Source: 3M</description>
 <pad name="6" x="1.27" y="1.27" drill="0.7" diameter="1.4"/>
 <pad name="7" x="3.81" y="-1.27" drill="0.7" diameter="1.4"/>
 <pad name="8" x="3.81" y="1.27" drill="0.7" diameter="1.4"/>
-<text x="-10.16" y="4.572" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="4.572" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="PAK100/2500-5-10">
 <description>&lt;b&gt;3M (TM) Pak 100 4-Wall Header&lt;/b&gt; Right Angle&lt;p&gt;
@@ -2623,13 +2619,11 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="2.25" y1="4.65" x2="2.25" y2="-4.65" width="0.254" layer="21"/>
 <wire x1="2.25" y1="-4.65" x2="-2.25" y2="-4.65" width="0.254" layer="21"/>
 <wire x1="-2.25" y1="-4.65" x2="-2.25" y2="4.65" width="0.254" layer="21"/>
-<circle x="0" y="-2.55" radius="1.1011" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="-2.54" drill="1" diameter="2"/>
-<pad name="2" x="0" y="0" drill="1" diameter="2"/>
-<pad name="3" x="0" y="2.54" drill="1" diameter="2"/>
-<text x="-2.65" y="-4.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<pad name="1" x="0" y="-2.54" drill="0.5" diameter="1.2" shape="square"/>
+<pad name="2" x="0" y="0" drill="0.5" diameter="1.2"/>
+<pad name="3" x="0" y="2.54" drill="0.5" diameter="1.2"/>
+<text x="-0.745" y="-3.23" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="3.95" y="-4.5" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.15" y1="-3.6" x2="0.15" y2="-1.5" layer="51"/>
 </package>
 <package name="RTRIM3296X">
 <description>&lt;b&gt;Trimm resistor&lt;/b&gt; BOURNS&lt;p&gt;

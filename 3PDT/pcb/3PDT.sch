@@ -976,6 +976,43 @@ spacing: 6 holes
 </deviceset>
 </devicesets>
 </library>
+<library name="pedals-supply">
+<description>&lt;b&gt;Supply&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;input, output, ground, and power supply.  
+&lt;li&gt;these are used on a schematic for placeholders and on a board for pads for off-board components like jacks.
+&lt;/ul&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;Ground&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;use this to hook up ground connections throughout a schematic instead of running wire&lt;/li&gt;
+&lt;li&gt;automatically labels the net "GND"&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="GND" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -990,6 +1027,8 @@ spacing: 6 holes
 <part name="SW1" library="pedals-switches" deviceset="3PDT" device=""/>
 <part name="R1" library="pedals-resistors" deviceset="R_" device=".3B"/>
 <part name="D1" library="pedals-diodes" deviceset="LED" device=""/>
+<part name="GND1" library="pedals-supply" deviceset="GND" device=""/>
+<part name="GND2" library="pedals-supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1009,6 +1048,8 @@ spacing: 6 holes
 <instance part="SW1" gate="C" x="12.7" y="91.44" rot="R270"/>
 <instance part="R1" gate="G$1" x="33.02" y="88.9"/>
 <instance part="D1" gate="G$1" x="33.02" y="83.82"/>
+<instance part="GND1" gate="GND" x="-12.7" y="78.74" rot="R90"/>
+<instance part="GND2" gate="GND" x="2.54" y="81.28" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1065,15 +1106,6 @@ spacing: 6 holes
 <wire x1="20.32" y1="73.66" x2="17.78" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="X1" gate="-6" pin="KL"/>
-<wire x1="-17.78" y1="78.74" x2="0" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="0" y1="78.74" x2="0" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="B" pin="2"/>
-<wire x1="0" y1="81.28" x2="7.62" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="X1" gate="-4" pin="KL"/>
@@ -1099,6 +1131,18 @@ spacing: 6 holes
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="SW1" gate="B" pin="1"/>
 <wire x1="30.48" y1="83.82" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="X1" gate="-6" pin="KL"/>
+<pinref part="GND1" gate="GND" pin="GND"/>
+<wire x1="-17.78" y1="78.74" x2="-15.24" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="GND" pin="GND"/>
+<pinref part="SW1" gate="B" pin="2"/>
+<wire x1="5.08" y1="81.28" x2="7.62" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

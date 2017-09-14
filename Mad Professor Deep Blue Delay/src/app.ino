@@ -3,8 +3,13 @@
 
 //////
 #define MP41_CS 53
-#define LED 41
-#define SWITCH 40
+#define LED_TAP 41
+#define LED_DIV_FULL 42
+#define LED_DIV_HALF 43
+#define LED_DIV_QUARTER 44
+#define LED_DIV_THIRD 45 
+#define SWITCH_TAP 40
+#define SWITCH_DIV 46
 #define ANALOGPOT 8
 
 #define CALIN 1
@@ -33,6 +38,10 @@ long int firstTapTime;
 long int lastTapTime;
 int tapState;
 int lastTapState;
+int divState;
+int lastDivState;
+int divValue = 1;
+int isDivEnabled = 0;
 
 long int nextBlinkTime;
 long int nextBlinkSync;
@@ -46,8 +55,10 @@ void tapReset();
 void digitalPotWrite(int value);
 long int getInterval();
 int tapButtonPressed();
+void checkDivButtonPress();
+void lightDivLED();
 void firstPress();
-void blinkLed(long int blinkDelay);
+void blinkTapLED(long int blinkDelay);
 int analogPotTurned();
 void calibration();
 
@@ -55,8 +66,13 @@ void calibration();
 void setup()
 {
   pinMode(MP41_CS, OUTPUT);
-  pinMode(LED, OUTPUT);
-  pinMode(SWITCH, INPUT_PULLUP);
+  pinMode(LED_TAP, OUTPUT);
+  pinMode(LED_DIV_FULL, OUTPUT);
+  pinMode(LED_DIV_HALF, OUTPUT);
+  pinMode(LED_DIV_QUARTER, OUTPUT);
+  pinMode(LED_DIV_THIRD, OUTPUT);
+  pinMode(SWITCH_TAP, INPUT_PULLUP);
+  pinMode(SWITCH_DIV, INPUT_PULLUP);
   pinMode(ANALOGPOT, INPUT);
   pinMode(CALIN, INPUT);
   pinMode(CALOUT, OUTPUT);
@@ -67,7 +83,7 @@ void setup()
   SPI.begin();
   Serial.begin(9600);
   tapReset();
-  digitalWrite(CALOUT, HIGH);
+
   //calibration();
 }
 
@@ -76,14 +92,22 @@ void loop()
   now = micros();
   checkTapTimeout();
   
+  checkDivButtonPress();
+
   if(timesTapped >= MINTAPS)
   {
     interval = getInterval();
+
+    isDivEnabled = 1;
+    divValue = 1;
   }
   
   if(analogPotTurned())
   {
     interval = map(analogPotCurrVal, 0, 1023, minInterval, maxInterval);
+
+    isDivEnabled = 0;
+    divValue = 1;
   }
   
   if (tapButtonPressed())
@@ -97,12 +121,13 @@ void loop()
   
   digitalPotWrite(mappedInterval);
   
-  blinkLed(interval);
+  blinkTapLED(interval);
+  lightDivLED();
   
   //Serial.println(analogPotCurrVal);
   //Serial.println(mappedInterval);
   //Serial.println(timesTapped);
-  //Serial.println(interval); 
+  //Serial.println(interval);
 }
 
 void checkTapTimeout()
@@ -158,7 +183,7 @@ long int getInterval()
 
 int tapButtonPressed()
 {
-  tapState = digitalRead(SWITCH);
+  tapState = digitalRead(SWITCH_TAP);
   if(tapState == LOW && now - lastTapTime > 30000 && tapState != lastTapState )
   {
     lastTapState = tapState;
@@ -178,7 +203,7 @@ void firstPress()
   timesTapped++;
 }
 
-void blinkLed(long int blinkDelay)
+void blinkTapLED(long int blinkDelay)
 {
   if(now >= nextBlinkSync)
   {
@@ -188,20 +213,20 @@ void blinkLed(long int blinkDelay)
 
   if(now >= nextBlinkTime)
   {
-    digitalWrite(LED, HIGH);
+    digitalWrite(LED_TAP, HIGH);
     nextBlinkTime = blinkDelay + now;
   }
 
   if(now >= nextBlinkTime - blinkDelay/2)
   {
-    digitalWrite(LED, LOW);
+    digitalWrite(LED_TAP, LOW);
   }
 }
 
 int analogPotTurned()
 {
   analogPotCurrVal = analogRead(ANALOGPOT);
-  if(analogPotCurrVal > analogPotLastVal + 3 || analogPotCurrVal < analogPotLastVal - 3 )
+  if(analogPotCurrVal > analogPotLastVal + 3 || analogPotCurrVal < analogPotLastVal - 3)
   {
     analogPotLastVal = analogPotCurrVal;
 
@@ -251,4 +276,52 @@ void calibration()
   Serial.println(eepromReadLong(4));
   Serial.println(maxDiff);
   Serial.println(eepromReadLong(8));*/
+}
+
+void checkDivButtonPress()
+{
+  divState = digitalRead(SWITCH_DIV);
+
+  if(divState == LOW && now - lastDivState > 30000 && divState != lastDivState && isDivEnabled == 1)
+  {
+    divValue++;
+    if(divValue > 4)
+    {
+      divValue = 1;
+    }
+  }
+  lastDivState = divState;
+}
+
+void lightDivLED()
+{
+  if(isDivEnabled == 1)
+  {
+    switch (divValue)
+    {
+      case 1:
+        digitalWrite(LED_DIV_THIRD, LOW);
+        digitalWrite(LED_DIV_FULL, HIGH);
+        break;
+      case 2:
+        digitalWrite(LED_DIV_FULL, LOW);
+        digitalWrite(LED_DIV_HALF, HIGH);
+        break;
+      case 3:
+        digitalWrite(LED_DIV_HALF, LOW);
+        digitalWrite(LED_DIV_QUARTER, HIGH);
+        break;
+      case 4:
+        digitalWrite(LED_DIV_QUARTER, LOW);
+        digitalWrite(LED_DIV_THIRD, HIGH);
+        break;
+    }
+  }
+  else
+  {
+    digitalWrite(LED_DIV_FULL, LOW);
+    digitalWrite(LED_DIV_HALF, LOW);
+    digitalWrite(LED_DIV_QUARTER, LOW);
+    digitalWrite(LED_DIV_THIRD, LOW);
+  }  
 }

@@ -1686,14 +1686,14 @@ NS Package M08A</description>
 <wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="1" diameter="2" shape="square" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="1" diameter="2" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="1" diameter="2" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="1" diameter="2" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="1" diameter="2" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="1" diameter="2" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="1" diameter="2" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="1" diameter="2" rot="R90"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.5" diameter="1.2" shape="square" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
 <text x="0" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -2623,13 +2623,11 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="2.25" y1="4.65" x2="2.25" y2="-4.65" width="0.254" layer="21"/>
 <wire x1="2.25" y1="-4.65" x2="-2.25" y2="-4.65" width="0.254" layer="21"/>
 <wire x1="-2.25" y1="-4.65" x2="-2.25" y2="4.65" width="0.254" layer="21"/>
-<circle x="0" y="-2.55" radius="1.1011" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="-2.54" drill="1" diameter="2"/>
-<pad name="2" x="0" y="0" drill="1" diameter="2"/>
-<pad name="3" x="0" y="2.54" drill="1" diameter="2"/>
-<text x="-2.65" y="-4.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<pad name="1" x="0" y="-2.54" drill="0.5" diameter="1.2" shape="square"/>
+<pad name="2" x="0" y="0" drill="0.5" diameter="1.2"/>
+<pad name="3" x="0" y="2.54" drill="0.5" diameter="1.2"/>
+<text x="-0.745" y="-3.23" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="3.95" y="-4.5" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.15" y1="-3.6" x2="0.15" y2="-1.5" layer="51"/>
 </package>
 <package name="RTRIM3296X">
 <description>&lt;b&gt;Trimm resistor&lt;/b&gt; BOURNS&lt;p&gt;

@@ -113,8 +113,6 @@ Source: 3M</description>
 <pad name="6" x="1.27" y="1.27" drill="0.7" diameter="1.4"/>
 <pad name="7" x="3.81" y="-1.27" drill="0.7" diameter="1.4"/>
 <pad name="8" x="3.81" y="1.27" drill="0.7" diameter="1.4"/>
-<text x="-11.43" y="-0.508" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="4.572" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="PAK100/2500-5-10">
 <description>&lt;b&gt;3M (TM) Pak 100 4-Wall Header&lt;/b&gt; Right Angle&lt;p&gt;

@@ -635,19 +635,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <pad name="C" x="-1.27" y="0" drill="1" diameter="2" shape="square"/>
 <text x="0" y="1.905" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
-<package name="DO41-3">
-<description>&lt;b&gt;DO-41 0.3" pad spacing&lt;/b&gt;</description>
-<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
-<rectangle x1="-2.413" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
-<rectangle x1="2.032" y1="-0.381" x2="2.413" y2="0.381" layer="21"/>
-<pad name="A" x="3.81" y="0" drill="1" diameter="2"/>
-<pad name="C" x="-3.81" y="0" drill="1" diameter="2" shape="square"/>
-<text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
-</package>
 <package name="DO41-4">
 <description>&lt;b&gt;DO-41 0.4" pad spacing&lt;/b&gt;</description>
 <wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
@@ -659,6 +646,19 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <rectangle x1="-3.937" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
 <pad name="A" x="5.08" y="0" drill="1" diameter="2"/>
 <pad name="C" x="-5.08" y="0" drill="1" diameter="2" shape="square"/>
+<text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
+</package>
+<package name="DO41-3">
+<description>&lt;b&gt;DO-41 0.3" pad spacing&lt;/b&gt;</description>
+<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
+<rectangle x1="-2.413" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
+<rectangle x1="2.032" y1="-0.381" x2="2.413" y2="0.381" layer="21"/>
+<pad name="A" x="3.81" y="0" drill="0.7" diameter="1.4"/>
+<pad name="C" x="-3.81" y="0" drill="0.7" diameter="1.4" shape="square"/>
 <text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -740,8 +740,8 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <circle x="0" y="0" radius="2.5" width="0.1524" layer="21"/>
 <wire x1="-1.143" y1="1.6764" x2="-1.143" y2="1.0414" width="0.1524" layer="21"/>
 <wire x1="-0.8128" y1="1.3716" x2="-1.4732" y2="1.3716" width="0.1524" layer="21"/>
-<pad name="+" x="-1.27" y="0" drill="0.4" diameter="1" shape="square"/>
-<pad name="-" x="1.27" y="0" drill="0.4" diameter="1"/>
+<pad name="+" x="-1.27" y="0" drill="0.5" diameter="1.2" shape="square"/>
+<pad name="-" x="1.27" y="0" drill="0.5" diameter="1.2"/>
 <text x="0" y="-1.778" size="0.8128" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 <package name="050_020">
@@ -749,8 +749,8 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <circle x="0" y="0" radius="2.5" width="0.1524" layer="21"/>
 <wire x1="-0.983615625" y1="1.57988125" x2="-0.983615625" y2="0.94488125" width="0.1524" layer="21"/>
 <wire x1="-0.674878125" y1="1.254759375" x2="-1.335278125" y2="1.254759375" width="0.1524" layer="21"/>
-<pad name="+" x="-0.998221875" y="0.001271875" drill="1" diameter="1.524" shape="square"/>
-<pad name="-" x="0.99821875" y="0.000634375" drill="1" diameter="1.524"/>
+<pad name="+" x="-0.998221875" y="0.001271875" drill="0.5" diameter="1.1" shape="square"/>
+<pad name="-" x="0.99821875" y="0.000634375" drill="0.5" diameter="1.1"/>
 <text x="-0.46863125" y="-1.36651875" size="1.016" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>

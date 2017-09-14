@@ -2860,8 +2860,8 @@ Marquardt</description>
 </class>
 </classes>
 <parts>
-<part name="J2" library="pedals-jacks" deviceset="STEREO" device="NMJ"/>
-<part name="J3" library="pedals-jacks" deviceset="STEREO" device="NMJ"/>
+<part name="OUTPUT" library="pedals-jacks" deviceset="STEREO" device="NMJ"/>
+<part name="INPUT" library="pedals-jacks" deviceset="STEREO" device="NMJ"/>
 <part name="GND1" library="gm-supply" deviceset="GND" device=""/>
 <part name="D1" library="pedals-diodes" deviceset="DO41" device=".2" value="1N4002"/>
 <part name="IN2" library="supply pins" deviceset="IN" device=""/>
@@ -2942,8 +2942,8 @@ Marquardt</description>
 <plain>
 </plain>
 <instances>
-<instance part="J2" gate="G$1" x="20.32" y="55.88" rot="R180"/>
-<instance part="J3" gate="G$1" x="20.32" y="38.1" rot="R180"/>
+<instance part="OUTPUT" gate="G$1" x="20.32" y="55.88" rot="R180"/>
+<instance part="INPUT" gate="G$1" x="20.32" y="38.1" rot="R180"/>
 <instance part="GND1" gate="GND" x="-17.78" y="93.98"/>
 <instance part="D1" gate="G$1" x="7.62" y="91.44" rot="R90"/>
 <instance part="IN2" gate="G$1" x="40.64" y="55.88"/>
@@ -3031,13 +3031,13 @@ Marquardt</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="S"/>
+<pinref part="OUTPUT" gate="G$1" pin="S"/>
 <wire x1="7.62" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="GND" pin="GND"/>
 <wire x1="5.08" y1="50.8" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="S"/>
+<pinref part="INPUT" gate="G$1" pin="S"/>
 <wire x1="7.62" y1="33.02" x2="5.08" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="GND" pin="GND"/>
 <wire x1="5.08" y1="33.02" x2="5.08" y2="30.48" width="0.1524" layer="91"/>
@@ -3188,7 +3188,7 @@ Marquardt</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="T"/>
+<pinref part="OUTPUT" gate="G$1" pin="T"/>
 <pinref part="X1" gate="-1" pin="KL"/>
 <wire x1="7.62" y1="55.88" x2="-15.24" y2="55.88" width="0.1524" layer="91"/>
 </segment>
@@ -3198,7 +3198,7 @@ Marquardt</description>
 <pinref part="X1" gate="-7" pin="KL"/>
 <wire x1="-15.24" y1="40.64" x2="-2.54" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="40.64" x2="-2.54" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="T"/>
+<pinref part="INPUT" gate="G$1" pin="T"/>
 <wire x1="-2.54" y1="38.1" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
