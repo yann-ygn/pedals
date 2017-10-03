@@ -154,7 +154,6 @@
 </layers>
 <board>
 <plain>
-<wire x1="26.035" y1="55.245" x2="26.035" y2="49.53" width="0" layer="41"/>
 </plain>
 <libraries>
 <library name="pedals-jacks">

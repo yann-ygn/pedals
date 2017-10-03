@@ -247,8 +247,8 @@
 <wire x1="1.429734375" y1="-0.8911125" x2="-0.9652" y2="-1.3716" width="0.127" layer="21" curve="-90"/>
 <wire x1="-0.9652" y1="-1.3716" x2="1.42974375" y2="0.90490625" width="0.127" layer="21" curve="-204.158299" cap="flat"/>
 <circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
-<pad name="P$1" x="1.27" y="0" drill="0.5" diameter="1.3"/>
-<pad name="ANODE" x="-1.27" y="0" drill="0.5" diameter="1.3" shape="square"/>
+<pad name="P$1" x="1.27" y="0" drill="0.8" diameter="1.5"/>
+<pad name="ANODE" x="-1.27" y="0" drill="0.8" diameter="1.5" shape="square"/>
 <wire x1="1.429734375" y1="-0.8911125" x2="-0.9652" y2="-1.3716" width="0.127" layer="21" curve="-90"/>
 <wire x1="-0.9652" y1="-1.3716" x2="1.42974375" y2="0.90490625" width="0.127" layer="21" curve="-204.158299" cap="flat"/>
 <wire x1="1.429734375" y1="-0.8911125" x2="1.42974375" y2="0.90490625" width="0.127" layer="21"/>
@@ -430,15 +430,16 @@ Source: 3M</description>
 <wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.5" diameter="1.2" shape="square" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<text x="0" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 </library>

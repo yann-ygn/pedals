@@ -1173,8 +1173,8 @@ spacing: 6 holes
 <wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-3.81" y1="1.905" x2="-3.225" y2="2.49" width="0.1524" layer="21" curve="-90"/>
 <wire x1="-3.225" y1="2.49" x2="-2.948" y2="2.49" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.5" diameter="1.1"/>
-<pad name="2" x="2.54" y="0" drill="0.5" diameter="1.1"/>
+<pad name="1" x="-2.54" y="0" drill="0.7" diameter="1.4"/>
+<pad name="2" x="2.54" y="0" drill="0.7" diameter="1.4"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="AXIAL">
@@ -1335,8 +1335,8 @@ spacing: 6 holes
 <circle x="0" y="0" radius="2.5" width="0.1524" layer="21"/>
 <wire x1="-1.143" y1="1.6764" x2="-1.143" y2="1.0414" width="0.1524" layer="21"/>
 <wire x1="-0.8128" y1="1.3716" x2="-1.4732" y2="1.3716" width="0.1524" layer="21"/>
-<pad name="+" x="-1.27" y="0" drill="0.4" diameter="1" shape="square"/>
-<pad name="-" x="1.27" y="0" drill="0.4" diameter="1"/>
+<pad name="+" x="-1.27" y="0" drill="0.5" diameter="1.2" shape="square"/>
+<pad name="-" x="1.27" y="0" drill="0.5" diameter="1.2"/>
 <text x="0" y="-1.778" size="0.8128" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 <package name="050_020">

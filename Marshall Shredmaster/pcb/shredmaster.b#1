@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -815,8 +815,12 @@ design rules under a new name.</description>
 <contactref element="D1" pad="C"/>
 <contactref element="R1" pad="1"/>
 <contactref element="X1" pad="5"/>
-<wire x1="29.21" y1="45.085" x2="29.7815" y2="62.277" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="45.085" x2="29.21" y2="45.085" width="0" layer="19" extent="1-1"/>
+<wire x1="29.7815" y1="62.277" x2="31.703" y2="62.277" width="0.8128" layer="16"/>
+<wire x1="31.703" y1="62.277" x2="33.02" y2="60.96" width="0.8128" layer="16"/>
+<wire x1="33.02" y1="60.96" x2="33.02" y2="51.435" width="0.8128" layer="16"/>
+<wire x1="33.02" y1="51.435" x2="29.21" y2="47.625" width="0.8128" layer="16"/>
+<wire x1="29.21" y1="47.625" x2="29.21" y2="45.085" width="0.8128" layer="16"/>
+<wire x1="29.21" y1="45.085" x2="31.75" y2="45.085" width="0.8128" layer="16"/>
 <wire x1="28.575" y1="3.81" x2="29.21" y2="45.085" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">

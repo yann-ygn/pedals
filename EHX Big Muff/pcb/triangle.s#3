@@ -667,8 +667,8 @@ spacing: 6 holes
 <wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
 <rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
-<pad name="A" x="2.54" y="0" drill="0.5" diameter="1.2"/>
-<pad name="C" x="-2.54" y="0" drill="0.5" diameter="1.2" shape="square"/>
+<pad name="A" x="2.54" y="0" drill="0.7" diameter="1.4"/>
+<pad name="C" x="-2.54" y="0" drill="0.7" diameter="1.4" shape="square"/>
 <text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 <package name="DO41-3">
@@ -812,8 +812,8 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <wire x1="3.583" y1="1.24" x2="3.583" y2="-1.24" width="0.1524" layer="21"/>
 <wire x1="3.583" y1="-1.24" x2="-3.583" y2="-1.24" width="0.1524" layer="21"/>
 <wire x1="-3.583" y1="-1.24" x2="-3.583" y2="1.24" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.4" diameter="1.1"/>
-<pad name="2" x="2.54" y="0" drill="0.4" diameter="1.1"/>
+<pad name="1" x="-2.54" y="0" drill="0.6" diameter="1.3"/>
+<pad name="2" x="2.54" y="0" drill="0.6" diameter="1.3"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="0805">
@@ -853,8 +853,8 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <wire x1="1.27" y1="-1.27" x2="2.54" y2="0" width="0.1524" layer="21" curve="90"/>
 <wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="21" curve="90"/>
 <wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.4" diameter="1"/>
-<pad name="2" x="2.54" y="0" drill="0.4" diameter="1"/>
+<pad name="1" x="-2.54" y="0" drill="0.6" diameter="1.3"/>
+<pad name="2" x="2.54" y="0" drill="0.6" diameter="1.3"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 <package name="050X030_025_3">
@@ -1998,14 +1998,14 @@ Source: 3M</description>
 <wire x1="7.605" y1="-3.275" x2="1.883" y2="-3.275" width="0.2032" layer="21"/>
 <wire x1="-1.883" y1="-3.275" x2="-7.605" y2="-3.275" width="0.2032" layer="21"/>
 <wire x1="-7.605" y1="-3.275" x2="-7.605" y2="3.275" width="0.2032" layer="21"/>
-<pad name="1" x="-3.81" y="-1.27" drill="0.7" diameter="1.4"/>
-<pad name="2" x="-3.81" y="1.27" drill="0.7" diameter="1.4"/>
-<pad name="3" x="-1.27" y="-1.27" drill="0.7" diameter="1.4"/>
-<pad name="4" x="-1.27" y="1.27" drill="0.7" diameter="1.4"/>
-<pad name="5" x="1.27" y="-1.27" drill="0.7" diameter="1.4"/>
-<pad name="6" x="1.27" y="1.27" drill="0.7" diameter="1.4"/>
-<pad name="7" x="3.81" y="-1.27" drill="0.7" diameter="1.4"/>
-<pad name="8" x="3.81" y="1.27" drill="0.7" diameter="1.4"/>
+<pad name="1" x="-3.81" y="-1.27" drill="0.9" diameter="1.6"/>
+<pad name="2" x="-3.81" y="1.27" drill="0.9" diameter="1.6"/>
+<pad name="3" x="-1.27" y="-1.27" drill="0.9" diameter="1.6"/>
+<pad name="4" x="-1.27" y="1.27" drill="0.9" diameter="1.6"/>
+<pad name="5" x="1.27" y="-1.27" drill="0.9" diameter="1.6"/>
+<pad name="6" x="1.27" y="1.27" drill="0.9" diameter="1.6"/>
+<pad name="7" x="3.81" y="-1.27" drill="0.9" diameter="1.6"/>
+<pad name="8" x="3.81" y="1.27" drill="0.9" diameter="1.6"/>
 </package>
 <package name="PAK100/2500-5-10">
 <description>&lt;b&gt;3M (TM) Pak 100 4-Wall Header&lt;/b&gt; Right Angle&lt;p&gt;
@@ -2174,9 +2174,9 @@ Source: 3M</description>
 <wire x1="0" y1="5.715" x2="0" y2="23.495" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-8.89" y1="14.605" x2="8.89" y2="14.605" width="0.127" layer="22" style="shortdash"/>
 <wire x1="-7.62" y1="0.651" x2="7.62" y2="0.651" width="0.127" layer="22" style="shortdash"/>
-<pad name="1" x="5.08" y="-1" drill="0.9" diameter="1.6" shape="square" rot="R180"/>
-<pad name="2" x="0" y="-1" drill="0.9" diameter="1.6" rot="R180"/>
-<pad name="3" x="-5.08" y="-1" drill="0.9" diameter="1.6" rot="R180"/>
+<pad name="1" x="5.08" y="-1" drill="1.1" diameter="1.8" shape="square" rot="R180"/>
+<pad name="2" x="0" y="-1" drill="1.1" diameter="1.8" rot="R180"/>
+<pad name="3" x="-5.08" y="-1" drill="1.1" diameter="1.8" rot="R180"/>
 <text x="0" y="2.667" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 <text x="5.142" y="0.978" size="1.016" layer="21" ratio="12">1</text>
 <text x="0" y="2.667" size="1.27" layer="26" ratio="12" rot="MR0" align="center">&gt;NAME</text>
@@ -2796,7 +2796,7 @@ Source: 3M</description>
 <part name="INPUT" library="pedals-jacks" deviceset="STEREO" device="NMJ"/>
 <part name="GND18" library="gm-supply" deviceset="GND" device=""/>
 <part name="D6" library="pedals-diodes" deviceset="DO41" device=".2" value="1N4002"/>
-<part name="C18" library="pedals-capacitors-elec" deviceset="040" device="0" value="47u"/>
+<part name="C18" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
 <part name="J2" library="pedals-jacks" deviceset="POWER_JACK" device=""/>
 <part name="GND19" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND20" library="gm-supply" deviceset="GND" device=""/>
@@ -2804,8 +2804,8 @@ Source: 3M</description>
 <part name="IN2" library="supply pins" deviceset="IN" device=""/>
 <part name="OUT2" library="supply pins" deviceset="OUT" device=""/>
 <part name="GND21" library="gm-supply" deviceset="GND" device=""/>
-<part name="R24" library="pedals-resistors" deviceset="R_" device=".3B" value="100"/>
-<part name="C19" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="100n"/>
+<part name="R24" library="pedals-resistors" deviceset="R_" device=".3B" value="47"/>
+<part name="C19" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="100n"/>
 <part name="GND22" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND23" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND24" library="gm-supply" deviceset="GND" device=""/>

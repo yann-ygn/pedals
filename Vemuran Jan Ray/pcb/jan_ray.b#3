@@ -731,6 +731,78 @@ design rules under a new name.</description>
 <vertex x="-0.635" y="1.27"/>
 </polygon>
 <contactref element="C3" pad="-"/>
+<via x="57.5945" y="61.595" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="57.5945" y="51.435" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="10.6045" y="71.3105" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="21.3995" y="71.3105" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="30.2895" y="71.3105" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="0.8255" y="51.435" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="10.6045" y="61.595" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="10.6045" y="51.435" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="21.3995" y="51.435" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="30.2895" y="62.23" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="30.2895" y="51.435" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="37.2745" y="71.3105" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="46.7995" y="71.3105" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="37.2745" y="61.595" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="37.2745" y="51.435" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="46.7995" y="61.595" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="46.7995" y="51.435" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="57.5945" y="41.275" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="57.5945" y="31.115" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="57.5945" y="20.955" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="57.5945" y="10.795" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="57.5945" y="2.9845" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="49.53" y="2.9845" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="39.37" y="2.9845" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="29.21" y="2.9845" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="19.05" y="2.9845" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="8.89" y="2.9845" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="0.8255" y="2.9845" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="0.8255" y="61.595" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="0.8255" y="41.275" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="0.8255" y="31.115" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="0.8255" y="20.955" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="0.8255" y="10.795" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="39.37" y="6.1595" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="49.53" y="6.1595" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="39.37" y="9.3345" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="49.53" y="9.3345" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="19.05" y="9.3345" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="21.59" y="9.3345" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="8.89" y="8.6995" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="13.335" y="11.2395" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="13.335" y="13.7795" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="53.7845" y="10.795" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="53.7845" y="20.955" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="53.7845" y="31.115" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="49.3395" y="41.275" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="26.543" y="11.2395" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="29.21" y="11.2395" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="33.655" y="20.1295" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="27.305" y="20.1295" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="31.115" y="31.115" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="27.3685" y="31.115" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="50.165" y="13.7795" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="39.37" y="14.4145" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="16.51" y="19.4945" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="8.3185" y="41.91" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="8.3185" y="44.45" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="14.0335" y="38.735" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="14.6685" y="31.115" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="12.7635" y="27.305" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="3.3655" y="51.435" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="2.921" y="41.275" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="2.921" y="31.115" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="2.921" y="20.955" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="40.64" y="26.2255" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="45.085" y="30.48" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="42.545" y="29.21" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="31.75" y="41.91" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="29.1465" y="41.91" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="19.05" y="15.6845" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="22.86" y="15.0495" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="21.3995" y="61.595" extent="1-16" drill="0.5" diameter="0.85"/>
 </signal>
 <signal name="N$1">
 <contactref element="D1" pad="C"/>
@@ -771,7 +843,11 @@ design rules under a new name.</description>
 <signal name="OUT">
 <contactref element="X1" pad="2"/>
 <contactref element="VOLUME" pad="2"/>
-<wire x1="33.02" y1="5.08" x2="47.625" y2="43.196" width="0" layer="19" extent="1-1"/>
+<wire x1="47.625" y1="43.196" x2="48.879" y2="43.196" width="0.254" layer="1"/>
+<wire x1="48.879" y1="43.196" x2="55.245" y2="36.83" width="0.254" layer="1"/>
+<wire x1="55.245" y1="36.83" x2="55.245" y2="7.62" width="0.254" layer="1"/>
+<wire x1="55.245" y1="7.62" x2="52.705" y2="5.08" width="0.254" layer="1"/>
+<wire x1="52.705" y1="5.08" x2="33.02" y2="5.08" width="0.254" layer="1"/>
 </signal>
 <signal name="IN">
 <contactref element="X1" pad="8"/>
@@ -796,11 +872,11 @@ design rules under a new name.</description>
 <signal name="N$2">
 <contactref element="X1" pad="7"/>
 <contactref element="INPUT" pad="T"/>
-<wire x1="1.905" y1="52.705" x2="1.905" y2="11.43" width="0.254" layer="16"/>
+<wire x1="1.905" y1="51.435" x2="1.905" y2="11.43" width="0.254" layer="16"/>
 <wire x1="1.905" y1="11.43" x2="5.715" y2="7.62" width="0.254" layer="16"/>
 <wire x1="5.715" y1="7.62" x2="25.4" y2="7.62" width="0.254" layer="16"/>
-<wire x1="7.252" y1="54.6735" x2="3.8735" y2="54.6735" width="0.254" layer="16"/>
-<wire x1="3.8735" y1="54.6735" x2="1.905" y2="52.705" width="0.254" layer="16"/>
+<wire x1="7.252" y1="54.6735" x2="5.1435" y2="54.6735" width="0.254" layer="16"/>
+<wire x1="5.1435" y1="54.6735" x2="1.905" y2="51.435" width="0.254" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="C5" pad="1"/>

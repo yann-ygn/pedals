@@ -2468,6 +2468,9 @@ NS Package M08A</description>
 <part name="C20" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="2.2n"/>
 <part name="VB8" library="pedals-supply" deviceset="VB" device=""/>
 <part name="GND14" library="gm-supply" deviceset="GND" device=""/>
+<part name="C21" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="2.2n"/>
+<part name="R19" library="pedals-resistors" deviceset="R_" device=".3B" value="100k"/>
+<part name="GND15" library="gm-supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2479,7 +2482,7 @@ NS Package M08A</description>
 <instance part="GND4" gate="GND" x="-17.78" y="93.98"/>
 <instance part="D1" gate="G$1" x="7.62" y="91.44" rot="R90"/>
 <instance part="IN1" gate="G$1" x="40.64" y="50.8"/>
-<instance part="OUT1" gate="G$1" x="317.5" y="27.94"/>
+<instance part="OUT1" gate="G$1" x="330.2" y="27.94"/>
 <instance part="GAIN" gate="G$1" x="78.74" y="25.4" rot="MR90"/>
 <instance part="VOL" gate="G$1" x="307.34" y="27.94"/>
 <instance part="C1" gate="1" x="25.4" y="91.44" rot="R270"/>
@@ -2567,7 +2570,10 @@ NS Package M08A</description>
 <instance part="R18" gate="G$1" x="289.56" y="27.94"/>
 <instance part="C20" gate="G$1" x="288.29" y="20.32"/>
 <instance part="VB8" gate="G$1" x="279.4" y="45.72"/>
-<instance part="GND14" gate="GND" x="307.34" y="15.24"/>
+<instance part="GND14" gate="GND" x="307.34" y="10.16"/>
+<instance part="C21" gate="G$1" x="318.77" y="27.94"/>
+<instance part="R19" gate="G$1" x="325.12" y="20.32" rot="R90"/>
+<instance part="GND15" gate="GND" x="325.12" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -2648,7 +2654,12 @@ NS Package M08A</description>
 <segment>
 <pinref part="GND14" gate="GND" pin="GND"/>
 <pinref part="VOL" gate="G$1" pin="1"/>
-<wire x1="307.34" y1="17.78" x2="307.34" y2="21.59" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="12.7" x2="307.34" y2="21.59" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="GND15" gate="GND" pin="GND"/>
+<wire x1="325.12" y1="15.24" x2="325.12" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OUT" class="0">
@@ -2658,9 +2669,13 @@ NS Package M08A</description>
 <wire x1="-10.16" y1="53.34" x2="-15.24" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="VOL" gate="G$1" pin="2"/>
+<pinref part="C21" gate="G$1" pin="1"/>
 <pinref part="OUT1" gate="G$1" pin="OUT"/>
-<wire x1="312.42" y1="27.94" x2="314.96" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="27.94" x2="325.12" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="325.12" y1="27.94" x2="327.66" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="27.94" x2="325.12" y2="25.4" width="0.1524" layer="91"/>
+<junction x="325.12" y="27.94"/>
 </segment>
 </net>
 <net name="IN" class="0">
@@ -3104,6 +3119,13 @@ NS Package M08A</description>
 <pinref part="VOL" gate="G$1" pin="3"/>
 <wire x1="299.72" y1="38.1" x2="307.34" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="38.1" x2="307.34" y2="34.29" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="VOL" gate="G$1" pin="2"/>
+<pinref part="C21" gate="G$1" pin="2"/>
+<wire x1="312.42" y1="27.94" x2="314.96" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -644,8 +644,8 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
 <rectangle x1="-2.413" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
 <rectangle x1="2.032" y1="-0.381" x2="2.413" y2="0.381" layer="21"/>
-<pad name="A" x="3.81" y="0" drill="1" diameter="2"/>
-<pad name="C" x="-3.81" y="0" drill="1" diameter="2" shape="square"/>
+<pad name="A" x="3.81" y="0" drill="0.7" diameter="1.4"/>
+<pad name="C" x="-3.81" y="0" drill="0.7" diameter="1.4" shape="square"/>
 <text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 <package name="DO41-4">

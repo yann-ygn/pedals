@@ -3822,7 +3822,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <part name="GND2" library="pedals-supply" deviceset="GND" device=""/>
 <part name="GND3" library="pedals-supply" deviceset="GND" device=""/>
 <part name="R3" library="pedals-resistors" deviceset="R_" device=".3B" value="7.5k"/>
-<part name="C4" library="pedals-capacitors-elec" deviceset="050" device="1" value="47u"/>
+<part name="C4" library="pedals-capacitors-elec" deviceset="050" device="0" value="47u"/>
 <part name="GND5" library="pedals-supply" deviceset="GND" device=""/>
 <part name="GND6" library="pedals-supply" deviceset="GND" device=""/>
 <part name="VR1" library="pedals-supply" deviceset="VR" device=""/>

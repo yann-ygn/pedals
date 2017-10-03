@@ -4,17 +4,23 @@
             "name": "Win32",
             "includePath": [
                 "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino",
-                "${workspaceRoot}"
+                "${workspaceRoot}",
+                "C:\\Users\\Yann\\AppData\\Local\\Arduino15\\packages\\ATTinyCore\\hardware\\avr\\1.1.4\\cores\\empty",
+                "C:\\Users\\Yann\\AppData\\Local\\Arduino15\\packages\\ATTinyCore\\hardware\\avr\\1.1.4\\cores\\tiny",
+                "C:\\Users\\Yann\\AppData\\Local\\Arduino15\\packages\\ATTinyCore\\hardware\\avr\\1.1.4\\cores\\tinymodern"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": false,
                 "path": [
                     "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino",
-                    "${workspaceRoot}"
+                    "${workspaceRoot}",
+                    "C:\\Users\\Yann\\AppData\\Local\\Arduino15\\packages\\ATTinyCore\\hardware\\avr\\1.1.4\\cores\\empty",
+                    "C:\\Users\\Yann\\AppData\\Local\\Arduino15\\packages\\ATTinyCore\\hardware\\avr\\1.1.4\\cores\\tiny",
+                    "C:\\Users\\Yann\\AppData\\Local\\Arduino15\\packages\\ATTinyCore\\hardware\\avr\\1.1.4\\cores\\tinymodern"
                 ]
             },
             "intelliSenseMode": "msvc-x64"
         }
     ],
-    "version": 2
+    "version": 3
 }

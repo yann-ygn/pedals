@@ -635,19 +635,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <pad name="C" x="-1.27" y="0" drill="1" diameter="2" shape="square"/>
 <text x="0" y="1.905" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
-<package name="DO41-3">
-<description>&lt;b&gt;DO-41 0.3" pad spacing&lt;/b&gt;</description>
-<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
-<rectangle x1="-2.413" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
-<rectangle x1="2.032" y1="-0.381" x2="2.413" y2="0.381" layer="21"/>
-<pad name="A" x="3.81" y="0" drill="1" diameter="2"/>
-<pad name="C" x="-3.81" y="0" drill="1" diameter="2" shape="square"/>
-<text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
-</package>
 <package name="DO41-4">
 <description>&lt;b&gt;DO-41 0.4" pad spacing&lt;/b&gt;</description>
 <wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
@@ -659,6 +646,19 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <rectangle x1="-3.937" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
 <pad name="A" x="5.08" y="0" drill="1" diameter="2"/>
 <pad name="C" x="-5.08" y="0" drill="1" diameter="2" shape="square"/>
+<text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
+</package>
+<package name="DO41-3">
+<description>&lt;b&gt;DO-41 0.3" pad spacing&lt;/b&gt;</description>
+<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
+<rectangle x1="-2.413" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
+<rectangle x1="2.032" y1="-0.381" x2="2.413" y2="0.381" layer="21"/>
+<pad name="A" x="3.81" y="0" drill="0.7" diameter="1.4"/>
+<pad name="C" x="-3.81" y="0" drill="0.7" diameter="1.4" shape="square"/>
 <text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -740,8 +740,8 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <circle x="0" y="0" radius="2.5" width="0.1524" layer="21"/>
 <wire x1="-1.143" y1="1.6764" x2="-1.143" y2="1.0414" width="0.1524" layer="21"/>
 <wire x1="-0.8128" y1="1.3716" x2="-1.4732" y2="1.3716" width="0.1524" layer="21"/>
-<pad name="+" x="-1.27" y="0" drill="0.4" diameter="1" shape="square"/>
-<pad name="-" x="1.27" y="0" drill="0.4" diameter="1"/>
+<pad name="+" x="-1.27" y="0" drill="0.5" diameter="1.2" shape="square"/>
+<pad name="-" x="1.27" y="0" drill="0.5" diameter="1.2"/>
 <text x="0" y="-1.778" size="0.8128" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 <package name="050_020">
@@ -749,9 +749,47 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <circle x="0" y="0" radius="2.5" width="0.1524" layer="21"/>
 <wire x1="-0.983615625" y1="1.57988125" x2="-0.983615625" y2="0.94488125" width="0.1524" layer="21"/>
 <wire x1="-0.674878125" y1="1.254759375" x2="-1.335278125" y2="1.254759375" width="0.1524" layer="21"/>
-<pad name="+" x="-0.998221875" y="0.001271875" drill="1" diameter="1.524" shape="square"/>
-<pad name="-" x="0.99821875" y="0.000634375" drill="1" diameter="1.524"/>
+<pad name="+" x="-0.998221875" y="0.001271875" drill="0.5" diameter="1.1" shape="square"/>
+<pad name="-" x="0.99821875" y="0.000634375" drill="0.5" diameter="1.1"/>
 <text x="-0.46863125" y="-1.36651875" size="1.016" layer="25" ratio="12" align="center">&gt;NAME</text>
+</package>
+<package name="063_025">
+<description>&lt;b&gt;6.3mm diameter, 2.5 mm lead spacing, 0.1" pad spacing&lt;/b&gt;</description>
+<circle x="0" y="0" radius="3.15" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="1.6764" x2="-1.143" y2="1.0414" width="0.1524" layer="21"/>
+<wire x1="-0.8128" y1="1.3716" x2="-1.4732" y2="1.3716" width="0.1524" layer="21"/>
+<pad name="+" x="-1.27" y="0" drill="1" diameter="1.9304" shape="square"/>
+<pad name="-" x="1.27" y="0" drill="1" diameter="1.9304"/>
+<text x="0" y="-1.905" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
+</package>
+<package name="063_025_2">
+<description>&lt;b&gt;6.3mm diameter, 2.5mm lead spacing, 0.2" pad spacing&lt;/b&gt;</description>
+<circle x="0" y="0" radius="3.15" width="0.1524" layer="21"/>
+<wire x1="-1.778" y1="1.6764" x2="-1.778" y2="1.0414" width="0.1524" layer="21"/>
+<wire x1="-1.4478" y1="1.3716" x2="-2.1082" y2="1.3716" width="0.1524" layer="21"/>
+<pad name="+" x="-2.54" y="0" drill="1" diameter="2" shape="square"/>
+<pad name="-" x="2.54" y="0" drill="1" diameter="2"/>
+<text x="0" y="0" size="1.016" layer="25" ratio="12" align="center">&gt;NAME</text>
+</package>
+<package name="063_025_3">
+<description>&lt;b&gt;6.3mm diameter, 2.5mm lead spacing, 0.3" pad spacing&lt;/b&gt;</description>
+<circle x="0" y="0" radius="3.15" width="0.1524" layer="21"/>
+<wire x1="-3.683" y1="1.6764" x2="-3.683" y2="1.0414" width="0.1524" layer="21"/>
+<wire x1="-3.3528" y1="1.3716" x2="-4.0132" y2="1.3716" width="0.1524" layer="21"/>
+<pad name="+" x="-3.81" y="0" drill="1" diameter="2" shape="square"/>
+<pad name="-" x="3.81" y="0" drill="1" diameter="2"/>
+<text x="0" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
+</package>
+<package name="063_025_4">
+<description>&lt;b&gt;6.3mm diameter, 2.5mm lead spacing, 0.4" pad spacing&lt;/b&gt;</description>
+<circle x="0" y="0" radius="3.15" width="0.1524" layer="21"/>
+<wire x1="-4.953" y1="1.6764" x2="-4.953" y2="1.0414" width="0.1524" layer="21"/>
+<wire x1="-4.6228" y1="1.3716" x2="-5.2832" y2="1.3716" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-5.1054" y2="0" width="0.6096" layer="51"/>
+<wire x1="5.08" y1="0" x2="2.5654" y2="0" width="0.6096" layer="51"/>
+<pad name="+" x="-5.08" y="0" drill="1" diameter="2" shape="square"/>
+<pad name="-" x="5.08" y="0" drill="1" diameter="2"/>
+<text x="0" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -803,6 +841,53 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <connects>
 <connect gate="1" pin="+" pad="+"/>
 <connect gate="1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="063" prefix="C" uservalue="yes">
+<description>&lt;b&gt;33 - 220uF&lt;/b&gt;
+
+&lt;p&gt;Xicon values at Mouser.com&lt;br&gt;
+10V: 220uF; 16V: 100uF; 25V: 100uF; 50V: 33uF</description>
+<gates>
+<gate name="G$1" symbol="CPOL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1" package="063_025">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2" package="063_025_2">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3" package="063_025_3">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="4" package="063_025_4">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1372,8 +1457,8 @@ spacing: 6 holes
 <wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-3.81" y1="1.905" x2="-3.225" y2="2.49" width="0.1524" layer="21" curve="-90"/>
 <wire x1="-3.225" y1="2.49" x2="-2.948" y2="2.49" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.5" diameter="1.1"/>
-<pad name="2" x="2.54" y="0" drill="0.5" diameter="1.1"/>
+<pad name="1" x="-2.54" y="0" drill="0.7" diameter="1.4"/>
+<pad name="2" x="2.54" y="0" drill="0.7" diameter="1.4"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -2277,7 +2362,6 @@ Source: 3M</description>
 <part name="GND7" library="gm-supply" deviceset="GND" device=""/>
 <part name="R2" library="pedals-resistors" deviceset="R_" device=".3B" value="4.7k"/>
 <part name="GND8" library="gm-supply" deviceset="GND" device=""/>
-<part name="C3" library="pedals-capacitors-elec" deviceset="040" device="0" value="22u"/>
 <part name="GND9" library="gm-supply" deviceset="GND" device=""/>
 <part name="Q2" library="pedals-transistors" deviceset="2N3904" device=""/>
 <part name="R4" library="pedals-resistors" deviceset="R_" device=".3B" value="150k"/>
@@ -2312,7 +2396,6 @@ Source: 3M</description>
 <part name="BASS" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kB"/>
 <part name="TREBLE" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kB"/>
 <part name="VOL" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kA"/>
-<part name="C1" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
 <part name="C2" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="220n"/>
 <part name="C13" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="220n"/>
 <part name="R3" library="pedals-resistors" deviceset="R_" device=".3B" value="12k"/>
@@ -2338,6 +2421,8 @@ Source: 3M</description>
 <part name="VR4" library="pedals-supply" deviceset="VR" device=""/>
 <part name="VR5" library="pedals-supply" deviceset="VR" device=""/>
 <part name="C15" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="100p"/>
+<part name="C3" library="pedals-capacitors-elec" deviceset="040" device="0" value="22u"/>
+<part name="C1" library="pedals-capacitors-elec" deviceset="063" device="1" value="100u"/>
 </parts>
 <sheets>
 <sheet>
@@ -2355,7 +2440,6 @@ Source: 3M</description>
 <instance part="GND7" gate="GND" x="45.72" y="38.1"/>
 <instance part="R2" gate="G$1" x="66.04" y="33.02" rot="R90"/>
 <instance part="GND8" gate="GND" x="66.04" y="17.78"/>
-<instance part="C3" gate="1" x="76.2" y="38.1" rot="R270"/>
 <instance part="GND9" gate="GND" x="76.2" y="10.16"/>
 <instance part="Q2" gate="G1" x="88.9" y="71.12"/>
 <instance part="R4" gate="G$1" x="81.28" y="45.72" rot="R180"/>
@@ -2390,7 +2474,6 @@ Source: 3M</description>
 <instance part="BASS" gate="G$1" x="129.54" y="83.82" rot="MR270"/>
 <instance part="TREBLE" gate="G$1" x="129.54" y="43.18" rot="R90"/>
 <instance part="VOL" gate="G$1" x="187.96" y="63.5"/>
-<instance part="C1" gate="1" x="35.56" y="91.44" rot="R270"/>
 <instance part="C2" gate="G$1" x="52.07" y="55.88"/>
 <instance part="C13" gate="G$1" x="179.07" y="81.28"/>
 <instance part="R3" gate="G$1" x="78.74" y="83.82" rot="R180"/>
@@ -2423,6 +2506,8 @@ Source: 3M</description>
 <instance part="VR4" gate="G$1" x="160.02" y="101.6"/>
 <instance part="VR5" gate="G$1" x="172.72" y="101.6"/>
 <instance part="C15" gate="G$1" x="166.37" y="71.12" rot="R180"/>
+<instance part="C3" gate="1" x="76.2" y="38.1" rot="R270"/>
+<instance part="C1" gate="G$1" x="35.56" y="91.44" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2513,11 +2598,6 @@ Source: 3M</description>
 <wire x1="25.4" y1="86.36" x2="25.4" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="1"/>
 </segment>
-<segment>
-<pinref part="C1" gate="1" pin="-"/>
-<pinref part="GND16" gate="GND" pin="GND"/>
-<wire x1="35.56" y1="86.36" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="OUT" class="0">
 <segment>
@@ -2580,7 +2660,6 @@ Source: 3M</description>
 <pinref part="Q1" gate="G1" pin="E"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="50.8" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="C3" gate="1" pin="+"/>
 <wire x1="66.04" y1="48.26" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="43.18" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="40.64" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
@@ -2591,13 +2670,14 @@ Source: 3M</description>
 <wire x1="71.12" y1="83.82" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="48.26" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
 <junction x="66.04" y="48.26"/>
+<pinref part="C3" gate="1" pin="+"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="C3" gate="1" pin="-"/>
 <wire x1="76.2" y1="33.02" x2="76.2" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="GAIN" gate="G$1" pin="3"/>
+<pinref part="C3" gate="1" pin="-"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -2823,12 +2903,9 @@ Source: 3M</description>
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="96.52" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C1" gate="1" pin="+"/>
 <wire x1="25.4" y1="96.52" x2="35.56" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="96.52" x2="35.56" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="96.52" x2="25.4" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="VR1" gate="G$1" pin="VR"/>
-<junction x="35.56" y="96.52"/>
 <pinref part="C14" gate="G$1" pin="2"/>
 <junction x="25.4" y="96.52"/>
 </segment>

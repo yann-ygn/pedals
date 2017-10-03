@@ -822,7 +822,7 @@ design rules under a new name.</description>
 <via x="29.4005" y="7.62" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="24.9555" y="17.4625" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="28.1305" y="17.4625" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="4.0005" y="27.94" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="4.2545" y="27.94" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="4.0005" y="17.78" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="9.7155" y="5.08" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="19.685" y="4.8895" extent="1-16" drill="0.5" diameter="0.85"/>

@@ -800,7 +800,7 @@ design rules under a new name.</description>
 <via x="54.102" y="5.7785" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="45.72" y="9.3345" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="45.72" y="11.557" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="4.0005" y="46.99" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="4.6355" y="48.26" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="4.6355" y="38.1" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="20.5105" y="15.875" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="20.5105" y="12.065" extent="1-16" drill="0.5" diameter="0.85"/>
