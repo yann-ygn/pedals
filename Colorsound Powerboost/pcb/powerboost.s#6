@@ -1372,8 +1372,8 @@ spacing: 6 holes
 <wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-3.81" y1="1.905" x2="-3.225" y2="2.49" width="0.1524" layer="21" curve="-90"/>
 <wire x1="-3.225" y1="2.49" x2="-2.948" y2="2.49" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.5" diameter="1.1"/>
-<pad name="2" x="2.54" y="0" drill="0.5" diameter="1.1"/>
+<pad name="1" x="-2.54" y="0" drill="0.7" diameter="1.4"/>
+<pad name="2" x="2.54" y="0" drill="0.7" diameter="1.4"/>
 <text x="0" y="0" size="1.016" layer="25" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -2277,7 +2277,6 @@ Source: 3M</description>
 <part name="GND7" library="gm-supply" deviceset="GND" device=""/>
 <part name="R2" library="pedals-resistors" deviceset="R_" device=".3B" value="4.7k"/>
 <part name="GND8" library="gm-supply" deviceset="GND" device=""/>
-<part name="C3" library="pedals-capacitors-elec" deviceset="040" device="0" value="22u"/>
 <part name="GND9" library="gm-supply" deviceset="GND" device=""/>
 <part name="Q2" library="pedals-transistors" deviceset="2N3904" device=""/>
 <part name="R4" library="pedals-resistors" deviceset="R_" device=".3B" value="150k"/>
@@ -2338,6 +2337,7 @@ Source: 3M</description>
 <part name="VR4" library="pedals-supply" deviceset="VR" device=""/>
 <part name="VR5" library="pedals-supply" deviceset="VR" device=""/>
 <part name="C15" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="100p"/>
+<part name="C3" library="pedals-capacitors-elec" deviceset="040" device="0" value="22u"/>
 </parts>
 <sheets>
 <sheet>
@@ -2355,7 +2355,6 @@ Source: 3M</description>
 <instance part="GND7" gate="GND" x="45.72" y="38.1"/>
 <instance part="R2" gate="G$1" x="66.04" y="33.02" rot="R90"/>
 <instance part="GND8" gate="GND" x="66.04" y="17.78"/>
-<instance part="C3" gate="1" x="76.2" y="38.1" rot="R270"/>
 <instance part="GND9" gate="GND" x="76.2" y="10.16"/>
 <instance part="Q2" gate="G1" x="88.9" y="71.12"/>
 <instance part="R4" gate="G$1" x="81.28" y="45.72" rot="R180"/>
@@ -2423,6 +2422,7 @@ Source: 3M</description>
 <instance part="VR4" gate="G$1" x="160.02" y="101.6"/>
 <instance part="VR5" gate="G$1" x="172.72" y="101.6"/>
 <instance part="C15" gate="G$1" x="166.37" y="71.12" rot="R180"/>
+<instance part="C3" gate="1" x="76.2" y="38.1" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2580,7 +2580,6 @@ Source: 3M</description>
 <pinref part="Q1" gate="G1" pin="E"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="50.8" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="C3" gate="1" pin="+"/>
 <wire x1="66.04" y1="48.26" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="43.18" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="40.64" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
@@ -2591,13 +2590,14 @@ Source: 3M</description>
 <wire x1="71.12" y1="83.82" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="48.26" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
 <junction x="66.04" y="48.26"/>
+<pinref part="C3" gate="1" pin="+"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="C3" gate="1" pin="-"/>
 <wire x1="76.2" y1="33.02" x2="76.2" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="GAIN" gate="G$1" pin="3"/>
+<pinref part="C3" gate="1" pin="-"/>
 </segment>
 </net>
 <net name="N$12" class="0">

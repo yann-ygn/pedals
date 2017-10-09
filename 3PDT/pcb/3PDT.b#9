@@ -85,13 +85,13 @@
 <board>
 <plain>
 <wire x1="10.795" y1="0" x2="29.825" y2="0" width="0" layer="20"/>
-<wire x1="29.825" y1="0" x2="29.825" y2="25.3875" width="0" layer="20"/>
-<wire x1="0" y1="13.335" x2="0" y2="3.175" width="0" layer="20"/>
-<wire x1="10.795" y1="26.67" x2="10.795" y2="13.335" width="0" layer="20"/>
-<wire x1="10.795" y1="13.335" x2="0" y2="13.335" width="0" layer="20"/>
+<wire x1="29.825" y1="0" x2="29.8243625" y2="26.6702" width="0" layer="20"/>
+<wire x1="0" y1="13.97" x2="0" y2="2.54" width="0" layer="20"/>
+<wire x1="10.795" y1="26.67" x2="10.795" y2="13.97" width="0" layer="20"/>
+<wire x1="10.795" y1="13.97" x2="0" y2="13.97" width="0" layer="20"/>
 <wire x1="10.795" y1="26.67" x2="29.845" y2="26.67" width="0" layer="20"/>
-<wire x1="0" y1="3.175" x2="10.795" y2="3.175" width="0" layer="20"/>
-<wire x1="10.795" y1="3.175" x2="10.795" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="2.54" x2="10.795" y2="2.54" width="0" layer="20"/>
+<wire x1="10.795" y1="2.54" x2="10.795" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="pedals-headers">
