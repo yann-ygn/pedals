@@ -698,7 +698,7 @@ design rules under a new name.</description>
 <element name="C13" library="pedals-capacitors-elec" package="040_020" value="1u" x="78.74" y="-419.735"/>
 <element name="R17" library="pedals-resistors" package="R0207/3" value="5.6k" x="81.28" y="-431.165"/>
 <element name="C14" library="pedals-capacitors-film" package="050X030_025_2" value="120n" x="81.28" y="-443.23"/>
-<element name="SW1" library="pedals-switches" package="M9040P" value="" x="92.71" y="-466.09"/>
+<element name="SW1" library="pedals-switches" package="M9040P" value="SPDT" x="92.71" y="-466.09"/>
 <element name="C15" library="pedals-capacitors-film" package="BOX_SMALL" value="150n" x="81.28" y="-488.95"/>
 <element name="R18" library="pedals-resistors" package="R0207/3" value="47k" x="81.28" y="-501.015"/>
 <element name="R19" library="pedals-resistors" package="R0207/3" value="47k" x="81.28" y="-512.445"/>
