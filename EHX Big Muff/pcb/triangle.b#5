@@ -799,6 +799,11 @@ design rules under a new name.</description>
 <via x="113.9825" y="25.0825" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="83.82" y="40.3225" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="88.5825" y="31.6865" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="94.2975" y="15.1765" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="94.2975" y="17.7165" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="89.5985" y="10.795" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="87.0585" y="10.795" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="115.697" y="33.782" extent="1-16" drill="0.5" diameter="0.85"/>
 </signal>
 <signal name="OUT">
 <contactref element="VOLUME" pad="2"/>
