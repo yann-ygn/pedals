@@ -783,6 +783,7 @@ design rules under a new name.</description>
 <via x="25.4" y="36.068" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="28.575" y="36.068" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="23.495" y="30.48" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="24.765" y="25.4635" extent="1-16" drill="0.5" diameter="0.85"/>
 </signal>
 <signal name="OUT">
 <contactref element="X1" pad="2"/>

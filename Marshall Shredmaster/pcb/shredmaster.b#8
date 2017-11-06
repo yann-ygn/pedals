@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -28,13 +28,13 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -46,9 +46,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -634,7 +634,7 @@ design rules under a new name.</description>
 <element name="R3" library="pedals-resistors" package="R0207/3" value="47k" x="28.575" y="22.225" rot="R270"/>
 <element name="C4" library="pedals-capacitors-elec" package="040_020" value="47u" x="29.591" y="15.6845"/>
 <element name="CONTOUR" library="pedals-potentiometers" package="16MM" value="100kB" x="48.26" y="11.176"/>
-<element name="TREBLE" library="pedals-potentiometers" package="16MM" value="25kA" x="29.845" y="13.081"/>
+<element name="TREBLE" library="pedals-potentiometers" package="16MM" value="25kA" x="29.845" y="11.176"/>
 <element name="C3" library="pedals-capacitors-film" package="050X030_025_2" value="100n" x="39.37" y="36.195" rot="R180"/>
 <element name="R4" library="pedals-resistors" package="R0207/3" value="2M" x="18.415" y="21.59" rot="R180"/>
 <element name="C5" library="pedals-capacitors-film" package="BOX_SMALL" value="100n" x="12.065" y="24.13" rot="R270"/>
@@ -692,7 +692,6 @@ design rules under a new name.</description>
 <vertex x="0" y="69.85"/>
 <vertex x="0" y="-1.27"/>
 </polygon>
-<via x="58.2295" y="32.385" extent="1-16" drill="0.5" diameter="0.85"/>
 <contactref element="C2" pad="1"/>
 <contactref element="C3" pad="1"/>
 <contactref element="IC1" pad="4"/>
@@ -950,10 +949,11 @@ design rules under a new name.</description>
 <signal name="N$13">
 <contactref element="C11" pad="1"/>
 <contactref element="TREBLE" pad="3"/>
-<wire x1="17.78" y1="13.97" x2="17.78" y2="12.7" width="0.254" layer="16"/>
-<wire x1="17.78" y1="12.7" x2="18.415" y2="12.065" width="0.254" layer="16"/>
-<wire x1="18.415" y1="12.065" x2="24.749" y2="12.065" width="0.254" layer="16"/>
-<wire x1="24.749" y1="12.065" x2="24.765" y2="12.081" width="0.254" layer="16"/>
+<wire x1="24.765" y1="10.176" x2="24.765" y2="11.43" width="0.254" layer="16"/>
+<wire x1="24.765" y1="11.43" x2="24.13" y2="12.065" width="0.254" layer="16"/>
+<wire x1="24.13" y1="12.065" x2="18.415" y2="12.065" width="0.254" layer="16"/>
+<wire x1="18.415" y1="12.065" x2="17.78" y2="12.7" width="0.254" layer="16"/>
+<wire x1="17.78" y1="12.7" x2="17.78" y2="13.97" width="0.254" layer="16"/>
 </signal>
 <signal name="N$14">
 <contactref element="R10" pad="1"/>
@@ -977,9 +977,11 @@ design rules under a new name.</description>
 <wire x1="8.255" y1="19.05" x2="8.255" y2="16.51" width="0.254" layer="16"/>
 <wire x1="8.255" y1="16.51" x2="11.43" y2="13.335" width="0.254" layer="16"/>
 <wire x1="11.43" y1="13.335" x2="11.43" y2="10.176" width="0.254" layer="16"/>
-<wire x1="16.51" y1="10.176" x2="34.306" y2="10.176" width="0.254" layer="16"/>
-<wire x1="34.306" y1="10.176" x2="34.925" y2="10.795" width="0.254" layer="16"/>
-<wire x1="34.925" y1="10.795" x2="34.925" y2="12.081" width="0.254" layer="16"/>
+<wire x1="16.51" y1="10.176" x2="16.51" y2="8.255" width="0.254" layer="16"/>
+<wire x1="16.51" y1="8.255" x2="17.145" y2="7.62" width="0.254" layer="16"/>
+<wire x1="17.145" y1="7.62" x2="34.29" y2="7.62" width="0.254" layer="16"/>
+<wire x1="34.29" y1="7.62" x2="34.925" y2="8.255" width="0.254" layer="16"/>
+<wire x1="34.925" y1="8.255" x2="34.925" y2="10.176" width="0.254" layer="16"/>
 </signal>
 <signal name="N$16">
 <contactref element="C13" pad="1"/>
@@ -1017,13 +1019,13 @@ design rules under a new name.</description>
 <signal name="N$21">
 <contactref element="TREBLE" pad="2"/>
 <contactref element="IC2" pad="3"/>
-<wire x1="29.845" y1="12.081" x2="29.845" y2="10.795" width="0.254" layer="1"/>
-<wire x1="29.845" y1="10.795" x2="31.115" y2="9.525" width="0.254" layer="1"/>
-<wire x1="31.115" y1="9.525" x2="36.83" y2="9.525" width="0.254" layer="1"/>
-<wire x1="40.005" y1="12.7" x2="36.83" y2="9.525" width="0.254" layer="1"/>
 <wire x1="41.91" y1="26.035" x2="41.7195" y2="26.035" width="0.254" layer="1"/>
-<wire x1="41.7195" y1="26.035" x2="40.005" y2="24.3205" width="0.254" layer="1"/>
-<wire x1="40.005" y1="24.3205" x2="40.005" y2="12.7" width="0.254" layer="1"/>
+<wire x1="40.005" y1="24.3205" x2="41.7195" y2="26.035" width="0.254" layer="1"/>
+<wire x1="29.845" y1="10.176" x2="29.845" y2="11.43" width="0.254" layer="1"/>
+<wire x1="29.845" y1="11.43" x2="30.48" y2="12.065" width="0.254" layer="1"/>
+<wire x1="30.48" y1="12.065" x2="38.735" y2="12.065" width="0.254" layer="1"/>
+<wire x1="38.735" y1="12.065" x2="40.005" y2="13.335" width="0.254" layer="1"/>
+<wire x1="40.005" y1="13.335" x2="40.005" y2="24.3205" width="0.254" layer="1"/>
 </signal>
 <signal name="N$22">
 <contactref element="R13" pad="1"/>
