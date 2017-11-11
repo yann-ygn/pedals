@@ -2396,12 +2396,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <sheets>
 <sheet>
 <plain>
-<circle x="142.24" y="-73.66" radius="0.381" width="0.1524" layer="95"/>
-<circle x="157.48" y="-73.66" radius="0.381" width="0.1524" layer="95"/>
 <circle x="254" y="-50.8" radius="0.381" width="0.1524" layer="95"/>
 <circle x="254" y="-38.1" radius="0.381" width="0.1524" layer="95"/>
-<text x="142.494" y="-73.406" size="1.778" layer="95">14</text>
-<text x="157.734" y="-73.406" size="1.778" layer="95">16</text>
 <text x="254.254" y="-50.546" size="1.778" layer="95">18</text>
 <text x="254.254" y="-37.846" size="1.778" layer="95">15</text>
 </plain>

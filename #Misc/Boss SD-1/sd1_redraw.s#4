@@ -2340,6 +2340,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="C17" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
 <part name="GND102" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND104" library="gm-supply" deviceset="GND" device=""/>
+<part name="V102" library="gm-supply" deviceset="+9V" device=""/>
 <part name="V103" library="gm-supply" deviceset="+9V" device=""/>
 <part name="V107" library="gm-supply" deviceset="+9V" device=""/>
 <part name="D7" library="pedals-diodes" deviceset="DO35" device=".2" value="1S2473"/>
@@ -2450,6 +2451,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="C17" gate="1" x="45.72" y="-27.94" rot="R270"/>
 <instance part="GND102" gate="GND" x="35.56" y="-38.1"/>
 <instance part="GND104" gate="GND" x="45.72" y="-38.1"/>
+<instance part="V102" gate="+9V" x="35.56" y="-15.24"/>
 <instance part="V103" gate="+9V" x="60.96" y="66.04"/>
 <instance part="V107" gate="+9V" x="238.76" y="63.5"/>
 <instance part="D7" gate="G$1" x="200.66" y="38.1" rot="R270"/>
@@ -2832,6 +2834,19 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="V1" gate="+9V" pin="+9V"/>
 <wire x1="248.92" y1="0" x2="248.92" y2="2.54" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C17" gate="1" pin="+"/>
+<wire x1="35.56" y1="-20.32" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-20.32" x2="45.72" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="35.56" y1="-25.4" x2="35.56" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="45.72" y="-20.32"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="-20.32" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="V102" gate="+9V" pin="+9V"/>
+<wire x1="35.56" y1="-17.78" x2="35.56" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="35.56" y="-20.32"/>
+</segment>
 </net>
 <net name="N$29" class="0">
 <segment>
@@ -3115,19 +3130,6 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="VR2" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="190.5" y1="53.34" x2="193.04" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="C17" gate="1" pin="+"/>
-<wire x1="35.56" y1="-20.32" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-20.32" x2="45.72" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="35.56" y1="-25.4" x2="35.56" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="45.72" y="-20.32"/>
-<wire x1="45.72" y1="-17.78" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="-20.32" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

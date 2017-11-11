@@ -2388,10 +2388,10 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="VB3" library="gm-supply" deviceset="VB" device=""/>
 <part name="VB4" library="gm-supply" deviceset="VB" device=""/>
 <part name="VB5" library="gm-supply" deviceset="VB" device=""/>
-<part name="IN1" library="gm-supply" deviceset="IN" device=""/>
+<part name="IN" library="gm-supply" deviceset="IN" device=""/>
 <part name="VB6" library="gm-supply" deviceset="VB" device=""/>
 <part name="VB7" library="gm-supply" deviceset="VB" device=""/>
-<part name="OUT1" library="gm-supply" deviceset="OUT" device=""/>
+<part name="OUT" library="gm-supply" deviceset="OUT" device=""/>
 <part name="VB8" library="gm-supply" deviceset="VB" device=""/>
 </parts>
 <sheets>
@@ -2495,10 +2495,10 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="VB3" gate="G$1" x="78.74" y="22.86" rot="R180"/>
 <instance part="VB4" gate="G$1" x="71.12" y="78.74"/>
 <instance part="VB5" gate="G$1" x="124.46" y="27.94" rot="R180"/>
-<instance part="IN1" gate="G$1" x="25.4" y="48.26"/>
+<instance part="IN" gate="G$1" x="25.4" y="48.26"/>
 <instance part="VB6" gate="G$1" x="231.14" y="27.94" rot="R180"/>
 <instance part="VB7" gate="G$1" x="185.42" y="63.5"/>
-<instance part="OUT1" gate="G$1" x="269.24" y="45.72"/>
+<instance part="OUT" gate="G$1" x="269.24" y="45.72"/>
 <instance part="VB8" gate="G$1" x="185.42" y="33.02"/>
 </instances>
 <busses>
@@ -3105,7 +3105,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="IN1" gate="G$1" pin="IN"/>
+<pinref part="IN" gate="G$1" pin="IN"/>
 </segment>
 </net>
 <net name="OUT" class="0">
@@ -3114,7 +3114,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="45.72" x2="264.16" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="45.72" x2="264.16" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="OUT1" gate="G$1" pin="OUT"/>
+<pinref part="OUT" gate="G$1" pin="OUT"/>
 <wire x1="264.16" y1="45.72" x2="266.7" y2="45.72" width="0.1524" layer="91"/>
 <junction x="264.16" y="45.72"/>
 </segment>

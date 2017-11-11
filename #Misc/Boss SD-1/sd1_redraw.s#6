@@ -187,6 +187,20 @@
 <text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <pin name="OUT" x="-2.54" y="0" visible="off" length="short" direction="sup"/>
 </symbol>
+<symbol name="+09V-1">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+9V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VR">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VR" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -254,6 +268,41 @@
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="OUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+9V" prefix="V">
+<description>&lt;b&gt;+9V Voltage Supply&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;use this to hook up +9v throughout a schematic instead of running wire&lt;/li&gt;
+&lt;li&gt;automatically labels the net "+9v"&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="+9V" symbol="+09V-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VR" prefix="VR">
+<description>&lt;b&gt;Vr (Voltage Reference)&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;use for reduced voltage coming out of a voltage divider&lt;/li&gt;
+&lt;li&gt;an alternative on schematics for running hookup wire
+&lt;li&gt;automatically labels net "VR"
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="VR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -2362,6 +2411,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="VB7" library="gm-supply" deviceset="VB" device=""/>
 <part name="OUT1" library="gm-supply" deviceset="OUT" device=""/>
 <part name="VB8" library="gm-supply" deviceset="VB" device=""/>
+<part name="V1" library="gm-supply" deviceset="+9V" device=""/>
+<part name="VR4" library="gm-supply" deviceset="VR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2466,6 +2517,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="VB7" gate="G$1" x="185.42" y="63.5"/>
 <instance part="OUT1" gate="G$1" x="269.24" y="45.72"/>
 <instance part="VB8" gate="G$1" x="185.42" y="33.02"/>
+<instance part="V1" gate="+9V" x="30.48" y="-20.32" rot="R90"/>
+<instance part="VR4" gate="G$1" x="45.72" y="-15.24"/>
 </instances>
 <busses>
 </busses>
@@ -3049,19 +3102,6 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="190.5" y1="53.34" x2="193.04" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="C17" gate="1" pin="+"/>
-<wire x1="35.56" y1="-20.32" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-20.32" x2="45.72" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="35.56" y1="-25.4" x2="35.56" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="45.72" y="-20.32"/>
-<wire x1="45.72" y1="-17.78" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="-20.32" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="Q5" gate="G$1" pin="C"/>
@@ -3096,6 +3136,22 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="231.14" y1="-22.86" x2="231.14" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VR" class="0">
+<segment>
+<pinref part="C17" gate="1" pin="+"/>
+<wire x1="35.56" y1="-20.32" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-20.32" x2="45.72" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="35.56" y1="-25.4" x2="35.56" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="45.72" y="-20.32"/>
+<wire x1="45.72" y1="-17.78" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="-20.32" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-20.32" x2="35.56" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="V1" gate="+9V" pin="+9V"/>
+<pinref part="VR4" gate="G$1" pin="VR"/>
 </segment>
 </net>
 </nets>

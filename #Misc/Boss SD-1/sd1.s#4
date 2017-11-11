@@ -2081,7 +2081,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="D2" gate="G$1" x="91.44" y="55.88" rot="R180"/>
 <instance part="D3" gate="G$1" x="99.06" y="63.5"/>
 <instance part="R9" gate="G$1" x="86.36" y="71.12" rot="R90"/>
-<instance part="POT1" gate="G$1" x="96.52" y="83.82" rot="MR90"/>
+<instance part="POT1" gate="G$1" x="97.79" y="83.82" rot="MR90"/>
 </instances>
 <busses>
 </busses>
@@ -2232,8 +2232,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="POT1" gate="G$1" pin="3"/>
 <wire x1="109.22" y1="83.82" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="POT1" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="83.82" x2="102.87" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="97.79" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="88.9" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
 <junction x="104.14" y="83.82"/>
 <junction x="109.22" y="63.5"/>
@@ -2246,7 +2245,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="76.2" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="POT1" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="83.82" x2="90.17" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

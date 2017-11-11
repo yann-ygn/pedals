@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2858,7 +2858,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="R13" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="GND117" library="gm-supply" deviceset="GND" device=""/>
 <part name="C9" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
-<part name="R30" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
+<part name="R30" library="pedals-resistors" deviceset="R_" device=".3B" value="3.9k"/>
 <part name="D2" library="pedals-diodes" deviceset="ZENER" device=".2" value="RD5.1EB-3"/>
 <part name="V1" library="gm-supply" deviceset="+9V" device=""/>
 <part name="LED" library="pedals-diodes" deviceset="LED" device="" value="SLP1358"/>
