@@ -2796,7 +2796,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="R11" gate="G$1" x="398.78" y="15.24" rot="R90"/>
 <instance part="Q4" gate="G$1" x="406.4" y="22.86" rot="R90"/>
 <instance part="VB111" gate="G$1" x="398.78" y="5.08" rot="R180"/>
-<instance part="C13" gate="1" x="353.06" y="101.6" rot="MR180"/>
+<instance part="C13" gate="1" x="353.06" y="101.6"/>
 <instance part="R16" gate="G$1" x="360.68" y="93.98" rot="R90"/>
 <instance part="Q112" gate="G1" x="365.76" y="101.6"/>
 <instance part="R12" gate="G$1" x="368.3" y="86.36" rot="R90"/>

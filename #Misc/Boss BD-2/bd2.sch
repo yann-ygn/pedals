@@ -3087,7 +3087,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="VA109" library="gm-supply" deviceset="VA" device=""/>
 <part name="R25" library="pedals-resistors" deviceset="R_" device=".3B" value="2.2k"/>
 <part name="R26" library="pedals-resistors" deviceset="R_" device=".3B" value="5.6k"/>
-<part name="C17" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="6.8n"/>
+<part name="C17" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="5.6n"/>
 <part name="C19" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="5.6n"/>
 <part name="GND120" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND121" library="gm-supply" deviceset="GND" device=""/>
@@ -3099,7 +3099,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="D1" library="pedals-diodes" deviceset="DO41" device=".2" value="1SS133"/>
 <part name="D3" library="pedals-diodes" deviceset="DO41" device=".2" value="1SS133"/>
 <part name="R13" library="pedals-resistors" deviceset="R_" device=".3B" value="470k"/>
-<part name="RX" library="pedals-resistors" deviceset="R_" device=".3B" value="6.8k"/>
+<part name="R9" library="pedals-resistors" deviceset="R_" device=".3B" value="6.8k"/>
 <part name="C8" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="2.2n"/>
 <part name="C9" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="56n"/>
 <part name="R21" library="pedals-resistors" deviceset="R_" device=".3B" value="1.2k"/>
@@ -3117,7 +3117,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="VB111" library="gm-supply" deviceset="VB" device=""/>
 <part name="C13" library="pedals-capacitors-elec" deviceset="040" device="0" value="10u"/>
 <part name="R16" library="pedals-resistors" deviceset="R_" device=".3B" value="100k"/>
-<part name="Q112" library="pedals-transistors" deviceset="2N3904" device="" value="2SC2459"/>
+<part name="Q5" library="pedals-transistors" deviceset="2N3904" device="" value="2SC2459"/>
 <part name="R12" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
 <part name="C12" library="pedals-capacitors-elec" deviceset="040" device="0" value="10u"/>
 <part name="R14" library="pedals-resistors" deviceset="R_" device=".3B" value="100k"/>
@@ -3145,7 +3145,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="OUTPUT" library="pedals-jacks" deviceset="MONO" device=""/>
 <part name="R41" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
 <part name="C28" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
-<part name="R42" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
+<part name="R43" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
 <part name="Q15" library="pedals-transistors" deviceset="2N3904" device="" value="2SC2459"/>
 <part name="R47" library="pedals-resistors" deviceset="R_" device=".3B" value="100k"/>
 <part name="R45" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
@@ -3157,7 +3157,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="R44" library="pedals-resistors" deviceset="R_" device=".3B" value="100k"/>
 <part name="C29" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="470p"/>
 <part name="C32" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="220p"/>
-<part name="R46" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
+<part name="R48" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
 <part name="Q16" library="pedals-transistors" deviceset="2N3904" device="" value="2SC2459"/>
 <part name="R40" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
 <part name="GND127" library="gm-supply" deviceset="GND" device=""/>
@@ -3172,9 +3172,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="LED" library="pedals-diodes" deviceset="LED" device=""/>
 <part name="V104" library="gm-supply" deviceset="+9V" device=""/>
 <part name="GND109" library="gm-supply" deviceset="GND" device=""/>
-<part name="R9" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
+<part name="R46" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="C33" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
-<part name="R24" library="pedals-resistors" deviceset="R_" device=".3B" value="100R"/>
+<part name="R42" library="pedals-resistors" deviceset="R_" device=".3B" value="100R"/>
 <part name="SW1" library="pedals-switches" deviceset="MOMENTARY" device=""/>
 <part name="V1" library="gm-supply" deviceset="+9V" device=""/>
 <part name="GND1" library="gm-supply" deviceset="GND" device=""/>
@@ -3330,7 +3330,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="D1" gate="G$1" x="304.8" y="22.86" rot="R90"/>
 <instance part="D3" gate="G$1" x="314.96" y="20.32" rot="R270"/>
 <instance part="R13" gate="G$1" x="314.96" y="7.62" rot="R90"/>
-<instance part="RX" gate="G$1" x="330.2" y="43.18"/>
+<instance part="R9" gate="G$1" x="330.2" y="43.18"/>
 <instance part="C8" gate="G$1" x="328.93" y="58.42"/>
 <instance part="C9" gate="G$1" x="313.69" y="58.42"/>
 <instance part="R21" gate="G$1" x="307.34" y="50.8" rot="R90"/>
@@ -3348,7 +3348,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="VB111" gate="G$1" x="353.06" y="-2.54" rot="R180"/>
 <instance part="C13" gate="1" x="317.5" y="96.52"/>
 <instance part="R16" gate="G$1" x="325.12" y="88.9" rot="R90"/>
-<instance part="Q112" gate="G1" x="330.2" y="96.52"/>
+<instance part="Q5" gate="G1" x="330.2" y="96.52"/>
 <instance part="R12" gate="G$1" x="332.74" y="81.28" rot="R90"/>
 <instance part="C12" gate="1" x="340.36" y="88.9" rot="MR0"/>
 <instance part="R14" gate="G$1" x="345.44" y="81.28" rot="R90"/>
@@ -3376,7 +3376,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="OUTPUT" gate="G$1" x="434.34" y="78.74" rot="MR0"/>
 <instance part="R41" gate="G$1" x="312.42" y="-35.56"/>
 <instance part="C28" gate="G$1" x="304.8" y="-41.91" rot="R90"/>
-<instance part="R42" gate="G$1" x="320.04" y="-27.94" rot="R90"/>
+<instance part="R43" gate="G$1" x="320.04" y="-27.94" rot="R90"/>
 <instance part="Q15" gate="G1" x="322.58" y="-43.18" rot="MR0"/>
 <instance part="R47" gate="G$1" x="332.74" y="-35.56"/>
 <instance part="R45" gate="G$1" x="327.66" y="-50.8" rot="R90"/>
@@ -3388,7 +3388,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="R44" gate="G$1" x="358.14" y="-35.56"/>
 <instance part="C29" gate="G$1" x="359.41" y="-25.4"/>
 <instance part="C32" gate="G$1" x="350.52" y="-49.53" rot="R90"/>
-<instance part="R46" gate="G$1" x="363.22" y="-50.8" rot="R90"/>
+<instance part="R48" gate="G$1" x="363.22" y="-50.8" rot="R90"/>
 <instance part="Q16" gate="G1" x="368.3" y="-43.18"/>
 <instance part="R40" gate="G$1" x="370.84" y="-27.94" rot="R90"/>
 <instance part="GND127" gate="GND" x="363.22" y="-60.96"/>
@@ -3403,9 +3403,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="LED" gate="G$1" x="408.94" y="33.02" rot="R90"/>
 <instance part="V104" gate="+9V" x="396.24" y="45.72"/>
 <instance part="GND109" gate="GND" x="68.58" y="-86.36"/>
-<instance part="R9" gate="G$1" x="386.08" y="-63.5" rot="R90"/>
+<instance part="R46" gate="G$1" x="386.08" y="-63.5" rot="R90"/>
 <instance part="C33" gate="G$1" x="386.08" y="-77.47" rot="R90"/>
-<instance part="R24" gate="G$1" x="393.7" y="-71.12"/>
+<instance part="R42" gate="G$1" x="393.7" y="-71.12"/>
 <instance part="SW1" gate="G$1" x="421.64" y="-71.12"/>
 <instance part="V1" gate="+9V" x="386.08" y="-53.34"/>
 <instance part="GND1" gate="GND" x="386.08" y="-86.36"/>
@@ -3562,7 +3562,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </segment>
 <segment>
 <pinref part="GND127" gate="GND" pin="GND"/>
-<pinref part="R46" gate="G$1" pin="1"/>
+<pinref part="R48" gate="G$1" pin="1"/>
 <wire x1="363.22" y1="-58.42" x2="363.22" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -3801,7 +3801,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </segment>
 <segment>
 <pinref part="V102" gate="+9V" pin="+9V"/>
-<pinref part="R42" gate="G$1" pin="2"/>
+<pinref part="R43" gate="G$1" pin="2"/>
 <wire x1="320.04" y1="-20.32" x2="320.04" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -3818,7 +3818,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </segment>
 <segment>
 <pinref part="V1" gate="+9V" pin="+9V"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R46" gate="G$1" pin="2"/>
 <wire x1="386.08" y1="-55.88" x2="386.08" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3881,7 +3881,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </segment>
 <segment>
 <pinref part="VA111" gate="G$1" pin="VA"/>
-<pinref part="Q112" gate="G1" pin="C"/>
+<pinref part="Q5" gate="G1" pin="C"/>
 <wire x1="332.74" y1="104.14" x2="332.74" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4269,7 +4269,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="314.96" y1="25.4" x2="314.96" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="27.94" x2="320.04" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="RX" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="320.04" y1="43.18" x2="325.12" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="C8" gate="G$1" pin="2"/>
@@ -4284,7 +4284,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="RX" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="335.28" y1="43.18" x2="340.36" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="43.18" x2="340.36" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="17.78" x2="337.82" y2="17.78" width="0.1524" layer="91"/>
@@ -4346,7 +4346,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <net name="N$43" class="0">
 <segment>
 <pinref part="C13" gate="1" pin="-"/>
-<pinref part="Q112" gate="G1" pin="B"/>
+<pinref part="Q5" gate="G1" pin="B"/>
 <wire x1="322.58" y1="96.52" x2="325.12" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="325.12" y1="96.52" x2="327.66" y2="96.52" width="0.1524" layer="91"/>
@@ -4356,7 +4356,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </net>
 <net name="N$44" class="0">
 <segment>
-<pinref part="Q112" gate="G1" pin="E"/>
+<pinref part="Q5" gate="G1" pin="E"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="332.74" y1="91.44" x2="332.74" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C12" gate="1" pin="-"/>
@@ -4470,7 +4470,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="R41" gate="G$1" pin="2"/>
 <pinref part="R47" gate="G$1" pin="1"/>
 <wire x1="317.5" y1="-35.56" x2="320.04" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="R42" gate="G$1" pin="1"/>
+<pinref part="R43" gate="G$1" pin="1"/>
 <wire x1="320.04" y1="-35.56" x2="325.12" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="325.12" y1="-35.56" x2="327.66" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="-33.02" x2="320.04" y2="-35.56" width="0.1524" layer="91"/>
@@ -4515,7 +4515,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="350.52" y1="-45.72" x2="350.52" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="Q16" gate="G1" pin="B"/>
 <wire x1="350.52" y1="-43.18" x2="363.22" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="R46" gate="G$1" pin="2"/>
+<pinref part="R48" gate="G$1" pin="2"/>
 <wire x1="363.22" y1="-43.18" x2="365.76" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="363.22" y1="-43.18" x2="363.22" y2="-45.72" width="0.1524" layer="91"/>
 <junction x="350.52" y="-43.18"/>
@@ -4555,9 +4555,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="345.44" y1="-55.88" x2="350.52" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="-55.88" x2="350.52" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="-55.88" x2="345.44" y2="-71.12" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="R42" gate="G$1" pin="1"/>
 <wire x1="345.44" y1="-71.12" x2="386.08" y2="-71.12" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R46" gate="G$1" pin="1"/>
 <wire x1="386.08" y1="-71.12" x2="388.62" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="386.08" y1="-68.58" x2="386.08" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="C33" gate="G$1" pin="1"/>
@@ -4604,7 +4604,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </net>
 <net name="N$52" class="0">
 <segment>
-<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="R42" gate="G$1" pin="2"/>
 <pinref part="SW1" gate="G$1" pin="P"/>
 <wire x1="398.78" y1="-71.12" x2="416.56" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
