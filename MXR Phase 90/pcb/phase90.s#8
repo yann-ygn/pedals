@@ -3581,6 +3581,7 @@ Marquardt</description>
 <wire x1="129.54" y1="48.26" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="1" pin="P"/>
 <wire x1="129.54" y1="55.88" x2="152.4" y2="55.88" width="0.1524" layer="91"/>
+<junction x="129.54" y="48.26"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -3684,6 +3685,7 @@ Marquardt</description>
 <pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="58.42" x2="231.14" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="58.42" x2="231.14" y2="48.26" width="0.1524" layer="91"/>
+<junction x="231.14" y="48.26"/>
 </segment>
 </net>
 <net name="N$1" class="0">

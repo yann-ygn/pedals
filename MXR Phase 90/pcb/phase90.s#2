@@ -2929,7 +2929,7 @@ Marquardt</description>
 <part name="R5" library="pedals-resistors" deviceset="R_" device=".3B" value="470k"/>
 <part name="VB2" library="gm-supply" deviceset="VB" device=""/>
 <part name="R6" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
-<part name="IC2" library="pedals-integrated circuits" deviceset="QUAD" device="TH"/>
+<part name="IC2" library="pedals-integrated circuits" deviceset="QUAD" device="TH" value="TL074"/>
 <part name="GND12" library="pedals-supply" deviceset="GND" device=""/>
 <part name="C6" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
 <part name="Q1" library="pedals-transistors" deviceset="2N5457" device=""/>
@@ -3410,6 +3410,7 @@ Marquardt</description>
 <wire x1="45.72" y1="30.48" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="_B" pin="+IN"/>
 <wire x1="48.26" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+<junction x="48.26" y="30.48"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -3433,6 +3434,7 @@ Marquardt</description>
 <wire x1="48.26" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="_B" pin="OUT"/>
 <wire x1="66.04" y1="33.02" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
+<junction x="68.58" y="33.02"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -3444,6 +3446,7 @@ Marquardt</description>
 <wire x1="88.9" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="_A" pin="-IN"/>
 <wire x1="88.9" y1="35.56" x2="91.44" y2="35.56" width="0.1524" layer="91"/>
+<junction x="88.9" y="35.56"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -3476,6 +3479,7 @@ Marquardt</description>
 <junction x="114.3" y="33.02"/>
 <pinref part="IC2" gate="_A" pin="OUT"/>
 <wire x1="106.68" y1="33.02" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
+<junction x="109.22" y="33.02"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -3582,6 +3586,7 @@ Marquardt</description>
 <pinref part="SW1" gate="1" pin="P"/>
 <wire x1="129.54" y1="55.88" x2="152.4" y2="55.88" width="0.1524" layer="91"/>
 <junction x="129.54" y="48.26"/>
+<junction x="129.54" y="35.56"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -3614,6 +3619,7 @@ Marquardt</description>
 <junction x="154.94" y="33.02"/>
 <pinref part="IC2" gate="_B" pin="OUT"/>
 <wire x1="147.32" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
+<junction x="149.86" y="33.02"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -3625,6 +3631,7 @@ Marquardt</description>
 <wire x1="170.18" y1="48.26" x2="170.18" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="_C" pin="-IN"/>
 <wire x1="170.18" y1="35.56" x2="172.72" y2="35.56" width="0.1524" layer="91"/>
+<junction x="170.18" y="35.56"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -3657,6 +3664,7 @@ Marquardt</description>
 <junction x="195.58" y="33.02"/>
 <pinref part="IC2" gate="_C" pin="OUT"/>
 <wire x1="187.96" y1="33.02" x2="190.5" y2="33.02" width="0.1524" layer="91"/>
+<junction x="190.5" y="33.02"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -3668,6 +3676,7 @@ Marquardt</description>
 <wire x1="210.82" y1="48.26" x2="215.9" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="_D" pin="-IN"/>
 <wire x1="210.82" y1="35.56" x2="213.36" y2="35.56" width="0.1524" layer="91"/>
+<junction x="210.82" y="35.56"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -3698,6 +3707,7 @@ Marquardt</description>
 <junction x="231.14" y="48.26"/>
 <pinref part="IC2" gate="_D" pin="OUT"/>
 <wire x1="228.6" y1="33.02" x2="231.14" y2="33.02" width="0.1524" layer="91"/>
+<junction x="231.14" y="33.02"/>
 </segment>
 </net>
 <net name="N$1" class="0">

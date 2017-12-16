@@ -2425,7 +2425,7 @@ NS Package M08A</description>
 <part name="V2" library="pedals-supply" deviceset="+9V" device=""/>
 <part name="V3" library="pedals-supply" deviceset="+9V" device=""/>
 <part name="CONTOUR" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kB"/>
-<part name="TREBLE" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="25kA"/>
+<part name="TREBLE" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="25kB"/>
 <part name="C3" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="100n"/>
 <part name="GND6" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND9" library="gm-supply" deviceset="GND" device=""/>

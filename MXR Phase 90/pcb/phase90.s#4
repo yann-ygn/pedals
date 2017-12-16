@@ -3036,9 +3036,9 @@ Marquardt</description>
 <instance part="VB2" gate="G$1" x="48.26" y="12.7" rot="R180"/>
 <instance part="R6" gate="G$1" x="81.28" y="35.56"/>
 <instance part="IC2" gate="_A" x="99.06" y="33.02" rot="MR180"/>
-<instance part="IC2" gate="_B" x="185.42" y="-30.48" rot="MR180"/>
+<instance part="IC2" gate="_B" x="139.7" y="33.02" rot="MR180"/>
 <instance part="IC2" gate="_C" x="180.34" y="33.02" rot="MR180"/>
-<instance part="IC2" gate="_D" x="139.7" y="33.02" rot="MR180"/>
+<instance part="IC2" gate="_D" x="220.98" y="33.02" rot="MR180"/>
 <instance part="IC2" gate="_PWR" x="35.56" y="86.36"/>
 <instance part="GND12" gate="GND" x="55.88" y="45.72" rot="R180"/>
 <instance part="C6" gate="G$1" x="80.01" y="25.4"/>
@@ -3576,12 +3576,12 @@ Marquardt</description>
 <wire x1="129.54" y1="35.56" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="48.26" x2="134.62" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="_B" pin="-IN"/>
+<wire x1="129.54" y1="35.56" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="48.26" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="1" pin="P"/>
 <wire x1="129.54" y1="55.88" x2="152.4" y2="55.88" width="0.1524" layer="91"/>
 <junction x="129.54" y="48.26"/>
-<pinref part="IC2" gate="_D" pin="-IN"/>
-<wire x1="129.54" y1="35.56" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -3595,8 +3595,8 @@ Marquardt</description>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="127" y1="25.4" x2="127" y2="22.86" width="0.1524" layer="91"/>
 <junction x="127" y="25.4"/>
+<pinref part="IC2" gate="_B" pin="+IN"/>
 <wire x1="127" y1="30.48" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="30.48" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -3612,7 +3612,7 @@ Marquardt</description>
 <wire x1="144.78" y1="48.26" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="48.26" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
 <junction x="154.94" y="33.02"/>
-<pinref part="IC2" gate="_D" pin="OUT"/>
+<pinref part="IC2" gate="_B" pin="OUT"/>
 <wire x1="147.32" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>

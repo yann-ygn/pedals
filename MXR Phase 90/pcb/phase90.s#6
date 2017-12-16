@@ -2232,72 +2232,6 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 </library>
 <library name="pedals-integrated circuits">
 <packages>
-<package name="SO14">
-<description>&lt;b&gt;Small Outline package&lt;/b&gt; 150 mil</description>
-<wire x1="4.064" y1="1.9558" x2="-4.064" y2="1.9558" width="0.1524" layer="21"/>
-<wire x1="4.064" y1="-1.9558" x2="4.445" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
-<wire x1="-4.445" y1="1.5748" x2="-4.064" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.064" y1="1.9558" x2="4.445" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.445" y1="-1.5748" x2="-4.064" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
-<wire x1="-4.064" y1="-1.9558" x2="4.064" y2="-1.9558" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="-1.5748" x2="4.445" y2="1.5748" width="0.1524" layer="21"/>
-<wire x1="-4.445" y1="1.5748" x2="-4.445" y2="-1.5748" width="0.1524" layer="21"/>
-<wire x1="-4.445" y1="0.508" x2="-4.445" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-4.445" y1="-1.6002" x2="4.445" y2="-1.6002" width="0.1524" layer="21"/>
-<rectangle x1="-0.254" y1="1.9558" x2="0.254" y2="3.0988" layer="51"/>
-<rectangle x1="-4.064" y1="-3.0988" x2="-3.556" y2="-1.9558" layer="51"/>
-<rectangle x1="-2.794" y1="-3.0988" x2="-2.286" y2="-1.9558" layer="51"/>
-<rectangle x1="-1.524" y1="-3.0734" x2="-1.016" y2="-1.9304" layer="51"/>
-<rectangle x1="-0.254" y1="-3.0988" x2="0.254" y2="-1.9558" layer="51"/>
-<rectangle x1="-1.524" y1="1.9558" x2="-1.016" y2="3.0988" layer="51"/>
-<rectangle x1="-2.794" y1="1.9558" x2="-2.286" y2="3.0988" layer="51"/>
-<rectangle x1="-4.064" y1="1.9558" x2="-3.556" y2="3.0988" layer="51"/>
-<rectangle x1="1.016" y1="1.9558" x2="1.524" y2="3.0988" layer="51"/>
-<rectangle x1="2.286" y1="1.9558" x2="2.794" y2="3.0988" layer="51"/>
-<rectangle x1="3.556" y1="1.9558" x2="4.064" y2="3.0988" layer="51"/>
-<rectangle x1="1.016" y1="-3.0988" x2="1.524" y2="-1.9558" layer="51"/>
-<rectangle x1="2.286" y1="-3.0988" x2="2.794" y2="-1.9558" layer="51"/>
-<rectangle x1="3.556" y1="-3.0988" x2="4.064" y2="-1.9558" layer="51"/>
-<smd name="1" x="-3.81" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="2" x="-2.54" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="3" x="-1.27" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="4" x="0" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="5" x="1.27" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="6" x="2.54" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="7" x="3.81" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="8" x="3.81" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="9" x="2.54" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="10" x="1.27" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="11" x="0" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="12" x="-1.27" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="13" x="-2.54" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="14" x="-3.81" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<text x="0" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
-</package>
-<package name="DIL14">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="8.382" y1="2.921" x2="-8.382" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.382" y1="2.921" x2="8.382" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="2.921" x2="-8.382" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="-2.921" x2="-8.382" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-8.382" y1="1.016" x2="-8.382" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-7.62" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="2" x="-5.08" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="3" x="-2.54" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="4" x="0" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="5" x="2.54" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="6" x="5.08" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="7" x="7.62" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="8" x="7.62" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="9" x="5.08" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="10" x="2.54" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="11" x="0" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="12" x="-2.54" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="13" x="-5.08" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="14" x="-7.62" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<text x="0" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
-</package>
 <package name="SIL08">
 <wire x1="19.431" y1="1.651" x2="19.431" y2="-1.651" width="0.127" layer="21"/>
 <wire x1="19.431" y1="-1.651" x2="-1.27" y2="-1.651" width="0.127" layer="21"/>
@@ -2389,60 +2323,6 @@ NS Package M08A</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="QUAD" prefix="IC" uservalue="yes">
-<description>&lt;b&gt;OP AMP&lt;/b&gt;</description>
-<gates>
-<gate name="_A" symbol="OPAMP" x="0" y="0" swaplevel="1"/>
-<gate name="_B" symbol="OPAMP" x="0" y="-10.16" swaplevel="1"/>
-<gate name="_C" symbol="OPAMP" x="0" y="-20.32" swaplevel="1"/>
-<gate name="_D" symbol="OPAMP" x="0" y="-30.48" swaplevel="1"/>
-<gate name="_PWR" symbol="PWR+-" x="-2.54" y="-48.26"/>
-</gates>
-<devices>
-<device name="SMD" package="SO14">
-<connects>
-<connect gate="_A" pin="+IN" pad="3"/>
-<connect gate="_A" pin="-IN" pad="2"/>
-<connect gate="_A" pin="OUT" pad="1"/>
-<connect gate="_B" pin="+IN" pad="5"/>
-<connect gate="_B" pin="-IN" pad="6"/>
-<connect gate="_B" pin="OUT" pad="7"/>
-<connect gate="_C" pin="+IN" pad="10"/>
-<connect gate="_C" pin="-IN" pad="9"/>
-<connect gate="_C" pin="OUT" pad="8"/>
-<connect gate="_D" pin="+IN" pad="12"/>
-<connect gate="_D" pin="-IN" pad="13"/>
-<connect gate="_D" pin="OUT" pad="14"/>
-<connect gate="_PWR" pin="V+" pad="4"/>
-<connect gate="_PWR" pin="V-" pad="11"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TH" package="DIL14">
-<connects>
-<connect gate="_A" pin="+IN" pad="3"/>
-<connect gate="_A" pin="-IN" pad="2"/>
-<connect gate="_A" pin="OUT" pad="1"/>
-<connect gate="_B" pin="+IN" pad="5"/>
-<connect gate="_B" pin="-IN" pad="6"/>
-<connect gate="_B" pin="OUT" pad="7"/>
-<connect gate="_C" pin="+IN" pad="10"/>
-<connect gate="_C" pin="-IN" pad="9"/>
-<connect gate="_C" pin="OUT" pad="8"/>
-<connect gate="_D" pin="+IN" pad="12"/>
-<connect gate="_D" pin="-IN" pad="13"/>
-<connect gate="_D" pin="OUT" pad="14"/>
-<connect gate="_PWR" pin="V+" pad="4"/>
-<connect gate="_PWR" pin="V-" pad="11"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="DUAL" prefix="IC" uservalue="yes">
 <description>&lt;b&gt;OP AMP&lt;/b&gt;</description>
 <gates>
@@ -2929,7 +2809,6 @@ Marquardt</description>
 <part name="R5" library="pedals-resistors" deviceset="R_" device=".3B" value="470k"/>
 <part name="VB2" library="gm-supply" deviceset="VB" device=""/>
 <part name="R6" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
-<part name="IC2" library="pedals-integrated circuits" deviceset="QUAD" device="TH"/>
 <part name="GND12" library="pedals-supply" deviceset="GND" device=""/>
 <part name="C6" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
 <part name="Q1" library="pedals-transistors" deviceset="2N5457" device=""/>
@@ -2980,6 +2859,7 @@ Marquardt</description>
 <part name="IC1" library="pedals-integrated circuits" deviceset="DUAL" device="TH" value="TL072"/>
 <part name="SW1" library="pedals-switches" deviceset="SPDT" device="PIN_MOUNT"/>
 <part name="R27" library="pedals-resistors" deviceset="R_" device=".3B" value="22k"/>
+<part name="IC3" library="pedals-integrated circuits" deviceset="DUAL" device="TH"/>
 </parts>
 <sheets>
 <sheet>
@@ -3035,7 +2915,6 @@ Marquardt</description>
 <instance part="R5" gate="G$1" x="48.26" y="22.86" rot="R270"/>
 <instance part="VB2" gate="G$1" x="48.26" y="12.7" rot="R180"/>
 <instance part="R6" gate="G$1" x="81.28" y="35.56"/>
-<instance part="IC2" gate="_PWR" x="35.56" y="86.36"/>
 <instance part="GND12" gate="GND" x="55.88" y="45.72" rot="R180"/>
 <instance part="C6" gate="G$1" x="80.01" y="25.4"/>
 <instance part="Q1" gate="G$1" x="101.6" y="17.78" rot="MR0"/>
@@ -3088,6 +2967,9 @@ Marquardt</description>
 <instance part="IC1" gate="_PWR" x="55.88" y="33.02" rot="R180"/>
 <instance part="SW1" gate="1" x="157.48" y="58.42" rot="R270"/>
 <instance part="R27" gate="G$1" x="172.72" y="58.42"/>
+<instance part="IC3" gate="_A" x="99.06" y="33.02" rot="MR180"/>
+<instance part="IC3" gate="_B" x="139.7" y="33.02" rot="MR180"/>
+<instance part="IC3" gate="_PWR" x="35.56" y="86.36" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3195,8 +3077,8 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="GND17" gate="GND" pin="GND"/>
-<pinref part="IC2" gate="_PWR" pin="V-"/>
 <wire x1="35.56" y1="76.2" x2="35.56" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="_PWR" pin="V+"/>
 </segment>
 </net>
 <net name="VR" class="0">
@@ -3216,11 +3098,11 @@ Marquardt</description>
 <junction x="7.62" y="93.98"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="93.98" x2="17.78" y2="90.17" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="_PWR" pin="V+"/>
 <wire x1="17.78" y1="93.98" x2="35.56" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="93.98" x2="35.56" y2="93.98" width="0.1524" layer="91"/>
-<junction x="35.56" y="93.98"/>
 <junction x="17.78" y="93.98"/>
+<pinref part="IC3" gate="_PWR" pin="V-"/>
+<wire x1="35.56" y1="93.98" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
+<junction x="35.56" y="93.98"/>
 </segment>
 <segment>
 <wire x1="55.88" y1="22.86" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
@@ -3439,6 +3321,8 @@ Marquardt</description>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="35.56" x2="91.44" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="_A" pin="-IN"/>
+<junction x="88.9" y="35.56"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -3453,6 +3337,7 @@ Marquardt</description>
 <wire x1="86.36" y1="30.48" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
 <junction x="86.36" y="25.4"/>
 <wire x1="86.36" y1="30.48" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="_A" pin="+IN"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -3469,6 +3354,8 @@ Marquardt</description>
 <wire x1="114.3" y1="25.4" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
 <junction x="114.3" y="33.02"/>
 <wire x1="106.68" y1="33.02" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="_A" pin="OUT"/>
+<junction x="109.22" y="33.02"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -3574,6 +3461,8 @@ Marquardt</description>
 <pinref part="SW1" gate="1" pin="P"/>
 <wire x1="129.54" y1="55.88" x2="152.4" y2="55.88" width="0.1524" layer="91"/>
 <junction x="129.54" y="48.26"/>
+<pinref part="IC3" gate="_B" pin="-IN"/>
+<junction x="129.54" y="35.56"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -3588,6 +3477,7 @@ Marquardt</description>
 <wire x1="127" y1="25.4" x2="127" y2="22.86" width="0.1524" layer="91"/>
 <junction x="127" y="25.4"/>
 <wire x1="127" y1="30.48" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="_B" pin="+IN"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -3604,6 +3494,7 @@ Marquardt</description>
 <wire x1="149.86" y1="48.26" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
 <junction x="154.94" y="33.02"/>
 <wire x1="147.32" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="_B" pin="OUT"/>
 </segment>
 </net>
 <net name="N$16" class="0">

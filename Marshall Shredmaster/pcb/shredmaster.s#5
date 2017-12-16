@@ -2448,7 +2448,7 @@ NS Package M08A</description>
 <part name="C13" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="22n"/>
 <part name="R11" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
 <part name="VB5" library="pedals-supply" deviceset="VB" device=""/>
-<part name="IC2" library="pedals-integrated circuits" deviceset="DUAL" device="TH"/>
+<part name="IC2" library="pedals-integrated circuits" deviceset="DUAL" device="TH" value="TL072"/>
 <part name="GND13" library="gm-supply" deviceset="GND" device=""/>
 <part name="R12" library="pedals-resistors" deviceset="R_" device=".3B" value="220k"/>
 <part name="C14" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="2.2n"/>

@@ -2415,7 +2415,7 @@ NS Package M08A</description>
 <part name="V1" library="pedals-supply" deviceset="+9V" device=""/>
 <part name="V2" library="pedals-supply" deviceset="+9V" device=""/>
 <part name="V3" library="pedals-supply" deviceset="+9V" device=""/>
-<part name="TONE" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kA"/>
+<part name="CONTOUR" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kB"/>
 <part name="TREBLE" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="25kA"/>
 <part name="C3" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="100n"/>
 <part name="GND6" library="gm-supply" deviceset="GND" device=""/>
@@ -2514,7 +2514,7 @@ NS Package M08A</description>
 <instance part="V1" gate="+9V" x="-22.86" y="93.98" rot="R180"/>
 <instance part="V2" gate="+9V" x="0" y="96.52" rot="R90"/>
 <instance part="V3" gate="+9V" x="-7.62" y="45.72" rot="R270"/>
-<instance part="TONE" gate="G$1" x="231.14" y="20.32" rot="R270"/>
+<instance part="CONTOUR" gate="G$1" x="231.14" y="20.32" rot="R270"/>
 <instance part="TREBLE" gate="G$1" x="172.72" y="38.1"/>
 <instance part="C3" gate="G$1" x="50.8" y="90.17" rot="R270"/>
 <instance part="GND6" gate="GND" x="35.56" y="78.74"/>
@@ -2782,7 +2782,7 @@ NS Package M08A</description>
 <wire x1="187.96" y1="-5.08" x2="187.96" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="TONE" gate="G$1" pin="2"/>
+<pinref part="CONTOUR" gate="G$1" pin="2"/>
 <pinref part="VB7" gate="G$1" pin="VB"/>
 <wire x1="231.14" y1="15.24" x2="231.14" y2="12.7" width="0.1524" layer="91"/>
 </segment>
@@ -3032,7 +3032,7 @@ NS Package M08A</description>
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="25.4" x2="223.52" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="TONE" gate="G$1" pin="1"/>
+<pinref part="CONTOUR" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="20.32" x2="224.79" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3040,7 +3040,7 @@ NS Package M08A</description>
 <segment>
 <pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="238.76" y1="25.4" x2="238.76" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="TONE" gate="G$1" pin="3"/>
+<pinref part="CONTOUR" gate="G$1" pin="3"/>
 <wire x1="238.76" y1="20.32" x2="237.49" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>

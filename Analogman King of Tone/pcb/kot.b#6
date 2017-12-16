@@ -793,6 +793,10 @@ design rules under a new name.</description>
 <via x="55.0545" y="41.275" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="3.048" y="31.115" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="3.048" y="41.275" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="7.1755" y="14.224" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="9.906" y="14.224" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="36.322" y="20.955" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="33.4645" y="20.955" extent="1-16" drill="0.5" diameter="0.85"/>
 </signal>
 <signal name="VR">
 <contactref element="R1" pad="2"/>
