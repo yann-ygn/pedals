@@ -3628,6 +3628,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="43.18" y1="-17.78" x2="53.34" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="V101" gate="+9V" pin="+9V"/>
 <wire x1="22.86" y1="-15.24" x2="22.86" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="22.86" y="-17.78"/>
 </segment>
 </net>
 <net name="N$29" class="0">

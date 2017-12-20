@@ -196,6 +196,11 @@
 <text x="0" y="5.08" size="1.778" layer="95" rot="R180">&gt;NAME</text>
 <pin name="IN" x="2.54" y="0" visible="off" length="short" direction="sup" rot="R180"/>
 </symbol>
+<symbol name="OUT">
+<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<pin name="OUT" x="-2.54" y="0" visible="off" length="short" direction="sup"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -279,6 +284,25 @@
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="IN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OUT" prefix="OUT">
+<description>&lt;b&gt;Output&lt;/b&gt;
+
+&lt;ul&gt;
+&lt;li&gt;obsolete:  use Mark instead and label net
+&lt;li&gt;output label without circuit board terminal/pad&lt;/li&gt;
+&lt;li&gt;commonly used as output label on 2nd lug of a potentiometer&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="OUT" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -2756,6 +2780,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="VB7" library="gm-supply" deviceset="VB" device=""/>
 <part name="VB8" library="gm-supply" deviceset="VB" device=""/>
 <part name="IN" library="gm-supply" deviceset="IN" device=""/>
+<part name="OUT" library="gm-supply" deviceset="OUT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2984,6 +3009,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="VB7" gate="G$1" x="467.36" y="33.02" rot="R180"/>
 <instance part="VB8" gate="G$1" x="403.86" y="35.56" rot="R180"/>
 <instance part="IN" gate="G$1" x="25.4" y="48.26"/>
+<instance part="OUT" gate="G$1" x="497.84" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -3901,13 +3927,6 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="492.76" y1="22.86" x2="492.76" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$56" class="0">
-<segment>
-<pinref part="C24" gate="1" pin="-"/>
-<pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="492.76" y1="12.7" x2="492.76" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$57" class="0">
 <segment>
 <pinref part="C23" gate="G$1" pin="1"/>
@@ -4329,6 +4348,17 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="IN" gate="G$1" pin="IN"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="OUT" class="0">
+<segment>
+<pinref part="C24" gate="1" pin="-"/>
+<pinref part="R33" gate="G$1" pin="1"/>
+<wire x1="492.76" y1="12.7" x2="492.76" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="OUT" gate="G$1" pin="OUT"/>
+<wire x1="492.76" y1="10.16" x2="492.76" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="492.76" y1="10.16" x2="495.3" y2="10.16" width="0.1524" layer="91"/>
+<junction x="492.76" y="10.16"/>
 </segment>
 </net>
 </nets>

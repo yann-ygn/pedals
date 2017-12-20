@@ -2971,7 +2971,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="C27" gate="1" x="177.8" y="-17.78"/>
 <instance part="C28" gate="1" x="190.5" y="-17.78" rot="MR0"/>
 <instance part="R36" gate="G$1" x="149.86" y="-2.54"/>
-<instance part="VR2" gate="G$1" x="195.58" y="-40.64"/>
+<instance part="VR2" gate="G$1" x="195.58" y="-43.18"/>
 <instance part="Q8" gate="G$1" x="185.42" y="-71.12"/>
 <instance part="R43" gate="G$1" x="177.8" y="-63.5" rot="R90"/>
 <instance part="VA104" gate="G$1" x="177.8" y="-53.34"/>
@@ -3165,7 +3165,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="VR2" gate="G$1" pin="1"/>
 <wire x1="187.96" y1="-81.28" x2="195.58" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="-81.28" x2="195.58" y2="-46.99" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="-81.28" x2="195.58" y2="-49.53" width="0.1524" layer="91"/>
 <pinref part="Q8" gate="G$1" pin="C"/>
 <wire x1="187.96" y1="-76.2" x2="187.96" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="GND114" gate="GND" pin="GND"/>
@@ -4179,7 +4179,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="195.58" y1="-2.54" x2="195.58" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="195.58" y="-17.78"/>
 <pinref part="VR2" gate="G$1" pin="3"/>
-<wire x1="195.58" y1="-30.48" x2="195.58" y2="-34.29" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="-30.48" x2="195.58" y2="-36.83" width="0.1524" layer="91"/>
 <junction x="195.58" y="-30.48"/>
 </segment>
 </net>
@@ -4193,8 +4193,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <net name="N$78" class="0">
 <segment>
 <pinref part="VR2" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="-40.64" x2="205.74" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="-40.64" x2="205.74" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="-43.18" x2="205.74" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-43.18" x2="205.74" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="R48" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="-91.44" x2="241.3" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="-91.44" x2="241.3" y2="-83.82" width="0.1524" layer="91"/>
