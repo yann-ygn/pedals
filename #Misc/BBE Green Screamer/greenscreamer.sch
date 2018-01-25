@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2303,7 +2304,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <parts>
 <part name="IN" library="pedals-jacks" deviceset="STEREO" device="3PADS"/>
 <part name="GND101" library="gm-supply" deviceset="GND" device=""/>
-<part name="DC101" library="pedals-jacks" deviceset="DC_KOBICONN" device="" value="DCJACK"/>
+<part name="DCJACK" library="pedals-jacks" deviceset="DC_KOBICONN" device="" value="DCJACK"/>
 <part name="1101" library="pedals-jacks" deviceset="BATTERY" device=""/>
 <part name="GND104" library="gm-supply" deviceset="GND" device=""/>
 <part name="OUT" library="pedals-jacks" deviceset="MONO" device=""/>
@@ -2354,11 +2355,14 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <sheets>
 <sheet>
 <plain>
+<text x="91.44" y="99.06" size="1.778" layer="96">GAIN</text>
+<text x="127" y="91.44" size="1.778" layer="96">TONE</text>
+<text x="172.72" y="48.26" size="1.778" layer="96">VOLUME</text>
 </plain>
 <instances>
 <instance part="IN" gate="G$1" x="27.94" y="40.64" rot="MR180"/>
 <instance part="GND101" gate="GND" x="43.18" y="30.48"/>
-<instance part="DC101" gate="G$1" x="35.56" y="-10.16" rot="MR180"/>
+<instance part="DCJACK" gate="G$1" x="35.56" y="-10.16" rot="MR180"/>
 <instance part="1101" gate="G$1" x="48.26" y="10.16" rot="R180"/>
 <instance part="GND104" gate="GND" x="55.88" y="-25.4"/>
 <instance part="OUT" gate="G$1" x="205.74" y="35.56" rot="MR0"/>
@@ -2430,7 +2434,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="GND113" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="DC101" gate="G$1" pin="T"/>
+<pinref part="DCJACK" gate="G$1" pin="T"/>
 <pinref part="GND102" gate="GND" pin="GND"/>
 <wire x1="45.72" y1="-12.7" x2="48.26" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="-12.7" x2="48.26" y2="-15.24" width="0.1524" layer="91"/>
@@ -2490,7 +2494,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="DC101" gate="G$1" pin="R"/>
+<pinref part="DCJACK" gate="G$1" pin="R"/>
 <wire x1="45.72" y1="-10.16" x2="48.26" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="-10.16" x2="48.26" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="1101" gate="G$1" pin="P$1"/>
@@ -2524,7 +2528,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <net name="+9V" class="0">
 <segment>
 <wire x1="55.88" y1="-10.16" x2="55.88" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="DC101" gate="G$1" pin="S"/>
+<pinref part="DCJACK" gate="G$1" pin="S"/>
 <wire x1="45.72" y1="-7.62" x2="55.88" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="R2" gate="G$1" pin="1"/>

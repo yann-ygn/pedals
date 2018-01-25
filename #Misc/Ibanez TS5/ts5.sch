@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -2911,6 +2912,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="165.1" y1="-58.42" x2="175.26" y2="-58.42" width="0.1524" layer="95" style="shortdash"/>
 <text x="172.212" y="-57.658" size="1.778" layer="95" rot="MR0">CR1</text>
 <text x="197.612" y="-57.658" size="1.778" layer="95" rot="MR0">CR2</text>
+<text x="91.44" y="106.68" size="1.778" layer="95">DIST.</text>
+<text x="127" y="106.68" size="1.778" layer="95">TONE</text>
+<text x="179.578" y="106.68" size="1.778" layer="95">LEVEL</text>
 </plain>
 <instances>
 <instance part="JK2" gate="G$1" x="2.54" y="48.26" rot="MR180"/>
@@ -2954,8 +2958,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="R23" gate="G$1" x="149.86" y="66.04"/>
 <instance part="C11" gate="1" x="119.38" y="38.1" rot="MR270"/>
 <instance part="GND108" gate="GND" x="119.38" y="25.4"/>
-<instance part="R21" gate="G$1" x="137.16" y="35.56" rot="R90"/>
-<instance part="VB106" gate="G$1" x="137.16" y="25.4" rot="R180"/>
+<instance part="R21" gate="G$1" x="134.62" y="35.56" rot="R90"/>
+<instance part="VB106" gate="G$1" x="134.62" y="25.4" rot="R180"/>
 <instance part="VR2" gate="G$1" x="129.54" y="99.06" rot="R270"/>
 <instance part="V104" gate="+9V" x="149.86" y="55.88"/>
 <instance part="GND113" gate="GND" x="149.86" y="35.56"/>
@@ -3183,7 +3187,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="VB106" gate="G$1" pin="VB"/>
 <pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="27.94" x2="137.16" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="27.94" x2="134.62" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R32" gate="G$1" pin="1"/>
@@ -3375,12 +3379,12 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="C11" gate="1" pin="+"/>
 <wire x1="119.38" y1="40.64" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="137.16" y1="40.64" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="40.64" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="_B" pin="+IN"/>
-<wire x1="137.16" y1="43.18" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="43.18" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="43.18" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
 <junction x="119.38" y="43.18"/>
-<junction x="137.16" y="43.18"/>
+<junction x="134.62" y="43.18"/>
 </segment>
 </net>
 <net name="N$11" class="0">

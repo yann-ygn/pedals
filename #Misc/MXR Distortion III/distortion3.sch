@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2870,6 +2871,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <sheets>
 <sheet>
 <plain>
+<text x="86.36" y="83.82" size="1.778" layer="95">DISTORTION</text>
+<text x="159.258" y="73.66" size="1.778" layer="95">TONE</text>
+<text x="210.82" y="31.242" size="1.778" layer="95" rot="R90">OUTPUT</text>
 </plain>
 <instances>
 <instance part="IN" gate="G$1" x="-20.32" y="45.72" rot="MR180"/>
@@ -2903,7 +2907,6 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="R7" gate="G$1" x="71.12" y="33.02" rot="R90"/>
 <instance part="IC1" gate="_A" x="182.88" y="45.72" rot="MR180"/>
 <instance part="IC1" gate="_B" x="91.44" y="43.18" rot="MR180"/>
-<instance part="IC1" gate="_PWR" x="111.76" y="114.3"/>
 <instance part="R4" gate="G$1" x="81.28" y="33.02" rot="R90"/>
 <instance part="C12" gate="G$1" x="90.17" y="53.34" rot="MR0"/>
 <instance part="R6" gate="G$1" x="101.6" y="60.96" rot="R90"/>

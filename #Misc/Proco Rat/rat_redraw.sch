@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1997,8 +1998,8 @@ Diodes:  1N914</description>
 <part name="VB101" library="pedals-supply" deviceset="VB" device=""/>
 <part name="C8" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="30p"/>
 <part name="C7" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="100p"/>
-<part name="R6" library="pedals-resistors" deviceset="R_" device=".3B" value="47"/>
-<part name="R7" library="pedals-resistors" deviceset="R_" device=".3B" value="560"/>
+<part name="R6" library="pedals-resistors" deviceset="R_" device=".3B" value="47R"/>
+<part name="R7" library="pedals-resistors" deviceset="R_" device=".3B" value="560R"/>
 <part name="C7_" library="pedals-capacitors-elec" deviceset="050" device="0" value="4.7u"/>
 <part name="C6" library="pedals-capacitors-elec" deviceset="050" device="0" value="2.2u"/>
 <part name="GND109" library="gm-supply" deviceset="GND" device=""/>
@@ -2028,7 +2029,7 @@ Diodes:  1N914</description>
 <part name="C1" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
 <part name="GND104" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND102" library="gm-supply" deviceset="GND" device=""/>
-<part name="R1" library="pedals-resistors" deviceset="R_" device=".3B" value="47"/>
+<part name="R1" library="pedals-resistors" deviceset="R_" device=".3B" value="47R"/>
 <part name="D1" library="pedals-diodes" deviceset="DO35" device=".2" value="1N4001"/>
 <part name="R2" library="pedals-resistors" deviceset="R_" device=".3B" value="100k"/>
 <part name="R3" library="pedals-resistors" deviceset="R_" device=".3B" value="100k"/>
@@ -2046,6 +2047,9 @@ Diodes:  1N914</description>
 <sheets>
 <sheet>
 <plain>
+<text x="80.772" y="45.466" size="1.778" layer="95">GAIN</text>
+<text x="133.604" y="81.28" size="1.778" layer="95">FILTER</text>
+<text x="204.724" y="86.36" size="1.778" layer="95">LEVEL</text>
 </plain>
 <instances>
 <instance part="RR1" gate="G$1" x="83.82" y="53.34" rot="MR90"/>

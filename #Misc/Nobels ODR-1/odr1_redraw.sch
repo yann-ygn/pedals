@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2772,7 +2773,7 @@ Based on the following sources:
 </class>
 </classes>
 <parts>
-<part name="C201" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
+<part name="C201" library="pedals-capacitors-elec" deviceset="040" device="0" value="220u"/>
 <part name="GND502" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND504" library="gm-supply" deviceset="GND" device=""/>
 <part name="V501" library="gm-supply" deviceset="+9V" device=""/>
@@ -2780,7 +2781,7 @@ Based on the following sources:
 <part name="R201" library="pedals-resistors" deviceset="R_" device=".3B" value="15k"/>
 <part name="R202" library="pedals-resistors" deviceset="R_" device=".3B" value="15k"/>
 <part name="C202" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
-<part name="C204" library="pedals-capacitors-elec" deviceset="040" device="0" value="100u"/>
+<part name="C204" library="pedals-capacitors-elec" deviceset="040" device="0" value="47u"/>
 <part name="GND506" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND507" library="gm-supply" deviceset="GND" device=""/>
 <part name="GND509" library="gm-supply" deviceset="GND" device=""/>

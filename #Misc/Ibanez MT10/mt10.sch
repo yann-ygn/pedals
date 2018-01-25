@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2778,7 +2779,6 @@ NS Package M08A</description>
 <part name="R1" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
 <part name="R2" library="pedals-resistors" deviceset="R_" device=".3B" value="510k"/>
 <part name="R3" library="pedals-resistors" deviceset="R_" device=".3B" value="9.1k"/>
-<part name="VB101" library="gm-supply" deviceset="VB" device=""/>
 <part name="R4" library="pedals-resistors" deviceset="R_" device=".3B" value="22k"/>
 <part name="C2" library="pedals-capacitors-elec" deviceset="050" device="0" value="10u"/>
 <part name="GND103" library="gm-supply" deviceset="GND" device=""/>
@@ -2875,6 +2875,7 @@ NS Package M08A</description>
 <part name="GND2" library="gm-supply" deviceset="GND" device=""/>
 <part name="V1" library="gm-supply" deviceset="+9V" device=""/>
 <part name="GND3" library="gm-supply" deviceset="GND" device=""/>
+<part name="V2" library="gm-supply" deviceset="+9V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2911,6 +2912,11 @@ NS Package M08A</description>
 <text x="157.734" y="-86.106" size="1.778" layer="95">03</text>
 <circle x="187.96" y="-86.36" radius="0.381" width="0.1524" layer="95"/>
 <text x="188.214" y="-86.106" size="1.778" layer="95">04</text>
+<text x="93.98" y="134.62" size="1.778" layer="95">DISTORTION</text>
+<text x="132.08" y="134.62" size="1.778" layer="95">MIDDLE</text>
+<text x="167.64" y="134.62" size="1.778" layer="95">TREBLE</text>
+<text x="205.74" y="134.62" size="1.778" layer="95">BASS</text>
+<text x="238.76" y="134.62" size="1.778" layer="95">LEVEL</text>
 </plain>
 <instances>
 <instance part="JK1" gate="G$1" x="2.54" y="48.26" rot="MR180"/>
@@ -2950,7 +2956,6 @@ NS Package M08A</description>
 <instance part="R1" gate="G$1" x="40.64" y="48.26"/>
 <instance part="R2" gate="G$1" x="48.26" y="27.94" rot="R90"/>
 <instance part="R3" gate="G$1" x="38.1" y="27.94" rot="R90"/>
-<instance part="VB101" gate="G$1" x="38.1" y="38.1"/>
 <instance part="R4" gate="G$1" x="38.1" y="12.7" rot="R90"/>
 <instance part="C2" gate="1" x="48.26" y="15.24" rot="MR270"/>
 <instance part="GND103" gate="GND" x="38.1" y="2.54"/>
@@ -3049,6 +3054,7 @@ NS Package M08A</description>
 <instance part="GND2" gate="GND" x="137.16" y="-76.2"/>
 <instance part="V1" gate="+9V" x="137.16" y="-40.64"/>
 <instance part="GND3" gate="GND" x="187.96" y="-78.74" rot="R180"/>
+<instance part="V2" gate="+9V" x="38.1" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -3213,11 +3219,6 @@ NS Package M08A</description>
 <wire x1="73.66" y1="-30.48" x2="73.66" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="VB101" gate="G$1" pin="VB"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="35.56" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="27.94" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="VB104" gate="G$1" pin="VB"/>
@@ -3346,6 +3347,11 @@ NS Package M08A</description>
 <pinref part="V1" gate="+9V" pin="+9V"/>
 <pinref part="R33" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="-45.72" x2="137.16" y2="-43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="35.56" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="V2" gate="+9V" pin="+9V"/>
 </segment>
 </net>
 <net name="N$7" class="0">

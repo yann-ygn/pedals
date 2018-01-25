@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2696,6 +2697,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <text x="158.75" y="141.732" size="1.778" layer="95" rot="R90">yel</text>
 <text x="174.498" y="131.826" size="1.778" layer="95" rot="R90">blk</text>
 <text x="200.406" y="105.41" size="1.778" layer="95">gry</text>
+<text x="147.32" y="78.74" size="1.778" layer="95">GAIN</text>
+<text x="167.64" y="111.76" size="1.778" layer="95">VOLUME</text>
+<text x="55.88" y="104.14" size="1.778" layer="95">TWEAK</text>
 </plain>
 <instances>
 <instance part="IN" gate="G$1" x="5.08" y="88.9" rot="MR180"/>
