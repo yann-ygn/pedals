@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2814,9 +2815,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="R33" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="R32" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="D7" library="pedals-diodes" deviceset="DO35" device=".2" value="1S2473"/>
-<part name="C21" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="470n"/>
+<part name="C21" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
 <part name="D6" library="pedals-diodes" deviceset="DO35" device=".2" value="1S2473"/>
-<part name="C20" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="470n"/>
+<part name="C20" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
 <part name="Q8" library="pedals-transistors" deviceset="2N3819" device="TO-92S" value="2SK30ATM-Y"/>
 <part name="R36" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="C22" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
@@ -2834,11 +2835,11 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <sheet>
 <plain>
 <circle x="20.32" y="48.26" radius="0.381" width="0.1524" layer="95"/>
-<text x="20.574" y="48.514" size="1.778" layer="95">3</text>
+<text x="20.574" y="48.514" size="1.778" layer="95">1</text>
 <circle x="20.32" y="45.72" radius="0.381" width="0.1524" layer="95"/>
 <circle x="20.32" y="43.18" radius="0.381" width="0.1524" layer="95"/>
-<text x="20.574" y="45.974" size="1.778" layer="95">7</text>
-<text x="20.574" y="43.434" size="1.778" layer="95">17</text>
+<text x="20.574" y="45.974" size="1.778" layer="95">11</text>
+<text x="20.574" y="43.434" size="1.778" layer="95">13</text>
 <circle x="30.48" y="-24.13" radius="0.381" width="0.1524" layer="95"/>
 <circle x="30.48" y="-31.75" radius="0.381" width="0.1524" layer="95"/>
 <text x="30.226" y="-23.622" size="1.778" layer="95">10</text>
@@ -2861,6 +2862,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <circle x="137.16" y="-68.58" radius="0.381" width="0.1524" layer="95"/>
 <text x="151.892" y="-68.072" size="1.778" layer="95" rot="MR0">17</text>
 <text x="136.652" y="-68.072" size="1.778" layer="95" rot="MR0">16</text>
+<text x="177.8" y="30.48" size="1.778" layer="95" rot="R90">DIST</text>
+<text x="225.298" y="25.4" size="1.778" layer="95" rot="R90">TONE</text>
+<text x="235.458" y="17.272" size="1.778" layer="95" rot="R90">LEVEL</text>
 </plain>
 <instances>
 <instance part="INPUT" gate="G$1" x="2.54" y="48.26" rot="MR180"/>

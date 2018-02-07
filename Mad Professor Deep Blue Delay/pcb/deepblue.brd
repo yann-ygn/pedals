@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="inch"/>
@@ -555,10 +556,11 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -1135,11 +1137,11 @@ design rules under a new name.</description>
 <contactref element="R16" pad="2"/>
 <contactref element="R18" pad="1"/>
 <contactref element="C24" pad="2"/>
-<wire x1="95.885" y1="13.97" x2="95.25" y2="13.97" width="0.254" layer="16"/>
-<wire x1="95.25" y1="13.97" x2="93.98" y2="12.7" width="0.254" layer="16"/>
-<wire x1="93.98" y1="12.7" x2="93.98" y2="7.62" width="0.254" layer="16"/>
-<wire x1="93.98" y1="7.62" x2="95.25" y2="6.35" width="0.254" layer="16"/>
-<wire x1="95.25" y1="6.35" x2="95.885" y2="6.35" width="0.254" layer="16"/>
+<wire x1="95.885" y1="13.97" x2="94.615" y2="13.97" width="0.254" layer="16"/>
+<wire x1="94.615" y1="13.97" x2="93.98" y2="13.335" width="0.254" layer="16"/>
+<wire x1="93.98" y1="13.335" x2="93.98" y2="6.985" width="0.254" layer="16"/>
+<wire x1="93.98" y1="6.985" x2="94.615" y2="6.35" width="0.254" layer="16"/>
+<wire x1="94.615" y1="6.35" x2="95.885" y2="6.35" width="0.254" layer="16"/>
 <wire x1="109.22" y1="3.81" x2="111.76" y2="3.81" width="0.254" layer="16"/>
 <wire x1="111.76" y1="3.81" x2="114.3" y2="3.81" width="0.254" layer="16"/>
 <wire x1="95.885" y1="6.35" x2="97.79" y2="8.255" width="0.254" layer="16"/>

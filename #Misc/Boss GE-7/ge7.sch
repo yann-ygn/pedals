@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2899,12 +2900,12 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="R29" library="pedals-resistors" deviceset="R_" device=".3B" value="470k"/>
 <part name="VB2" library="gm-supply" deviceset="VB" device=""/>
 <part name="IC5" library="pedals-integrated circuits" deviceset="HA1457" device=""/>
-<part name="C21" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="470p"/>
+<part name="C21" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="22p"/>
 <part name="V1" library="gm-supply" deviceset="+9V" device=""/>
 <part name="GND3" library="gm-supply" deviceset="GND" device=""/>
-<part name="R31" library="pedals-resistors" deviceset="R_" device=".3B" value="470k"/>
-<part name="R28" library="pedals-resistors" deviceset="R_" device=".3B" value="470k"/>
-<part name="C20" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
+<part name="R31" library="pedals-resistors" deviceset="R_" device=".3B" value="4.7k"/>
+<part name="R28" library="pedals-resistors" deviceset="R_" device=".3B" value="470R"/>
+<part name="C20" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="15n"/>
 <part name="GND4" library="gm-supply" deviceset="GND" device=""/>
 <part name="R27" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
 <part name="IC4" library="pedals-integrated circuits" deviceset="DUAL" device="TH" value="uPC4558C"/>
@@ -2947,7 +2948,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="VR4" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="10kG"/>
 <part name="R21" library="pedals-resistors" deviceset="R_" device=".3B" value="82k"/>
 <part name="R22" library="pedals-resistors" deviceset="R_" device=".3B" value="330R"/>
-<part name="C15" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="39n"/>
+<part name="C15" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="3.9n"/>
 <part name="C4" library="pedals-capacitors-elec" deviceset="040" device="0" value="1u"/>
 <part name="VB7" library="gm-supply" deviceset="VB" device=""/>
 <part name="VR5" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="10kG"/>
@@ -3014,6 +3015,14 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <sheets>
 <sheet>
 <plain>
+<text x="88.9" y="154.94" size="1.778" layer="95">LEVEL</text>
+<text x="139.7" y="154.94" size="1.778" layer="95">100</text>
+<text x="170.18" y="154.94" size="1.778" layer="95">200</text>
+<text x="200.66" y="154.94" size="1.778" layer="95">400</text>
+<text x="231.14" y="154.94" size="1.778" layer="95">800</text>
+<text x="261.62" y="154.94" size="1.778" layer="95">1.6k</text>
+<text x="292.1" y="154.94" size="1.778" layer="95">3.2k</text>
+<text x="312.42" y="154.94" size="1.778" layer="95">6.4k</text>
 </plain>
 <instances>
 <instance part="INPUT" gate="G$1" x="2.54" y="48.26" rot="MR180"/>

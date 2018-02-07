@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2333,9 +2334,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="R33" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="R32" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="D7" library="pedals-diodes" deviceset="DO35" device=".2" value="1S2473"/>
-<part name="C21" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="470n"/>
+<part name="C21" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
 <part name="D6" library="pedals-diodes" deviceset="DO35" device=".2" value="1S2473"/>
-<part name="C20" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="470n"/>
+<part name="C20" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
 <part name="Q8" library="pedals-transistors" deviceset="2N3819" device="TO-92S" value="2SK30ATM-Y"/>
 <part name="R36" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="C22" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
@@ -2368,6 +2369,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <sheets>
 <sheet>
 <plain>
+<text x="177.8" y="30.48" size="1.778" layer="95" rot="R90">DIST</text>
+<text x="225.298" y="39.878" size="1.778" layer="95" rot="R90">TONE</text>
+<text x="235.458" y="32.512" size="1.778" layer="95" rot="R90">LEVEL</text>
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="81.28" y="-25.4" rot="R90"/>
