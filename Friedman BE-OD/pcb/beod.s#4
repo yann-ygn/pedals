@@ -4576,6 +4576,7 @@ NS Package M08A</description>
 <junction x="139.7" y="33.02"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="40.64" x2="144.78" y2="40.64" width="0.1524" layer="91"/>
+<junction x="139.7" y="40.64"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -4605,6 +4606,7 @@ NS Package M08A</description>
 <junction x="160.02" y="50.8"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="40.64" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
+<junction x="160.02" y="40.64"/>
 </segment>
 </net>
 <net name="N$13" class="0">

@@ -3986,6 +3986,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="226.06" y1="-7.62" x2="198.12" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="-7.62" x2="198.12" y2="-8.89" width="0.1524" layer="91"/>
 <junction x="226.06" y="-7.62"/>
+<junction x="248.92" y="-2.54"/>
 </segment>
 </net>
 <net name="N$41" class="0">

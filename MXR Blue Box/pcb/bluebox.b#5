@@ -805,10 +805,10 @@ design rules under a new name.</description>
 <contactref element="OUTPUT" pad="S"/>
 <contactref element="INPUT" pad="S"/>
 <polygon width="0.3048" layer="16" isolate="0.254">
-<vertex x="0" y="72.39"/>
-<vertex x="58.42" y="72.39"/>
-<vertex x="58.42" y="-7.62"/>
-<vertex x="0" y="-7.62"/>
+<vertex x="-1.27" y="73.66"/>
+<vertex x="59.055" y="73.66"/>
+<vertex x="59.055" y="-7.62"/>
+<vertex x="-1.27" y="-7.62"/>
 </polygon>
 <contactref element="J1" pad="PWR"/>
 <contactref element="X1" pad="3"/>
@@ -876,22 +876,42 @@ design rules under a new name.</description>
 <contactref element="LEVEL" pad="1"/>
 <contactref element="IC2" pad="7"/>
 <contactref element="C16" pad="-"/>
-<via x="39.37" y="-0.9525" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="48.26" y="-0.9525" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="54.864" y="5.715" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="54.864" y="17.145" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="54.864" y="28.575" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="39.37" y="-0.762" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="48.26" y="-0.762" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="54.61" y="5.715" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="54.61" y="17.145" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="54.61" y="28.575" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="49.149" y="40.005" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="19.05" y="-0.9525" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="10.16" y="-0.9525" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="37.2745" y="40.005" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="37.2745" y="31.75" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="19.05" y="-0.762" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="10.16" y="-0.762" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="33.2105" y="40.005" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="33.2105" y="31.75" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="30.2895" y="40.005" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="30.2895" y="31.75" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="21.3995" y="40.005" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="10.6045" y="40.64" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="44.704" y="15.24" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="38.989" y="12.065" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="34.544" y="8.89" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="31.369" y="8.89" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="34.544" y="17.526" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="31.369" y="17.4625" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="33.274" y="24.511" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="27.559" y="17.4625" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="24.384" y="14.9225" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="21.844" y="10.16" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="8.509" y="10.16" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="8.509" y="14.9225" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="15.494" y="14.9225" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="19.939" y="24.511" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="3.3655" y="28.575" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="12.8905" y="28.575" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="15.621" y="36.195" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="3.3655" y="40.005" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="3.1115" y="17.145" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="24.384" y="24.511" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="10.414" y="24.511" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="44.704" y="19.685" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="45.339" y="32.385" extent="1-16" drill="0.5" diameter="0.85"/>
 </signal>
 <signal name="VR">
 <contactref element="C2" pad="+"/>

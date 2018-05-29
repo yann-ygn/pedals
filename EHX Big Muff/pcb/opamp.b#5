@@ -761,9 +761,6 @@ design rules under a new name.</description>
 <via x="76.073" y="19.177" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="76.073" y="9.017" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="122.047" y="49.657" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="112.522" y="49.022" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="107.442" y="48.387" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="93.2815" y="41.9735" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="78.613" y="49.657" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="115.697" y="33.782" extent="1-16" drill="0.5" diameter="0.85"/>
 <contactref element="C2" pad="1"/>
@@ -795,6 +792,7 @@ design rules under a new name.</description>
 <wire x1="8.255" y1="-3.175" x2="28.93821875" y2="-5.079365625" width="0" layer="19" extent="1-1"/>
 <wire x1="3.81" y1="-11.43" x2="8.255" y2="-3.175" width="0" layer="19" extent="1-1"/>
 <wire x1="8.255" y1="-14.605" x2="3.81" y2="-11.43" width="0" layer="19" extent="1-1"/>
+<via x="112.522" y="49.657" extent="1-16" drill="0.5" diameter="0.85"/>
 </signal>
 <signal name="OUT">
 <contactref element="X1" pad="2"/>

@@ -677,7 +677,7 @@ design rules under a new name.</description>
 <element name="R9" library="pedals-resistors" package="R0207/3" value="10k" x="81.28" y="22.86" rot="R90"/>
 <element name="R10" library="pedals-resistors" package="R0207/3" value="47k" x="86.36" y="34.925"/>
 <element name="C7" library="pedals-capacitors-film" package="BOX_SMALL" value="10n" x="87.63" y="37.465"/>
-<element name="C8" library="pedals-capacitors-film" package="BOX_SMALL" value="4.7n" x="85.725" y="32.385"/>
+<element name="C8" library="pedals-capacitors-film" package="BOX_SMALL" value="4.7n" x="86.36" y="32.385"/>
 <element name="R11" library="pedals-resistors" package="R0207/3" value="560k" x="93.345" y="33.02" rot="R90"/>
 <element name="R12" library="pedals-resistors" package="R0207/3" value="62k" x="95.885" y="33.02" rot="R270"/>
 <element name="C9" library="pedals-capacitors-elec" package="050_020" value="10u" x="97.155" y="41.91" rot="R90"/>
@@ -894,8 +894,8 @@ design rules under a new name.</description>
 <contactref element="R9" pad="2"/>
 <contactref element="R10" pad="1"/>
 <contactref element="C8" pad="1"/>
-<wire x1="83.185" y1="32.385" x2="82.55" y2="34.925" width="0" layer="19" extent="1-1"/>
-<wire x1="81.28" y1="26.67" x2="83.185" y2="32.385" width="0" layer="19" extent="1-1"/>
+<wire x1="83.82" y1="32.385" x2="82.55" y2="34.925" width="0" layer="19" extent="1-1"/>
+<wire x1="81.28" y1="26.67" x2="83.82" y2="32.385" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R10" pad="2"/>
@@ -909,9 +909,9 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="7"/>
 <contactref element="R11" pad="2"/>
 <contactref element="SUSTAIN" pad="3"/>
-<wire x1="88.265" y1="32.385" x2="93.345" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="86.36" y1="26.67" x2="88.265" y2="32.385" width="0" layer="19" extent="1-1"/>
-<wire x1="80.9625" y1="40.91" x2="88.265" y2="32.385" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="32.385" x2="93.345" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="86.36" y1="26.67" x2="88.9" y2="32.385" width="0" layer="19" extent="1-1"/>
+<wire x1="80.9625" y1="40.91" x2="88.9" y2="32.385" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="IC1" pad="6"/>

@@ -4045,7 +4045,7 @@ NS Package M08A</description>
 <part name="C14" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="100p"/>
 <part name="TRIM" library="pedals-potentiometers" deviceset="R-TRIMM" device="3296W" value="100k"/>
 <part name="VB5" library="pedals-supply" deviceset="VB" device=""/>
-<part name="R19" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
+<part name="R19" library="pedals-resistors" deviceset="R_" device=".3B" value="2.2k"/>
 <part name="C15" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
 <part name="GND18" library="gm-supply" deviceset="GND" device=""/>
 <part name="D8" library="pedals-diodes" deviceset="LED" device="" value="3mm_RED"/>

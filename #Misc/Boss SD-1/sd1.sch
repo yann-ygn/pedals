@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1640,6 +1641,26 @@ NS Package M08A</description>
 <text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="SIL09">
+<wire x1="21.971" y1="1.651" x2="21.971" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="21.971" y1="-1.651" x2="-1.27" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.651" x2="-1.651" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="-1.651" x2="-1.651" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="-1.27" x2="-1.651" y2="1.651" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="1.651" x2="21.971" y2="1.651" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-1.651" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1" diameter="1.9304" shape="square"/>
+<pad name="2" x="2.54" y="0" drill="1" diameter="1.9304"/>
+<pad name="3" x="5.08" y="0" drill="1" diameter="1.9304"/>
+<pad name="4" x="7.62" y="0" drill="1" diameter="1.9304"/>
+<pad name="5" x="10.16" y="0" drill="1" diameter="1.9304"/>
+<pad name="6" x="12.7" y="0" drill="1" diameter="1.9304"/>
+<pad name="7" x="15.24" y="0" drill="1" diameter="1.9304"/>
+<pad name="8" x="17.78" y="0" drill="1" diameter="1.9304"/>
+<text x="8.636" y="2.413" size="1.27" layer="25" align="center">&gt;NAME</text>
+<pad name="9" x="20.32" y="0" drill="1" diameter="1.9304"/>
+</package>
 </packages>
 <symbols>
 <symbol name="OPAMP">
@@ -1712,6 +1733,21 @@ NS Package M08A</description>
 <connect gate="_B" pin="OUT" pad="7"/>
 <connect gate="_PWR" pin="V+" pad="8"/>
 <connect gate="_PWR" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="SIL09">
+<connects>
+<connect gate="_A" pin="+IN" pad="4"/>
+<connect gate="_A" pin="-IN" pad="3"/>
+<connect gate="_A" pin="OUT" pad="2"/>
+<connect gate="_B" pin="+IN" pad="6"/>
+<connect gate="_B" pin="-IN" pad="7"/>
+<connect gate="_B" pin="OUT" pad="8"/>
+<connect gate="_PWR" pin="V+" pad="9"/>
+<connect gate="_PWR" pin="V-" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2862,6 +2898,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="D2" library="pedals-diodes" deviceset="ZENER" device=".2" value="RD5.1EB-3"/>
 <part name="V1" library="gm-supply" deviceset="+9V" device=""/>
 <part name="LED" library="pedals-diodes" deviceset="LED" device="" value="SLP1358"/>
+<part name="V2" library="gm-supply" deviceset="+9V" device=""/>
+<part name="GND1" library="gm-supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2872,20 +2910,20 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <circle x="20.32" y="43.18" radius="0.381" width="0.1524" layer="95"/>
 <text x="20.574" y="45.974" size="1.778" layer="95">7</text>
 <text x="20.574" y="43.434" size="1.778" layer="95">17</text>
-<circle x="86.36" y="78.74" radius="0.381" width="0.1524" layer="95"/>
-<circle x="109.22" y="78.74" radius="0.381" width="0.1524" layer="95"/>
-<text x="109.474" y="78.994" size="1.778" layer="95">4</text>
-<text x="86.106" y="78.994" size="1.778" layer="95" align="bottom-right">2</text>
-<circle x="124.46" y="78.74" radius="0.381" width="0.1524" layer="95"/>
-<circle x="144.78" y="78.74" radius="0.381" width="0.1524" layer="95"/>
-<text x="123.952" y="78.994" size="1.778" layer="95" align="bottom-right">5</text>
-<text x="145.288" y="78.994" size="1.778" layer="95">8</text>
+<circle x="86.36" y="81.28" radius="0.381" width="0.1524" layer="95"/>
+<circle x="109.22" y="81.28" radius="0.381" width="0.1524" layer="95"/>
+<text x="109.474" y="81.534" size="1.778" layer="95">4</text>
+<text x="86.106" y="81.534" size="1.778" layer="95" align="bottom-right">2</text>
+<circle x="124.46" y="81.28" radius="0.381" width="0.1524" layer="95"/>
+<circle x="144.78" y="81.28" radius="0.381" width="0.1524" layer="95"/>
+<text x="123.952" y="81.534" size="1.778" layer="95" align="bottom-right">5</text>
+<text x="145.288" y="81.534" size="1.778" layer="95">8</text>
 <circle x="190.5" y="43.18" radius="0.381" width="0.1524" layer="95"/>
 <circle x="190.5" y="27.94" radius="0.381" width="0.1524" layer="95"/>
 <text x="190.754" y="43.434" size="1.778" layer="95">9</text>
 <text x="190.246" y="28.194" size="1.778" layer="95" align="bottom-right">1</text>
-<circle x="134.62" y="78.74" radius="0.381" width="0.1524" layer="95"/>
-<text x="134.112" y="78.994" size="1.778" layer="95" align="bottom-right">11</text>
+<circle x="134.62" y="81.28" radius="0.381" width="0.1524" layer="95"/>
+<text x="134.112" y="81.534" size="1.778" layer="95" align="bottom-right">11</text>
 <circle x="195.58" y="35.56" radius="0.381" width="0.1524" layer="95"/>
 <text x="195.834" y="35.814" size="1.778" layer="95">10</text>
 <circle x="271.78" y="27.94" radius="0.381" width="0.1524" layer="95"/>
@@ -2902,8 +2940,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <text x="162.814" y="-73.406" size="1.778" layer="95">16</text>
 <text x="259.334" y="-50.546" size="1.778" layer="95">18</text>
 <text x="259.334" y="-37.846" size="1.778" layer="95">15</text>
-<text x="93.98" y="91.44" size="1.778" layer="95">DRIVE</text>
-<text x="132.08" y="91.44" size="1.778" layer="95">TONE</text>
+<text x="93.98" y="93.98" size="1.778" layer="95">DRIVE</text>
+<text x="132.08" y="93.98" size="1.778" layer="95">TONE</text>
 <text x="187.96" y="50.8" size="1.778" layer="95">LEVEL</text>
 </plain>
 <instances>
@@ -2932,10 +2970,10 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="D5" gate="G$1" x="91.44" y="55.88" rot="R180"/>
 <instance part="D4" gate="G$1" x="99.06" y="63.5"/>
 <instance part="R5" gate="G$1" x="86.36" y="71.12" rot="R90"/>
-<instance part="VR1" gate="G$1" x="97.79" y="83.82" rot="MR90"/>
-<instance part="R9" gate="G$1" x="154.94" y="58.42"/>
-<instance part="C6" gate="G$1" x="153.67" y="68.58"/>
-<instance part="VR3" gate="G$1" x="134.62" y="83.82" rot="R270"/>
+<instance part="VR1" gate="G$1" x="97.79" y="86.36" rot="MR90"/>
+<instance part="R9" gate="G$1" x="154.94" y="66.04"/>
+<instance part="C6" gate="G$1" x="153.67" y="76.2"/>
+<instance part="VR3" gate="G$1" x="134.62" y="86.36" rot="R270"/>
 <instance part="C5" gate="G$1" x="134.62" y="72.39" rot="R90"/>
 <instance part="R8" gate="G$1" x="134.62" y="60.96" rot="R90"/>
 <instance part="GND107" gate="GND" x="134.62" y="50.8"/>
@@ -3007,6 +3045,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="D2" gate="G$1" x="254" y="-20.32" rot="R90"/>
 <instance part="V1" gate="+9V" x="254" y="-10.16"/>
 <instance part="LED" gate="G$1" x="264.16" y="-45.72" rot="R90"/>
+<instance part="IC" gate="_PWR" x="154.94" y="45.72"/>
+<instance part="V2" gate="+9V" x="154.94" y="55.88"/>
+<instance part="GND1" gate="GND" x="154.94" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -3111,6 +3152,10 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="OUTPUT" gate="G$1" pin="SLEEVE"/>
 <wire x1="276.86" y1="22.86" x2="279.4" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND117" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC" gate="_PWR" pin="V-"/>
+<pinref part="GND1" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3234,16 +3279,16 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="109.22" y1="55.88" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="IC" gate="_B" pin="OUT"/>
 <wire x1="109.22" y1="43.18" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="83.82" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="86.36" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="C"/>
 <wire x1="109.22" y1="63.5" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="63.5" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="VR1" gate="G$1" pin="3"/>
-<wire x1="109.22" y1="83.82" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="VR1" gate="G$1" pin="2"/>
-<wire x1="97.79" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="88.9" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
-<junction x="104.14" y="83.82"/>
+<wire x1="97.79" y1="91.44" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="91.44" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
+<junction x="104.14" y="86.36"/>
 <junction x="109.22" y="63.5"/>
 <junction x="109.22" y="55.88"/>
 <junction x="109.22" y="43.18"/>
@@ -3254,9 +3299,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <net name="N$12" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="76.2" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="76.2" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="VR1" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="86.36" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -3267,9 +3312,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="124.46" y1="43.18" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="IC" gate="_A" pin="+IN"/>
 <wire x1="124.46" y1="43.18" x2="147.32" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="43.18" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="43.18" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="VR3" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="83.82" x2="128.27" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="86.36" x2="128.27" y2="86.36" width="0.1524" layer="91"/>
 <junction x="124.46" y="43.18"/>
 </segment>
 </net>
@@ -3277,30 +3322,30 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="IC" gate="_A" pin="-IN"/>
 <wire x1="147.32" y1="48.26" x2="144.78" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="48.26" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="48.26" x2="144.78" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="58.42" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="66.04" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="66.04" x2="144.78" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="68.58" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="76.2" x2="149.86" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="76.2" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="VR3" gate="G$1" pin="3"/>
-<wire x1="144.78" y1="83.82" x2="140.97" y2="83.82" width="0.1524" layer="91"/>
-<junction x="144.78" y="58.42"/>
-<junction x="144.78" y="68.58"/>
+<wire x1="144.78" y1="86.36" x2="140.97" y2="86.36" width="0.1524" layer="91"/>
+<junction x="144.78" y="66.04"/>
+<junction x="144.78" y="76.2"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="58.42" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="58.42" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="66.04" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="66.04" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="IC" gate="_A" pin="OUT"/>
 <wire x1="165.1" y1="45.72" x2="162.56" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="68.58" x2="165.1" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="68.58" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
-<junction x="165.1" y="58.42"/>
+<wire x1="157.48" y1="76.2" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="76.2" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
+<junction x="165.1" y="66.04"/>
 <junction x="165.1" y="45.72"/>
 <pinref part="C7" gate="1" pin="+"/>
 <wire x1="165.1" y1="45.72" x2="167.64" y2="45.72" width="0.1524" layer="91"/>
@@ -3310,7 +3355,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="VR3" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="76.2" x2="134.62" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="76.2" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -3487,6 +3532,10 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="V1" gate="+9V" pin="+9V"/>
 <wire x1="254" y1="-15.24" x2="254" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC" gate="_PWR" pin="V+"/>
+<pinref part="V2" gate="+9V" pin="+9V"/>
 </segment>
 </net>
 <net name="N$29" class="0">

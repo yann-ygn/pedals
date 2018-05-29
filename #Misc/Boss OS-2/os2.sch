@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2589,7 +2590,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="V2" library="gm-supply" deviceset="+9V" device=""/>
 <part name="GND5" library="gm-supply" deviceset="GND" device=""/>
 <part name="R29" library="pedals-resistors" deviceset="R_" device=".3B" value="4.1M"/>
-<part name="C17" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
+<part name="C17" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="100p"/>
 <part name="C14" library="pedals-capacitors-elec" deviceset="050" device="0" value="10u"/>
 <part name="R22" library="pedals-resistors" deviceset="R_" device=".3B" value="12k"/>
 <part name="VR3B" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="270k"/>
@@ -2624,7 +2625,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="R26" library="pedals-resistors" deviceset="R_" device=".3B" value="8.2k"/>
 <part name="C20" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="100n"/>
 <part name="GND11" library="gm-supply" deviceset="GND" device=""/>
-<part name="C16" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
+<part name="C16" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="18n"/>
 <part name="R24" library="pedals-resistors" deviceset="R_" device=".3B" value="2.2k"/>
 <part name="R32" library="pedals-resistors" deviceset="R_" device=".3B" value="6.8k"/>
 <part name="GND12" library="gm-supply" deviceset="GND" device=""/>

@@ -684,7 +684,7 @@ design rules under a new name.</description>
 <element name="R6" library="pedals-resistors" package="R0207/3" value="3.3k" x="15.24" y="33.02" rot="R90"/>
 <element name="R8" library="pedals-resistors" package="R0207/3" value="3.3k" x="10.16" y="20.955" rot="R90"/>
 <element name="R9" library="pedals-resistors" package="R0207/3" value="1.2k" x="50.165" y="28.575" rot="R90"/>
-<element name="TREBLE" library="pedals-potentiometers" package="16MM" value="10kB" x="47.625" y="13.6525"/>
+<element name="TREBLE" library="pedals-potentiometers" package="16MM" value="50kB" x="47.625" y="13.6525"/>
 <element name="VOLUME" library="pedals-potentiometers" package="16MM" value="10kB" x="47.625" y="44.196"/>
 <element name="X1" library="pedals-headers" package="PAK100/2500-10" value="2510-" x="29.21" y="6.35" rot="R180">
 <attribute name="MF" value="3M" x="29.21" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>

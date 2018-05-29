@@ -4794,17 +4794,14 @@ NS Package M08A</description>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="TREBLE" gate="G$1" pin="2"/>
-<pinref part="IC3" gate="_A" pin="+IN"/>
-<wire x1="314.96" y1="48.26" x2="317.5" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="48.26" x2="320.04" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="48.26" x2="317.5" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="317.5" y1="25.4" x2="317.5" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="15.24" x2="320.04" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="317.5" y1="25.4" x2="327.66" y2="25.4" width="0.1524" layer="91"/>
-<junction x="317.5" y="48.26"/>
+<pinref part="IC3" gate="_A" pin="-IN"/>
+<wire x1="320.04" y1="43.18" x2="317.5" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="43.18" x2="317.5" y2="25.4" width="0.1524" layer="91"/>
 <junction x="317.5" y="25.4"/>
 </segment>
 </net>
@@ -4855,6 +4852,13 @@ NS Package M08A</description>
 <wire x1="370.84" y1="45.72" x2="373.38" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="VOL" gate="G$1" pin="3"/>
 <wire x1="373.38" y1="45.72" x2="373.38" y2="41.91" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="IC3" gate="_A" pin="+IN"/>
+<pinref part="TREBLE" gate="G$1" pin="2"/>
+<wire x1="314.96" y1="48.26" x2="320.04" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

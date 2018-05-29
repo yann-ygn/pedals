@@ -1,4 +1,4 @@
-atti#include <tinySPI.h>
+#include <tinySPI.h>
 
 #include <arduino.h>
 

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2595,7 +2596,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="R26" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="V112" library="gm-supply" deviceset="+9V" device=""/>
 <part name="C15" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
-<part name="R18" library="pedals-resistors" deviceset="R_" device=".3B" value="100"/>
+<part name="R18" library="pedals-resistors" deviceset="R_" device=".3B" value="100R"/>
 <part name="GND127" library="gm-supply" deviceset="GND" device=""/>
 <part name="SW1" library="pedals-switches" deviceset="MOMENTARY" device=""/>
 <part name="GND131" library="gm-supply" deviceset="GND" device=""/>
@@ -2687,7 +2688,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="R2" gate="G$1" x="220.98" y="33.02" rot="R90"/>
 <instance part="VB108" gate="G$1" x="220.98" y="22.86" rot="R180"/>
 <instance part="Q1" gate="1" x="233.68" y="38.1" rot="R90"/>
-<instance part="D2" gate="G$1" x="236.22" y="25.4" rot="R270"/>
+<instance part="D2" gate="G$1" x="236.22" y="25.4" rot="MR270"/>
 <instance part="R6" gate="G$1" x="246.38" y="33.02" rot="R90"/>
 <instance part="VB109" gate="G$1" x="246.38" y="22.86" rot="R180"/>
 <instance part="C3" gate="1" x="251.46" y="40.64"/>
@@ -2697,7 +2698,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="R7" gate="G$1" x="215.9" y="68.58" rot="R90"/>
 <instance part="C5" gate="1" x="208.28" y="76.2"/>
 <instance part="VB106" gate="G$1" x="215.9" y="58.42" rot="R180"/>
-<instance part="D3" gate="G$1" x="226.06" y="60.96" rot="R270"/>
+<instance part="D3" gate="G$1" x="226.06" y="60.96" rot="MR270"/>
 <instance part="Q2" gate="G$1" x="264.16" y="40.64"/>
 <instance part="R5" gate="G$1" x="266.7" y="25.4" rot="R90"/>
 <instance part="GND124" gate="GND" x="266.7" y="15.24"/>

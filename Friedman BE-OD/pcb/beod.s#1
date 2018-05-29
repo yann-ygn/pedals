@@ -4015,7 +4015,7 @@ NS Package M08A</description>
 <part name="VA2" library="pedals-supply" deviceset="VA" device=""/>
 <part name="C8" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
 <part name="R10" library="pedals-resistors" deviceset="R_" device=".3B" value="39k"/>
-<part name="TIGHT" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="C100K"/>
+<part name="TIGHT" library="pedals-potentiometers" deviceset="R-TRIMM" device="3296W" value="C100K"/>
 <part name="VB3" library="pedals-supply" deviceset="VB" device=""/>
 <part name="R11" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
 <part name="C9" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1n"/>
@@ -4136,7 +4136,7 @@ NS Package M08A</description>
 <instance part="VA2" gate="G$1" x="58.42" y="73.66"/>
 <instance part="C8" gate="G$1" x="107.95" y="53.34"/>
 <instance part="R10" gate="G$1" x="114.3" y="45.72" rot="R90"/>
-<instance part="TIGHT" gate="G$1" x="114.3" y="27.94"/>
+<instance part="TIGHT" gate="G$1" x="114.3" y="27.94" rot="MR0"/>
 <instance part="VB3" gate="G$1" x="114.3" y="15.24" rot="R180"/>
 <instance part="R11" gate="G$1" x="121.92" y="53.34"/>
 <instance part="C9" gate="G$1" x="129.54" y="46.99" rot="R90"/>
@@ -4453,6 +4453,11 @@ NS Package M08A</description>
 <pinref part="D9" gate="G$1" pin="A"/>
 <pinref part="VB7" gate="G$1" pin="VB"/>
 <wire x1="297.18" y1="43.18" x2="297.18" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="TIGHT" gate="G$1" pin="A"/>
+<pinref part="VB3" gate="G$1" pin="VB"/>
+<wire x1="114.3" y1="22.86" x2="114.3" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VA" class="0">
@@ -4842,6 +4847,19 @@ NS Package M08A</description>
 <pinref part="IC3" gate="_A" pin="+IN"/>
 <pinref part="TREBLE" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="48.26" x2="320.04" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="TIGHT" gate="G$1" pin="E"/>
+<wire x1="114.3" y1="40.64" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="TIGHT" gate="G$1" pin="S"/>
+<wire x1="114.3" y1="35.56" x2="114.3" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="27.94" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="27.94" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="35.56" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
+<junction x="114.3" y="35.56"/>
 </segment>
 </net>
 </nets>

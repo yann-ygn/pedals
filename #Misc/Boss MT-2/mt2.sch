@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3173,6 +3173,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <text x="319.278" y="-92.71" size="2.54" layer="95" ratio="16">MID FREQ</text>
 <circle x="457.2" y="91.44" radius="0.381" width="0.1524" layer="95"/>
 <text x="457.454" y="91.694" size="1.778" layer="95">1</text>
+<text x="363.728" y="-110.49" size="2.54" layer="95" ratio="16">LEVEL</text>
 </plain>
 <instances>
 <instance part="INPUT" gate="G$1" x="-7.62" y="48.26" rot="MR180"/>

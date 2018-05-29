@@ -4063,6 +4063,9 @@ NS Package M08A</description>
 <part name="R21" library="pedals-resistors" deviceset="R_" device=".3B" value="33k"/>
 <part name="C18" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="220n"/>
 <part name="GND21" library="gm-supply" deviceset="GND" device=""/>
+<part name="C19" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="220n"/>
+<part name="R22" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
+<part name="GND22" library="gm-supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4074,11 +4077,11 @@ NS Package M08A</description>
 <instance part="GND4" gate="GND" x="-17.78" y="93.98"/>
 <instance part="D1" gate="G$1" x="7.62" y="91.44" rot="R90"/>
 <instance part="IN1" gate="G$1" x="40.64" y="55.88"/>
-<instance part="OUT1" gate="G$1" x="165.1" y="91.44"/>
+<instance part="OUT1" gate="G$1" x="383.54" y="35.56"/>
 <instance part="GAIN" gate="G$1" x="149.86" y="0" rot="R270"/>
 <instance part="BASS" gate="G$1" x="332.74" y="-5.08"/>
 <instance part="PRESENCE" gate="G$1" x="256.54" y="55.88" rot="MR270"/>
-<instance part="VOL" gate="G$1" x="154.94" y="81.28"/>
+<instance part="VOL" gate="G$1" x="373.38" y="35.56"/>
 <instance part="C1" gate="1" x="55.88" y="91.44" rot="R270"/>
 <instance part="J1" gate="G$1" x="-25.4" y="101.6" rot="R270"/>
 <instance part="GND1" gate="GND" x="5.08" y="45.72"/>
@@ -4185,6 +4188,9 @@ NS Package M08A</description>
 <instance part="R21" gate="G$1" x="340.36" y="15.24"/>
 <instance part="C18" gate="G$1" x="332.74" y="8.89" rot="R90"/>
 <instance part="GND21" gate="GND" x="332.74" y="-17.78"/>
+<instance part="C19" gate="G$1" x="354.33" y="45.72"/>
+<instance part="R22" gate="G$1" x="365.76" y="45.72"/>
+<instance part="GND22" gate="GND" x="373.38" y="22.86"/>
 </instances>
 <busses>
 </busses>

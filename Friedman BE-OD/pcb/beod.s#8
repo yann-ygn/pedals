@@ -4310,12 +4310,22 @@ NS Package M08A</description>
 <wire x1="340.36" y1="-5.08" x2="340.36" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="-12.7" x2="332.74" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND22" gate="GND" pin="GND"/>
+<pinref part="VOL" gate="G$1" pin="1"/>
+<wire x1="373.38" y1="25.4" x2="373.38" y2="29.21" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="OUT" class="0">
 <segment>
 <pinref part="OUT2" gate="G$1" pin="OUT"/>
 <pinref part="X1" gate="-2" pin="KL"/>
 <wire x1="-10.16" y1="53.34" x2="-15.24" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="VOL" gate="G$1" pin="2"/>
+<pinref part="OUT1" gate="G$1" pin="OUT"/>
+<wire x1="378.46" y1="35.56" x2="381" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN" class="0">
@@ -4810,6 +4820,8 @@ NS Package M08A</description>
 <wire x1="335.28" y1="25.4" x2="347.98" y2="25.4" width="0.1524" layer="91"/>
 <junction x="347.98" y="25.4"/>
 <junction x="347.98" y="45.72"/>
+<pinref part="C19" gate="G$1" pin="2"/>
+<wire x1="347.98" y1="45.72" x2="350.52" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -4828,6 +4840,21 @@ NS Package M08A</description>
 <pinref part="C18" gate="G$1" pin="2"/>
 <pinref part="BASS" gate="G$1" pin="3"/>
 <wire x1="332.74" y1="5.08" x2="332.74" y2="1.27" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="C19" gate="G$1" pin="1"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="358.14" y1="45.72" x2="360.68" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="370.84" y1="45.72" x2="373.38" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="VOL" gate="G$1" pin="3"/>
+<wire x1="373.38" y1="45.72" x2="373.38" y2="41.91" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

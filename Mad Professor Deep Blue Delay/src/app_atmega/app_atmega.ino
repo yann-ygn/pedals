@@ -1,5 +1,6 @@
 #include <arduino.h>
 #include <spi.h>
+#include <hardwareSerial.h>
 
 //////
 #define MP41_CS 53

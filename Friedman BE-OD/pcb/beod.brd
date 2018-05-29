@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="inch"/>
@@ -66,6 +67,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -247,8 +250,8 @@
 <wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
 <rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
-<pad name="A" x="2.54" y="0" drill="0.7" diameter="1.4"/>
-<pad name="C" x="-2.54" y="0" drill="0.7" diameter="1.4" shape="square"/>
+<pad name="A" x="2.794" y="0" drill="0.7" diameter="1.4"/>
+<pad name="C" x="-2.7305" y="0" drill="0.7" diameter="1.4" shape="square"/>
 <text x="0.0508" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
 </package>
 <package name="3MM_D">
@@ -436,9 +439,9 @@ Source: 3M</description>
 <library name="pedals-pcb">
 <packages>
 <package name="125B_PCB_HUGE">
-<wire x1="0" y1="0" x2="0" y2="80.78" width="0" layer="20"/>
-<wire x1="0" y1="0" x2="59" y2="0" width="0" layer="20"/>
-<wire x1="59" y1="0" x2="59" y2="80.78" width="0" layer="20"/>
+<wire x1="0" y1="7.62" x2="0" y2="80.78" width="0" layer="20"/>
+<wire x1="0" y1="7.62" x2="59" y2="7.62" width="0" layer="20"/>
+<wire x1="59" y1="7.62" x2="59" y2="80.78" width="0" layer="20"/>
 <wire x1="0" y1="80.78" x2="5.5" y2="80.78" width="0" layer="20"/>
 <wire x1="5.5" y1="80.78" x2="5.5" y2="87.78" width="0" layer="20"/>
 <wire x1="53.5" y1="87.78" x2="53.5" y2="80.78" width="0" layer="20"/>
@@ -449,7 +452,7 @@ Source: 3M</description>
 </library>
 <library name="pedals-integrated circuits">
 <packages>
-<package name="DIL08">
+<package name="DIL0">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
@@ -457,15 +460,16 @@ Source: 3M</description>
 <wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.5" diameter="1.2" shape="square" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.5" diameter="1.2" rot="R90"/>
-<text x="0" y="0" size="1.27" layer="25" ratio="12" align="center">&gt;NAME</text>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -556,10 +560,11 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -672,8 +677,8 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CONN-08197" x="29.81325" y="69.99605" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="X1" library="pedals-headers" package="PAK100/2500-10" value="2510-" x="29.845" y="-13.97" rot="R180">
-<attribute name="MPN" value="2510-6002UB" x="29.845" y="-13.97" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="3M" x="29.845" y="-13.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="2510-6002UB" x="29.845" y="-13.97" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="9838244" x="29.845" y="-13.97" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="46F4725" x="29.845" y="-13.97" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -690,7 +695,7 @@ design rules under a new name.</description>
 <element name="R6" library="pedals-resistors" package="R0207/3" value="470k" x="31.115" y="20.32" rot="R90"/>
 <element name="R7" library="pedals-resistors" package="R0207/3" value="10k" x="28.575" y="20.32" rot="R90"/>
 <element name="C7" library="pedals-capacitors-film" package="050X030_025_2" value="47p" x="34.29" y="29.21" rot="R270"/>
-<element name="IC1" library="pedals-integrated circuits" package="DIL08" value="TL072" x="27.305" y="30.48"/>
+<element name="IC1" library="pedals-integrated circuits" package="DIL0" value="TL072" x="27.305" y="30.48"/>
 <element name="R8" library="pedals-resistors" package="R0207/3" value="39k" x="23.495" y="20.32" rot="R90"/>
 <element name="R9" library="pedals-resistors" package="R0207/3" value="22k" x="26.035" y="20.32" rot="R90"/>
 <element name="C8" library="pedals-capacitors-film" package="BOX_SMALL" value="10n" x="14.605" y="31.75" rot="R270"/>
@@ -706,7 +711,7 @@ design rules under a new name.</description>
 <element name="D3" library="pedals-diodes" package="3MM_D" value="3mm_RED" x="-23.495" y="70.485"/>
 <element name="C12" library="pedals-capacitors-film" package="BOX_SMALL" value="47n" x="8.255" y="36.83" rot="R180"/>
 <element name="R14" library="pedals-resistors" package="R0207/3" value="22k" x="8.255" y="34.29" rot="R180"/>
-<element name="IC2" library="pedals-integrated circuits" package="DIL08" value="TL072" x="8.255" y="25.4" rot="R270"/>
+<element name="IC2" library="pedals-integrated circuits" package="DIL0" value="TL072" x="8.255" y="25.4" rot="R270"/>
 <element name="R15" library="pedals-resistors" package="R0207/3" value="220k" x="6.35" y="17.78" rot="R180"/>
 <element name="D4" library="pedals-diodes" package="DO35-2" value="1N4148" x="-3.175" y="8.255"/>
 <element name="D5" library="pedals-diodes" package="DO35-2" value="1N4148" x="-3.175" y="5.08"/>
@@ -724,7 +729,7 @@ design rules under a new name.</description>
 <element name="D9" library="pedals-diodes" package="3MM_D" value="3mm_RED" x="-40.64" y="24.13"/>
 <element name="TREBLE" library="pedals-potentiometers" package="16MM" value="100kB" x="29.845" y="10.16"/>
 <element name="C16" library="pedals-capacitors-film" package="BOX_SMALL" value="4.7n" x="-27.305" y="19.05"/>
-<element name="IC3" library="pedals-integrated circuits" package="DIL08" value="TL062" x="52.07" y="16.51" rot="R270"/>
+<element name="IC3" library="pedals-integrated circuits" package="DIL0" value="TL062" x="52.07" y="16.51" rot="R270"/>
 <element name="C17" library="pedals-capacitors-film" package="BOX_SMALL" value="22n" x="52.705" y="26.67" rot="R180"/>
 <element name="R20" library="pedals-resistors" package="R0207/3" value="33k" x="43.18" y="15.875" rot="R270"/>
 <element name="R21" library="pedals-resistors" package="R0207/3" value="33k" x="45.72" y="15.875" rot="R90"/>
@@ -766,6 +771,7 @@ design rules under a new name.</description>
 <contactref element="VOL" pad="1"/>
 <wire x1="-24.765" y1="19.05" x2="-26.67" y2="22.225" width="0" layer="19" extent="1-1"/>
 <wire x1="4.445" y1="21.59" x2="-24.765" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="31.115" y1="-12.7" x2="48.26" y2="9.541" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUT">
 <contactref element="X1" pad="2"/>
@@ -795,7 +801,7 @@ design rules under a new name.</description>
 <contactref element="R1" pad="1"/>
 <contactref element="X1" pad="5"/>
 <wire x1="37.465" y1="42.545" x2="29.81325" y2="62.29605" width="0" layer="19" extent="1-1"/>
-<wire x1="40.005" y1="42.545" x2="37.465" y2="42.545" width="0" layer="19" extent="1-1"/>
+<wire x1="40.005" y1="42.7355" x2="37.465" y2="42.545" width="0" layer="19" extent="1-1"/>
 <wire x1="28.575" y1="-12.7" x2="37.465" y2="42.545" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VR">

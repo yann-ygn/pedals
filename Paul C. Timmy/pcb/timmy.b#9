@@ -438,6 +438,29 @@ Source: 3M</description>
 </package>
 </packages>
 </library>
+<library name="pedals-switches">
+<packages>
+<package name="M9040P">
+<description>&lt;b&gt;TOGGLE SWITCH&lt;/b&gt;&lt;p&gt;
+Marquardt</description>
+<wire x1="6.35" y1="2.286" x2="6.35" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="-2.286" x2="-6.35" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-2.286" x2="-6.35" y2="2.286" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="2.286" x2="6.35" y2="2.286" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="0" x2="-0.635" y2="0" width="0.127" layer="22"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.127" layer="22"/>
+<wire x1="6.35" y1="-2.2606" x2="6.35" y2="2.286" width="0.1524" layer="22"/>
+<wire x1="6.35" y1="2.286" x2="-6.35" y2="2.286" width="0.1524" layer="22"/>
+<wire x1="-6.35" y1="2.286" x2="-6.35" y2="-2.27965" width="0.1524" layer="22"/>
+<wire x1="-6.35" y1="-2.286" x2="6.35" y2="-2.286" width="0.1524" layer="22"/>
+<pad name="1" x="4.6355" y="0" drill="2.2" diameter="2.89999375" shape="square" rot="R270"/>
+<pad name="2" x="0" y="0" drill="2.2" diameter="2.89999375" rot="R270"/>
+<pad name="3" x="-4.6101" y="0" drill="2.2" diameter="2.89999375" rot="R270"/>
+<text x="0" y="3.048" size="1.27" layer="25" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="3.048" size="1.27" layer="26" ratio="10" rot="MR0" align="center">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -671,6 +694,10 @@ design rules under a new name.</description>
 </element>
 <element name="U$1" library="pedals-pcb" package="125B_PCB" value="" x="-0.3175" y="2.921"/>
 <element name="C3" library="pedals-capacitors-elec" package="050_020" value="47u" x="36.557584375" y="20.955"/>
+<element name="SW1" library="pedals-switches" package="M9040P" value="" x="17.78" y="-19.05"/>
+<element name="D6" library="pedals-diodes" package="DO35-2" value="1N4148" x="5.715" y="-41.275"/>
+<element name="D7" library="pedals-diodes" package="DO35-2" value="1N4148" x="5.715" y="-53.34"/>
+<element name="D8" library="pedals-diodes" package="DO35-2" value="1N4148" x="5.715" y="-65.405"/>
 </elements>
 <signals>
 <signal name="+9V">
@@ -992,7 +1019,9 @@ design rules under a new name.</description>
 <wire x1="10.16" y1="31.115" x2="10.16" y2="29.845" width="0.3048" layer="16"/>
 <wire x1="15.24" y1="29.21" x2="19.05" y2="29.21" width="0.3048" layer="16"/>
 <contactref element="R8" pad="2"/>
+<contactref element="SW1" pad="2"/>
 <wire x1="10.16" y1="24.765" x2="13.97" y2="26.67" width="0" layer="19" extent="16-16"/>
+<wire x1="17.78" y1="-19.05" x2="10.16" y2="24.765" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="IC1" pad="1"/>
@@ -1023,6 +1052,12 @@ design rules under a new name.</description>
 <wire x1="38.735" y1="12.7" x2="40.64" y2="10.795" width="0.254" layer="16"/>
 <wire x1="40.64" y1="10.795" x2="45.7675" y2="10.795" width="0.254" layer="16"/>
 <wire x1="45.7675" y1="10.795" x2="47.625" y2="12.6525" width="0.254" layer="16"/>
+<contactref element="D6" pad="A"/>
+<contactref element="D7" pad="C"/>
+<contactref element="D8" pad="A"/>
+<wire x1="3.175" y1="-53.34" x2="8.255" y2="-65.405" width="0" layer="19" extent="1-1"/>
+<wire x1="8.255" y1="-41.275" x2="3.175" y2="-53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="12.7" x2="8.255" y2="-41.275" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$7">
 <contactref element="R6" pad="2"/>
@@ -1118,6 +1153,18 @@ design rules under a new name.</description>
 <contactref element="C12" pad="1"/>
 <contactref element="VOLUME" pad="3"/>
 <wire x1="42.545" y1="43.196" x2="42.545" y2="40.005" width="0.254" layer="16"/>
+</signal>
+<signal name="N$1">
+<contactref element="SW1" pad="3"/>
+<contactref element="D6" pad="C"/>
+<wire x1="13.1699" y1="-19.05" x2="3.175" y2="-41.275" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$10">
+<contactref element="SW1" pad="1"/>
+<contactref element="D7" pad="A"/>
+<contactref element="D8" pad="C"/>
+<wire x1="8.255" y1="-53.34" x2="3.175" y2="-65.405" width="0" layer="19" extent="1-1"/>
+<wire x1="22.4155" y1="-19.05" x2="8.255" y2="-53.34" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

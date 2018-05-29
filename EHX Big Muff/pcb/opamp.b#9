@@ -702,6 +702,7 @@ design rules under a new name.</description>
 <element name="C15" library="pedals-capacitors-film" package="BOX_SMALL" value="150n" x="81.28" y="-488.95"/>
 <element name="R18" library="pedals-resistors" package="R0207/3" value="47k" x="81.28" y="-501.015"/>
 <element name="R19" library="pedals-resistors" package="R0207/3" value="47k" x="81.28" y="-512.445"/>
+<element name="R20" library="pedals-resistors" package="R0207/3" value="5.6k" x="81.28" y="-523.875"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -828,6 +829,7 @@ design rules under a new name.</description>
 <contactref element="R16" pad="1"/>
 <contactref element="R19" pad="1"/>
 <contactref element="VOLUME" pad="1"/>
+<contactref element="R20" pad="1"/>
 <wire x1="79.73821875" y1="-231.774365625" x2="86.36" y2="-285.75" width="0" layer="19" extent="1-1"/>
 <wire x1="78.74" y1="-183.515" x2="79.73821875" y2="-231.774365625" width="0" layer="19" extent="1-1"/>
 <wire x1="86.36" y1="-136.525" x2="78.74" y2="-183.515" width="0" layer="19" extent="1-1"/>
@@ -934,6 +936,7 @@ design rules under a new name.</description>
 <wire x1="77.47" y1="-408.305" x2="86.36" y2="-285.75" width="0" layer="19" extent="1-1"/>
 <wire x1="78.74" y1="-443.23" x2="77.47" y2="-408.305" width="0" layer="19" extent="1-1"/>
 <wire x1="77.47" y1="-512.445" x2="78.74" y2="-443.23" width="0" layer="19" extent="1-1"/>
+<wire x1="77.47" y1="-523.875" x2="77.47" y2="-512.445" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUT">
 <contactref element="X1" pad="2"/>
@@ -944,7 +947,9 @@ design rules under a new name.</description>
 <wire x1="131.445" y1="8.89" x2="125.095" y2="2.54" width="0.254" layer="1"/>
 <wire x1="125.095" y1="2.54" x2="108.331" y2="2.54" width="0.254" layer="1"/>
 <contactref element="VOLUME" pad="2"/>
-<wire x1="124.19" y1="40.91" x2="122.8725" y2="40.91" width="0" layer="19" extent="1-1"/>
+<contactref element="R20" pad="2"/>
+<wire x1="108.331" y1="2.54" x2="85.09" y2="-523.875" width="0" layer="19" extent="1-1"/>
+<wire x1="122.8725" y1="40.91" x2="124.19" y2="40.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IN">
 <contactref element="X1" pad="8"/>

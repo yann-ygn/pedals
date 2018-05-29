@@ -809,6 +809,38 @@ design rules under a new name.</description>
 <via x="76.0095" y="15.6845" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="76.0095" y="4.2545" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="96.5835" y="60.1345" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="94.234" y="-1.9685" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="84.074" y="-1.9685" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="114.554" y="-1.9685" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="124.714" y="-1.9685" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="130.2385" y="4.2545" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="130.2385" y="15.6845" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="130.2385" y="27.1145" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="130.2385" y="38.5445" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="108.839" y="7.5565" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="105.918" y="7.5565" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="105.4735" y="16.3195" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="101.0285" y="16.3195" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="92.329" y="7.5565" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="78.232" y="4.2545" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="78.232" y="15.6845" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="78.232" y="27.1145" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="78.232" y="38.5445" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="103.1875" y="27.305" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="100.33" y="26.67" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="103.124" y="38.735" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="100.5205" y="38.1" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="88.9" y="33.655" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="97.155" y="30.48" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="120.0785" y="38.5445" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="111.8235" y="38.5445" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="109.0295" y="38.5445" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="111.8235" y="26.4795" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="109.0295" y="26.4795" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="119.4435" y="22.6695" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="91.5035" y="16.3195" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="91.7575" y="27.305" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="88.265" y="38.735" extent="1-16" drill="0.5" diameter="0.85"/>
 </signal>
 <signal name="OUT">
 <contactref element="X1" pad="2"/>

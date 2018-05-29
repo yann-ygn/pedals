@@ -4309,6 +4309,7 @@ NS Package M08A</description>
 <wire x1="337.82" y1="-5.08" x2="340.36" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="-5.08" x2="340.36" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="-12.7" x2="332.74" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="332.74" y="-12.7"/>
 </segment>
 <segment>
 <pinref part="GND22" gate="GND" pin="GND"/>

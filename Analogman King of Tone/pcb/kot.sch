@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -2823,10 +2824,10 @@ NS Package M08A</description>
 <part name="R1" library="pedals-resistors" deviceset="R_" device=".3B" value="47"/>
 <part name="C1" library="pedals-capacitors-film" deviceset="CER/FILM" device="2" value="100n"/>
 <part name="C2" library="pedals-capacitors-elec" deviceset="050" device="0" value="100u"/>
-<part name="R2" library="pedals-resistors" deviceset="R_" device=".3B" value="22k"/>
+<part name="R2" library="pedals-resistors" deviceset="R_" device=".3B" value="47k"/>
 <part name="GND2" library="pedals-supply" deviceset="GND" device=""/>
 <part name="GND3" library="pedals-supply" deviceset="GND" device=""/>
-<part name="R3" library="pedals-resistors" deviceset="R_" device=".3B" value="22k"/>
+<part name="R3" library="pedals-resistors" deviceset="R_" device=".3B" value="47k"/>
 <part name="C4" library="pedals-capacitors-elec" deviceset="050" device="0" value="47u"/>
 <part name="GND5" library="pedals-supply" deviceset="GND" device=""/>
 <part name="GND6" library="pedals-supply" deviceset="GND" device=""/>
