@@ -2075,8 +2075,7 @@ Source: LITEON, LTV816.pdf</description>
 </segment>
 <segment>
 <wire x1="50.8" y1="88.9" x2="48.26" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="88.9" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
-<label x="50.8" y="91.44" size="1.778" layer="95" rot="R90"/>
+<label x="50.8" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

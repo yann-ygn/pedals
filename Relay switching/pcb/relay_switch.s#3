@@ -1830,6 +1830,7 @@ Source: LITEON, LTV816.pdf</description>
 <part name="D2" library="pedals-diodes" deviceset="LED" device=""/>
 <part name="OK1" library="pedals-integrated circuits" deviceset="LTV816" device="" package3d_urn="urn:adsk.eagle:package:21938/1"/>
 <part name="GND7" library="pedals-supply" deviceset="GND" device=""/>
+<part name="GND8" library="pedals-supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1860,6 +1861,7 @@ Source: LITEON, LTV816.pdf</description>
 <instance part="D2" gate="G$1" x="-35.56" y="99.06" rot="R180"/>
 <instance part="OK1" gate="G$1" x="40.64" y="86.36"/>
 <instance part="GND7" gate="GND" x="27.94" y="78.74"/>
+<instance part="GND8" gate="GND" x="50.8" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -1902,6 +1904,12 @@ Source: LITEON, LTV816.pdf</description>
 <wire x1="27.94" y1="81.28" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="OK1" gate="G$1" pin="C"/>
 <wire x1="27.94" y1="83.82" x2="30.48" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="OK1" gate="G$1" pin="EMIT"/>
+<wire x1="48.26" y1="83.82" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="GND" pin="GND"/>
+<wire x1="50.8" y1="83.82" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+9V" class="0">
@@ -2064,6 +2072,11 @@ Source: LITEON, LTV816.pdf</description>
 <pinref part="K1" gate="1" pin="S"/>
 <wire x1="15.24" y1="111.76" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
 <label x="15.24" y="114.3" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="50.8" y1="88.9" x2="48.26" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="88.9" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
+<label x="50.8" y="91.44" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>

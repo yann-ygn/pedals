@@ -1875,6 +1875,39 @@ spacing: 6 holes
 <wire x1="-43.18" y1="99.06" x2="-40.64" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="K1" gate="2" pin="P"/>
+<wire x1="-7.62" y1="106.68" x2="-5.08" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="K1" gate="1" pin="P"/>
+<wire x1="5.08" y1="106.68" x2="7.62" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="K1" gate="2" pin="O"/>
+<wire x1="2.54" y1="101.6" x2="2.54" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="99.06" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="K1" gate="1" pin="O"/>
+<wire x1="15.24" y1="99.06" x2="15.24" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="K1" gate="2" pin="S"/>
+<wire x1="2.54" y1="111.76" x2="2.54" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="K1" gate="1" pin="S"/>
+<wire x1="15.24" y1="111.76" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
