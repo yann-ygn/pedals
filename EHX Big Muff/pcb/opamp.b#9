@@ -766,7 +766,7 @@ design rules under a new name.</description>
 <element name="R5" library="pedals-resistors" package="R0207/3" value="1M" x="111.125" y="42.545"/>
 <element name="C5" library="pedals-capacitors-elec" package="050_020" value="47u" x="111.125" y="46.355" rot="R180"/>
 <element name="R6" library="pedals-resistors" package="R0207/3" value="1M" x="85.09" y="3.81"/>
-<element name="C6" library="pedals-capacitors-film" package="BOX_SMALL" value="150n" x="86.36" y="6.35" rot="R180"/>
+<element name="C6" library="pedals-capacitors-film" package="BOX_SMALL" value="150n" x="85.09" y="6.35" rot="R180"/>
 <element name="R7" library="pedals-resistors" package="R0207/3" value="56k" x="85.09" y="8.89"/>
 <element name="IC1" library="pedals-integrated circuits" package="DIL0" value="JRC4558" x="87.63" y="17.78"/>
 <element name="R8" library="pedals-resistors" package="R0207/3" value="330k" x="85.09" y="11.43" rot="R180"/>
@@ -902,8 +902,7 @@ design rules under a new name.</description>
 <via x="78.4225" y="27.432" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="78.4225" y="16.637" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="78.4225" y="5.842" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="88.138" y="-4.953" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="95.0595" y="-7.6835" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="86.233" y="-4.953" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="129.667" y="38.862" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="129.667" y="28.067" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="129.667" y="17.272" extent="1-16" drill="0.5" diameter="0.85"/>
@@ -911,13 +910,13 @@ design rules under a new name.</description>
 <via x="99.822" y="10.922" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="102.997" y="18.542" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="100.33" y="18.6055" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="110.617" y="29.972" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="101.092" y="29.972" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="105.537" y="29.972" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="94.742" y="29.972" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="111.252" y="28.702" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="98.552" y="29.972" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="105.537" y="28.702" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="95.123" y="29.972" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="111.252" y="40.132" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="102.997" y="34.417" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="94.742" y="35.052" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="95.123" y="35.052" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="84.1375" y="28.702" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="83.82" y="33.02" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="83.82" y="35.56" extent="1-16" drill="0.5" diameter="0.85"/>
@@ -929,13 +928,11 @@ design rules under a new name.</description>
 <via x="106.807" y="21.082" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="114.427" y="21.082" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="103.0605" y="10.922" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="104.4575" y="-14.0335" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="126.492" y="-11.938" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="117.1575" y="-17.8435" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="105.7275" y="-1.9685" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="105.7275" y="0.6985" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="117.1575" y="0.0635" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="84.7725" y="8.382" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="85.4075" y="5.842" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="95.123" y="-22.9235" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="104.648" y="-22.9235" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="114.173" y="-22.9235" extent="1-16" drill="0.5" diameter="0.85"/>
@@ -949,9 +946,21 @@ design rules under a new name.</description>
 <via x="132.842" y="49.657" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="132.842" y="60.452" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="117.1575" y="4.5085" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="96.2025" y="3.1115" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="117.1575" y="-5.6515" extent="1-16" drill="0.5" diameter="0.85"/>
 <contactref element="C17" pad="-"/>
+<via x="85.598" y="-15.748" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="95.123" y="-15.748" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="95.123" y="-4.953" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="95.123" y="5.842" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="104.648" y="-15.748" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="114.173" y="-15.748" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="97.917" y="35.052" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="100.33" y="38.735" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="100.33" y="41.275" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="102.87" y="44.45" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="105.41" y="44.45" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="100.33" y="5.9055" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="102.9335" y="5.9055" extent="1-16" drill="0.5" diameter="0.85"/>
 </signal>
 <signal name="OUT">
 <contactref element="OK1" pad="4"/>
@@ -971,11 +980,11 @@ design rules under a new name.</description>
 <signal name="IN">
 <contactref element="K1" pad="9"/>
 <contactref element="INPUT" pad="T"/>
-<wire x1="90.551" y1="-8.89" x2="77.216" y2="4.445" width="0.254" layer="1"/>
-<wire x1="77.216" y1="4.445" x2="77.216" y2="50.1015" width="0.254" layer="1"/>
-<wire x1="77.216" y1="50.1015" x2="80.264" y2="53.1495" width="0.254" layer="1"/>
-<wire x1="82.436" y1="53.1495" x2="80.264" y2="53.1495" width="0.254" layer="1"/>
-<wire x1="90.551" y1="-8.89" x2="102.235" y2="-8.89" width="0.254" layer="1"/>
+<wire x1="88.646" y1="-8.89" x2="77.216" y2="2.54" width="0.254" layer="1"/>
+<wire x1="77.216" y1="2.54" x2="77.216" y2="49.4665" width="0.254" layer="1"/>
+<wire x1="77.216" y1="49.4665" x2="80.899" y2="53.1495" width="0.254" layer="1"/>
+<wire x1="82.436" y1="53.1495" x2="80.899" y2="53.1495" width="0.254" layer="1"/>
+<wire x1="88.646" y1="-8.89" x2="102.235" y2="-8.89" width="0.254" layer="1"/>
 </signal>
 <signal name="+18V">
 <contactref element="D1" pad="C"/>
@@ -1068,7 +1077,9 @@ design rules under a new name.</description>
 <signal name="N$3">
 <contactref element="C6" pad="2"/>
 <contactref element="R7" pad="1"/>
-<wire x1="81.28" y1="8.89" x2="83.82" y2="6.35" width="0.254" layer="16"/>
+<wire x1="82.55" y1="6.35" x2="81.915" y2="6.35" width="0.254" layer="16"/>
+<wire x1="81.915" y1="6.35" x2="81.28" y2="6.985" width="0.254" layer="16"/>
+<wire x1="81.28" y1="6.985" x2="81.28" y2="8.89" width="0.254" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="R7" pad="2"/>
@@ -1355,9 +1366,11 @@ design rules under a new name.</description>
 <contactref element="K1" pad="8"/>
 <contactref element="C6" pad="1"/>
 <contactref element="R6" pad="2"/>
-<wire x1="88.9" y1="3.81" x2="88.9" y2="6.35" width="0.254" layer="16"/>
 <wire x1="88.9" y1="3.81" x2="99.06" y2="-6.35" width="0.254" layer="16"/>
 <wire x1="99.06" y1="-6.35" x2="102.235" y2="-6.35" width="0.254" layer="16"/>
+<wire x1="87.63" y1="6.35" x2="88.265" y2="6.35" width="0.254" layer="16"/>
+<wire x1="88.265" y1="6.35" x2="88.9" y2="5.715" width="0.254" layer="16"/>
+<wire x1="88.9" y1="5.715" x2="88.9" y2="3.81" width="0.254" layer="16"/>
 </signal>
 <signal name="RETURN">
 <contactref element="K1" pad="5"/>

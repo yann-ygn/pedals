@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -646,6 +646,9 @@ design rules under a new name.</description>
 <param name="checkRestrict" value="0"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -777,7 +780,7 @@ design rules under a new name.</description>
 <element name="R11" library="pedals-resistors" package="R0207/3" value="560k" x="85.09" y="31.75" rot="R180"/>
 <element name="R12" library="pedals-resistors" package="R0207/3" value="62k" x="85.09" y="34.29" rot="R180"/>
 <element name="C9" library="pedals-capacitors-elec" package="050_020" value="10u" x="92.456" y="36.83"/>
-<element name="R13" library="pedals-resistors" package="R0207/3" value="47" x="85.09" y="36.83" rot="R180"/>
+<element name="R13" library="pedals-resistors" package="R0207/3" value="47R" x="85.09" y="36.83" rot="R180"/>
 <element name="C10" library="pedals-capacitors-elec" package="050_020" value="4.7u" x="100.33" y="36.83"/>
 <element name="R14" library="pedals-resistors" package="R0207/3" value="8.2k" x="111.125" y="24.765"/>
 <element name="IC2" library="pedals-integrated circuits" package="DIL0" value="LM741" x="111.125" y="33.655" rot="R90"/>
@@ -955,6 +958,16 @@ design rules under a new name.</description>
 <via x="104.648" y="-15.748" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="114.173" y="-15.748" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="97.917" y="35.052" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="100.33" y="38.735" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="100.33" y="41.275" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="102.87" y="44.45" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="105.41" y="44.45" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="100.2665" y="5.9055" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="102.9335" y="5.9055" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="111.252" y="34.417" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="119.507" y="36.322" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="90.043" y="20.32" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="85.4075" y="16.637" extent="1-16" drill="0.5" diameter="0.85"/>
 </signal>
 <signal name="OUT">
 <contactref element="OK1" pad="4"/>
@@ -1068,13 +1081,6 @@ design rules under a new name.</description>
 <wire x1="112.123221875" y1="46.353728125" x2="114.935" y2="43.54195" width="0.8128" layer="16"/>
 <wire x1="114.935" y1="43.54195" x2="114.935" y2="42.545" width="0.8128" layer="16"/>
 </signal>
-<signal name="N$3">
-<contactref element="C6" pad="2"/>
-<contactref element="R7" pad="1"/>
-<wire x1="82.55" y1="6.35" x2="81.915" y2="6.35" width="0.254" layer="16"/>
-<wire x1="81.915" y1="6.35" x2="81.28" y2="6.985" width="0.254" layer="16"/>
-<wire x1="81.28" y1="6.985" x2="81.28" y2="8.89" width="0.254" layer="16"/>
-</signal>
 <signal name="N$4">
 <contactref element="R7" pad="2"/>
 <contactref element="IC1" pad="2"/>
@@ -1092,9 +1098,9 @@ design rules under a new name.</description>
 <signal name="N$6">
 <contactref element="R9" pad="2"/>
 <contactref element="R10" pad="1"/>
-<contactref element="C8" pad="1"/>
 <wire x1="81.28" y1="21.59" x2="81.28" y2="26.67" width="0.254" layer="16"/>
-<wire x1="81.28" y1="26.67" x2="81.28" y2="29.21" width="0.254" layer="16"/>
+<contactref element="C8" pad="2"/>
+<wire x1="81.28" y1="26.67" x2="86.36" y2="29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R10" pad="2"/>
@@ -1104,21 +1110,21 @@ design rules under a new name.</description>
 <wire x1="88.9" y1="26.67" x2="91.44" y2="26.67" width="0.254" layer="16"/>
 </signal>
 <signal name="N$8">
-<contactref element="C8" pad="2"/>
 <contactref element="IC1" pad="7"/>
 <contactref element="R11" pad="2"/>
 <contactref element="SUSTAIN" pad="3"/>
 <wire x1="86.36" y1="21.59" x2="86.36" y2="22.225" width="0.254" layer="16"/>
 <wire x1="86.36" y1="22.225" x2="85.725" y2="22.86" width="0.254" layer="16"/>
 <wire x1="85.725" y1="22.86" x2="85.725" y2="28.575" width="0.254" layer="16"/>
-<wire x1="85.725" y1="28.575" x2="86.36" y2="29.21" width="0.254" layer="16"/>
 <wire x1="81.28" y1="31.75" x2="85.09" y2="31.75" width="0.254" layer="16"/>
 <wire x1="85.09" y1="31.75" x2="86.36" y2="30.48" width="0.254" layer="16"/>
-<wire x1="86.36" y1="30.48" x2="86.36" y2="29.21" width="0.254" layer="16"/>
 <wire x1="81.28" y1="31.75" x2="80.645" y2="31.75" width="0.254" layer="16"/>
 <wire x1="80.645" y1="31.75" x2="79.375" y2="33.02" width="0.254" layer="16"/>
 <wire x1="79.375" y1="39.3225" x2="80.9625" y2="40.91" width="0.254" layer="16"/>
 <wire x1="79.375" y1="33.02" x2="79.375" y2="39.3225" width="0.254" layer="16"/>
+<contactref element="C8" pad="1"/>
+<wire x1="85.725" y1="28.575" x2="86.36" y2="30.48" width="0" layer="19" extent="16-16"/>
+<wire x1="81.28" y1="29.21" x2="81.28" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="IC1" pad="6"/>
@@ -1358,13 +1364,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="SEND">
 <contactref element="K1" pad="8"/>
-<contactref element="C6" pad="1"/>
 <contactref element="R6" pad="2"/>
 <wire x1="88.9" y1="3.81" x2="99.06" y2="-6.35" width="0.254" layer="16"/>
 <wire x1="99.06" y1="-6.35" x2="102.235" y2="-6.35" width="0.254" layer="16"/>
-<wire x1="87.63" y1="6.35" x2="88.265" y2="6.35" width="0.254" layer="16"/>
 <wire x1="88.265" y1="6.35" x2="88.9" y2="5.715" width="0.254" layer="16"/>
 <wire x1="88.9" y1="5.715" x2="88.9" y2="3.81" width="0.254" layer="16"/>
+<contactref element="C6" pad="1"/>
+<wire x1="87.63" y1="6.35" x2="88.265" y2="6.35" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="RETURN">
 <contactref element="K1" pad="5"/>
@@ -1385,7 +1391,19 @@ design rules under a new name.</description>
 <contactref element="K1" pad="3"/>
 <wire x1="102.235" y1="-11.43" x2="107.315" y2="-11.43" width="0.254" layer="16"/>
 </signal>
+<signal name="N$3">
+<contactref element="C6" pad="2"/>
+<contactref element="R7" pad="1"/>
+<wire x1="82.55" y1="6.35" x2="81.28" y2="8.89" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>

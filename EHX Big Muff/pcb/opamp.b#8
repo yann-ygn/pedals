@@ -911,12 +911,12 @@ design rules under a new name.</description>
 <via x="102.997" y="18.542" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="100.33" y="18.6055" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="111.252" y="28.702" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="101.092" y="29.972" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="98.552" y="29.972" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="105.537" y="28.702" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="94.742" y="29.972" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="95.123" y="29.972" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="111.252" y="40.132" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="102.997" y="34.417" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="94.742" y="35.052" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="95.123" y="35.052" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="84.1375" y="28.702" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="83.82" y="33.02" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="83.82" y="35.56" extent="1-16" drill="0.5" diameter="0.85"/>
@@ -928,13 +928,11 @@ design rules under a new name.</description>
 <via x="106.807" y="21.082" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="114.427" y="21.082" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="103.0605" y="10.922" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="104.4575" y="-14.0335" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="126.492" y="-11.938" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="117.1575" y="-17.8435" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="105.7275" y="-1.9685" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="105.7275" y="0.6985" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="117.1575" y="0.0635" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="84.7725" y="8.382" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="85.4075" y="5.842" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="95.123" y="-22.9235" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="104.648" y="-22.9235" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="114.173" y="-22.9235" extent="1-16" drill="0.5" diameter="0.85"/>
@@ -948,12 +946,21 @@ design rules under a new name.</description>
 <via x="132.842" y="49.657" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="132.842" y="60.452" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="117.1575" y="4.5085" extent="1-16" drill="0.5" diameter="0.85"/>
-<via x="96.2025" y="3.1115" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="117.1575" y="-5.6515" extent="1-16" drill="0.5" diameter="0.85"/>
 <contactref element="C17" pad="-"/>
 <via x="85.598" y="-15.748" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="95.123" y="-15.748" extent="1-16" drill="0.5" diameter="0.85"/>
 <via x="95.123" y="-4.953" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="95.123" y="5.842" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="104.648" y="-15.748" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="114.173" y="-15.748" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="97.917" y="35.052" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="100.33" y="38.735" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="100.33" y="41.275" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="102.87" y="44.45" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="105.41" y="44.45" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="100.2665" y="5.9055" extent="1-16" drill="0.5" diameter="0.85"/>
+<via x="102.9335" y="5.9055" extent="1-16" drill="0.5" diameter="0.85"/>
 </signal>
 <signal name="OUT">
 <contactref element="OK1" pad="4"/>

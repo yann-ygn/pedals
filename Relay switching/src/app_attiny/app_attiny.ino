@@ -1,12 +1,13 @@
 #include <arduino.h>
 
-#define FOOTSWITCH 0
-#define RELAY 1
-#define OPTOCOUPLER 2
+#define FOOTSWITCH 4
+#define RELAY 3
+#define OPTOCOUPLER 0
 
-int now;
+long int now;
 int switchState;
 int lastSwitchState = 0;
+int relayState = 0;
 long int lastPressTime;
 
 int footSwitchPress();
@@ -25,6 +26,13 @@ void loop()
     if (footSwitchPress())
     {
         lastPressTime = now;
+        relayState = !relayState;
+
+        digitalWrite(OPTOCOUPLER, HIGH);
+        delay(10);
+        digitalWrite(RELAY, relayState);
+        delay(30);
+        digitalWrite(OPTOCOUPLER, LOW);
     }
 }
 
@@ -32,7 +40,7 @@ int footSwitchPress()
 {
     switchState = digitalRead(FOOTSWITCH);
 
-    if (switchState == LOW && now - lastPressTime > 30000 && switchState != lastSwitchState )
+    if (switchState == LOW && now - lastPressTime > 300)
     {
         lastSwitchState = switchState;
         return 1;
