@@ -1,6 +1,6 @@
 {
     "board": "ATTinyCore:avr:attinyx5",
-    "port": "COM3",
+    "port": "COM4",
     "sketch": "Relay switching\\src\\app_attiny\\app_attiny.ino",
     "configuration": "LTO=disable,TimerClockSource=default,chip=85,clock=8internal,bod=disable"
 }
