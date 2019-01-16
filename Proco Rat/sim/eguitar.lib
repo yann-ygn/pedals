@@ -1,0 +1,24 @@
+*Electric Guitar Pickup with Signal Generator SPICE Subcircuits
+*
+*VG1=Sine Wave Generator (100mV P-P 440Hz)
+*XP1=Volume Control (250kOhms 99 Percent Maximum)
+*XP2=Tone Control (250kOhms 99 Percent Maximum)
+*C1=Pickup Capacitance (120pF)
+*C2=Tone Capacitor (.022uF)
+*R1=Pickup Resistance (10kOhms)
+*L1=Pickup Inductance (2.5H)
+*
+*
+*Connections:***OUT
+**************| GND
+**************| |
+.SUBCKT EGUITAR 1 2
+VG1 5 1 DC 0 AC 1 0
++ SIN( 0 100M 440 0 0 0 )
+XP2 3 4 4 PotMeter PARAMS: Res=250K Percent=990M
+C2 4 1 22N
+XP1 1 3 2 PotMeter PARAMS: Res=250K Percent=990M
+C1 3 1 120P
+R1 6 5 10K
+L1 3 6 2.5
+.ENDS
