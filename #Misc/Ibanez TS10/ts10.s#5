@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2715,60 +2715,60 @@ NS Package M08A</description>
 </class>
 </classes>
 <parts>
-<part name="J1" library="pedals-jacks" deviceset="STEREO" device=""/>
-<part name="C1" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1"/>
-<part name="R1" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="R2" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="R3" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="R4" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_4_$_2020-03-22_19-59-12" library="pedals-capacitors-elec" deviceset="050" device="0"/>
-<part name="Q1" library="pedals-transistors" deviceset="2N3904" device=""/>
-<part name="R5" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_5_$_2020-03-22_19-59-12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1"/>
-<part name="R6" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="R7" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_9_$_2020-03-22_19-59-12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1"/>
-<part name="$1_22_$_2020-03-22_19-59-12" library="pedals-diodes" deviceset="DO35" device=".2"/>
-<part name="$1_21_$_2020-03-22_19-59-12" library="pedals-diodes" deviceset="DO35" device=".2"/>
-<part name="POT1" library="pedals-potentiometers" deviceset="POTS" device="16MM"/>
-<part name="R8" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_6_$_2020-03-22_19-59-12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1"/>
-<part name="R9" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="R10" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="R11" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_11_$_2020-03-22_19-59-12" library="pedals-capacitors-elec" deviceset="050" device="0"/>
-<part name="POT2" library="pedals-potentiometers" deviceset="POTS" device="16MM"/>
-<part name="IC1" library="pedals-integrated circuits" deviceset="DUAL" device="TH"/>
-<part name="R12" library="pedals-resistors" deviceset="R_" device=".3B"/>
+<part name="J101" library="pedals-jacks" deviceset="STEREO" device=""/>
+<part name="C1" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="20n"/>
+<part name="R1" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
+<part name="R4" library="pedals-resistors" deviceset="R_" device=".3B" value="510k"/>
+<part name="R3" library="pedals-resistors" deviceset="R_" device=".3B" value="22k"/>
+<part name="R2" library="pedals-resistors" deviceset="R_" device=".3B" value="9.2k"/>
+<part name="C2" library="pedals-capacitors-elec" deviceset="050" device="0" value="10u"/>
+<part name="Q1" library="pedals-transistors" deviceset="2N3904" device="" value="2SC1815"/>
+<part name="R5" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
+<part name="C3" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1u"/>
+<part name="R6" library="pedals-resistors" deviceset="R_" device=".3B" value="220R"/>
+<part name="R8" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
+<part name="C7" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="51p"/>
+<part name="D6" library="pedals-diodes" deviceset="DO35" device=".2" value="1N914"/>
+<part name="D5" library="pedals-diodes" deviceset="DO35" device=".2" value="1N914"/>
+<part name="DRIVE" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="500k"/>
+<part name="R10" library="pedals-resistors" deviceset="R_" device=".3B" value="51k"/>
+<part name="C6" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
+<part name="R9" library="pedals-resistors" deviceset="R_" device=".3B" value="4.7k"/>
+<part name="R12" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
+<part name="R13" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
+<part name="C8" library="pedals-capacitors-elec" deviceset="050" device="0" value="220n"/>
+<part name="TONE" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="20k"/>
+<part name="IC1" library="pedals-integrated circuits" deviceset="DUAL" device="TH" value="NJZ4558"/>
+<part name="R14" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
 <part name="V1" library="pedals-supply" deviceset="+9V" device=""/>
-<part name="$1_12_$_2020-03-22_19-59-12" library="pedals-capacitors-elec" deviceset="050" device="0"/>
-<part name="R13" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_15_$_2020-03-22_19-59-12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1"/>
-<part name="R14" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="POT3" library="pedals-potentiometers" deviceset="POTS" device="16MM"/>
-<part name="$1_16_$_2020-03-22_19-59-12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1"/>
-<part name="R15" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="Q2" library="pedals-transistors" deviceset="2SK170" device=""/>
-<part name="$1_18_$_2020-03-22_19-59-12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1"/>
-<part name="R16" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="Q3" library="pedals-transistors" deviceset="2N3904" device=""/>
-<part name="R17" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_19_$_2020-03-22_19-59-12" library="pedals-capacitors-elec" deviceset="050" device="0"/>
-<part name="R18" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="R19" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="R20" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="Q4" library="pedals-transistors" deviceset="2N3904" device=""/>
-<part name="R21" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_7_$_2020-03-22_19-59-12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1"/>
-<part name="R22" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="Q5" library="pedals-transistors" deviceset="2SK170" device=""/>
-<part name="R23" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_20_$_2020-03-22_19-59-12" library="pedals-diodes" deviceset="DO35" device=".2"/>
-<part name="$1_2_$_2020-03-22_19-59-12" library="pedals-capacitors-elec" deviceset="050" device="0"/>
-<part name="R24" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="R25" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_3_$_2020-03-22_19-59-12" library="pedals-capacitors-elec" deviceset="050" device="0"/>
-<part name="$1_0_$_2020-03-22_19-59-12" library="pedals-jacks" deviceset="BATTERY" device=""/>
+<part name="C9" library="pedals-capacitors-elec" deviceset="050" device="0" value="220n"/>
+<part name="R15" library="pedals-resistors" deviceset="R_" device=".3B" value="220R"/>
+<part name="C10" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1u"/>
+<part name="R16" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
+<part name="LEVEL" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100k"/>
+<part name="C11" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1u"/>
+<part name="R17" library="pedals-resistors" deviceset="R_" device=".3B" value="510k"/>
+<part name="Q7" library="pedals-transistors" deviceset="2SK170" device="" value="2SK118"/>
+<part name="C13" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="100n"/>
+<part name="R19" library="pedals-resistors" deviceset="R_" device=".3B" value="510k"/>
+<part name="Q2" library="pedals-transistors" deviceset="2N3904" device="" value="2SC1815"/>
+<part name="R20" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
+<part name="C14" library="pedals-capacitors-elec" deviceset="050" device="0" value="10u"/>
+<part name="R21" library="pedals-resistors" deviceset="R_" device=".3B" value="470R"/>
+<part name="R22" library="pedals-resistors" deviceset="R_" device=".3B" value="100k"/>
+<part name="R39" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
+<part name="Q6" library="pedals-transistors" deviceset="2N3904" device="" value="2SC1815"/>
+<part name="R40" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
+<part name="C15" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="100n"/>
+<part name="R23" library="pedals-resistors" deviceset="R_" device=".3B" value="510k"/>
+<part name="Q8" library="pedals-transistors" deviceset="2SK170" device="" value="2SK118"/>
+<part name="R24" library="pedals-resistors" deviceset="R_" device=".3B" value="510k"/>
+<part name="D1" library="pedals-diodes" deviceset="DO35" device=".2" value="1N4001"/>
+<part name="C21" library="pedals-capacitors-elec" deviceset="050" device="0" value="100u"/>
+<part name="R101" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
+<part name="R104" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
+<part name="C20" library="pedals-capacitors-elec" deviceset="050" device="0" value="47u"/>
+<part name="1101" library="pedals-jacks" deviceset="BATTERY" device=""/>
 <part name="V2" library="pedals-supply" deviceset="+9V" device=""/>
 <part name="VB1" library="pedals-supply" deviceset="VB" device=""/>
 <part name="V3" library="pedals-supply" deviceset="+9V" device=""/>
@@ -2783,38 +2783,38 @@ NS Package M08A</description>
 <part name="VB8" library="pedals-supply" deviceset="VB" device=""/>
 <part name="V6" library="pedals-supply" deviceset="+9V" device=""/>
 <part name="VB9" library="pedals-supply" deviceset="VB" device=""/>
-<part name="J2" library="pedals-jacks" deviceset="MONO" device=""/>
-<part name="Q105" library="pedals-transistors" deviceset="2SC828A" device="" value="2SC1815BL"/>
-<part name="R125" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
-<part name="$1_14_$_2020-03-22_19-59-12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1n"/>
-<part name="R126" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
-<part name="$1_13_$_2020-03-22_19-59-12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1n"/>
-<part name="R128" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
-<part name="Q106" library="pedals-transistors" deviceset="2SC828A" device="" value="2SC1815BL"/>
-<part name="R127" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
+<part name="J102" library="pedals-jacks" deviceset="MONO" device=""/>
+<part name="Q4" library="pedals-transistors" deviceset="2SC828A" device="" value="2SC1815"/>
+<part name="R29" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
+<part name="C18" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1n"/>
+<part name="R27" library="pedals-resistors" deviceset="R_" device=".3B" value="22k"/>
+<part name="C17" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1n"/>
+<part name="R28" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
+<part name="Q3" library="pedals-transistors" deviceset="2SC828A" device="" value="2SC1815"/>
+<part name="R26" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
 <part name="V106" library="gm-supply" deviceset="+9V" device=""/>
 <part name="V105" library="gm-supply" deviceset="+9V" device=""/>
-<part name="$1_23_$_2020-03-22_19-59-12" library="pedals-diodes" deviceset="DO35" device=".2"/>
-<part name="R26" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_8_$_2020-03-22_19-59-12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1"/>
-<part name="$1_25_$_2020-03-22_19-59-12" library="pedals-diodes" deviceset="DO35" device=".2"/>
-<part name="R27" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_17_$_2020-03-22_19-59-12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1"/>
-<part name="$1_24_$_2020-03-22_19-59-12" library="pedals-diodes" deviceset="DO35" device=".2"/>
-<part name="R28" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="R29" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
-<part name="Q6" library="pedals-transistors" deviceset="2SC828A" device="" value="2SC1815BL"/>
-<part name="$1_27_$_2020-03-22_19-59-12" library="pedals-diodes" deviceset="ZENER" device=".3"/>
-<part name="R30" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
-<part name="$1_26_$_2020-03-22_19-59-12" library="pedals-diodes" deviceset="LED" device=""/>
+<part name="D8" library="pedals-diodes" deviceset="DO35" device=".2" value="1N914"/>
+<part name="R25" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
+<part name="C16" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
+<part name="D7" library="pedals-diodes" deviceset="DO35" device=".2" value="1N914"/>
+<part name="R18" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
+<part name="C12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
+<part name="D9" library="pedals-diodes" deviceset="DO35" device=".2" value="1N914"/>
+<part name="R34" library="pedals-resistors" deviceset="R_" device=".3B" value="100R"/>
+<part name="R35" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
+<part name="Q5" library="pedals-transistors" deviceset="2SC828A" device="" value="2SC1815"/>
+<part name="D2" library="pedals-diodes" deviceset="ZENER" device=".3" value="ZW3"/>
+<part name="R36" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
+<part name="LED" library="pedals-diodes" deviceset="LED" device=""/>
 <part name="V7" library="gm-supply" deviceset="+9V" device=""/>
+<part name="R33" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
 <part name="R31" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
-<part name="R32" library="pedals-resistors" deviceset="R_" device=".3B" value="56k"/>
-<part name="R33" library="pedals-resistors" deviceset="R_" device=".3B"/>
+<part name="R32" library="pedals-resistors" deviceset="R_" device=".3B"/>
 <part name="V8" library="gm-supply" deviceset="+9V" device=""/>
-<part name="R34" library="pedals-resistors" deviceset="R_" device=".3B"/>
-<part name="$1_10_$_2020-03-22_19-59-12" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1n"/>
-<part name="SW1" library="pedals-switches" deviceset="MOMENTARY" device=""/>
+<part name=" " library="pedals-resistors" deviceset="R_" device=".3B" value="22R"/>
+<part name="C19" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1n"/>
+<part name="FOOTSW" library="pedals-switches" deviceset="MOMENTARY" device=""/>
 <part name="GND1" library="pedals-supply" deviceset="GND" device=""/>
 <part name="GND2" library="pedals-supply" deviceset="GND" device=""/>
 <part name="GND3" library="pedals-supply" deviceset="GND" device=""/>
@@ -2854,7 +2854,7 @@ NS Package M08A</description>
 <text x="152.908" y="36.322" size="1.778" layer="95">CR2</text>
 </plain>
 <instances>
-<instance part="J1" gate="G$1" x="2.54" y="116.84" smashed="yes" rot="MR180">
+<instance part="J101" gate="G$1" x="2.54" y="116.84" smashed="yes" rot="MR180">
 <attribute name="NAME" x="6.731" y="110.617" size="1.778" layer="95" rot="MR180" align="center"/>
 <attribute name="VALUE" x="6.731" y="118.237" size="1.778" layer="96" rot="MR180" align="center"/>
 </instance>
@@ -2866,7 +2866,7 @@ NS Package M08A</description>
 <attribute name="NAME" x="43.18" y="118.9736" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="43.18" y="114.681" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R2" gate="G$1" x="50.8" y="109.22" smashed="yes" rot="R90">
+<instance part="R4" gate="G$1" x="50.8" y="109.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.6664" y="109.22" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="52.959" y="109.22" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
@@ -2874,11 +2874,11 @@ NS Package M08A</description>
 <attribute name="NAME" x="48.6664" y="93.98" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="52.959" y="93.98" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R4" gate="G$1" x="43.18" y="101.6" smashed="yes">
+<instance part="R2" gate="G$1" x="43.18" y="101.6" smashed="yes">
 <attribute name="NAME" x="43.18" y="103.7336" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="43.18" y="99.441" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="$1_4_$_2020-03-22_19-59-12" gate="1" x="60.96" y="96.52" smashed="yes" rot="MR270">
+<instance part="C2" gate="1" x="60.96" y="96.52" smashed="yes" rot="MR270">
 <attribute name="NAME" x="57.277" y="96.52" size="1.778" layer="95" rot="R270" align="center"/>
 <attribute name="VALUE" x="64.643" y="96.52" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
@@ -2890,7 +2890,7 @@ NS Package M08A</description>
 <attribute name="NAME" x="68.9864" y="101.6" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="73.279" y="101.6" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_5_$_2020-03-22_19-59-12" gate="G$1" x="86.36" y="109.22" smashed="yes">
+<instance part="C3" gate="G$1" x="86.36" y="109.22" smashed="yes">
 <attribute name="NAME" x="85.09" y="112.522" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="85.09" y="105.918" size="1.778" layer="96" align="center"/>
 </instance>
@@ -2898,31 +2898,31 @@ NS Package M08A</description>
 <attribute name="NAME" x="96.52" y="111.3536" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="96.52" y="107.061" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R7" gate="G$1" x="104.14" y="101.6" smashed="yes" rot="R90">
+<instance part="R8" gate="G$1" x="104.14" y="101.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="102.0064" y="101.6" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="106.299" y="101.6" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_9_$_2020-03-22_19-59-12" gate="G$1" x="116.84" y="124.46" smashed="yes">
+<instance part="C7" gate="G$1" x="116.84" y="124.46" smashed="yes">
 <attribute name="NAME" x="115.57" y="127.762" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="115.57" y="121.158" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="$1_22_$_2020-03-22_19-59-12" gate="G$1" x="116.84" y="134.62" smashed="yes">
+<instance part="D6" gate="G$1" x="116.84" y="134.62" smashed="yes">
 <attribute name="NAME" x="116.84" y="137.0076" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="116.84" y="132.207" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="$1_21_$_2020-03-22_19-59-12" gate="G$1" x="114.3" y="144.78" smashed="yes" rot="MR0">
+<instance part="D5" gate="G$1" x="114.3" y="144.78" smashed="yes" rot="MR0">
 <attribute name="NAME" x="114.3" y="147.1676" size="1.778" layer="95" rot="MR0" align="center"/>
 <attribute name="VALUE" x="114.3" y="142.367" size="1.778" layer="96" rot="MR0" align="center"/>
 </instance>
-<instance part="POT1" gate="G$1" x="127" y="154.94" smashed="yes" rot="MR0">
+<instance part="DRIVE" gate="G$1" x="127" y="154.94" smashed="yes" rot="MR0">
 <attribute name="NAME" x="129.159" y="154.94" size="1.778" layer="95" rot="MR90" align="center"/>
 <attribute name="VALUE" x="131.445" y="154.94" size="1.778" layer="96" rot="MR90" align="center"/>
 </instance>
-<instance part="R8" gate="G$1" x="111.76" y="154.94" smashed="yes">
+<instance part="R10" gate="G$1" x="111.76" y="154.94" smashed="yes">
 <attribute name="NAME" x="111.76" y="157.0736" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="111.76" y="152.781" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="$1_6_$_2020-03-22_19-59-12" gate="G$1" x="96.52" y="149.86" smashed="yes" rot="R90">
+<instance part="C6" gate="G$1" x="96.52" y="149.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="93.218" y="148.59" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="99.822" y="148.59" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
@@ -2930,19 +2930,19 @@ NS Package M08A</description>
 <attribute name="NAME" x="94.3864" y="137.16" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="98.679" y="137.16" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R10" gate="G$1" x="134.62" y="111.76" smashed="yes">
+<instance part="R12" gate="G$1" x="134.62" y="111.76" smashed="yes">
 <attribute name="NAME" x="134.62" y="113.8936" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="134.62" y="109.601" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R11" gate="G$1" x="142.24" y="119.38" smashed="yes" rot="R90">
+<instance part="R13" gate="G$1" x="142.24" y="119.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="140.1064" y="119.38" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="144.399" y="119.38" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_11_$_2020-03-22_19-59-12" gate="1" x="142.24" y="106.68" smashed="yes" rot="MR270">
+<instance part="C8" gate="1" x="142.24" y="106.68" smashed="yes" rot="MR270">
 <attribute name="NAME" x="138.557" y="106.68" size="1.778" layer="95" rot="R270" align="center"/>
 <attribute name="VALUE" x="145.923" y="106.68" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
-<instance part="POT2" gate="G$1" x="157.48" y="154.94" smashed="yes" rot="R270">
+<instance part="TONE" gate="G$1" x="157.48" y="154.94" smashed="yes" rot="R270">
 <attribute name="NAME" x="157.48" y="157.099" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="157.48" y="159.385" size="1.778" layer="96" align="center"/>
 </instance>
@@ -2957,122 +2957,122 @@ NS Package M08A</description>
 <instance part="IC1" gate="_PWR" x="175.26" y="114.3" smashed="yes">
 <attribute name="NAME" x="174.625" y="114.3" size="0.8128" layer="95" rot="R90" align="center"/>
 </instance>
-<instance part="R12" gate="G$1" x="175.26" y="139.7" smashed="yes">
+<instance part="R14" gate="G$1" x="175.26" y="139.7" smashed="yes">
 <attribute name="NAME" x="175.26" y="141.8336" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="175.26" y="137.541" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="V1" gate="+9V" x="175.26" y="127" smashed="yes">
 <attribute name="VALUE" x="173.355" y="130.175" size="1.778" layer="96"/>
 </instance>
-<instance part="$1_12_$_2020-03-22_19-59-12" gate="1" x="157.48" y="144.78" smashed="yes" rot="MR270">
+<instance part="C9" gate="1" x="157.48" y="144.78" smashed="yes" rot="MR270">
 <attribute name="NAME" x="153.797" y="144.78" size="1.778" layer="95" rot="R270" align="center"/>
 <attribute name="VALUE" x="161.163" y="144.78" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
-<instance part="R13" gate="G$1" x="157.48" y="132.08" smashed="yes" rot="R90">
+<instance part="R15" gate="G$1" x="157.48" y="132.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="155.3464" y="132.08" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="159.639" y="132.08" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_15_$_2020-03-22_19-59-12" gate="G$1" x="193.04" y="114.3" smashed="yes">
+<instance part="C10" gate="G$1" x="193.04" y="114.3" smashed="yes">
 <attribute name="NAME" x="191.77" y="117.602" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="191.77" y="110.998" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R14" gate="G$1" x="203.2" y="114.3" smashed="yes">
+<instance part="R16" gate="G$1" x="203.2" y="114.3" smashed="yes">
 <attribute name="NAME" x="203.2" y="116.4336" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="203.2" y="112.141" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="POT3" gate="G$1" x="210.82" y="104.14" smashed="yes">
+<instance part="LEVEL" gate="G$1" x="210.82" y="104.14" smashed="yes">
 <attribute name="NAME" x="208.661" y="104.14" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="206.375" y="104.14" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_16_$_2020-03-22_19-59-12" gate="G$1" x="223.52" y="104.14" smashed="yes">
+<instance part="C11" gate="G$1" x="223.52" y="104.14" smashed="yes">
 <attribute name="NAME" x="222.25" y="107.442" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="222.25" y="100.838" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R15" gate="G$1" x="228.6" y="111.76" smashed="yes" rot="R90">
+<instance part="R17" gate="G$1" x="228.6" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="226.4664" y="111.76" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="230.759" y="111.76" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="Q2" gate="G$1" x="236.22" y="101.6" smashed="yes" rot="R90">
+<instance part="Q7" gate="G$1" x="236.22" y="101.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="235.585" y="105.283" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="237.871" y="105.283" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="$1_18_$_2020-03-22_19-59-12" gate="G$1" x="251.46" y="104.14" smashed="yes">
+<instance part="C13" gate="G$1" x="251.46" y="104.14" smashed="yes">
 <attribute name="NAME" x="250.19" y="107.442" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="250.19" y="100.838" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R16" gate="G$1" x="256.54" y="111.76" smashed="yes" rot="R90">
+<instance part="R19" gate="G$1" x="256.54" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="254.4064" y="111.76" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="258.699" y="111.76" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="Q3" gate="G1" x="261.62" y="104.14" smashed="yes">
+<instance part="Q2" gate="G1" x="261.62" y="104.14" smashed="yes">
 <attribute name="NAME" x="264.16" y="104.521" size="1.778" layer="95"/>
 <attribute name="VALUE" x="264.16" y="102.235" size="1.778" layer="96"/>
 </instance>
-<instance part="R17" gate="G$1" x="264.16" y="88.9" smashed="yes" rot="R90">
+<instance part="R20" gate="G$1" x="264.16" y="88.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="262.0264" y="88.9" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="266.319" y="88.9" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_19_$_2020-03-22_19-59-12" gate="1" x="269.24" y="96.52" smashed="yes">
+<instance part="C14" gate="1" x="269.24" y="96.52" smashed="yes">
 <attribute name="NAME" x="269.24" y="100.203" size="1.778" layer="95" rot="MR180" align="center"/>
 <attribute name="VALUE" x="269.24" y="92.837" size="1.778" layer="96" rot="MR180" align="center"/>
 </instance>
-<instance part="R18" gate="G$1" x="281.94" y="96.52" smashed="yes">
+<instance part="R21" gate="G$1" x="281.94" y="96.52" smashed="yes">
 <attribute name="NAME" x="281.94" y="98.6536" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="281.94" y="94.361" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R19" gate="G$1" x="289.56" y="88.9" smashed="yes" rot="R90">
+<instance part="R22" gate="G$1" x="289.56" y="88.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="287.4264" y="88.9" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="291.719" y="88.9" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R20" gate="G$1" x="86.36" y="76.2" smashed="yes">
+<instance part="R39" gate="G$1" x="86.36" y="76.2" smashed="yes">
 <attribute name="NAME" x="86.36" y="78.3336" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="86.36" y="74.041" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="Q4" gate="G1" x="96.52" y="76.2" smashed="yes">
+<instance part="Q6" gate="G1" x="96.52" y="76.2" smashed="yes">
 <attribute name="NAME" x="99.06" y="76.581" size="1.778" layer="95"/>
 <attribute name="VALUE" x="99.06" y="74.295" size="1.778" layer="96"/>
 </instance>
-<instance part="R21" gate="G$1" x="99.06" y="60.96" smashed="yes" rot="R90">
+<instance part="R40" gate="G$1" x="99.06" y="60.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="96.9264" y="60.96" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="101.219" y="60.96" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_7_$_2020-03-22_19-59-12" gate="G$1" x="106.68" y="68.58" smashed="yes">
+<instance part="C15" gate="G$1" x="106.68" y="68.58" smashed="yes">
 <attribute name="NAME" x="105.41" y="71.882" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="105.41" y="65.278" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R22" gate="G$1" x="111.76" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="109.6264" y="76.2" size="1.778" layer="95" rot="R90" align="center"/>
-<attribute name="VALUE" x="113.919" y="76.2" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="R23" gate="G$1" x="114.3" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="112.1664" y="76.2" size="1.778" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="116.459" y="76.2" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="Q5" gate="G$1" x="119.38" y="66.04" smashed="yes" rot="R90">
-<attribute name="NAME" x="118.745" y="69.723" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="121.031" y="69.723" size="1.778" layer="96" rot="R90"/>
+<instance part="Q8" gate="G$1" x="121.92" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="121.285" y="69.723" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="123.571" y="69.723" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R23" gate="G$1" x="127" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="124.8664" y="76.2" size="1.778" layer="95" rot="R90" align="center"/>
-<attribute name="VALUE" x="129.159" y="76.2" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="R24" gate="G$1" x="129.54" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="127.4064" y="76.2" size="1.778" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="131.699" y="76.2" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_20_$_2020-03-22_19-59-12" gate="G$1" x="22.86" y="53.34" smashed="yes" rot="R90">
+<instance part="D1" gate="G$1" x="22.86" y="53.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="20.4724" y="53.34" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="25.273" y="53.34" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_2_$_2020-03-22_19-59-12" gate="1" x="33.02" y="53.34" smashed="yes" rot="MR270">
+<instance part="C21" gate="1" x="33.02" y="53.34" smashed="yes" rot="MR270">
 <attribute name="NAME" x="29.337" y="53.34" size="1.778" layer="95" rot="R270" align="center"/>
 <attribute name="VALUE" x="36.703" y="53.34" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
-<instance part="R24" gate="G$1" x="40.64" y="58.42" smashed="yes">
+<instance part="R101" gate="G$1" x="40.64" y="58.42" smashed="yes">
 <attribute name="NAME" x="40.64" y="60.5536" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="40.64" y="56.261" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R25" gate="G$1" x="48.26" y="50.8" smashed="yes" rot="R90">
+<instance part="R104" gate="G$1" x="48.26" y="50.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.1264" y="50.8" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="50.419" y="50.8" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_3_$_2020-03-22_19-59-12" gate="1" x="58.42" y="53.34" smashed="yes" rot="MR270">
+<instance part="C20" gate="1" x="58.42" y="53.34" smashed="yes" rot="MR270">
 <attribute name="NAME" x="54.737" y="53.34" size="1.778" layer="95" rot="R270" align="center"/>
 <attribute name="VALUE" x="62.103" y="53.34" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
-<instance part="$1_0_$_2020-03-22_19-59-12" gate="G$1" x="22.86" y="78.74" smashed="yes" rot="R180"/>
+<instance part="1101" gate="G$1" x="22.86" y="78.74" smashed="yes" rot="R180"/>
 <instance part="V2" gate="+9V" x="33.02" y="63.5" smashed="yes">
 <attribute name="VALUE" x="31.115" y="66.675" size="1.778" layer="96"/>
 </instance>
@@ -3094,11 +3094,11 @@ NS Package M08A</description>
 <instance part="V5" gate="+9V" x="99.06" y="86.36" smashed="yes">
 <attribute name="VALUE" x="97.155" y="89.535" size="1.778" layer="96"/>
 </instance>
-<instance part="VB4" gate="G$1" x="111.76" y="86.36" smashed="yes">
-<attribute name="VALUE" x="109.22" y="90.17" size="1.778" layer="96"/>
+<instance part="VB4" gate="G$1" x="114.3" y="86.36" smashed="yes">
+<attribute name="VALUE" x="111.76" y="90.17" size="1.778" layer="96"/>
 </instance>
-<instance part="VB5" gate="G$1" x="127" y="86.36" smashed="yes">
-<attribute name="VALUE" x="124.46" y="90.17" size="1.778" layer="96"/>
+<instance part="VB5" gate="G$1" x="129.54" y="86.36" smashed="yes">
+<attribute name="VALUE" x="127" y="90.17" size="1.778" layer="96"/>
 </instance>
 <instance part="VB6" gate="G$1" x="142.24" y="129.54" smashed="yes">
 <attribute name="VALUE" x="139.7" y="133.35" size="1.778" layer="96"/>
@@ -3115,39 +3115,39 @@ NS Package M08A</description>
 <instance part="VB9" gate="G$1" x="210.82" y="91.44" smashed="yes" rot="R180">
 <attribute name="VALUE" x="213.36" y="87.63" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="J2" gate="G$1" x="307.34" y="93.98" smashed="yes" rot="MR0">
+<instance part="J102" gate="G$1" x="307.34" y="93.98" smashed="yes" rot="MR0">
 <attribute name="NAME" x="310.642" y="97.917" size="1.778" layer="95" rot="R180" align="center"/>
 <attribute name="VALUE" x="310.642" y="90.297" size="1.778" layer="96" rot="R180" align="center"/>
 </instance>
-<instance part="Q105" gate="G$1" x="190.5" y="25.4" smashed="yes">
+<instance part="Q4" gate="G$1" x="190.5" y="25.4" smashed="yes">
 <attribute name="NAME" x="193.04" y="25.781" size="1.778" layer="95"/>
 <attribute name="VALUE" x="193.04" y="23.495" size="1.778" layer="96"/>
 </instance>
-<instance part="R125" gate="G$1" x="182.88" y="17.78" smashed="yes" rot="R90">
+<instance part="R29" gate="G$1" x="182.88" y="17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="180.7464" y="17.78" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="185.039" y="17.78" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_14_$_2020-03-22_19-59-12" gate="G$1" x="172.72" y="16.51" smashed="yes" rot="R90">
+<instance part="C18" gate="G$1" x="172.72" y="16.51" smashed="yes" rot="R90">
 <attribute name="NAME" x="169.418" y="16.51" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="176.022" y="16.51" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R126" gate="G$1" x="193.04" y="40.64" smashed="yes" rot="R90">
+<instance part="R27" gate="G$1" x="193.04" y="40.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="190.9064" y="40.64" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="195.199" y="40.64" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_13_$_2020-03-22_19-59-12" gate="G$1" x="162.56" y="16.51" smashed="yes" rot="R90">
+<instance part="C17" gate="G$1" x="162.56" y="16.51" smashed="yes" rot="R90">
 <attribute name="NAME" x="159.258" y="16.51" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="165.862" y="16.51" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R128" gate="G$1" x="152.4" y="17.78" smashed="yes" rot="R90">
+<instance part="R28" gate="G$1" x="152.4" y="17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="150.2664" y="17.78" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="154.559" y="17.78" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="Q106" gate="G$1" x="144.78" y="25.4" smashed="yes" rot="MR0">
+<instance part="Q3" gate="G$1" x="144.78" y="25.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="142.24" y="25.781" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="142.24" y="23.495" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R127" gate="G$1" x="142.24" y="40.64" smashed="yes" rot="R90">
+<instance part="R26" gate="G$1" x="142.24" y="40.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="140.1064" y="40.64" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="144.399" y="40.64" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
@@ -3157,84 +3157,84 @@ NS Package M08A</description>
 <instance part="V105" gate="+9V" x="142.24" y="50.8" smashed="yes">
 <attribute name="VALUE" x="140.335" y="53.975" size="1.778" layer="96"/>
 </instance>
-<instance part="$1_23_$_2020-03-22_19-59-12" gate="G$1" x="121.92" y="53.34" smashed="yes" rot="MR270">
-<attribute name="NAME" x="119.5324" y="53.34" size="1.778" layer="95" rot="MR270" align="center"/>
-<attribute name="VALUE" x="124.333" y="53.34" size="1.778" layer="96" rot="MR270" align="center"/>
+<instance part="D8" gate="G$1" x="124.46" y="53.34" smashed="yes" rot="MR270">
+<attribute name="NAME" x="122.0724" y="53.34" size="1.778" layer="95" rot="MR270" align="center"/>
+<attribute name="VALUE" x="126.873" y="53.34" size="1.778" layer="96" rot="MR270" align="center"/>
 </instance>
-<instance part="R26" gate="G$1" x="121.92" y="40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="119.7864" y="40.64" size="1.778" layer="95" rot="R90" align="center"/>
-<attribute name="VALUE" x="124.079" y="40.64" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="R25" gate="G$1" x="124.46" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="122.3264" y="40.64" size="1.778" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="126.619" y="40.64" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_8_$_2020-03-22_19-59-12" gate="G$1" x="111.76" y="41.91" smashed="yes" rot="R90">
-<attribute name="NAME" x="108.458" y="40.64" size="1.778" layer="95" rot="R90" align="center"/>
-<attribute name="VALUE" x="115.062" y="40.64" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="C16" gate="G$1" x="114.3" y="41.91" smashed="yes" rot="R90">
+<attribute name="NAME" x="110.998" y="40.64" size="1.778" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="117.602" y="40.64" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_25_$_2020-03-22_19-59-12" gate="G$1" x="238.76" y="88.9" smashed="yes" rot="MR270">
+<instance part="D7" gate="G$1" x="238.76" y="88.9" smashed="yes" rot="MR270">
 <attribute name="NAME" x="236.3724" y="88.9" size="1.778" layer="95" rot="MR270" align="center"/>
 <attribute name="VALUE" x="241.173" y="88.9" size="1.778" layer="96" rot="MR270" align="center"/>
 </instance>
-<instance part="R27" gate="G$1" x="238.76" y="76.2" smashed="yes" rot="R90">
+<instance part="R18" gate="G$1" x="238.76" y="76.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="236.6264" y="76.2" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="240.919" y="76.2" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_17_$_2020-03-22_19-59-12" gate="G$1" x="232.41" y="83.82" smashed="yes">
+<instance part="C12" gate="G$1" x="232.41" y="83.82" smashed="yes">
 <attribute name="NAME" x="231.14" y="87.122" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="231.14" y="80.518" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="$1_24_$_2020-03-22_19-59-12" gate="G$1" x="193.04" y="-7.62" smashed="yes" rot="MR270">
+<instance part="D9" gate="G$1" x="193.04" y="-7.62" smashed="yes" rot="MR270">
 <attribute name="NAME" x="190.6524" y="-7.62" size="1.778" layer="95" rot="MR270" align="center"/>
 <attribute name="VALUE" x="195.453" y="-7.62" size="1.778" layer="96" rot="MR270" align="center"/>
 </instance>
-<instance part="R28" gate="G$1" x="193.04" y="-17.78" smashed="yes" rot="R90">
+<instance part="R34" gate="G$1" x="193.04" y="-17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="190.9064" y="-17.78" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="195.199" y="-17.78" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R29" gate="G$1" x="238.76" y="25.4" smashed="yes" rot="R90">
+<instance part="R35" gate="G$1" x="238.76" y="25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="236.6264" y="25.4" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="240.919" y="25.4" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="Q6" gate="G$1" x="246.38" y="15.24" smashed="yes">
+<instance part="Q5" gate="G$1" x="246.38" y="15.24" smashed="yes">
 <attribute name="NAME" x="248.92" y="15.621" size="1.778" layer="95"/>
 <attribute name="VALUE" x="248.92" y="13.335" size="1.778" layer="96"/>
 </instance>
-<instance part="$1_27_$_2020-03-22_19-59-12" gate="G$1" x="248.92" y="25.4" smashed="yes" rot="R90">
+<instance part="D2" gate="G$1" x="248.92" y="25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="246.507" y="25.4" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="251.333" y="25.4" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R30" gate="G$1" x="248.92" y="38.1" smashed="yes" rot="R90">
+<instance part="R36" gate="G$1" x="248.92" y="38.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="246.7864" y="38.1" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="251.079" y="38.1" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="$1_26_$_2020-03-22_19-59-12" gate="G$1" x="248.92" y="50.8" smashed="yes" rot="R270">
+<instance part="LED" gate="G$1" x="248.92" y="50.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="246.507" y="50.8" size="1.778" layer="95" rot="R270" align="center"/>
 </instance>
 <instance part="V7" gate="+9V" x="248.92" y="58.42" smashed="yes">
 <attribute name="VALUE" x="247.015" y="61.595" size="1.778" layer="96"/>
 </instance>
-<instance part="R31" gate="G$1" x="119.38" y="-2.54" smashed="yes" rot="R90">
+<instance part="R33" gate="G$1" x="119.38" y="-2.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="117.2464" y="-2.54" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="121.539" y="-2.54" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R32" gate="G$1" x="119.38" y="12.7" smashed="yes" rot="R90">
+<instance part="R31" gate="G$1" x="119.38" y="12.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="117.2464" y="12.7" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="121.539" y="12.7" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R33" gate="G$1" x="111.76" y="5.08" smashed="yes">
+<instance part="R32" gate="G$1" x="111.76" y="5.08" smashed="yes">
 <attribute name="NAME" x="111.76" y="7.2136" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="111.76" y="2.921" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="V8" gate="+9V" x="119.38" y="22.86" smashed="yes">
 <attribute name="VALUE" x="117.475" y="26.035" size="1.778" layer="96"/>
 </instance>
-<instance part="R34" gate="G$1" x="111.76" y="-10.16" smashed="yes">
+<instance part=" " gate="G$1" x="111.76" y="-10.16" smashed="yes">
 <attribute name="NAME" x="111.76" y="-8.0264" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="111.76" y="-12.319" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="$1_10_$_2020-03-22_19-59-12" gate="G$1" x="119.38" y="-16.51" smashed="yes" rot="R90">
+<instance part="C19" gate="G$1" x="119.38" y="-16.51" smashed="yes" rot="R90">
 <attribute name="NAME" x="116.078" y="-16.51" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="122.682" y="-16.51" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="SW1" gate="G$1" x="99.06" y="-10.16" smashed="yes">
+<instance part="FOOTSW" gate="G$1" x="99.06" y="-10.16" smashed="yes">
 <attribute name="NAME" x="99.06" y="-12.7" size="1.778" layer="95" align="center"/>
 </instance>
 <instance part="GND1" gate="GND" x="50.8" y="83.82" smashed="yes">
@@ -3258,8 +3258,8 @@ NS Package M08A</description>
 <instance part="GND7" gate="GND" x="99.06" y="50.8" smashed="yes">
 <attribute name="VALUE" x="97.155" y="47.625" size="1.778" layer="96"/>
 </instance>
-<instance part="GND8" gate="GND" x="111.76" y="33.02" smashed="yes">
-<attribute name="VALUE" x="109.855" y="29.845" size="1.778" layer="96"/>
+<instance part="GND8" gate="GND" x="114.3" y="33.02" smashed="yes">
+<attribute name="VALUE" x="112.395" y="29.845" size="1.778" layer="96"/>
 </instance>
 <instance part="GND9" gate="GND" x="104.14" y="0" smashed="yes">
 <attribute name="VALUE" x="102.235" y="-3.175" size="1.778" layer="96"/>
@@ -3312,7 +3312,7 @@ NS Package M08A</description>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="T"/>
+<pinref part="J101" gate="G$1" pin="T"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="116.84" x2="29.21" y2="116.84" width="0.1524" layer="91"/>
 </segment>
@@ -3329,7 +3329,7 @@ NS Package M08A</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="G1" pin="B"/>
 <wire x1="48.26" y1="116.84" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="116.84" x2="66.04" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="116.84" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
 <junction x="50.8" y="116.84"/>
@@ -3340,11 +3340,11 @@ NS Package M08A</description>
 <pinref part="Q1" gate="G1" pin="E"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="111.76" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="$1_5_$_2020-03-22_19-59-12" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="109.22" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="109.22" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
 <junction x="71.12" y="109.22"/>
-<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="R39" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="109.22" x2="82.55" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="109.22" x2="78.74" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="76.2" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
@@ -3358,69 +3358,69 @@ NS Package M08A</description>
 <pinref part="GND1" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="$1_4_$_2020-03-22_19-59-12" gate="1" pin="-"/>
+<pinref part="C2" gate="1" pin="-"/>
 <wire x1="60.96" y1="91.44" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="$1_20_$_2020-03-22_19-59-12" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="22.86" y1="48.26" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="$1_2_$_2020-03-22_19-59-12" gate="1" pin="-"/>
+<pinref part="C21" gate="1" pin="-"/>
 <wire x1="33.02" y1="48.26" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R25" gate="G$1" pin="1"/>
+<pinref part="R104" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="45.72" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="$1_3_$_2020-03-22_19-59-12" gate="1" pin="-"/>
+<pinref part="C20" gate="1" pin="-"/>
 <wire x1="58.42" y1="48.26" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="R40" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="53.34" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="$1_8_$_2020-03-22_19-59-12" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="38.1" x2="111.76" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="38.1" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="2.54" x2="104.14" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="R33" gate="G$1" pin="1"/>
+<pinref part="R32" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="5.08" x2="106.68" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="-12.7" x2="91.44" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="P"/>
+<pinref part="FOOTSW" gate="G$1" pin="P"/>
 <wire x1="91.44" y1="-10.16" x2="93.98" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="$1_10_$_2020-03-22_19-59-12" gate="G$1" pin="2"/>
+<pinref part="C19" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="-20.32" x2="119.38" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R28" gate="G$1" pin="1"/>
+<pinref part="R34" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="-22.86" x2="193.04" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R128" gate="G$1" pin="1"/>
+<pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="12.7" x2="152.4" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R125" gate="G$1" pin="1"/>
+<pinref part="R29" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="10.16" x2="182.88" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="GND" pin="GND"/>
 </segment>
@@ -3435,39 +3435,39 @@ NS Package M08A</description>
 <pinref part="GND16" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="$1_11_$_2020-03-22_19-59-12" gate="1" pin="-"/>
+<pinref part="C8" gate="1" pin="-"/>
 <wire x1="142.24" y1="101.6" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="$1_17_$_2020-03-22_19-59-12" gate="G$1" pin="2"/>
+<pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="83.82" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="83.82" x2="226.06" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="264.16" y1="83.82" x2="264.16" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="289.56" y1="83.82" x2="289.56" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <wire x1="299.72" y1="88.9" x2="299.72" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="SLEEVE"/>
+<pinref part="J102" gate="G$1" pin="SLEEVE"/>
 <wire x1="299.72" y1="91.44" x2="302.26" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND22" gate="GND" pin="GND"/>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="157.48" y1="124.46" x2="157.48" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="S"/>
+<pinref part="J101" gate="G$1" pin="S"/>
 <wire x1="15.24" y1="111.76" x2="17.78" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="111.76" x2="17.78" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="GND" pin="GND"/>
@@ -3475,12 +3475,12 @@ NS Package M08A</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="101.6" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="$1_4_$_2020-03-22_19-59-12" gate="1" pin="+"/>
+<pinref part="C2" gate="1" pin="+"/>
 <wire x1="50.8" y1="101.6" x2="60.96" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="101.6" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="104.14" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
 <junction x="50.8" y="101.6"/>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -3489,7 +3489,7 @@ NS Package M08A</description>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="$1_5_$_2020-03-22_19-59-12" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="90.17" y1="109.22" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
 </segment>
@@ -3498,7 +3498,7 @@ NS Package M08A</description>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="109.22" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="109.22" x2="104.14" y2="106.68" width="0.1524" layer="91"/>
 <junction x="104.14" y="109.22"/>
@@ -3507,25 +3507,25 @@ NS Package M08A</description>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="154.94" x2="104.14" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="154.94" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="144.78" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="134.62" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="124.46" x2="104.14" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="114.3" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="$1_21_$_2020-03-22_19-59-12" gate="G$1" pin="C"/>
+<pinref part="D5" gate="G$1" pin="C"/>
 <wire x1="104.14" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
 <junction x="104.14" y="144.78"/>
-<pinref part="$1_22_$_2020-03-22_19-59-12" gate="G$1" pin="A"/>
+<pinref part="D6" gate="G$1" pin="A"/>
 <wire x1="111.76" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
 <junction x="104.14" y="134.62"/>
-<pinref part="$1_9_$_2020-03-22_19-59-12" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="113.03" y1="124.46" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
 <junction x="104.14" y="124.46"/>
 <wire x1="104.14" y1="154.94" x2="96.52" y2="154.94" width="0.1524" layer="91"/>
 <junction x="104.14" y="154.94"/>
-<pinref part="$1_6_$_2020-03-22_19-59-12" gate="G$1" pin="1"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="154.94" x2="96.52" y2="153.67" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="_A" pin="-IN"/>
 </segment>
@@ -3537,28 +3537,28 @@ NS Package M08A</description>
 <wire x1="127" y1="134.62" x2="127" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="127" y1="124.46" x2="127" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="127" y1="111.76" x2="124.46" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="POT1" gate="G$1" pin="1"/>
-<pinref part="$1_21_$_2020-03-22_19-59-12" gate="G$1" pin="A"/>
+<pinref part="DRIVE" gate="G$1" pin="1"/>
+<pinref part="D5" gate="G$1" pin="A"/>
 <wire x1="119.38" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
 <junction x="127" y="144.78"/>
-<pinref part="$1_22_$_2020-03-22_19-59-12" gate="G$1" pin="C"/>
+<pinref part="D6" gate="G$1" pin="C"/>
 <wire x1="119.38" y1="134.62" x2="127" y2="134.62" width="0.1524" layer="91"/>
 <junction x="127" y="134.62"/>
-<pinref part="$1_9_$_2020-03-22_19-59-12" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="120.65" y1="124.46" x2="127" y2="124.46" width="0.1524" layer="91"/>
 <junction x="127" y="124.46"/>
 <pinref part="IC1" gate="_A" pin="OUT"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="127" y1="111.76" x2="129.54" y2="111.76" width="0.1524" layer="91"/>
 <junction x="127" y="111.76"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="POT1" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="DRIVE" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="154.94" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="POT1" gate="G$1" pin="3"/>
+<pinref part="DRIVE" gate="G$1" pin="3"/>
 <wire x1="119.38" y1="154.94" x2="121.92" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="127" y1="161.29" x2="127" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="127" y1="162.56" x2="119.38" y2="162.56" width="0.1524" layer="91"/>
@@ -3568,7 +3568,7 @@ NS Package M08A</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="$1_6_$_2020-03-22_19-59-12" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="146.05" x2="96.52" y2="142.24" width="0.1524" layer="91"/>
 </segment>
@@ -3580,22 +3580,22 @@ NS Package M08A</description>
 <wire x1="175.26" y1="121.92" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="R101" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="58.42" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="$1_20_$_2020-03-22_19-59-12" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="33.02" y1="58.42" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="58.42" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="$1_2_$_2020-03-22_19-59-12" gate="1" pin="+"/>
+<pinref part="C21" gate="1" pin="+"/>
 <wire x1="33.02" y1="58.42" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
 <junction x="33.02" y="58.42"/>
-<pinref part="$1_0_$_2020-03-22_19-59-12" gate="G$1" pin="P$1"/>
+<pinref part="1101" gate="G$1" pin="P$1"/>
 <wire x1="22.86" y1="58.42" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
 <junction x="22.86" y="58.42"/>
 <pinref part="V2" gate="+9V" pin="+9V"/>
 <wire x1="33.02" y1="60.96" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="101.6" x2="35.56" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="101.6" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="V3" gate="+9V" pin="+9V"/>
@@ -3606,48 +3606,48 @@ NS Package M08A</description>
 <pinref part="V4" gate="+9V" pin="+9V"/>
 </segment>
 <segment>
-<pinref part="Q4" gate="G1" pin="C"/>
+<pinref part="Q6" gate="G1" pin="C"/>
 <wire x1="99.06" y1="81.28" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="V5" gate="+9V" pin="+9V"/>
 </segment>
 <segment>
-<pinref part="Q3" gate="G1" pin="C"/>
+<pinref part="Q2" gate="G1" pin="C"/>
 <wire x1="264.16" y1="109.22" x2="264.16" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="V6" gate="+9V" pin="+9V"/>
 </segment>
 <segment>
 <pinref part="V105" gate="+9V" pin="+9V"/>
-<pinref part="R127" gate="G$1" pin="2"/>
+<pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="48.26" x2="142.24" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R126" gate="G$1" pin="2"/>
+<pinref part="R27" gate="G$1" pin="2"/>
 <pinref part="V106" gate="+9V" pin="+9V"/>
 <wire x1="193.04" y1="45.72" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V7" gate="+9V" pin="+9V"/>
-<pinref part="$1_26_$_2020-03-22_19-59-12" gate="G$1" pin="C"/>
+<pinref part="LED" gate="G$1" pin="C"/>
 <wire x1="248.92" y1="55.88" x2="248.92" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V8" gate="+9V" pin="+9V"/>
-<pinref part="R32" gate="G$1" pin="2"/>
+<pinref part="R31" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="20.32" x2="119.38" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="111.76" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="111.76" x2="142.24" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="$1_11_$_2020-03-22_19-59-12" gate="1" pin="+"/>
+<pinref part="C8" gate="1" pin="+"/>
 <wire x1="142.24" y1="111.76" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
 <junction x="142.24" y="111.76"/>
 <pinref part="IC1" gate="_B" pin="+IN"/>
 <wire x1="167.64" y1="111.76" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="POT2" gate="G$1" pin="1"/>
+<pinref part="TONE" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="111.76" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="151.13" y1="154.94" x2="149.86" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="154.94" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
@@ -3659,39 +3659,39 @@ NS Package M08A</description>
 <pinref part="IC1" gate="_B" pin="-IN"/>
 <wire x1="167.64" y1="116.84" x2="165.1" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="116.84" x2="165.1" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="POT2" gate="G$1" pin="3"/>
+<pinref part="TONE" gate="G$1" pin="3"/>
 <wire x1="165.1" y1="139.7" x2="165.1" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="154.94" x2="163.83" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="139.7" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
 <junction x="165.1" y="139.7"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="139.7" x2="185.42" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="139.7" x2="185.42" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="_B" pin="OUT"/>
 <wire x1="185.42" y1="114.3" x2="182.88" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="$1_15_$_2020-03-22_19-59-12" gate="G$1" pin="2"/>
+<pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="114.3" x2="189.23" y2="114.3" width="0.1524" layer="91"/>
 <junction x="185.42" y="114.3"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="R20" gate="G$1" pin="2"/>
-<pinref part="Q4" gate="G1" pin="B"/>
+<pinref part="R39" gate="G$1" pin="2"/>
+<pinref part="Q6" gate="G1" pin="B"/>
 <wire x1="91.44" y1="76.2" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="Q4" gate="G1" pin="E"/>
-<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="Q6" gate="G1" pin="E"/>
+<pinref part="R40" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="71.12" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="$1_7_$_2020-03-22_19-59-12" gate="G$1" pin="2"/>
+<pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="68.58" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="68.58" x2="102.87" y2="68.58" width="0.1524" layer="91"/>
 <junction x="99.06" y="68.58"/>
@@ -3699,25 +3699,25 @@ NS Package M08A</description>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="$1_7_$_2020-03-22_19-59-12" gate="G$1" pin="1"/>
-<pinref part="Q5" gate="G$1" pin="D"/>
-<wire x1="110.49" y1="68.58" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="71.12" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
-<junction x="111.76" y="68.58"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<pinref part="Q8" gate="G$1" pin="D"/>
+<wire x1="110.49" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="68.58" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="71.12" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
+<junction x="114.3" y="68.58"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="Q5" gate="G$1" pin="S"/>
-<wire x1="124.46" y1="68.58" x2="127" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="127" y1="68.58" x2="127" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="127" y1="68.58" x2="243.84" y2="68.58" width="0.1524" layer="91"/>
-<junction x="127" y="68.58"/>
-<pinref part="Q2" gate="G$1" pin="S"/>
-<pinref part="$1_18_$_2020-03-22_19-59-12" gate="G$1" pin="2"/>
+<pinref part="Q8" gate="G$1" pin="S"/>
+<wire x1="127" y1="68.58" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="68.58" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="68.58" x2="243.84" y2="68.58" width="0.1524" layer="91"/>
+<junction x="129.54" y="68.58"/>
+<pinref part="Q7" gate="G$1" pin="S"/>
+<pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="241.3" y1="104.14" x2="243.84" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="104.14" x2="247.65" y2="104.14" width="0.1524" layer="91"/>
 <junction x="243.84" y="104.14"/>
@@ -3726,32 +3726,32 @@ NS Package M08A</description>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="$1_15_$_2020-03-22_19-59-12" gate="G$1" pin="1"/>
-<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="196.85" y1="114.3" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="114.3" x2="210.82" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="POT3" gate="G$1" pin="3"/>
+<pinref part="LEVEL" gate="G$1" pin="3"/>
 <wire x1="210.82" y1="114.3" x2="210.82" y2="110.49" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="POT3" gate="G$1" pin="2"/>
-<pinref part="$1_16_$_2020-03-22_19-59-12" gate="G$1" pin="2"/>
+<pinref part="LEVEL" gate="G$1" pin="2"/>
+<pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="215.9" y1="104.14" x2="219.71" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
-<pinref part="$1_18_$_2020-03-22_19-59-12" gate="G$1" pin="1"/>
-<pinref part="Q3" gate="G1" pin="B"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<pinref part="Q2" gate="G1" pin="B"/>
 <wire x1="255.27" y1="104.14" x2="256.54" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="256.54" y1="104.14" x2="259.08" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="106.68" x2="256.54" y2="104.14" width="0.1524" layer="91"/>
 <junction x="256.54" y="104.14"/>
@@ -3759,10 +3759,10 @@ NS Package M08A</description>
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="Q3" gate="G1" pin="E"/>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="Q2" gate="G1" pin="E"/>
+<pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="264.16" y1="99.06" x2="264.16" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="$1_19_$_2020-03-22_19-59-12" gate="1" pin="+"/>
+<pinref part="C14" gate="1" pin="+"/>
 <wire x1="264.16" y1="96.52" x2="264.16" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="96.52" x2="266.7" y2="96.52" width="0.1524" layer="91"/>
 <junction x="264.16" y="96.52"/>
@@ -3770,38 +3770,38 @@ NS Package M08A</description>
 </net>
 <net name="N$36" class="0">
 <segment>
-<pinref part="$1_19_$_2020-03-22_19-59-12" gate="1" pin="-"/>
-<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="C14" gate="1" pin="-"/>
+<pinref part="R21" gate="G$1" pin="1"/>
 <wire x1="274.32" y1="96.52" x2="276.86" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="287.02" y1="96.52" x2="289.56" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="R22" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="96.52" x2="289.56" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="TIP"/>
+<pinref part="J102" gate="G$1" pin="TIP"/>
 <wire x1="302.26" y1="96.52" x2="289.56" y2="96.52" width="0.1524" layer="91"/>
 <junction x="289.56" y="96.52"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
-<pinref part="$1_0_$_2020-03-22_19-59-12" gate="G$1" pin="P$2"/>
+<pinref part="1101" gate="G$1" pin="P$2"/>
 <wire x1="22.86" y1="83.82" x2="22.86" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="R"/>
+<pinref part="J101" gate="G$1" pin="R"/>
 <wire x1="22.86" y1="114.3" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VB" class="0">
 <segment>
-<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="R101" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="$1_3_$_2020-03-22_19-59-12" gate="1" pin="+"/>
+<pinref part="C20" gate="1" pin="+"/>
 <wire x1="48.26" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="58.42" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="R104" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="58.42" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 <junction x="48.26" y="58.42"/>
 <pinref part="VB1" gate="G$1" pin="VB"/>
@@ -3814,47 +3814,47 @@ NS Package M08A</description>
 <pinref part="VB2" gate="G$1" pin="VB"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="96.52" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="VB3" gate="G$1" pin="VB"/>
 </segment>
 <segment>
-<pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="81.28" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="81.28" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="VB4" gate="G$1" pin="VB"/>
 </segment>
 <segment>
-<pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="127" y1="81.28" x2="127" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R24" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="81.28" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="VB5" gate="G$1" pin="VB"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="124.46" x2="142.24" y2="127" width="0.1524" layer="91"/>
 <pinref part="VB6" gate="G$1" pin="VB"/>
 </segment>
 <segment>
 <pinref part="VB8" gate="G$1" pin="VB"/>
-<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="256.54" y1="119.38" x2="256.54" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="VB7" gate="G$1" pin="VB"/>
-<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="119.38" x2="228.6" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="POT3" gate="G$1" pin="1"/>
+<pinref part="LEVEL" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="97.79" x2="210.82" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="VB9" gate="G$1" pin="VB"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="$1_16_$_2020-03-22_19-59-12" gate="G$1" pin="1"/>
-<pinref part="Q2" gate="G$1" pin="D"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="Q7" gate="G$1" pin="D"/>
 <wire x1="227.33" y1="104.14" x2="228.6" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="104.14" x2="231.14" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="106.68" x2="228.6" y2="104.14" width="0.1524" layer="91"/>
 <junction x="228.6" y="104.14"/>
@@ -3862,41 +3862,41 @@ NS Package M08A</description>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="R127" gate="G$1" pin="1"/>
-<pinref part="Q106" gate="G$1" pin="C"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<pinref part="Q3" gate="G$1" pin="C"/>
 <wire x1="142.24" y1="35.56" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="33.02" x2="142.24" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
 <junction x="142.24" y="33.02"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="35.56" x2="121.92" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="33.02" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="35.56" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="33.02" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="Q105" gate="G$1" pin="C"/>
+<pinref part="Q4" gate="G$1" pin="C"/>
 <wire x1="185.42" y1="33.02" x2="193.04" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="33.02" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="R126" gate="G$1" pin="1"/>
+<pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="33.02" x2="193.04" y2="35.56" width="0.1524" layer="91"/>
 <junction x="193.04" y="33.02"/>
-<pinref part="R27" gate="G$1" pin="1"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="33.02" x2="238.76" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="33.02" x2="238.76" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="R35" gate="G$1" pin="2"/>
 <wire x1="238.76" y1="33.02" x2="238.76" y2="30.48" width="0.1524" layer="91"/>
 <junction x="238.76" y="33.02"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="Q106" gate="G$1" pin="B"/>
-<pinref part="$1_13_$_2020-03-22_19-59-12" gate="G$1" pin="1"/>
+<pinref part="Q3" gate="G$1" pin="B"/>
+<pinref part="C17" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="25.4" x2="152.4" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="25.4" x2="162.56" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="25.4" x2="162.56" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="R128" gate="G$1" pin="2"/>
+<pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="25.4" x2="152.4" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="33.02" x2="175.26" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="25.4" x2="172.72" y2="33.02" width="0.1524" layer="91"/>
@@ -3907,12 +3907,12 @@ NS Package M08A</description>
 <net name="N$34" class="0">
 <segment>
 <wire x1="162.56" y1="33.02" x2="160.02" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="Q105" gate="G$1" pin="B"/>
-<pinref part="$1_14_$_2020-03-22_19-59-12" gate="G$1" pin="1"/>
+<pinref part="Q4" gate="G$1" pin="B"/>
+<pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="187.96" y1="25.4" x2="182.88" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="25.4" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="25.4" x2="172.72" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="R125" gate="G$1" pin="2"/>
+<pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="22.86" x2="182.88" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="33.02" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
 <junction x="172.72" y="25.4"/>
@@ -3921,32 +3921,32 @@ NS Package M08A</description>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="Q105" gate="G$1" pin="E"/>
+<pinref part="Q4" gate="G$1" pin="E"/>
 <wire x1="193.04" y1="0" x2="193.04" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="Q106" gate="G$1" pin="E"/>
+<pinref part="Q3" gate="G$1" pin="E"/>
 <wire x1="142.24" y1="20.32" x2="142.24" y2="0" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="0" x2="193.04" y2="0" width="0.1524" layer="91"/>
-<pinref part="Q6" gate="G$1" pin="E"/>
+<pinref part="Q5" gate="G$1" pin="E"/>
 <wire x1="193.04" y1="0" x2="248.92" y2="0" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="0" x2="248.92" y2="10.16" width="0.1524" layer="91"/>
 <junction x="193.04" y="0"/>
-<pinref part="$1_24_$_2020-03-22_19-59-12" gate="G$1" pin="A"/>
+<pinref part="D9" gate="G$1" pin="A"/>
 <wire x1="193.04" y1="0" x2="193.04" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="Q2" gate="G$1" pin="G"/>
-<pinref part="$1_25_$_2020-03-22_19-59-12" gate="G$1" pin="A"/>
+<pinref part="Q7" gate="G$1" pin="G"/>
+<pinref part="D7" gate="G$1" pin="A"/>
 <wire x1="238.76" y1="96.52" x2="238.76" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="$1_25_$_2020-03-22_19-59-12" gate="G$1" pin="C"/>
-<pinref part="R27" gate="G$1" pin="2"/>
+<pinref part="D7" gate="G$1" pin="C"/>
+<pinref part="R18" gate="G$1" pin="2"/>
 <wire x1="238.76" y1="86.36" x2="238.76" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="$1_17_$_2020-03-22_19-59-12" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="238.76" y1="83.82" x2="238.76" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="83.82" x2="238.76" y2="83.82" width="0.1524" layer="91"/>
 <junction x="238.76" y="83.82"/>
@@ -3954,72 +3954,72 @@ NS Package M08A</description>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="R29" gate="G$1" pin="1"/>
+<pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="238.76" y1="20.32" x2="238.76" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="Q6" gate="G$1" pin="B"/>
+<pinref part="Q5" gate="G$1" pin="B"/>
 <wire x1="238.76" y1="15.24" x2="243.84" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="$1_26_$_2020-03-22_19-59-12" gate="G$1" pin="A"/>
-<pinref part="R30" gate="G$1" pin="2"/>
+<pinref part="LED" gate="G$1" pin="A"/>
+<pinref part="R36" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="45.72" x2="248.92" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="R30" gate="G$1" pin="1"/>
-<pinref part="$1_27_$_2020-03-22_19-59-12" gate="G$1" pin="C"/>
+<pinref part="R36" gate="G$1" pin="1"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="248.92" y1="33.02" x2="248.92" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="$1_27_$_2020-03-22_19-59-12" gate="G$1" pin="A"/>
-<pinref part="Q6" gate="G$1" pin="C"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="Q5" gate="G$1" pin="C"/>
 <wire x1="248.92" y1="22.86" x2="248.92" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
-<pinref part="$1_24_$_2020-03-22_19-59-12" gate="G$1" pin="C"/>
-<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="D9" gate="G$1" pin="C"/>
+<pinref part="R34" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="-10.16" x2="193.04" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$41" class="0">
 <segment>
-<pinref part="Q5" gate="G$1" pin="G"/>
-<pinref part="$1_23_$_2020-03-22_19-59-12" gate="G$1" pin="A"/>
-<wire x1="121.92" y1="60.96" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="Q8" gate="G$1" pin="G"/>
+<pinref part="D8" gate="G$1" pin="A"/>
+<wire x1="124.46" y1="60.96" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$42" class="0">
 <segment>
-<pinref part="$1_23_$_2020-03-22_19-59-12" gate="G$1" pin="C"/>
-<pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="50.8" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="48.26" x2="121.92" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
-<junction x="121.92" y="48.26"/>
-<pinref part="$1_8_$_2020-03-22_19-59-12" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="48.26" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="D8" gate="G$1" pin="C"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="50.8" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="48.26" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="48.26" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
+<junction x="124.46" y="48.26"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="48.26" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
-<pinref part="SW1" gate="G$1" pin="S"/>
-<pinref part="R34" gate="G$1" pin="1"/>
+<pinref part="FOOTSW" gate="G$1" pin="S"/>
+<pinref part=" " gate="G$1" pin="1"/>
 <wire x1="104.14" y1="-10.16" x2="106.68" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
-<pinref part="R32" gate="G$1" pin="1"/>
-<pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="7.62" x2="119.38" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="R31" gate="G$1" pin="1"/>
 <pinref part="R33" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="7.62" x2="119.38" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="R32" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="5.08" x2="119.38" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="5.08" x2="116.84" y2="5.08" width="0.1524" layer="91"/>
 <junction x="119.38" y="5.08"/>
@@ -4027,16 +4027,16 @@ NS Package M08A</description>
 </net>
 <net name="N$46" class="0">
 <segment>
-<pinref part="R31" gate="G$1" pin="1"/>
-<pinref part="$1_10_$_2020-03-22_19-59-12" gate="G$1" pin="1"/>
+<pinref part="R33" gate="G$1" pin="1"/>
+<pinref part="C19" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="-7.62" x2="119.38" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="R34" gate="G$1" pin="2"/>
+<pinref part=" " gate="G$1" pin="2"/>
 <wire x1="119.38" y1="-10.16" x2="119.38" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="-10.16" x2="119.38" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="119.38" y="-10.16"/>
-<pinref part="$1_13_$_2020-03-22_19-59-12" gate="G$1" pin="2"/>
+<pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="12.7" x2="162.56" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="$1_14_$_2020-03-22_19-59-12" gate="G$1" pin="2"/>
+<pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="10.16" x2="167.64" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="10.16" x2="172.72" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="10.16" x2="172.72" y2="12.7" width="0.1524" layer="91"/>
@@ -4047,15 +4047,15 @@ NS Package M08A</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<pinref part="$1_12_$_2020-03-22_19-59-12" gate="1" pin="-"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="C9" gate="1" pin="-"/>
 <wire x1="157.48" y1="137.16" x2="157.48" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$43" class="0">
 <segment>
-<pinref part="$1_12_$_2020-03-22_19-59-12" gate="1" pin="+"/>
-<pinref part="POT2" gate="G$1" pin="2"/>
+<pinref part="C9" gate="1" pin="+"/>
+<pinref part="TONE" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="147.32" x2="157.48" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
