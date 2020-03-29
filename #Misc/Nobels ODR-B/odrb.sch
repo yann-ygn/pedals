@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3460,7 +3460,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="JP4 " library="pedals-headers" deviceset="JST-XH-03-PIN" device="-LONG-PAD" value="JP4"/>
 <part name="P21" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="50kB"/>
 <part name="P22" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="50kB"/>
-<part name="C4" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="68n"/>
+<part name="C28" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="68n"/>
 <part name="GND4" library="gm-supply" deviceset="GND" device=""/>
 <part name="JP5 " library="pedals-headers" deviceset="JST-XH-03-PIN" device="-LONG-PAD" value="JP5"/>
 <part name="P1" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="50kB"/>
@@ -3836,35 +3836,35 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="V505" gate="+9V" x="165.1" y="78.74" smashed="yes">
 <attribute name="VALUE" x="163.195" y="81.915" size="1.778" layer="96"/>
 </instance>
-<instance part="VB515" gate="G$1" x="309.88" y="22.86" smashed="yes" rot="R180">
-<attribute name="VALUE" x="312.42" y="19.05" size="1.778" layer="96" rot="R180"/>
+<instance part="VB515" gate="G$1" x="299.72" y="25.4" smashed="yes" rot="R180">
+<attribute name="VALUE" x="302.26" y="21.59" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C41" gate="1" x="302.26" y="22.86" smashed="yes" rot="MR270">
-<attribute name="NAME" x="298.577" y="22.86" size="1.778" layer="95" rot="R270" align="center"/>
-<attribute name="VALUE" x="305.943" y="22.86" size="1.778" layer="96" rot="R270" align="center"/>
+<instance part="C41" gate="1" x="292.1" y="22.86" smashed="yes" rot="MR270">
+<attribute name="NAME" x="288.417" y="22.86" size="1.778" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="295.783" y="22.86" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
-<instance part="Q7" gate="1" x="299.72" y="7.62" smashed="yes">
-<attribute name="NAME" x="303.403" y="8.255" size="1.778" layer="95"/>
-<attribute name="VALUE" x="303.403" y="5.969" size="1.778" layer="96"/>
+<instance part="Q7" gate="1" x="289.56" y="7.62" smashed="yes">
+<attribute name="NAME" x="293.243" y="8.255" size="1.778" layer="95"/>
+<attribute name="VALUE" x="293.243" y="5.969" size="1.778" layer="96"/>
 </instance>
-<instance part="R41" gate="G$1" x="294.64" y="15.24" smashed="yes">
-<attribute name="NAME" x="294.64" y="17.3736" size="1.778" layer="95" align="center"/>
-<attribute name="VALUE" x="294.64" y="13.081" size="1.778" layer="96" align="center"/>
+<instance part="R41" gate="G$1" x="284.48" y="15.24" smashed="yes">
+<attribute name="NAME" x="284.48" y="17.3736" size="1.778" layer="95" align="center"/>
+<attribute name="VALUE" x="284.48" y="13.081" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="D7" gate="G$1" x="287.02" y="5.08" smashed="yes" rot="MR0">
-<attribute name="NAME" x="287.02" y="7.4676" size="1.778" layer="95" rot="MR0" align="center"/>
-<attribute name="VALUE" x="287.02" y="2.667" size="1.778" layer="96" rot="MR0" align="center"/>
+<instance part="D7" gate="G$1" x="276.86" y="5.08" smashed="yes" rot="MR0">
+<attribute name="NAME" x="276.86" y="7.4676" size="1.778" layer="95" rot="MR0" align="center"/>
+<attribute name="VALUE" x="276.86" y="2.667" size="1.778" layer="96" rot="MR0" align="center"/>
 </instance>
-<instance part="C106" gate="G$1" x="281.94" y="-1.27" smashed="yes" rot="R90">
-<attribute name="NAME" x="278.638" y="-1.27" size="1.778" layer="95" rot="R90" align="center"/>
-<attribute name="VALUE" x="285.242" y="-1.27" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="C106" gate="G$1" x="271.78" y="-1.27" smashed="yes" rot="R90">
+<attribute name="NAME" x="268.478" y="-1.27" size="1.778" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="275.082" y="-1.27" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="GND529" gate="GND" x="281.94" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="280.035" y="-13.335" size="1.778" layer="96"/>
+<instance part="GND529" gate="GND" x="271.78" y="-10.16" smashed="yes">
+<attribute name="VALUE" x="269.875" y="-13.335" size="1.778" layer="96"/>
 </instance>
-<instance part="R109" gate="G$1" x="274.32" y="5.08" smashed="yes">
-<attribute name="NAME" x="274.32" y="7.2136" size="1.778" layer="95" align="center"/>
-<attribute name="VALUE" x="274.32" y="2.921" size="1.778" layer="96" align="center"/>
+<instance part="R109" gate="G$1" x="264.16" y="5.08" smashed="yes">
+<attribute name="NAME" x="264.16" y="7.2136" size="1.778" layer="95" align="center"/>
+<attribute name="VALUE" x="264.16" y="2.921" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="C3" gate="G$1" x="107.95" y="-12.7" smashed="yes">
 <attribute name="NAME" x="107.95" y="-9.398" size="1.778" layer="95" align="center"/>
@@ -4095,18 +4095,18 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="V1" gate="+9V" x="292.1" y="101.6" smashed="yes">
 <attribute name="VALUE" x="290.195" y="104.775" size="1.778" layer="96"/>
 </instance>
-<instance part="JP5" gate="-1" x="314.96" y="27.94" smashed="yes" rot="MR180">
-<attribute name="NAME" x="317.5" y="28.702" size="1.524" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="314.198" y="26.543" size="1.778" layer="96" rot="MR180"/>
+<instance part="JP5" gate="-1" x="304.8" y="30.48" smashed="yes" rot="MR180">
+<attribute name="NAME" x="307.34" y="31.242" size="1.524" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="304.038" y="29.083" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="JP5" gate="-2" x="314.96" y="30.48" smashed="yes" rot="MR180">
-<attribute name="NAME" x="317.5" y="31.242" size="1.524" layer="95" rot="MR180"/>
+<instance part="JP5" gate="-2" x="304.8" y="33.02" smashed="yes" rot="MR180">
+<attribute name="NAME" x="307.34" y="33.782" size="1.524" layer="95" rot="MR180"/>
 </instance>
-<instance part="JP5" gate="-3" x="314.96" y="33.02" smashed="yes" rot="MR180">
-<attribute name="NAME" x="317.5" y="33.782" size="1.524" layer="95" rot="MR180"/>
+<instance part="JP5" gate="-3" x="304.8" y="35.56" smashed="yes" rot="MR180">
+<attribute name="NAME" x="307.34" y="36.322" size="1.524" layer="95" rot="MR180"/>
 </instance>
-<instance part="VB2" gate="G$1" x="287.02" y="20.32" smashed="yes">
-<attribute name="VALUE" x="284.48" y="24.13" size="1.778" layer="96"/>
+<instance part="VB2" gate="G$1" x="276.86" y="20.32" smashed="yes">
+<attribute name="VALUE" x="274.32" y="24.13" size="1.778" layer="96"/>
 </instance>
 <instance part="R110" gate="G$1" x="78.74" y="-71.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="76.6064" y="-71.12" size="1.778" layer="95" rot="R90" align="center"/>
@@ -4151,15 +4151,15 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="NAME" x="137.16" y="-84.2264" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="137.16" y="-88.519" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="JP4 " gate="-1" x="195.58" y="-53.34" smashed="yes">
-<attribute name="NAME" x="198.12" y="-54.102" size="1.524" layer="95"/>
+<instance part="JP4 " gate="-1" x="195.58" y="-58.42" smashed="yes">
+<attribute name="NAME" x="198.12" y="-59.182" size="1.524" layer="95"/>
 <attribute name="VALUE" x="194.818" y="-51.943" size="1.778" layer="96"/>
 </instance>
 <instance part="JP4 " gate="-2" x="195.58" y="-55.88" smashed="yes">
 <attribute name="NAME" x="198.12" y="-56.642" size="1.524" layer="95"/>
 </instance>
-<instance part="JP4 " gate="-3" x="195.58" y="-58.42" smashed="yes">
-<attribute name="NAME" x="198.12" y="-59.182" size="1.524" layer="95"/>
+<instance part="JP4 " gate="-3" x="195.58" y="-53.34" smashed="yes">
+<attribute name="NAME" x="198.12" y="-54.102" size="1.524" layer="95"/>
 </instance>
 <instance part="P21" gate="G$1" x="182.88" y="-58.42" smashed="yes">
 <attribute name="NAME" x="180.721" y="-58.42" size="1.778" layer="95" rot="R90" align="center"/>
@@ -4169,22 +4169,22 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="NAME" x="169.799" y="-58.42" size="1.778" layer="95" rot="MR90" align="center"/>
 <attribute name="VALUE" x="172.085" y="-58.42" size="1.778" layer="96" rot="MR90" align="center"/>
 </instance>
-<instance part="C4" gate="G$1" x="156.21" y="-58.42" smashed="yes">
+<instance part="C28" gate="G$1" x="156.21" y="-58.42" smashed="yes">
 <attribute name="NAME" x="156.21" y="-55.118" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="156.21" y="-61.722" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="GND4" gate="GND" x="149.86" y="-63.5" smashed="yes">
 <attribute name="VALUE" x="147.955" y="-66.675" size="1.778" layer="96"/>
 </instance>
-<instance part="JP5 " gate="-1" x="195.58" y="-73.66" smashed="yes">
-<attribute name="NAME" x="198.12" y="-74.422" size="1.524" layer="95"/>
+<instance part="JP5 " gate="-1" x="195.58" y="-78.74" smashed="yes">
+<attribute name="NAME" x="198.12" y="-79.502" size="1.524" layer="95"/>
 <attribute name="VALUE" x="194.818" y="-72.263" size="1.778" layer="96"/>
 </instance>
 <instance part="JP5 " gate="-2" x="195.58" y="-76.2" smashed="yes">
 <attribute name="NAME" x="198.12" y="-76.962" size="1.524" layer="95"/>
 </instance>
-<instance part="JP5 " gate="-3" x="195.58" y="-78.74" smashed="yes">
-<attribute name="NAME" x="198.12" y="-79.502" size="1.524" layer="95"/>
+<instance part="JP5 " gate="-3" x="195.58" y="-73.66" smashed="yes">
+<attribute name="NAME" x="198.12" y="-74.422" size="1.524" layer="95"/>
 </instance>
 <instance part="P1" gate="G$1" x="182.88" y="-76.2" smashed="yes">
 <attribute name="NAME" x="180.721" y="-76.2" size="1.778" layer="95" rot="R90" align="center"/>
@@ -4330,7 +4330,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="C106" gate="G$1" pin="2"/>
 <pinref part="GND529" gate="GND" pin="GND"/>
-<wire x1="281.94" y1="-5.08" x2="281.94" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="-5.08" x2="271.78" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R45" gate="G$1" pin="1"/>
@@ -4401,7 +4401,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="GND4" gate="GND" pin="GND"/>
 <wire x1="149.86" y1="-60.96" x2="149.86" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C28" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="-58.42" x2="152.4" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4545,21 +4545,21 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </segment>
 <segment>
 <pinref part="JP5" gate="-1" pin="S"/>
-<wire x1="309.88" y1="27.94" x2="312.42" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="30.48" x2="302.26" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="VB515" gate="G$1" pin="VB"/>
-<wire x1="309.88" y1="25.4" x2="309.88" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="27.94" x2="299.72" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="VB2" gate="G$1" pin="VB"/>
-<wire x1="287.02" y1="17.78" x2="287.02" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="17.78" x2="276.86" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R41" gate="G$1" pin="1"/>
-<wire x1="287.02" y1="15.24" x2="289.56" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="15.24" x2="279.4" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP5 " gate="-3" pin="S"/>
-<wire x1="193.04" y1="-78.74" x2="190.5" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="VB3" gate="G$1" pin="VB"/>
 <wire x1="190.5" y1="-78.74" x2="190.5" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="JP5 " gate="-1" pin="S"/>
+<wire x1="190.5" y1="-78.74" x2="193.04" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P1" gate="G$1" pin="1"/>
@@ -4994,8 +4994,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="Q7" gate="1" pin="S"/>
 <wire x1="177.8" y1="-17.78" x2="182.88" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-17.78" x2="251.46" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="-17.78" x2="302.26" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="-17.78" x2="302.26" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="-17.78" x2="292.1" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="-17.78" x2="292.1" y2="2.54" width="0.1524" layer="91"/>
 <junction x="182.88" y="-17.78"/>
 <junction x="251.46" y="-17.78"/>
 <pinref part="C42" gate="1" pin="+"/>
@@ -5008,37 +5008,37 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="Q7" gate="1" pin="D"/>
 <pinref part="C41" gate="1" pin="-"/>
-<wire x1="302.26" y1="12.7" x2="302.26" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="12.7" x2="292.1" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R41" gate="G$1" pin="2"/>
-<wire x1="302.26" y1="15.24" x2="302.26" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="15.24" x2="302.26" y2="15.24" width="0.1524" layer="91"/>
-<junction x="302.26" y="15.24"/>
+<wire x1="292.1" y1="15.24" x2="292.1" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="15.24" x2="292.1" y2="15.24" width="0.1524" layer="91"/>
+<junction x="292.1" y="15.24"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="C41" gate="1" pin="+"/>
-<wire x1="302.26" y1="25.4" x2="302.26" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="25.4" x2="292.1" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="-2" pin="S"/>
-<wire x1="302.26" y1="30.48" x2="312.42" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="33.02" x2="302.26" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
 <pinref part="Q7" gate="1" pin="G"/>
 <pinref part="D7" gate="G$1" pin="A"/>
-<wire x1="294.64" y1="5.08" x2="292.1" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="5.08" x2="281.94" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$46" class="0">
 <segment>
 <pinref part="D7" gate="G$1" pin="C"/>
 <pinref part="R109" gate="G$1" pin="2"/>
-<wire x1="284.48" y1="5.08" x2="281.94" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="5.08" x2="271.78" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="C106" gate="G$1" pin="1"/>
-<wire x1="281.94" y1="5.08" x2="279.4" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="5.08" x2="281.94" y2="2.54" width="0.1524" layer="91"/>
-<junction x="281.94" y="5.08"/>
+<wire x1="271.78" y1="5.08" x2="269.24" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="5.08" x2="271.78" y2="2.54" width="0.1524" layer="91"/>
+<junction x="271.78" y="5.08"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -5095,7 +5095,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </segment>
 <segment>
 <wire x1="147.32" y1="-27.94" x2="149.86" y2="-27.94" width="0.1524" layer="91"/>
-<label x="142.24" y="-27.94" size="1.27" layer="95" font="vector"/>
+<label x="144.78" y="-27.94" size="1.27" layer="95" font="vector"/>
 <pinref part="R108" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -5148,8 +5148,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="88.9" y1="-71.12" x2="91.44" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="266.7" y1="5.08" x2="269.24" y2="5.08" width="0.1524" layer="91"/>
-<label x="263.398" y="5.08" size="1.27" layer="95" font="vector"/>
+<wire x1="256.54" y1="5.08" x2="259.08" y2="5.08" width="0.1524" layer="91"/>
+<label x="253.238" y="5.08" size="1.27" layer="95" font="vector"/>
 <pinref part="R109" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -5336,9 +5336,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="C30" gate="1" pin="-"/>
 <wire x1="281.94" y1="35.56" x2="302.26" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="35.56" x2="302.26" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="-3" pin="S"/>
-<wire x1="302.26" y1="33.02" x2="312.42" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$59" class="0">
@@ -5397,7 +5395,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </net>
 <net name="N$64" class="0">
 <segment>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C28" gate="G$1" pin="1"/>
 <pinref part="P22" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="-58.42" x2="162.56" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
@@ -5416,13 +5414,6 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <junction x="182.88" y="-66.04"/>
 </segment>
 </net>
-<net name="N$66" class="0">
-<segment>
-<pinref part="JP4 " gate="-3" pin="S"/>
-<pinref part="P21" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="-58.42" x2="187.96" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$67" class="0">
 <segment>
 <pinref part="P22" gate="G$1" pin="3"/>
@@ -5430,11 +5421,11 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="167.64" y1="-50.8" x2="182.88" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-50.8" x2="190.5" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="-50.8" x2="190.5" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="JP4 " gate="-1" pin="S"/>
-<wire x1="190.5" y1="-53.34" x2="193.04" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="P21" gate="G$1" pin="3"/>
 <wire x1="182.88" y1="-52.07" x2="182.88" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="182.88" y="-50.8"/>
+<pinref part="JP4 " gate="-3" pin="S"/>
+<wire x1="193.04" y1="-53.34" x2="190.5" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$68" class="0">
@@ -5443,7 +5434,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="182.88" y1="-69.85" x2="182.88" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-68.58" x2="190.5" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="-68.58" x2="190.5" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="JP5 " gate="-1" pin="S"/>
+<pinref part="JP5 " gate="-3" pin="S"/>
 <wire x1="190.5" y1="-73.66" x2="193.04" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5470,6 +5461,13 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="233.68" y1="-60.96" x2="233.68" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="R105" gate="G$1" pin="2"/>
 <wire x1="233.68" y1="-71.12" x2="231.14" y2="-71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<pinref part="JP4 " gate="-1" pin="S"/>
+<pinref part="P21" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="-58.42" x2="187.96" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
