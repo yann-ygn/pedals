@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1990,7 +1990,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="C5" library="pedals-capacitors-elec" deviceset="050" device="0" value="220n"/>
 <part name="R8" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
 <part name="GND9" library="pedals-supply" deviceset="GND" device=""/>
-<part name="R9" library="pedals-resistors" deviceset="R_" device=".3B"/>
+<part name="R9" library="pedals-resistors" deviceset="R_" device=".3B" value="20k"/>
 <part name="V3" library="pedals-supply" deviceset="+9V" device=""/>
 <part name="GND10" library="pedals-supply" deviceset="GND" device=""/>
 <part name="U3" library="pedals-integrated circuits" deviceset="DUAL" device="TH" value="JRC4558D"/>

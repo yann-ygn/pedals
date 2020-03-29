@@ -1,0 +1,177 @@
+# Configuration Script
+#
+# This file can be used to configure the editor windows.
+#
+# Uncomment this if you want a set of useful default shortcuts!
+#SCRIPT default-assign.scr;
+#
+
+BRD:
+ASSIGN F2 'WINDOW Fit'
+ASSIGN F3 'WINDOW Last'
+ASSIGN F4 'RATSNEST'
+ASSIGN F5 'RUN griddisplay'   #switch grid on/off
+ASSIGN F6 'RUN gridtype'   #switch grid to dots/lines
+ASSIGN F7 'RUN grid20'   #double the current grid
+ASSIGN F8 'RUN grid05'   #halfen the current grid
+ASSIGN F9 'INFO'
+ASSIGN F10 'UNDO'
+ASSIGN F11 'REDO'
+ASSIGN F12 'RUN togglecursor'   #make cursor small/large
+ASSIGN C+A 'ADD'
+ASSIGN CS+A 'ATTRIBUTE'
+ASSIGN C+B ''
+ASSIGN CS+C 'CUT;'
+ASSIGN C+C 'COPY'
+ASSIGN C+D 'DELETE'
+ASSIGN C+E 'ERRORS'
+ASSIGN CS+E 'ERC'
+ASSIGN C+F 'RUN find'   #search for objects
+ASSIGN CS+F 'RUN designlink'
+ASSIGN C+G 'GROUP'
+ASSIGN CS+G 'GROUP All;'
+ASSIGN C+H 'HOLE'
+ASSIGN C+I 'INFO'
+ASSIGN CS+I ''
+ASSIGN C+J ''
+ASSIGN C+K ''
+ASSIGN C+L 'LOCK'
+ASSIGN C+M 'MOVE'
+ASSIGN CS+M 'MIRROR'
+ASSIGN C+N 'SIGNAL'
+ASSIGN CS+N 'NAME'
+ASSIGN C+O 'OPEN'
+ASSIGN C+P 'PASTE'
+ASSIGN CS+P 'CHANGE Package'
+ASSIGN C+Q ''
+ASSIGN C+R 'MITER 0; ROUTE'
+ASSIGN CS+R 'RIPUP'
+ASSIGN C+S 'WRITE;'
+ASSIGN CS+S 'SPLIT'
+ASSIGN CS+T 'CHANGE Technology'
+ASSIGN C+U 'UPDATE;'
+ASSIGN C+V 'VALUE'
+ASSIGN CS+V 'VIA'
+ASSIGN C+W 'WIRE'
+ASSIGN CS+W 'WINDOW'
+ASSIGN C+X 'CHANGE Package'
+ASSIGN C+Y 'REDO'
+ASSIGN CS+Y 'RUN redo'   #choose more than one action to redo
+ASSIGN C+Z 'UNDO'
+ASSIGN CS+Z 'RUN undo'   #choose more than one action to undo
+MENU '[bin/designlink.png] Search and order : Run designlink-order.ulp -general;'\
+     '[bin/pcb-service.png] PCB Service : Run pcb-service.ulp;'\
+     '[bin/autodesk-make.png] Manufacture...: Run manufacturing.ulp;'\
+;
+DISPLAY = 'Preset_Top' None 1 17 18 19 20 21 23 25 39 41 45 51;
+DISPLAY = 'Preset_Bottom' None 16 17 18 19 20 22 24 26 40 42 45 52;
+DISPLAY = 'Preset_Standard' None 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 39 40 41 42 44 45 51 52;
+
+SCH:
+ASSIGN F2 'WINDOW Fit'
+ASSIGN F3 'RUN backward'   #switch to previous sheet
+ASSIGN F4 'RUN forward'   #switch to next sheet
+ASSIGN F5 'RUN griddisplay'   #switch grid on/off
+ASSIGN F6 'RUN gridtype'   #switch grid to dots/lines
+ASSIGN F7 'RUN grid20'   #double the current grid
+ASSIGN F8 'RUN grid05'   #halfen the current grid
+ASSIGN F9 'INFO'
+ASSIGN F10 'UNDO'
+ASSIGN F11 'REDO'
+ASSIGN F12 'RUN togglecursor'   #make cursor small/large
+ASSIGN C+A 'ADD'
+ASSIGN CS+A 'ATTRIBUTE'
+ASSIGN C+B 'BUS'
+ASSIGN CS+C 'CUT;'
+ASSIGN C+C 'COPY'
+ASSIGN C+D 'DELETE'
+ASSIGN C+E 'ERRORS'
+ASSIGN CS+E 'ERC'
+ASSIGN C+F 'RUN find'   #search for objects
+ASSIGN CS+F 'RUN designlink'
+ASSIGN C+G 'GROUP'
+ASSIGN CS+G 'GROUP All;'
+ASSIGN C+H 'CHANGE LAYER Info; CHANGE Size 0.1in; CHANGE Ratio 16;
+ASSIGN C+I 'INFO'
+ASSIGN CS+I 'INVOKE'
+ASSIGN C+J 'JUNCTION'
+ASSIGN C+K ''
+ASSIGN C+L 'CHANGE Size 0.05in; CHANGE Ratio 8; CHANGE Font Vector;
+ASSIGN C+M 'MOVE'
+ASSIGN CS+M 'MIRROR'
+ASSIGN C+N 'NET'
+ASSIGN CS+N 'NAME'
+ASSIGN C+O 'OPEN'
+ASSIGN C+P 'PASTE'
+ASSIGN CS+P 'CHANGE Package'
+ASSIGN C+Q ''
+ASSIGN C+R ''
+ASSIGN CS+R ''
+ASSIGN C+S 'WRITE;'
+ASSIGN CS+S 'SPLIT'
+ASSIGN C+T 'CHANGE LAYER Info; CHANGE Size 0.06in; CHANGE Ratio 8;
+ASSIGN CS+T 'CHANGE Technology'
+ASSIGN C+U 'UPDATE;'
+ASSIGN C+V 'VALUE'
+ASSIGN CS+V ''
+ASSIGN C+W 'WIRE'
+ASSIGN CS+W 'WINDOW'
+ASSIGN C+Y 'REDO'
+ASSIGN CS+Y 'RUN redo'   #choose more than one action to redo
+ASSIGN C+Z 'UNDO'
+ASSIGN CS+Z 'RUN undo'   #choose more than one action to undo
+Grid Default;
+Change Width 0.006in;
+MENU '[bin/designlink.png] Search and order {\
+                                          General : Run designlink-order.ulp -general; |\
+                                          Schematic : Run designlink-order.ulp; \
+                                          }'\
+     '[bin/LTspice.png] LT Spice simulation {\
+                    Export: RUN ltspice.ulp /E; |\
+                    Export Setup: RUN ltspice.ulp /E /S; |\
+                    Export Group: RUN ltspice.ulp /E /G; |\
+                    Import: RUN ltspice.ulp /I; \
+     }' \
+;
+
+LBR:
+MENU '[bin/designlink.png] Search and order : Run designlink-order.ulp -general;'\
+     '[bin/LTspice.png] LT Spice simulation {\
+                  Export: RUN ltspice.ulp /E; |\
+                  Import: RUN ltspice.ulp /I; \
+     }'\
+     '[bin/pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;' \
+;
+
+DEV:
+Grid Default;
+MENU '[bin/designlink.png] Search and order : Run designlink-order.ulp -general;' \
+     '[bin/LTspice.png] LT Spice simulation {\
+                  Export: RUN ltspice.ulp /E; |\
+                  SpiceOrder : RUN spiceorder.ulp; |\
+                  SpiceModel: ATTRIBUTE SPICEMODEL |\
+                  Value2: ATTRIBUTE VALUE2 |\
+                  Import: RUN ltspice.ulp /I; \
+     }'\
+     '[bin/pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;'\
+;
+
+SYM:
+Grid Default On;
+Change Width 0.010in;
+MENU '[bin/LTspice.png] LT Spice simulation {\
+                  Export: RUN ltspice.ulp /E; |\
+                  SpiceOrder : RUN spiceorder.ulp; |\
+                  Import: RUN ltspice.ulp /I; \
+     }'\
+;
+
+PAC:
+Grid Default On;
+Change Width 0.005in;
+Change Size 0.050in;
+MENU '[bin/LTspice.png] LT Spice simulation {\
+                  Import: RUN ltspice.ulp /I; \
+     }'\
+     '[bin/pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;' \
+     ;

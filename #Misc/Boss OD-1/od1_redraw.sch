@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2425,7 +2425,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="D11" library="pedals-diodes" deviceset="LED" device="" value="SLP1358"/>
 <part name="V2" library="gm-supply" deviceset="+9V" device=""/>
 <part name="GND1" library="gm-supply" deviceset="GND" device=""/>
-<part name="R9" library="pedals-resistors" deviceset="R_" device=".3B" value="100k"/>
+<part name="R9" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
 <part name="D3" library="pedals-diodes" deviceset="DO35" device=".2"/>
 <part name="GND2" library="gm-supply" deviceset="GND" device=""/>
 <part name="R28" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
@@ -2449,8 +2449,6 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <sheets>
 <sheet>
 <plain>
-<text x="93.98" y="86.36" size="1.778" layer="95">DRIVE</text>
-<text x="175.26" y="50.8" size="1.778" layer="95">LEVEL</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="35.56" y="48.26" smashed="yes">
@@ -2598,9 +2596,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="NAME" x="20.447" y="-20.32" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="25.273" y="-20.32" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="C17" gate="1" x="33.02" y="-17.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="36.703" y="-17.78" size="1.778" layer="95" rot="MR270" align="center"/>
-<attribute name="VALUE" x="29.337" y="-17.78" size="1.778" layer="96" rot="MR270" align="center"/>
+<instance part="C17" gate="1" x="33.02" y="-17.78" smashed="yes" rot="MR270">
+<attribute name="NAME" x="29.337" y="-17.78" size="1.778" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="36.703" y="-17.78" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
 <instance part="GND102" gate="GND" x="22.86" y="-27.94" smashed="yes">
 <attribute name="VALUE" x="20.955" y="-31.115" size="1.778" layer="96"/>

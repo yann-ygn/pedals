@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -803,13 +803,6 @@ NS Package M08A</description>
 </package>
 </packages>
 <symbols>
-<symbol name="EARTH">
-<wire x1="-1.778" y1="0" x2="1.778" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-0.762" x2="1.016" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-0.254" y1="-1.524" x2="0.254" y2="-1.524" width="0.254" layer="94"/>
-<text x="-1.905" y="-4.953" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="+09V-1">
 <wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
@@ -834,20 +827,15 @@ NS Package M08A</description>
 <text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <pin name="OUT" x="-2.54" y="0" visible="off" length="short" direction="sup"/>
 </symbol>
+<symbol name="GND">
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="EARTH">
-<gates>
-<gate name="G$1" symbol="EARTH" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="+9V" prefix="V">
 <description>&lt;b&gt;+9V Voltage Supply&lt;/b&gt;
 &lt;ul&gt;
@@ -915,6 +903,23 @@ NS Package M08A</description>
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="OUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;Ground&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;use this to hook up ground connections throughout a schematic instead of running wire&lt;/li&gt;
+&lt;li&gt;automatically labels the net "GND"&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="GND" symbol="GND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1704,19 +1709,14 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <part name="R1" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
 <part name="R2" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="IC1" library="pedals-integrated circuits" deviceset="SINGLE" device="TH" value="LM741"/>
-<part name="U$1" library="pedals-supply" deviceset="EARTH" device="" value="GND"/>
 <part name="R3" library="pedals-resistors" deviceset="R_" device=".3B" value="4.7k"/>
 <part name="C3" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="47n"/>
 <part name="R4" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="DISTORTION" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="1M"/>
-<part name="U$2" library="pedals-supply" deviceset="EARTH" device="" value="GND"/>
-<part name="U$3" library="pedals-supply" deviceset="EARTH" device="" value="GND"/>
 <part name="R5" library="pedals-resistors" deviceset="R_" device=".3B" value="10k"/>
 <part name="R6" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
 <part name="R7" library="pedals-resistors" deviceset="R_" device=".3B" value="1M"/>
-<part name="U$4" library="pedals-supply" deviceset="EARTH" device="" value="GND"/>
 <part name="C6" library="pedals-capacitors-elec" deviceset="050" device="0" value="1u"/>
-<part name="U$5" library="pedals-supply" deviceset="EARTH" device="" value="GND"/>
 <part name="C4" library="pedals-capacitors-elec" deviceset="050" device="0" value="1u"/>
 <part name="V1" library="pedals-supply" deviceset="+9V" device=""/>
 <part name="VB1" library="pedals-supply" deviceset="VB" device=""/>
@@ -1725,13 +1725,18 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <part name="D1" library="pedals-diodes" deviceset="DO41" device=".2" value="1N34A"/>
 <part name="D2" library="pedals-diodes" deviceset="DO41" device=".2" value="1N34A"/>
 <part name="C5" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1n"/>
-<part name="U$6" library="pedals-supply" deviceset="EARTH" device="" value="GND"/>
-<part name="U$7" library="pedals-supply" deviceset="EARTH" device="" value="GND"/>
-<part name="U$8" library="pedals-supply" deviceset="EARTH" device="" value="GND"/>
 <part name="OUTPUT" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="10k"/>
-<part name="U$9" library="pedals-supply" deviceset="EARTH" device="" value="GND"/>
 <part name="IN1" library="pedals-supply" deviceset="IN(T)" device=""/>
 <part name="OUT1" library="pedals-supply" deviceset="OUT" device=""/>
+<part name="GND1" library="pedals-supply" deviceset="GND" device=""/>
+<part name="GND2" library="pedals-supply" deviceset="GND" device=""/>
+<part name="GND3" library="pedals-supply" deviceset="GND" device=""/>
+<part name="GND4" library="pedals-supply" deviceset="GND" device=""/>
+<part name="GND5" library="pedals-supply" deviceset="GND" device=""/>
+<part name="GND6" library="pedals-supply" deviceset="GND" device=""/>
+<part name="GND7" library="pedals-supply" deviceset="GND" device=""/>
+<part name="GND8" library="pedals-supply" deviceset="GND" device=""/>
+<part name="GND9" library="pedals-supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1758,9 +1763,6 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <attribute name="NAME" x="101.6" y="90.805" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="101.6" y="88.265" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="U$1" gate="G$1" x="96.52" y="83.82" smashed="yes">
-<attribute name="VALUE" x="94.615" y="78.867" size="1.778" layer="96"/>
-</instance>
 <instance part="R3" gate="G$1" x="71.12" y="119.38" smashed="yes">
 <attribute name="NAME" x="71.12" y="121.5136" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="71.12" y="117.221" size="1.778" layer="96" align="center"/>
@@ -1777,46 +1779,34 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <attribute name="NAME" x="58.42" y="117.221" size="1.778" layer="95" rot="MR180" align="center"/>
 <attribute name="VALUE" x="58.42" y="114.935" size="1.778" layer="96" rot="MR180" align="center"/>
 </instance>
-<instance part="U$2" gate="G$1" x="63.5" y="78.74" smashed="yes">
-<attribute name="VALUE" x="61.595" y="73.787" size="1.778" layer="96"/>
-</instance>
-<instance part="U$3" gate="G$1" x="48.26" y="114.3" smashed="yes">
-<attribute name="VALUE" x="46.355" y="109.347" size="1.778" layer="96"/>
-</instance>
 <instance part="R5" gate="G$1" x="127" y="96.52" smashed="yes">
 <attribute name="NAME" x="127" y="98.6536" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="127" y="94.361" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R6" gate="G$1" x="129.54" y="132.08" smashed="yes">
-<attribute name="NAME" x="129.54" y="134.2136" size="1.778" layer="95" align="center"/>
-<attribute name="VALUE" x="129.54" y="129.921" size="1.778" layer="96" align="center"/>
+<instance part="R6" gate="G$1" x="129.54" y="124.46" smashed="yes">
+<attribute name="NAME" x="129.54" y="126.5936" size="1.778" layer="95" align="center"/>
+<attribute name="VALUE" x="129.54" y="122.301" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R7" gate="G$1" x="137.16" y="124.46" smashed="yes" rot="R90">
-<attribute name="NAME" x="135.0264" y="124.46" size="1.778" layer="95" rot="R90" align="center"/>
-<attribute name="VALUE" x="139.319" y="124.46" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="R7" gate="G$1" x="137.16" y="116.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="135.0264" y="116.84" size="1.778" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="139.319" y="116.84" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="U$4" gate="G$1" x="137.16" y="114.3" smashed="yes">
-<attribute name="VALUE" x="135.255" y="109.347" size="1.778" layer="96"/>
-</instance>
-<instance part="C6" gate="1" x="147.32" y="127" smashed="yes" rot="MR270">
-<attribute name="NAME" x="143.637" y="127" size="1.778" layer="95" rot="R270" align="center"/>
-<attribute name="VALUE" x="151.003" y="127" size="1.778" layer="96" rot="R270" align="center"/>
-</instance>
-<instance part="U$5" gate="G$1" x="147.32" y="114.3" smashed="yes">
-<attribute name="VALUE" x="145.415" y="109.347" size="1.778" layer="96"/>
+<instance part="C6" gate="1" x="147.32" y="119.38" smashed="yes" rot="MR270">
+<attribute name="NAME" x="143.637" y="119.38" size="1.778" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="151.003" y="119.38" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
 <instance part="C4" gate="1" x="114.3" y="96.52" smashed="yes">
 <attribute name="NAME" x="114.3" y="100.203" size="1.778" layer="95" rot="MR180" align="center"/>
 <attribute name="VALUE" x="114.3" y="92.837" size="1.778" layer="96" rot="MR180" align="center"/>
 </instance>
-<instance part="V1" gate="+9V" x="121.92" y="137.16" smashed="yes">
-<attribute name="VALUE" x="120.015" y="140.335" size="1.778" layer="96"/>
+<instance part="V1" gate="+9V" x="121.92" y="129.54" smashed="yes">
+<attribute name="VALUE" x="120.015" y="132.715" size="1.778" layer="96"/>
 </instance>
-<instance part="VB1" gate="G$1" x="147.32" y="137.16" smashed="yes">
-<attribute name="VALUE" x="144.78" y="140.97" size="1.778" layer="96"/>
+<instance part="VB1" gate="G$1" x="147.32" y="129.54" smashed="yes">
+<attribute name="VALUE" x="144.78" y="133.35" size="1.778" layer="96"/>
 </instance>
-<instance part="V2" gate="+9V" x="96.52" y="109.22" smashed="yes">
-<attribute name="VALUE" x="94.615" y="112.395" size="1.778" layer="96"/>
+<instance part="V2" gate="+9V" x="96.52" y="106.68" smashed="yes">
+<attribute name="VALUE" x="94.615" y="109.855" size="1.778" layer="96"/>
 </instance>
 <instance part="VB2" gate="G$1" x="88.9" y="76.2" smashed="yes" rot="R180">
 <attribute name="VALUE" x="91.44" y="72.39" size="1.778" layer="96" rot="R180"/>
@@ -1833,21 +1823,9 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <attribute name="NAME" x="151.638" y="90.17" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="158.242" y="90.17" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="U$6" gate="G$1" x="134.62" y="81.28" smashed="yes">
-<attribute name="VALUE" x="132.715" y="76.327" size="1.778" layer="96"/>
-</instance>
-<instance part="U$7" gate="G$1" x="144.78" y="81.28" smashed="yes">
-<attribute name="VALUE" x="142.875" y="76.327" size="1.778" layer="96"/>
-</instance>
-<instance part="U$8" gate="G$1" x="154.94" y="81.28" smashed="yes">
-<attribute name="VALUE" x="153.035" y="76.327" size="1.778" layer="96"/>
-</instance>
 <instance part="OUTPUT" gate="G$1" x="167.64" y="88.9" smashed="yes">
 <attribute name="NAME" x="165.481" y="88.9" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="163.195" y="88.9" size="1.778" layer="96" rot="R90" align="center"/>
-</instance>
-<instance part="U$9" gate="G$1" x="167.64" y="78.74" smashed="yes">
-<attribute name="VALUE" x="165.735" y="73.787" size="1.778" layer="96"/>
 </instance>
 <instance part="IN1" gate="G$1" x="58.42" y="93.98" smashed="yes">
 <attribute name="NAME" x="58.42" y="99.06" size="1.778" layer="95" rot="R180"/>
@@ -1855,89 +1833,62 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <instance part="OUT1" gate="G$1" x="177.8" y="88.9" smashed="yes">
 <attribute name="NAME" x="177.8" y="91.44" size="1.778" layer="95"/>
 </instance>
+<instance part="GND1" gate="GND" x="48.26" y="114.3" smashed="yes">
+<attribute name="VALUE" x="46.355" y="111.125" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="GND" x="137.16" y="106.68" smashed="yes">
+<attribute name="VALUE" x="135.255" y="103.505" size="1.778" layer="96"/>
+</instance>
+<instance part="GND3" gate="GND" x="147.32" y="106.68" smashed="yes">
+<attribute name="VALUE" x="145.415" y="103.505" size="1.778" layer="96"/>
+</instance>
+<instance part="GND4" gate="GND" x="167.64" y="78.74" smashed="yes">
+<attribute name="VALUE" x="165.735" y="75.565" size="1.778" layer="96"/>
+</instance>
+<instance part="GND5" gate="GND" x="154.94" y="81.28" smashed="yes">
+<attribute name="VALUE" x="153.035" y="78.105" size="1.778" layer="96"/>
+</instance>
+<instance part="GND6" gate="GND" x="144.78" y="81.28" smashed="yes">
+<attribute name="VALUE" x="142.875" y="78.105" size="1.778" layer="96"/>
+</instance>
+<instance part="GND7" gate="GND" x="134.62" y="81.28" smashed="yes">
+<attribute name="VALUE" x="132.715" y="78.105" size="1.778" layer="96"/>
+</instance>
+<instance part="GND8" gate="GND" x="96.52" y="86.36" smashed="yes">
+<attribute name="VALUE" x="94.615" y="83.185" size="1.778" layer="96"/>
+</instance>
+<instance part="GND9" gate="GND" x="63.5" y="78.74" smashed="yes">
+<attribute name="VALUE" x="61.595" y="75.565" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
-<segment>
-<pinref part="C6" gate="1" pin="-"/>
-<pinref part="U$5" gate="G$1" pin="GND"/>
-<wire x1="147.32" y1="121.92" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="U$4" gate="G$1" pin="GND"/>
-<wire x1="137.16" y1="119.38" x2="137.16" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="63.5" y1="81.28" x2="63.5" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="A" pin="V+"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="96.52" y1="88.9" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="DISTORTION" gate="G$1" pin="1"/>
-<wire x1="52.07" y1="119.38" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="GND"/>
-<wire x1="48.26" y1="119.38" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="DISTORTION" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="124.46" x2="58.42" y2="127" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="127" x2="48.26" y2="127" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="127" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
-<junction x="48.26" y="119.38"/>
-</segment>
-<segment>
-<pinref part="OUTPUT" gate="G$1" pin="1"/>
-<pinref part="U$9" gate="G$1" pin="GND"/>
-<wire x1="167.64" y1="82.55" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-<pinref part="U$8" gate="G$1" pin="GND"/>
-<wire x1="154.94" y1="86.36" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D2" gate="G$1" pin="C"/>
-<pinref part="U$7" gate="G$1" pin="GND"/>
-<wire x1="144.78" y1="86.36" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D1" gate="G$1" pin="A"/>
-<pinref part="U$6" gate="G$1" pin="GND"/>
-<wire x1="134.62" y1="86.36" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="+9V" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="132.08" x2="121.92" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="124.46" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="V1" gate="+9V" pin="+9V"/>
-<wire x1="121.92" y1="134.62" x2="121.92" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="127" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="V-"/>
 <pinref part="V2" gate="+9V" pin="+9V"/>
-<wire x1="96.52" y1="104.14" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VB" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="124.46" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C6" gate="1" pin="+"/>
-<wire x1="137.16" y1="132.08" x2="147.32" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="132.08" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="124.46" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="124.46" x2="147.32" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="137.16" y1="132.08" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
-<junction x="137.16" y="132.08"/>
+<wire x1="137.16" y1="124.46" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
+<junction x="137.16" y="124.46"/>
 <pinref part="VB1" gate="G$1" pin="VB"/>
-<wire x1="147.32" y1="134.62" x2="147.32" y2="132.08" width="0.1524" layer="91"/>
-<junction x="147.32" y="132.08"/>
+<wire x1="147.32" y1="127" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
+<junction x="147.32" y="124.46"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -2044,6 +1995,58 @@ Zener Diodes:  1N4728 - 1N4764&lt;br&gt;</description>
 <pinref part="OUTPUT" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="88.9" x2="175.26" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="OUT1" gate="G$1" pin="OUT"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="DISTORTION" gate="G$1" pin="1"/>
+<wire x1="52.07" y1="119.38" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="119.38" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="DISTORTION" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="124.46" x2="58.42" y2="127" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="127" x2="48.26" y2="127" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="127" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
+<junction x="48.26" y="119.38"/>
+<pinref part="GND1" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="111.76" x2="137.16" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C6" gate="1" pin="-"/>
+<wire x1="147.32" y1="114.3" x2="147.32" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="OUTPUT" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="82.55" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="86.36" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="144.78" y1="86.36" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="134.62" y1="86.36" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="A" pin="V+"/>
+<pinref part="GND8" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="81.28" x2="63.5" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="GND" pin="GND"/>
 </segment>
 </net>
 </nets>

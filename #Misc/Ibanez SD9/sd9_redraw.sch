@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -73,7 +73,7 @@
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="95" name="Names" color="7" fill="1" visible="no" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
@@ -2340,7 +2340,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="R9" library="pedals-resistors" deviceset="R_" device=".3B" value="2.2k"/>
 <part name="D2" library="pedals-diodes" deviceset="DO41" device=".2"/>
 <part name="D3" library="pedals-diodes" deviceset="DO41" device=".2"/>
-<part name="C8" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="20n"/>
+<part name="C8" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="10n"/>
 <part name="GND8" library="pedals-supply" deviceset="GND" device=""/>
 <part name="GND9" library="pedals-supply" deviceset="GND" device=""/>
 <part name="GND10" library="pedals-supply" deviceset="GND" device=""/>
@@ -2350,8 +2350,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="GND11" library="pedals-supply" deviceset="GND" device=""/>
 <part name="C10" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="27n"/>
 <part name="R12" library="pedals-resistors" deviceset="R_" device=".3B" value="6.8k"/>
-<part name="POT2" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="20kB"/>
-<part name="POT3" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kB"/>
+<part name="TONE" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="20kB"/>
+<part name="LEVEL" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kB"/>
 <part name="GND13" library="pedals-supply" deviceset="GND" device=""/>
 <part name="GND14" library="pedals-supply" deviceset="GND" device=""/>
 <part name="C11" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="100n"/>
@@ -2433,23 +2433,18 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="223.52" y="7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="221.1324" y="7.62" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="225.933" y="7.62" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="C1" gate="1" x="233.68" y="7.62" smashed="yes" rot="MR270">
-<attribute name="NAME" x="229.997" y="7.62" size="1.778" layer="95" rot="R270" align="center"/>
 <attribute name="VALUE" x="237.363" y="7.62" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
 <instance part="R1" gate="G$1" x="241.3" y="12.7" smashed="yes">
-<attribute name="NAME" x="241.3" y="14.8336" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="241.3" y="10.541" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R2" gate="G$1" x="248.92" y="5.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="246.7864" y="5.08" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="251.079" y="5.08" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="C2" gate="1" x="259.08" y="7.62" smashed="yes" rot="MR270">
-<attribute name="NAME" x="255.397" y="7.62" size="1.778" layer="95" rot="R270" align="center"/>
 <attribute name="VALUE" x="262.763" y="7.62" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
 <instance part="GND1" gate="GND" x="223.52" y="-5.08" smashed="yes">
@@ -2471,42 +2466,33 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="VALUE" x="256.54" y="21.59" size="1.778" layer="96"/>
 </instance>
 <instance part="C3" gate="G$1" x="67.31" y="91.44" smashed="yes">
-<attribute name="NAME" x="66.04" y="94.742" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="66.04" y="88.138" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R3" gate="G$1" x="78.74" y="91.44" smashed="yes">
-<attribute name="NAME" x="78.74" y="93.5736" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="78.74" y="89.281" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="Q1" gate="G1" x="91.44" y="91.44" smashed="yes">
-<attribute name="NAME" x="93.98" y="91.821" size="1.778" layer="95"/>
 <attribute name="VALUE" x="93.98" y="89.535" size="1.778" layer="96"/>
 </instance>
 <instance part="R4" gate="G$1" x="86.36" y="99.06" smashed="yes" rot="R90">
-<attribute name="NAME" x="84.2264" y="99.06" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="88.519" y="99.06" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="R5" gate="G$1" x="93.98" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="91.8464" y="76.2" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="96.139" y="76.2" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="C4" gate="G$1" x="100.33" y="83.82" smashed="yes">
-<attribute name="NAME" x="99.06" y="87.122" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="99.06" y="80.518" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="IC1" gate="_A" x="132.08" y="86.36" smashed="yes" rot="MR180">
-<attribute name="NAME" x="134.62" y="83.185" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="134.62" y="80.645" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC1" gate="_B" x="182.88" y="119.38" smashed="yes">
-<attribute name="NAME" x="185.42" y="122.555" size="1.778" layer="95"/>
 <attribute name="VALUE" x="185.42" y="125.095" size="1.778" layer="96"/>
 </instance>
 <instance part="IC1" gate="_PWR" x="132.08" y="86.36" smashed="yes">
 <attribute name="NAME" x="131.445" y="86.36" size="0.8128" layer="95" rot="R90" align="center"/>
 </instance>
 <instance part="R6" gate="G$1" x="109.22" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="107.0864" y="76.2" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="111.379" y="76.2" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="GND5" gate="GND" x="93.98" y="66.04" smashed="yes">
@@ -2522,11 +2508,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="VALUE" x="111.76" y="62.23" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C5" gate="G$1" x="132.08" y="111.76" smashed="yes">
-<attribute name="NAME" x="130.81" y="115.062" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="130.81" y="108.458" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R7" gate="G$1" x="121.92" y="119.38" smashed="yes" rot="R90">
-<attribute name="NAME" x="119.7864" y="119.38" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="124.079" y="119.38" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="DIST" gate="G$1" x="142.24" y="127" smashed="yes" rot="MR0">
@@ -2534,11 +2518,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="VALUE" x="146.685" y="127" size="1.778" layer="96" rot="MR90" align="center"/>
 </instance>
 <instance part="C6" gate="1" x="114.3" y="121.92" smashed="yes" rot="MR270">
-<attribute name="NAME" x="110.617" y="121.92" size="1.778" layer="95" rot="R270" align="center"/>
 <attribute name="VALUE" x="117.983" y="121.92" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
 <instance part="R8" gate="G$1" x="114.3" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="112.1664" y="109.22" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="116.459" y="109.22" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="GND6" gate="GND" x="114.3" y="99.06" smashed="yes">
@@ -2551,23 +2533,18 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="VALUE" x="130.175" y="70.485" size="1.778" layer="96"/>
 </instance>
 <instance part="C7" gate="1" x="149.86" y="86.36" smashed="yes">
-<attribute name="NAME" x="149.86" y="90.043" size="1.778" layer="95" rot="MR180" align="center"/>
 <attribute name="VALUE" x="149.86" y="82.677" size="1.778" layer="96" rot="MR180" align="center"/>
 </instance>
 <instance part="R9" gate="G$1" x="162.56" y="86.36" smashed="yes">
-<attribute name="NAME" x="162.56" y="88.4936" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="162.56" y="84.201" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="D2" gate="G$1" x="170.18" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="167.7924" y="81.28" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="172.593" y="81.28" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="D3" gate="G$1" x="180.34" y="78.74" smashed="yes" rot="MR270">
-<attribute name="NAME" x="177.9524" y="78.74" size="1.778" layer="95" rot="MR270" align="center"/>
 <attribute name="VALUE" x="182.753" y="78.74" size="1.778" layer="96" rot="MR270" align="center"/>
 </instance>
 <instance part="C8" gate="G$1" x="190.5" y="80.01" smashed="yes" rot="R90">
-<attribute name="NAME" x="187.198" y="78.74" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="193.802" y="78.74" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="GND8" gate="GND" x="170.18" y="71.12" smashed="yes">
@@ -2580,33 +2557,28 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="VALUE" x="188.595" y="67.945" size="1.778" layer="96"/>
 </instance>
 <instance part="R10" gate="G$1" x="208.28" y="86.36" smashed="yes">
-<attribute name="NAME" x="208.28" y="88.4936" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="208.28" y="84.201" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R11" gate="G$1" x="200.66" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="198.5264" y="78.74" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="202.819" y="78.74" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="C9" gate="G$1" x="200.66" y="64.77" smashed="yes" rot="R90">
-<attribute name="NAME" x="197.358" y="63.5" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="203.962" y="63.5" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="GND11" gate="GND" x="200.66" y="55.88" smashed="yes">
 <attribute name="VALUE" x="198.755" y="52.705" size="1.778" layer="96"/>
 </instance>
 <instance part="C10" gate="G$1" x="219.71" y="86.36" smashed="yes">
-<attribute name="NAME" x="218.44" y="89.662" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="218.44" y="83.058" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R12" gate="G$1" x="226.06" y="93.98" smashed="yes" rot="R90">
-<attribute name="NAME" x="223.9264" y="93.98" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="228.219" y="93.98" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="POT2" gate="G$1" x="226.06" y="78.74" smashed="yes">
+<instance part="TONE" gate="G$1" x="226.06" y="78.74" smashed="yes">
 <attribute name="NAME" x="223.901" y="78.74" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="221.615" y="78.74" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="POT3" gate="G$1" x="236.22" y="71.12" smashed="yes">
+<instance part="LEVEL" gate="G$1" x="236.22" y="71.12" smashed="yes">
 <attribute name="NAME" x="234.061" y="71.12" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="231.775" y="71.12" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
@@ -2617,27 +2589,17 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="VALUE" x="227.965" y="107.315" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C11" gate="G$1" x="199.39" y="119.38" smashed="yes">
-<attribute name="NAME" x="198.12" y="122.682" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="198.12" y="116.078" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R13" gate="G$1" x="266.7" y="63.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="264.5664" y="63.5" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="268.859" y="63.5" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="Q2" gate="G$1" x="274.32" y="68.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="273.685" y="72.263" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="275.971" y="72.263" size="1.778" layer="96" rot="R90"/>
-</instance>
+<instance part="Q2" gate="G$1" x="274.32" y="68.58" smashed="yes" rot="R90"/>
 <instance part="R14" gate="G$1" x="287.02" y="63.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="284.8864" y="63.5" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="289.179" y="63.5" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="Q3" gate="G$1" x="279.4" y="116.84" smashed="yes" rot="R90">
-<attribute name="NAME" x="278.765" y="120.523" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="281.051" y="120.523" size="1.778" layer="96" rot="R90"/>
-</instance>
+<instance part="Q3" gate="G$1" x="279.4" y="116.84" smashed="yes" rot="R90"/>
 <instance part="R15" gate="G$1" x="271.78" y="111.76" smashed="yes" rot="R90">
-<attribute name="NAME" x="269.6464" y="111.76" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="273.939" y="111.76" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="VB4" gate="G$1" x="266.7" y="53.34" smashed="yes" rot="R180">
@@ -2650,37 +2612,30 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="VALUE" x="274.32" y="97.79" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C12" gate="G$1" x="293.37" y="71.12" smashed="yes">
-<attribute name="NAME" x="292.1" y="74.422" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="292.1" y="67.818" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R16" gate="G$1" x="299.72" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="297.5864" y="78.74" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="301.879" y="78.74" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="VB7" gate="G$1" x="299.72" y="88.9" smashed="yes">
 <attribute name="VALUE" x="297.18" y="92.71" size="1.778" layer="96"/>
 </instance>
 <instance part="Q4" gate="G1" x="304.8" y="71.12" smashed="yes">
-<attribute name="NAME" x="307.34" y="71.501" size="1.778" layer="95"/>
 <attribute name="VALUE" x="307.34" y="69.215" size="1.778" layer="96"/>
 </instance>
 <instance part="R17" gate="G$1" x="307.34" y="55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="305.2064" y="55.88" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="309.499" y="55.88" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="GND12" gate="GND" x="307.34" y="45.72" smashed="yes">
 <attribute name="VALUE" x="305.435" y="42.545" size="1.778" layer="96"/>
 </instance>
 <instance part="C13" gate="1" x="312.42" y="63.5" smashed="yes">
-<attribute name="NAME" x="312.42" y="67.183" size="1.778" layer="95" rot="MR180" align="center"/>
 <attribute name="VALUE" x="312.42" y="59.817" size="1.778" layer="96" rot="MR180" align="center"/>
 </instance>
 <instance part="R18" gate="G$1" x="325.12" y="63.5" smashed="yes">
-<attribute name="NAME" x="325.12" y="65.6336" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="325.12" y="61.341" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R19" gate="G$1" x="332.74" y="55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="330.6064" y="55.88" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="334.899" y="55.88" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="GND15" gate="GND" x="332.74" y="45.72" smashed="yes">
@@ -2690,35 +2645,27 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="VALUE" x="305.435" y="84.455" size="1.778" layer="96"/>
 </instance>
 <instance part="Q31" gate="G$1" x="185.42" y="27.94" smashed="yes">
-<attribute name="NAME" x="187.96" y="28.321" size="1.778" layer="95"/>
 <attribute name="VALUE" x="187.96" y="26.035" size="1.778" layer="96"/>
 </instance>
 <instance part="R65" gate="G$1" x="177.8" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="175.6664" y="20.32" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="179.959" y="20.32" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="C34" gate="G$1" x="167.64" y="19.05" smashed="yes" rot="R90">
-<attribute name="NAME" x="164.338" y="19.05" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="170.942" y="19.05" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="R66" gate="G$1" x="187.96" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="185.8264" y="43.18" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="190.119" y="43.18" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="C32" gate="G$1" x="157.48" y="19.05" smashed="yes" rot="R90">
-<attribute name="NAME" x="154.178" y="19.05" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="160.782" y="19.05" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="R62" gate="G$1" x="147.32" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="145.1864" y="20.32" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="149.479" y="20.32" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="Q30" gate="G$1" x="139.7" y="27.94" smashed="yes" rot="MR0">
-<attribute name="NAME" x="137.16" y="28.321" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="137.16" y="26.035" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R61" gate="G$1" x="137.16" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="135.0264" y="43.18" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="139.319" y="43.18" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="GND17" gate="GND" x="177.8" y="10.16" smashed="yes">
@@ -2728,56 +2675,45 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="VALUE" x="145.415" y="6.985" size="1.778" layer="96"/>
 </instance>
 <instance part="C36" gate="G$1" x="281.94" y="29.21" smashed="yes" rot="R90">
-<attribute name="NAME" x="278.638" y="29.21" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="285.242" y="29.21" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="GND39" gate="GND" x="281.94" y="20.32" smashed="yes">
 <attribute name="VALUE" x="280.035" y="17.145" size="1.778" layer="96"/>
 </instance>
 <instance part="R69" gate="G$1" x="274.32" y="35.56" smashed="yes">
-<attribute name="NAME" x="274.32" y="37.6936" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="274.32" y="33.401" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R60" gate="G$1" x="116.84" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="114.7064" y="43.18" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="118.999" y="43.18" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="C30" gate="G$1" x="110.49" y="50.8" smashed="yes">
-<attribute name="NAME" x="110.49" y="54.102" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="110.49" y="47.498" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="GND42" gate="GND" x="104.14" y="45.72" smashed="yes">
 <attribute name="VALUE" x="102.235" y="42.545" size="1.778" layer="96"/>
 </instance>
 <instance part="D4" gate="G$1" x="281.94" y="104.14" smashed="yes" rot="MR270">
-<attribute name="NAME" x="279.5524" y="104.14" size="1.778" layer="95" rot="MR270" align="center"/>
 <attribute name="VALUE" x="284.353" y="104.14" size="1.778" layer="96" rot="MR270" align="center"/>
 </instance>
 <instance part="D5" gate="G$1" x="276.86" y="55.88" smashed="yes" rot="MR270">
-<attribute name="NAME" x="274.4724" y="55.88" size="1.778" layer="95" rot="MR270" align="center"/>
 <attribute name="VALUE" x="279.273" y="55.88" size="1.778" layer="96" rot="MR270" align="center"/>
 </instance>
 <instance part="C14" gate="G$1" x="162.56" y="-6.35" smashed="yes" rot="R90">
-<attribute name="NAME" x="159.258" y="-6.35" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="165.862" y="-6.35" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="GND16" gate="GND" x="162.56" y="-15.24" smashed="yes">
 <attribute name="VALUE" x="160.655" y="-18.415" size="1.778" layer="96"/>
 </instance>
 <instance part="R20" gate="G$1" x="175.26" y="-10.16" smashed="yes">
-<attribute name="NAME" x="175.26" y="-8.0264" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="175.26" y="-12.319" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R21" gate="G$1" x="195.58" y="0" smashed="yes">
-<attribute name="NAME" x="195.58" y="2.1336" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="195.58" y="-2.159" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R22" gate="G$1" x="203.2" y="7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="201.0664" y="7.62" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="205.359" y="7.62" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="R23" gate="G$1" x="203.2" y="-7.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="201.0664" y="-7.62" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="205.359" y="-7.62" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="GND19" gate="GND" x="203.2" y="-17.78" smashed="yes">
@@ -2799,48 +2735,37 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="VALUE" x="201.295" y="20.955" size="1.778" layer="96"/>
 </instance>
 <instance part="D6" gate="G$1" x="137.16" y="-2.54" smashed="yes" rot="MR270">
-<attribute name="NAME" x="134.7724" y="-2.54" size="1.778" layer="95" rot="MR270" align="center"/>
 <attribute name="VALUE" x="139.573" y="-2.54" size="1.778" layer="96" rot="MR270" align="center"/>
 </instance>
 <instance part="R24" gate="G$1" x="137.16" y="-12.7" smashed="yes" rot="R90">
-<attribute name="NAME" x="135.0264" y="-12.7" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="139.319" y="-12.7" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="GND21" gate="GND" x="137.16" y="-22.86" smashed="yes">
 <attribute name="VALUE" x="135.255" y="-26.035" size="1.778" layer="96"/>
 </instance>
 <instance part="Q5" gate="G$1" x="111.76" y="20.32" smashed="yes" rot="MR0">
-<attribute name="NAME" x="109.22" y="20.701" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="109.22" y="18.415" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R25" gate="G$1" x="116.84" y="27.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="114.7064" y="27.94" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="118.999" y="27.94" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="D7" gate="G$1" x="104.14" y="27.94" smashed="yes" rot="MR0">
-<attribute name="NAME" x="104.14" y="30.353" size="1.778" layer="95" rot="MR0" align="center"/>
 <attribute name="VALUE" x="104.14" y="25.527" size="1.778" layer="96" rot="MR0" align="center"/>
 </instance>
 <instance part="R26" gate="G$1" x="91.44" y="27.94" smashed="yes">
-<attribute name="NAME" x="91.44" y="30.0736" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="91.44" y="25.781" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="D8" gate="G$1" x="83.82" y="35.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="81.407" y="35.56" size="1.778" layer="95" rot="R270" align="center"/>
-</instance>
+<instance part="D8" gate="G$1" x="83.82" y="33.02" smashed="yes" rot="R90"/>
 <instance part="V8" gate="+9V" x="83.82" y="43.18" smashed="yes">
 <attribute name="VALUE" x="81.915" y="46.355" size="1.778" layer="96"/>
 </instance>
 <instance part="R27" gate="G$1" x="236.22" y="58.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="234.0864" y="58.42" size="1.778" layer="95" rot="R90" align="center"/>
 <attribute name="VALUE" x="238.379" y="58.42" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="C15" gate="G$1" x="260.35" y="71.12" smashed="yes">
-<attribute name="NAME" x="259.08" y="74.422" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="259.08" y="67.818" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R28" gate="G$1" x="248.92" y="71.12" smashed="yes">
-<attribute name="NAME" x="248.92" y="73.2536" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="248.92" y="68.961" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="IN1" gate="G$1" x="58.42" y="91.44" smashed="yes">
@@ -2893,14 +2818,14 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="V6" gate="+9V" pin="+9V"/>
 </segment>
 <segment>
-<pinref part="V8" gate="+9V" pin="+9V"/>
-<pinref part="D8" gate="G$1" pin="C"/>
-<wire x1="83.82" y1="40.64" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="V7" gate="+9V" pin="+9V"/>
 <pinref part="R22" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="15.24" x2="203.2" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="V8" gate="+9V" pin="+9V"/>
+<pinref part="D8" gate="G$1" pin="A"/>
+<wire x1="83.82" y1="38.1" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3206,7 +3131,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <net name="N$14" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
-<pinref part="POT2" gate="G$1" pin="3"/>
+<pinref part="TONE" gate="G$1" pin="3"/>
 <wire x1="226.06" y1="88.9" x2="226.06" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="86.36" x2="226.06" y2="85.09" width="0.1524" layer="91"/>
@@ -3222,15 +3147,15 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="200.66" y1="71.12" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="71.12" x2="226.06" y2="71.12" width="0.1524" layer="91"/>
 <junction x="200.66" y="71.12"/>
-<pinref part="POT2" gate="G$1" pin="1"/>
+<pinref part="TONE" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="71.12" x2="226.06" y2="72.39" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="POT2" gate="G$1" pin="2"/>
+<pinref part="TONE" gate="G$1" pin="2"/>
 <wire x1="231.14" y1="78.74" x2="236.22" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="POT3" gate="G$1" pin="3"/>
+<pinref part="LEVEL" gate="G$1" pin="3"/>
 <wire x1="236.22" y1="78.74" x2="236.22" y2="77.47" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3486,8 +3411,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="27.94" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="D8" gate="G$1" pin="A"/>
-<wire x1="83.82" y1="27.94" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="D8" gate="G$1" pin="C"/>
+<wire x1="83.82" y1="30.48" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -3517,14 +3442,14 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 </net>
 <net name="N$38" class="0">
 <segment>
-<pinref part="POT3" gate="G$1" pin="1"/>
+<pinref part="LEVEL" gate="G$1" pin="1"/>
 <pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="64.77" x2="236.22" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
-<pinref part="POT3" gate="G$1" pin="2"/>
+<pinref part="LEVEL" gate="G$1" pin="2"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="71.12" x2="243.84" y2="71.12" width="0.1524" layer="91"/>
 </segment>

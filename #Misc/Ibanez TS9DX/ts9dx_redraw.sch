@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2254,7 +2254,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="C106" library="pedals-capacitors-elec" deviceset="050" device="0" value="220n"/>
 <part name="R108" library="pedals-resistors" deviceset="R_" device=".3B" value="220R"/>
 <part name="GND8" library="gm-supply" deviceset="GND" device=""/>
-<part name="VR3" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100kB"/>
+<part name="VR3" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="100k"/>
 <part name="C107" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="1u"/>
 <part name="R111" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
 <part name="C108" library="pedals-capacitors-film" deviceset="CER/FILM" device="BOX.1" value="100n"/>
@@ -2286,9 +2286,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <part name="C120" library="pedals-capacitors-elec" deviceset="050" device="0" value="220n"/>
 <part name="C119" library="pedals-capacitors-elec" deviceset="050" device="0" value="1u"/>
 <part name="C118" library="pedals-capacitors-elec" deviceset="050" device="0" value="2.2u"/>
-<part name="VR2B" library="pedals-potentiometers" deviceset="POTS" device="16MM"/>
-<part name="VR1B" library="pedals-potentiometers" deviceset="POTS" device="16MM"/>
-<part name="R106" library="pedals-resistors" deviceset="R_" device=".3B" value="1k"/>
+<part name="VR1A" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="250k"/>
+<part name="VR1B" library="pedals-potentiometers" deviceset="POTS" device="16MM" value="250k"/>
+<part name="R106" library="pedals-resistors" deviceset="R_" device=".3B" value="51k"/>
 <part name="R3" library="pedals-resistors" deviceset="R_" device=".3B" value="4.7k"/>
 <part name="VB4" library="gm-supply" deviceset="VB" device=""/>
 <part name="VB7" library="gm-supply" deviceset="VB" device=""/>
@@ -2300,38 +2300,38 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="96.52" y1="71.12" x2="121.92" y2="71.12" width="0.1524" layer="96" style="shortdash"/>
 </plain>
 <instances>
-<instance part="GND102" gate="GND" x="121.92" y="0" smashed="yes">
-<attribute name="VALUE" x="120.015" y="-3.175" size="1.778" layer="96"/>
+<instance part="GND102" gate="GND" x="205.74" y="81.28" smashed="yes">
+<attribute name="VALUE" x="203.835" y="78.105" size="1.778" layer="96"/>
 </instance>
-<instance part="D108" gate="G$1" x="121.92" y="12.7" smashed="yes" rot="R90">
-<attribute name="VALUE" x="124.333" y="12.7" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="D108" gate="G$1" x="205.74" y="93.98" smashed="yes" rot="R90">
+<attribute name="VALUE" x="208.153" y="93.98" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="R133" gate="G$1" x="139.7" y="17.78" smashed="yes">
-<attribute name="VALUE" x="139.7" y="15.621" size="1.778" layer="96" align="center"/>
+<instance part="R133" gate="G$1" x="223.52" y="99.06" smashed="yes">
+<attribute name="VALUE" x="223.52" y="96.901" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R132" gate="G$1" x="147.32" y="10.16" smashed="yes" rot="R90">
-<attribute name="VALUE" x="149.479" y="10.16" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="R132" gate="G$1" x="231.14" y="91.44" smashed="yes" rot="R90">
+<attribute name="VALUE" x="233.299" y="91.44" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="C116" gate="1" x="157.48" y="12.7" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="161.163" y="12.7" size="1.778" layer="96" rot="R270" align="center"/>
+<instance part="C116" gate="1" x="241.3" y="93.98" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="244.983" y="93.98" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
-<instance part="GND2" gate="GND" x="147.32" y="0" smashed="yes">
-<attribute name="VALUE" x="145.415" y="-3.175" size="1.778" layer="96"/>
+<instance part="GND2" gate="GND" x="231.14" y="81.28" smashed="yes">
+<attribute name="VALUE" x="229.235" y="78.105" size="1.778" layer="96"/>
 </instance>
-<instance part="GND3" gate="GND" x="157.48" y="0" smashed="yes">
-<attribute name="VALUE" x="155.575" y="-3.175" size="1.778" layer="96"/>
+<instance part="GND3" gate="GND" x="241.3" y="81.28" smashed="yes">
+<attribute name="VALUE" x="239.395" y="78.105" size="1.778" layer="96"/>
 </instance>
-<instance part="V1" gate="+9V" x="121.92" y="22.86" smashed="yes">
-<attribute name="VALUE" x="120.015" y="26.035" size="1.778" layer="96"/>
+<instance part="V1" gate="+9V" x="205.74" y="104.14" smashed="yes">
+<attribute name="VALUE" x="203.835" y="107.315" size="1.778" layer="96"/>
 </instance>
-<instance part="VB1" gate="G$1" x="157.48" y="22.86" smashed="yes">
-<attribute name="VALUE" x="154.94" y="26.67" size="1.778" layer="96"/>
+<instance part="VB1" gate="G$1" x="241.3" y="104.14" smashed="yes">
+<attribute name="VALUE" x="238.76" y="107.95" size="1.778" layer="96"/>
 </instance>
-<instance part="C117" gate="1" x="132.08" y="12.7" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="135.763" y="12.7" size="1.778" layer="96" rot="R270" align="center"/>
+<instance part="C117" gate="1" x="215.9" y="93.98" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="219.583" y="93.98" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
-<instance part="GND4" gate="GND" x="132.08" y="0" smashed="yes">
-<attribute name="VALUE" x="130.175" y="-3.175" size="1.778" layer="96"/>
+<instance part="GND4" gate="GND" x="215.9" y="81.28" smashed="yes">
+<attribute name="VALUE" x="213.995" y="78.105" size="1.778" layer="96"/>
 </instance>
 <instance part="C102" gate="G$1" x="102.87" y="40.64" smashed="yes">
 <attribute name="VALUE" x="102.87" y="37.338" size="1.778" layer="96" align="center"/>
@@ -2339,8 +2339,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="R101" gate="G$1" x="48.26" y="48.26" smashed="yes">
 <attribute name="VALUE" x="48.26" y="46.101" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R102" gate="G$1" x="55.88" y="40.64" smashed="yes" rot="R90">
-<attribute name="VALUE" x="58.039" y="40.64" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="R102" gate="G$1" x="55.88" y="55.88" smashed="yes" rot="R90">
+<attribute name="VALUE" x="58.039" y="55.88" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="Q101" gate="G1" x="60.96" y="48.26" smashed="yes">
 <attribute name="VALUE" x="63.5" y="46.355" size="1.778" layer="96"/>
@@ -2365,8 +2365,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="U1" gate="_PWR" x="203.2" y="45.72" smashed="yes">
 <attribute name="NAME" x="202.565" y="45.72" size="0.8128" layer="95" rot="R90" align="center"/>
 </instance>
-<instance part="VB2" gate="G$1" x="55.88" y="30.48" smashed="yes" rot="R180">
-<attribute name="VALUE" x="58.42" y="26.67" size="1.778" layer="96" rot="R180"/>
+<instance part="VB2" gate="G$1" x="55.88" y="66.04" smashed="yes">
+<attribute name="VALUE" x="53.34" y="69.85" size="1.778" layer="96"/>
 </instance>
 <instance part="GND5" gate="GND" x="63.5" y="22.86" smashed="yes">
 <attribute name="VALUE" x="61.595" y="19.685" size="1.778" layer="96"/>
@@ -2389,9 +2389,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="VB5" gate="G$1" x="193.04" y="25.4" smashed="yes" rot="R180">
 <attribute name="VALUE" x="195.58" y="21.59" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="VR2" gate="G$1" x="182.88" y="88.9" smashed="yes" rot="R270">
-<attribute name="NAME" x="182.88" y="91.059" size="1.778" layer="95" align="center"/>
-<attribute name="VALUE" x="182.88" y="93.345" size="1.778" layer="96" align="center"/>
+<instance part="VR2" gate="G$1" x="182.88" y="83.82" smashed="yes" rot="R270">
+<attribute name="NAME" x="182.88" y="85.979" size="1.778" layer="95" align="center"/>
+<attribute name="VALUE" x="182.88" y="88.265" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="V3" gate="+9V" x="203.2" y="55.88" smashed="yes">
 <attribute name="VALUE" x="201.295" y="59.055" size="1.778" layer="96"/>
@@ -2402,14 +2402,14 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="R107" gate="G$1" x="165.1" y="43.18" smashed="yes">
 <attribute name="VALUE" x="165.1" y="41.021" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="C106" gate="1" x="182.88" y="78.74" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="186.563" y="78.74" size="1.778" layer="96" rot="R270" align="center"/>
+<instance part="C106" gate="1" x="182.88" y="73.66" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="186.563" y="73.66" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
-<instance part="R108" gate="G$1" x="182.88" y="66.04" smashed="yes" rot="R90">
-<attribute name="VALUE" x="185.039" y="66.04" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="R108" gate="G$1" x="182.88" y="60.96" smashed="yes" rot="R90">
+<attribute name="VALUE" x="185.039" y="60.96" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="GND8" gate="GND" x="182.88" y="55.88" smashed="yes">
-<attribute name="VALUE" x="180.975" y="52.705" size="1.778" layer="96"/>
+<instance part="GND8" gate="GND" x="182.88" y="50.8" smashed="yes">
+<attribute name="VALUE" x="180.975" y="47.625" size="1.778" layer="96"/>
 </instance>
 <instance part="VR3" gate="G$1" x="238.76" y="53.34" smashed="yes">
 <attribute name="NAME" x="236.601" y="53.34" size="1.778" layer="95" rot="R90" align="center"/>
@@ -2424,11 +2424,11 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <instance part="C108" gate="G$1" x="250.19" y="53.34" smashed="yes">
 <attribute name="VALUE" x="250.19" y="50.038" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R112" gate="G$1" x="256.54" y="45.72" smashed="yes" rot="R90">
-<attribute name="VALUE" x="258.699" y="45.72" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="R112" gate="G$1" x="256.54" y="60.96" smashed="yes" rot="R90">
+<attribute name="VALUE" x="258.699" y="60.96" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="VB6" gate="G$1" x="256.54" y="35.56" smashed="yes" rot="R180">
-<attribute name="VALUE" x="259.08" y="31.75" size="1.778" layer="96" rot="R180"/>
+<instance part="VB6" gate="G$1" x="256.54" y="71.12" smashed="yes">
+<attribute name="VALUE" x="254" y="74.93" size="1.778" layer="96"/>
 </instance>
 <instance part="Q103" gate="G1" x="261.62" y="53.34" smashed="yes">
 <attribute name="VALUE" x="264.16" y="51.435" size="1.778" layer="96"/>
@@ -2512,7 +2512,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="NAME" x="81.28" y="57.023" size="1.778" layer="95" rot="R180" align="center"/>
 <attribute name="VALUE" x="81.28" y="49.657" size="1.778" layer="96" rot="R180" align="center"/>
 </instance>
-<instance part="VR2B" gate="G$1" x="149.86" y="99.06" smashed="yes" rot="MR90">
+<instance part="VR1A" gate="G$1" x="149.86" y="99.06" smashed="yes" rot="MR90">
 <attribute name="NAME" x="149.86" y="96.901" size="1.778" layer="95" rot="MR180" align="center"/>
 <attribute name="VALUE" x="149.86" y="94.615" size="1.778" layer="96" rot="MR180" align="center"/>
 </instance>
@@ -2524,11 +2524,11 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <attribute name="NAME" x="116.84" y="101.1936" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="116.84" y="96.901" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="R3" gate="G$1" x="68.58" y="93.98" smashed="yes" rot="R90">
-<attribute name="VALUE" x="70.739" y="93.98" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="R3" gate="G$1" x="68.58" y="91.44" smashed="yes" rot="R90">
+<attribute name="VALUE" x="70.739" y="91.44" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
-<instance part="VB4" gate="G$1" x="68.58" y="104.14" smashed="yes">
-<attribute name="VALUE" x="66.04" y="107.95" size="1.778" layer="96"/>
+<instance part="VB4" gate="G$1" x="68.58" y="101.6" smashed="yes">
+<attribute name="VALUE" x="66.04" y="105.41" size="1.778" layer="96"/>
 </instance>
 <instance part="VB7" gate="G$1" x="238.76" y="43.18" smashed="yes" rot="R180">
 <attribute name="VALUE" x="241.3" y="39.37" size="1.778" layer="96" rot="R180"/>
@@ -2540,23 +2540,23 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <net name="GND" class="0">
 <segment>
 <pinref part="GND102" gate="GND" pin="GND"/>
-<wire x1="121.92" y1="7.62" x2="121.92" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="88.9" x2="205.74" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="D108" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="C116" gate="1" pin="-"/>
 <pinref part="GND3" gate="GND" pin="GND"/>
-<wire x1="157.48" y1="7.62" x2="157.48" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="88.9" x2="241.3" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="GND" pin="GND"/>
 <pinref part="R132" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="2.54" x2="147.32" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="83.82" x2="231.14" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="GND" pin="GND"/>
 <pinref part="C117" gate="1" pin="-"/>
-<wire x1="132.08" y1="2.54" x2="132.08" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="83.82" x2="215.9" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R103" gate="G$1" pin="1"/>
@@ -2575,7 +2575,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="R108" gate="G$1" pin="1"/>
 <pinref part="GND8" gate="GND" pin="GND"/>
-<wire x1="182.88" y1="60.96" x2="182.88" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="55.88" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R113" gate="G$1" pin="1"/>
@@ -2592,20 +2592,15 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="R133" gate="G$1" pin="2"/>
 <pinref part="C116" gate="1" pin="+"/>
-<wire x1="144.78" y1="17.78" x2="147.32" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="17.78" x2="157.48" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="17.78" x2="157.48" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="99.06" x2="231.14" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="99.06" x2="241.3" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="99.06" x2="241.3" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R132" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="15.24" x2="147.32" y2="17.78" width="0.1524" layer="91"/>
-<junction x="147.32" y="17.78"/>
-<junction x="157.48" y="17.78"/>
+<wire x1="231.14" y1="96.52" x2="231.14" y2="99.06" width="0.1524" layer="91"/>
+<junction x="231.14" y="99.06"/>
+<junction x="241.3" y="99.06"/>
 <pinref part="VB1" gate="G$1" pin="VB"/>
-<wire x1="157.48" y1="17.78" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R102" gate="G$1" pin="1"/>
-<pinref part="VB2" gate="G$1" pin="VB"/>
-<wire x1="55.88" y1="35.56" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="99.06" x2="241.3" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R105" gate="G$1" pin="1"/>
@@ -2618,34 +2613,39 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="193.04" y1="27.94" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R112" gate="G$1" pin="1"/>
-<pinref part="VB6" gate="G$1" pin="VB"/>
-<wire x1="256.54" y1="40.64" x2="256.54" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="VB4" gate="G$1" pin="VB"/>
-<wire x1="68.58" y1="99.06" x2="68.58" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="96.52" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="VR3" gate="G$1" pin="1"/>
 <wire x1="238.76" y1="45.72" x2="238.76" y2="46.99" width="0.1524" layer="91"/>
 <pinref part="VB7" gate="G$1" pin="VB"/>
 </segment>
+<segment>
+<pinref part="VB2" gate="G$1" pin="VB"/>
+<pinref part="R102" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="63.5" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="VB6" gate="G$1" pin="VB"/>
+<pinref part="R112" gate="G$1" pin="2"/>
+<wire x1="256.54" y1="68.58" x2="256.54" y2="66.04" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+9V" class="0">
 <segment>
-<wire x1="121.92" y1="15.24" x2="121.92" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="96.52" x2="205.74" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="D108" gate="G$1" pin="C"/>
 <pinref part="R133" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="17.78" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
-<junction x="121.92" y="17.78"/>
+<wire x1="205.74" y1="99.06" x2="215.9" y2="99.06" width="0.1524" layer="91"/>
+<junction x="205.74" y="99.06"/>
 <pinref part="V1" gate="+9V" pin="+9V"/>
-<wire x1="132.08" y1="17.78" x2="134.62" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="17.78" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="99.06" x2="218.44" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="99.06" x2="205.74" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C117" gate="1" pin="+"/>
-<wire x1="132.08" y1="15.24" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
-<junction x="132.08" y="17.78"/>
+<wire x1="215.9" y1="96.52" x2="215.9" y2="99.06" width="0.1524" layer="91"/>
+<junction x="215.9" y="99.06"/>
 </segment>
 <segment>
 <pinref part="Q101" gate="G1" pin="C"/>
@@ -2667,9 +2667,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="R101" gate="G$1" pin="2"/>
 <pinref part="Q101" gate="G1" pin="B"/>
 <wire x1="53.34" y1="48.26" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="R102" gate="G$1" pin="2"/>
+<pinref part="R102" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="48.26" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="50.8" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
 <junction x="55.88" y="48.26"/>
 </segment>
 </net>
@@ -2699,9 +2699,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="R107" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="43.18" x2="172.72" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="43.18" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="43.18" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="VR2" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="88.9" x2="176.53" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="83.82" x2="176.53" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C105" gate="1" pin="+"/>
 <wire x1="172.72" y1="40.64" x2="172.72" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R109" gate="G$1" pin="2"/>
@@ -2719,8 +2719,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="195.58" y1="48.26" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="48.26" x2="193.04" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="VR2" gate="G$1" pin="3"/>
-<wire x1="193.04" y1="66.04" x2="193.04" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="88.9" x2="189.23" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="66.04" x2="193.04" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="83.82" x2="189.23" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R110" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="66.04" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
 <junction x="193.04" y="66.04"/>
@@ -2742,14 +2742,14 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <segment>
 <pinref part="VR2" gate="G$1" pin="2"/>
 <pinref part="C106" gate="1" pin="+"/>
-<wire x1="182.88" y1="83.82" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="78.74" x2="182.88" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="C106" gate="1" pin="-"/>
 <pinref part="R108" gate="G$1" pin="2"/>
-<wire x1="182.88" y1="73.66" x2="182.88" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="68.58" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -2757,9 +2757,9 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="C108" gate="G$1" pin="1"/>
 <pinref part="Q103" gate="G1" pin="B"/>
 <wire x1="254" y1="53.34" x2="256.54" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R112" gate="G$1" pin="2"/>
+<pinref part="R112" gate="G$1" pin="1"/>
 <wire x1="256.54" y1="53.34" x2="259.08" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="53.34" x2="256.54" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="55.88" x2="256.54" y2="53.34" width="0.1524" layer="91"/>
 <junction x="256.54" y="53.34"/>
 </segment>
 </net>
@@ -2903,11 +2903,11 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <wire x1="157.48" y1="50.8" x2="157.48" y2="43.18" width="0.1524" layer="91"/>
 <junction x="157.48" y="50.8"/>
 <junction x="157.48" y="43.18"/>
-<pinref part="VR2B" gate="G$1" pin="3"/>
+<pinref part="VR1A" gate="G$1" pin="3"/>
 <wire x1="156.21" y1="99.06" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="99.06" x2="157.48" y2="86.36" width="0.1524" layer="91"/>
 <junction x="157.48" y="86.36"/>
-<pinref part="VR2B" gate="G$1" pin="2"/>
+<pinref part="VR1A" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="104.14" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="106.68" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="106.68" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
@@ -2961,7 +2961,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <net name="N$19" class="0">
 <segment>
 <pinref part="VR1B" gate="G$1" pin="3"/>
-<pinref part="VR2B" gate="G$1" pin="1"/>
+<pinref part="VR1A" gate="G$1" pin="1"/>
 <wire x1="138.43" y1="99.06" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="VR1B" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="99.06" x2="143.51" y2="99.06" width="0.1524" layer="91"/>
@@ -2978,7 +2978,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3296.pdf"&gt; Data sheet &lt;/a&g
 <pinref part="C118" gate="1" pin="-"/>
 <wire x1="68.58" y1="63.5" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="73.66" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="83.82" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="83.82" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="53.34" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="C119" gate="1" pin="-"/>
 <wire x1="71.12" y1="63.5" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
